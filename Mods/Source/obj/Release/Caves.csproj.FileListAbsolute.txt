@@ -1,0 +1,5 @@
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\CaveBiome\Source\bin\Release\Caves.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\CaveBiome\Source\bin\Release\Caves.pdb
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\CaveBiome\Source\obj\Release\Caves.csprojResolveAssemblyReference.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\CaveBiome\Source\obj\Release\Caves.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\CaveBiome\Source\obj\Release\Caves.pdb

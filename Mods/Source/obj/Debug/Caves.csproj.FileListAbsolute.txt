@@ -1,0 +1,6 @@
+D:\Games\Steam\steamapps\common\RimWorld\Mods\CaveBiome\Source\obj\Debug\Caves.csprojResolveAssemblyReference.cache
+D:\Games\Steam\steamapps\common\RimWorld\Mods\CaveBiome\Assemblies\Caves.dll
+D:\Games\Steam\steamapps\common\RimWorld\Mods\CaveBiome\Source\obj\Debug\Caves.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\CaveBiome\Source\obj\Debug\Caves.csprojResolveAssemblyReference.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\CaveBiome\Source\obj\Debug\Caves.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\CaveBiome\Assemblies\Caves.dll

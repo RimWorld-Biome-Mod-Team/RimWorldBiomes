@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TerrainDefs>
+
+  <TerrainDef>
+    <defName>CavernGround</defName>
+    <label>cavern ground</label>
+    <texturePath>Terrain/Caveground</texturePath>
+    <EdgeType>FadeRough</EdgeType>
+    <RenderPrecedence>340</RenderPrecedence>
+    <PathCost>2</PathCost>
+    <statBases>
+      <Beauty>-1</Beauty>
+      <Cleanliness>-1</Cleanliness>
+    </statBases>
+    <ScatterType>Rocky</ScatterType>
+    <affordances>
+      <li>Light</li>
+      <li>Heavy</li>
+      <li>GrowSoil</li>
+      <li>Diggable</li>
+    </affordances>
+    <TerrainFilthDef>FilthDirt</TerrainFilthDef>
+    <Fertility>0.4</Fertility>
+    <TakeFootprints>True</TakeFootprints>
+  </TerrainDef>
+
+  <TerrainDef>
+    <defName>CavernSoil</defName>
+    <label>cavern soil</label>
+    <texturePath>Terrain/Cavesoil</texturePath>
+    <EdgeType>FadeRough</EdgeType>
+    <RenderPrecedence>337</RenderPrecedence>
+    <PathCost>2</PathCost>
+    <statBases>
+      <Beauty>-1</Beauty>
+      <Cleanliness>-1</Cleanliness>
+    </statBases>
+    <ScatterType>Rocky</ScatterType>
+    <affordances>
+      <li>Light</li>
+      <li>Heavy</li>
+      <li>GrowSoil</li>
+      <li>Diggable</li>
+    </affordances>
+    <TerrainFilthDef>FilthDirt</TerrainFilthDef>
+    <Fertility>1</Fertility>
+    <TakeFootprints>True</TakeFootprints>
+  </TerrainDef>
+
+  <TerrainDef>
+    <defName>FungalBed</defName>
+    <label>fungal bed</label>
+    <texturePath>Terrain/Fungalbed</texturePath>
+    <EdgeType>FadeRough</EdgeType>
+    <RenderPrecedence>335</RenderPrecedence>
+    <PathCost>4</PathCost>
+    <statBases>
+      <Beauty>-1</Beauty>
+      <Cleanliness>-1</Cleanliness>
+    </statBases>
+    <affordances>
+      <li>Light</li>
+      <li>Heavy</li>
+      <li>GrowSoil</li>
+      <li>Diggable</li>
+    </affordances>
+    <TerrainFilthDef>FilthDirt</TerrainFilthDef>
+    <Fertility>1.5</Fertility>
+    <TakeFootprints>True</TakeFootprints>
+  </TerrainDef>
+
+</TerrainDefs>
