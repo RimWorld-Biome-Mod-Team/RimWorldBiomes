@@ -6,7 +6,7 @@ using System.Runtime.CompilerServices;
 using Verse;
 using Verse.Noise;
 
-namespace Caves.GenStep
+namespace Caves
 {
 	public class Terrain : GenStep
 	{

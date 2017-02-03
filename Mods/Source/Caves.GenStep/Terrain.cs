@@ -38,7 +38,7 @@ namespace Caves.GenStep
                     GenerateBridge(new IntVec3[] { current }, map);
                 }
             }
-            ModuleBase moduleBase = new Perlin(0.021999999716877937, 2.0, 0.5, 6, Rand.Range(0, 2147483647), QualityMode.High);
+            ModuleBase moduleBase = new Perlin(0.0004, 2.0, 0.5, 6, Rand.Range(0, 2147483647), QualityMode.High);
             int[,] ravineGrid = MapGen.GenRiver(map.Size.x, map.Size.z, moduleBase);
             foreach (IntVec3 current in map.AllCells)
             {
