@@ -1,0 +1,16 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workbench ActiveDocument="rimworld_biomes/GenStep_CavernFloor.cs">
+    <Files>
+      <File FileName="rimworld_biomes/BiomeWorker_Cavern.cs" Line="9" Column="1" />
+      <File FileName="rimworld_biomes/Harmony_BiomePatches.cs" Line="35" Column="38" />
+      <File FileName="rimworld_biomes/GenStep_CavernElevation.cs" Line="18" Column="67" />
+      <File FileName="rimworld_biomes/GenStep_CavernFloor.cs" Line="41" Column="9" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" ActiveRuntime="Mono 3.12.1 (b7764aa)" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>
