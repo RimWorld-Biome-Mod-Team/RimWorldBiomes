@@ -67,12 +67,12 @@
         <thresholds>
           <li>
             <terrain>WaterShallow</terrain>
-            <min>0.575</min>
-            <max>0.7</max>
+            <min>0.7</min>
+            <max>0.8</max>
           </li>
           <li>
             <terrain>WaterDeep</terrain>
-            <min>0.7</min>
+            <min>0.8</min>
             <max>999</max>
           </li>
         </thresholds>
