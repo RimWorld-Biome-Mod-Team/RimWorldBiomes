@@ -99,7 +99,27 @@ namespace rimworld_biomes
 						map.terrainGrid.SetTerrain(current, TerrainDefOf.WaterMovingShallow);
                     }
 				}
-
+                if (current.GetTerrain(map) == RWBTerrainDefOf.RockySoil){
+                    if(GenStep_RocksFromGrid.RockDefAt(current).naturalTerrain.defName.Contains("Sand")){
+                        map.terrainGrid.SetTerrain(current, RWBTerrainDefOf.SandstoneSoil);
+                    }
+					if (GenStep_RocksFromGrid.RockDefAt(current).naturalTerrain.defName.Contains("Marble"))
+					{
+						map.terrainGrid.SetTerrain(current, RWBTerrainDefOf.MarbleSoil);
+					}
+					if (GenStep_RocksFromGrid.RockDefAt(current).naturalTerrain.defName.Contains("Slate"))
+					{
+						map.terrainGrid.SetTerrain(current, RWBTerrainDefOf.SlateSoil);
+					}
+					if (GenStep_RocksFromGrid.RockDefAt(current).naturalTerrain.defName.Contains("Granite"))
+					{
+						map.terrainGrid.SetTerrain(current, RWBTerrainDefOf.GraniteSoil);
+					}
+					if (GenStep_RocksFromGrid.RockDefAt(current).naturalTerrain.defName.Contains("Lime"))
+					{
+						map.terrainGrid.SetTerrain(current, RWBTerrainDefOf.LimestoneSoil);
+					}
+                }
 				GenRoof(current, roof,map);
 			}
 
