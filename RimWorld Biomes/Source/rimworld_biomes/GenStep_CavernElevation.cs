@@ -15,12 +15,12 @@ namespace rimworld_biomes
             }
             NoiseRenderer.renderSize = new IntVec2(map.Size.x, map.Size.z);
 
-            ModuleBase moduleBase = new Perlin(0.09, 1.0, 100, 6, Rand.Range(0, 2147483647), QualityMode.High);
+            ModuleBase moduleBase = new Perlin(0.0, 0.0, 0.0, 0, Rand.Int, QualityMode.Medium);
 			moduleBase = new ScaleBias(0.5, 0.5, moduleBase);
             NoiseDebugUI.StoreNoiseRender(moduleBase, "Cave: elev base");
             moduleBase = new Multiply(moduleBase, new Const(1.5));
             NoiseDebugUI.StoreNoiseRender(moduleBase, "Cave: elev cave-factored");
-            MapGenFloatGrid mapGenFloatGrid = MapGenerator.FloatGridNamed("Elevation", map);
+            MapGenFloatGrid mapGenFloatGrid = MapGenerator.FloatGridNamed("Elevation");
             foreach (IntVec3 current in map.AllCells)
             {
                 mapGenFloatGrid[current] = moduleBase.GetValue(current);

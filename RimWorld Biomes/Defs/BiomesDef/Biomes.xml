@@ -8,16 +8,12 @@
     <workerClass>rimworld_biomes.BiomeWorker_Cavern</workerClass>
     <animalDensity>2.8</animalDensity>
     <plantDensity>0</plantDensity>
-    <allowRivers>false</allowRivers>
+    <allowRivers>true</allowRivers>
     <factionBaseSelectionWeight>1</factionBaseSelectionWeight>
-		<pathCost>
-            <points>
-                <li>(0, 50000)</li>
-                <li>(0.4, 30000)</li>
-                <li>(0.6, 30000)</li>
-                <li>(1, 50000)</li>
-            </points>
-		</pathCost>
+    <pathCost_spring>1750</pathCost_spring>
+    <pathCost_summer>1750</pathCost_summer>
+    <pathCost_fall>1750</pathCost_fall>
+    <pathCost_winter>44000</pathCost_winter>
     <texture>World/Biomes/TemperateForest</texture>
     <soundsAmbient>
       <li>AmbientNightInsects_Standard</li>
@@ -70,18 +66,8 @@
         <perlinFrequency>0.015</perlinFrequency>
         <thresholds>
           <li>
-            <terrain>SoilRich</terrain>
-            <min>0</min>
-            <max>0.1</max>
-          </li>
-          <li>
-            <terrain>Mud</terrain>
-            <min>0.1</min>
-            <max>0.2</max>
-          </li>
-          <li>
             <terrain>WaterShallow</terrain>
-            <min>0.5</min>
+            <min>0.575</min>
             <max>0.7</max>
           </li>
           <li>
