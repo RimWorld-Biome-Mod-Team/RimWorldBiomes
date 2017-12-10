@@ -1,0 +1,19 @@
+<Patch>
+
+<!--	<Operation Class="PatchOperationRemove">-->
+<!--		<xpath>/Defs/TerrainDef[defName = "Glowstool"]/plant</xpath>-->
+<!--	</Operation>-->
+<!--    -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName = "Glowstool"]/plant</xpath>
+		<value>
+<!--			<changeable>true</changeable>-->
+                <sowTags>
+                    <li>Ground</li>
+                </sowTags>
+			
+		</value>
+	</Operation>
+
+
+</Patch>

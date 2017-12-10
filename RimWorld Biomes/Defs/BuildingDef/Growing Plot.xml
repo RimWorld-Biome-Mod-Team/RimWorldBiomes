@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ThingDef ParentName="BuildingBase">
+    <defName>RWBPlanterBox</defName>
+    <label>planter box</label>
+    <description>A portable box for growing plants quickly.</description>
+    <thingClass>Building_PlantGrower</thingClass>
+    <graphicData>
+      <texPath>Buildings/PlanterBox</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,1)</drawSize>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <altitudeLayer>FloorEmplacement</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>60</pathCost>
+    <castEdgeShadows>true</castEdgeShadows>
+    <constructEffect>ConstructMetal</constructEffect>
+    <fillPercent>0.30</fillPercent>
+    <canOverlapZones>false</canOverlapZones>
+    <statBases>
+      <WorkToBuild>1400</WorkToBuild>
+      <MaxHitPoints>180</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <Cleanliness>-3</Cleanliness>
+    </statBases>
+    <size>(1,1)</size>
+    <costList>
+      <Steel>25</Steel>
+      <WoodLog>50</WoodLog>
+    </costList>
+    <fertility>1</fertility>
+    <building>
+      <defaultPlantToGrow>PlantPotato</defaultPlantToGrow>
+      <sowTag>Ground</sowTag>
+    </building>
+    <tickerType>Rare</tickerType>
+    <comps>
+        <li Class="CompProperties_Forbiddable"/>
+<!--        <li Class="CompProperties_Power">-->
+<!--            <compClass>CompPowerTrader</compClass>-->
+<!--            <basePowerConsumption>0</basePowerConsumption>-->
+<!--        </li>-->
+<!--        <li Class="CompProperties_Flickable"/>-->
+        <li Class="CompProperties_Breakdownable"/>
+    </comps>
+    <!--<researchPrerequisites><li>Hydroponics</li></researchPrerequisites> -->
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <designationCategory>Production</designationCategory>
+  </ThingDef>
+</Defs>

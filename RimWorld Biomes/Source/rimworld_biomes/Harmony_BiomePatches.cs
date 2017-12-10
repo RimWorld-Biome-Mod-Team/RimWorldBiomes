@@ -30,8 +30,28 @@ namespace rimworld_biomes
             //Trying to get this one to work
             harmony.Patch(AccessTools.Method(typeof(GenStep_Terrain),"TerrainFrom"), new HarmonyMethod(typeof(Harmony_BiomePatches), nameof(TerrainFrom_PreFix)), null);
             harmony.Patch(AccessTools.Method(typeof(GenStep_Caves), "Generate"), new HarmonyMethod(typeof(Harmony_BiomePatches), nameof(Generate_PreFix)), null);
+            harmony.Patch(AccessTools.Method(typeof(Building_PlantGrower), "GetInspectString"), null, new HarmonyMethod(typeof(Harmony_BiomePatches), nameof(GetInspectString_PostFix)));
 
         }
+
+        public static void GetInspectString_PostFix(Building_PlantGrower __instance, ref string __result){
+            //if(__result.Substring(0,1))
+            //Log.Error(__result.Substring(0,2));
+            //Log.Error(__result.Substring(0, 3));
+            //Log.Error(__result.Substring(1,1));
+            //Log.Error(__result.Substring(2,2));
+            if(__result.Substring(1,1) == "G"){
+                __result = __result.Substring(1, __result.Length-1);
+            }
+            //Log.Error(__result.Substring(2, __result.Length));
+            //if(__instance.GetInspectString() == null){
+            //    Log.Error("test");
+            //    //__result = "GrowSeasonHereNow".Translate();
+            //    //return false;
+            //}
+            return;
+        }
+
 
 		public static bool IsValidTileForNewSettlement_PreFix(int tile, StringBuilder reason, ref bool __result)
 		{

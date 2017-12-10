@@ -195,7 +195,7 @@ namespace rimworld_biomes
 
         protected void GenRoof(IntVec3 current, ModuleBase roof, Map map){
             //Log.Error(roof.GetValue(current).ToString());
-            if (roof.GetValue(current) > 0.5  && current.GetFirstBuilding(map) == null){
+            if (roof.GetValue(current) > 0.6  && current.GetFirstBuilding(map) == null){
 				//for (int i = -2; i < 3; i++)
 				//{
 				//	for (int j = -2; j < 3; j++)
