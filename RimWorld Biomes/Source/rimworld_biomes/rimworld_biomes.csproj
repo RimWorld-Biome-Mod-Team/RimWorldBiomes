@@ -50,5 +50,8 @@
     <Compile Include="GenStep_Cavern.cs" />
     <Compile Include="RWBTerrainDefOf.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="RWBBuildingDefOf.cs" />
+  </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

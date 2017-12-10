@@ -99,6 +99,70 @@ namespace rimworld_biomes
 						map.terrainGrid.SetTerrain(current, TerrainDefOf.WaterMovingShallow);
                     }
 				}
+
+
+				if (isStone(current, map) && current.GetFirstBuilding(map) == null)
+				{
+					System.Random rand = new System.Random();
+					int r2 = rand.Next(0, 1001);
+					//for (int i = 0; i < 100; i++)
+					//{
+					//	r2 = rand.Next(0, 1001);
+					//                   //r2 = r2 + 0;
+					//	//Log.Error(r2.ToString());
+					//}
+					rand = new System.Random();
+					r2 = Rand.RangeInclusive(0,1000);
+                    if (r2 < 10)
+                    {
+                        //Log.Error(r2.ToString());
+                        string str = "Stalagmite";
+                        int r = rand.Next(1, 5);
+                        for (int i = 0; i < 100; i++)
+                        {
+                            r = Rand.RangeInclusive(1,4);
+                            //Log.Error(r.ToString());
+                            r = r + 0;
+                        }
+                        if (GenStep_RocksFromGrid.RockDefAt(current).naturalTerrain.defName.Contains("Sand"))
+                        {
+                            str = str + "A";
+                        }
+                        if (GenStep_RocksFromGrid.RockDefAt(current).naturalTerrain.defName.Contains("Marble"))
+                        {
+                            str = str + "E";
+                        }
+                        if (GenStep_RocksFromGrid.RockDefAt(current).naturalTerrain.defName.Contains("Slate"))
+                        {
+                            str = str + "D";
+                        }
+                        if (GenStep_RocksFromGrid.RockDefAt(current).naturalTerrain.defName.Contains("Granite"))
+                        {
+                            str = str + "B";
+                        }
+                        if (GenStep_RocksFromGrid.RockDefAt(current).naturalTerrain.defName.Contains("Lime"))
+                        {
+                            str = str + "C";
+                        }
+                        if (r == 1)
+                        {
+                            str = str + "A";
+                        }
+                        if (r == 2)
+                        {
+                            str = str + "B";
+                        }
+                        if (r == 3)
+                        {
+                            str = str + "C";
+                        }
+                        if (r == 4)
+                        {
+                            str = str + "D";
+                        }
+                        GenSpawn.Spawn(ThingDef.Named(str), current, map);
+                    }
+				}
                 if (current.GetTerrain(map) == RWBTerrainDefOf.RockySoil){
                     if(GenStep_RocksFromGrid.RockDefAt(current).naturalTerrain.defName.Contains("Sand")){
                         map.terrainGrid.SetTerrain(current, RWBTerrainDefOf.SandstoneSoil);
@@ -121,6 +185,7 @@ namespace rimworld_biomes
 					}
                 }
 				GenRoof(current, roof,map);
+
 			}
 
 			map.regionAndRoomUpdater.Enabled = true;
@@ -173,6 +238,13 @@ namespace rimworld_biomes
                 return true;
             }
             return false;
+        }
+
+        private bool isStone(IntVec3 pos, Map map){
+            if (isWater(pos, map) || pos.GetTerrain(map) == TerrainDefOf.Soil || pos.GetTerrain(map) == TerrainDefOf.Gravel || pos.GetTerrain(map) == TerrainDefOf.Sand || pos.GetTerrain(map) == TerrainDefOf.Ice || pos.GetTerrain(map) == TerrainDefOf.MetalTile || pos.GetTerrain(map) == TerrainDef.Named("Mud")){
+                return false;
+            }
+            return true;
         }
 
     }

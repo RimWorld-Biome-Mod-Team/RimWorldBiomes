@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>	
+	<ThingDef ParentName="CavePlantBase">
+		<defName>MushroomCluster</defName>
+		<label>mushroom cluster</label>
+		<description>Wild Mushrooms. Grows anywhere there is a little light and minimally fertile ground.</description>
+		<statBases>
+			<MaxHitPoints>85</MaxHitPoints>
+		</statBases>
+		<graphicData>
+			<texPath>Plants/Mushroom_Cluster</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+            <selectable>true</selectable>
+		<hideAtSnowDepth>0.5</hideAtSnowDepth>
+		<ingestible>
+			<nutrition>0.18</nutrition>
+		</ingestible>
+		<plant>
+			<fertilityMin>0.01</fertilityMin>
+			<fertilitySensitivity>0.15</fertilitySensitivity>
+			<growDays>2.5</growDays>
+            <dieIfLeafless>true</dieIfLeafless>
+<!--			<leaflessGraphicPath>Things/Plant/Grass_Leafless</leaflessGraphicPath>-->
+			<harvestWork>40</harvestWork>
+			<maxMeshCount>9</maxMeshCount>
+			<visualSizeRange>
+				<min>0.4</min>
+				<max>0.6</max>
+			</visualSizeRange>
+			<topWindExposure>0.4</topWindExposure>
+			<reproduceMtbDays>3</reproduceMtbDays>
+            <neverBlightable>true</neverBlightable>
+		</plant>
+
+	</ThingDef>
+</Defs>

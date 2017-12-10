@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ThingDef ParentName="RockBase">
+    <defName>MineableCrystal</defName>
+    <label>compacted crystal</label>
+    <graphicData>
+      <texPath>Buildings/Ore/Crystal</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+      <color>(87,3,127)</color>
+      <colorTwo>(126,104,94)</colorTwo>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>1500</MaxHitPoints>
+    </statBases>
+    <description>Crystal shards embedded in rock.</description>
+    <building>
+      <isResourceRock>true</isResourceRock>
+      <mineableThing>ChunkCrystal</mineableThing>
+      <mineableYield>1</mineableYield>
+      <mineableScatterCommonality>1</mineableScatterCommonality>
+      <mineableScatterLumpSizeRange>
+        <min>20</min>
+        <max>40</max>
+      </mineableScatterLumpSizeRange>
+    </building>
+  </ThingDef>
+  
+  <ThingDef ParentName="RockBase">
+      <defName>MineableCoal</defName>
+      <label>coal deposit</label>
+      <graphicData>
+          <texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
+          <graphicClass>Graphic_Single</graphicClass>
+          <shaderType>CutoutComplex</shaderType>
+          <color>(70,70,70)</color>
+          <colorTwo>(100,100,100)</colorTwo>
+      </graphicData>
+      <statBases>
+          <MaxHitPoints>1500</MaxHitPoints>
+          <Flammability>4</Flammability>
+      </statBases>
+      <description>Coal Deposits.</description>
+      <building>
+          <isResourceRock>true</isResourceRock>
+          <mineableThing>Coal</mineableThing>
+          <mineableYield>35</mineableYield>
+          <mineableScatterCommonality>1</mineableScatterCommonality>
+          <mineableScatterLumpSizeRange>
+              <min>20</min>
+              <max>40</max>
+          </mineableScatterLumpSizeRange>
+      </building>
+  </ThingDef>
+</Defs>

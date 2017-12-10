@@ -83,7 +83,7 @@
 <!--      <SnowHard>4</SnowHard>-->
     </baseWeatherCommonalities>
     <wildPlants>
-			<PlantGrass>8.0</PlantGrass>
+			<MushroomCluster>8.0</MushroomCluster>
 			<PlantDandelion>0.8</PlantDandelion>
 			<PlantBush>0.7</PlantBush>
 			<PlantTreeOak>0.5</PlantTreeOak>
