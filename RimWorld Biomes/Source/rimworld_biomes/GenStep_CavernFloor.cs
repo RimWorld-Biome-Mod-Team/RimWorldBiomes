@@ -100,7 +100,7 @@ namespace rimworld_biomes
                     }
 				}
 
-
+				GenRoof(current, roof, map);
 				if (isStone(current, map) && current.GetFirstBuilding(map) == null)
 				{
 					System.Random rand = new System.Random();
@@ -184,7 +184,7 @@ namespace rimworld_biomes
 						map.terrainGrid.SetTerrain(current, RWBTerrainDefOf.LimestoneSoil);
 					}
                 }
-				GenRoof(current, roof,map);
+
 
 			}
 
@@ -195,7 +195,7 @@ namespace rimworld_biomes
 
         protected void GenRoof(IntVec3 current, ModuleBase roof, Map map){
             //Log.Error(roof.GetValue(current).ToString());
-            if (roof.GetValue(current) > 0.3  && current.GetFirstBuilding(map) == null){
+            if (roof.GetValue(current) > 0.5  && current.GetFirstBuilding(map) == null){
 				//for (int i = -2; i < 3; i++)
 				//{
 				//	for (int j = -2; j < 3; j++)

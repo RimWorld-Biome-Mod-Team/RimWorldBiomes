@@ -9,7 +9,7 @@
 		</statBases>
 		<graphicData>
 			<texPath>Plants/Mushroom_Cluster</texPath>
-			<graphicClass>Graphic_Random</graphicClass>
+			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
             <selectable>true</selectable>
 		<hideAtSnowDepth>0.5</hideAtSnowDepth>
@@ -34,4 +34,35 @@
 		</plant>
 
 	</ThingDef>
+    
+    <ThingDef ParentName="TreeBase">
+        <defName>MushroomTree</defName>
+        <label>mushroom tree</label>
+        <description>A strong mushroom tree. Slow-going, but its fungus is very strong.</description>
+        <graphicData>
+            <texPath>Plants/Mushroom_Tree</texPath>
+            <graphicClass>Graphic_Random</graphicClass>
+            <shadowData>
+                <volume>(0.2, 0.35, 0.13)</volume>
+                <offset>(-0.03,0,-0.44)</offset>
+            </shadowData>
+        </graphicData>
+        <statBases>
+            <Beauty>2</Beauty>
+        </statBases>
+        <plant>
+            <harvestedThingDef>FungalLog</harvestedThingDef>
+            <growMinGlow>0</growMinGlow>
+            <growOptimalGlow>0</growOptimalGlow>
+            <reproduces>false</reproduces>
+            <wildClusterRadius>8</wildClusterRadius>
+            <cavePlant>true</cavePlant>
+            <growDays>30</growDays>
+            <dieIfLeafless>true</dieIfLeafless>
+            <harvestWork>1000</harvestWork>
+            <harvestYield>45</harvestYield>
+            <harvestTag>FungalLog</harvestTag>
+            <neverBlightable>true</neverBlightable>
+        </plant>
+    </ThingDef>
 </Defs>
