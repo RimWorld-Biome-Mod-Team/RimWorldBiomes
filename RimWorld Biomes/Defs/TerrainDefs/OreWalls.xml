@@ -7,8 +7,8 @@
       <texPath>Buildings/Ore/Crystal</texPath>
       <graphicClass>Graphic_Single</graphicClass>
             <shaderType>CutoutComplex</shaderType>
-      <color>(87,3,127)</color>
-      <colorTwo>(126,104,94)</colorTwo>
+      <color>(170,219,255)</color>
+      <colorTwo>(140,120,100)</colorTwo>
     </graphicData>
     <statBases>
       <MaxHitPoints>1500</MaxHitPoints>

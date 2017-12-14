@@ -14,7 +14,7 @@
     <pathCost_summer>1750</pathCost_summer>
     <pathCost_fall>1750</pathCost_fall>
     <pathCost_winter>44000</pathCost_winter>
-    <texture>World/Biomes/TemperateForest</texture>
+    <texture>World/Biomes/Cavern</texture>
     <soundsAmbient>
       <li>AmbientNightInsects_Standard</li>
     </soundsAmbient>
