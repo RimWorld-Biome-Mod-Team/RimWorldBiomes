@@ -30,15 +30,13 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="0Harmony">
-      <HintPath>..\..\..\..\..\..\..\..\..\..\..\Downloads\JecsTools-master-2\Assemblies\0Harmony.dll</HintPath>
+      <HintPath>..\..\..\Revamped Economy\Assemblies\0Harmony.dll</HintPath>
     </Reference>
     <Reference Include="Assembly-CSharp">
       <HintPath>..\..\..\..\Contents\Resources\Data\Managed\Assembly-CSharp.dll</HintPath>
-      <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine">
       <HintPath>..\..\..\..\Contents\Resources\Data\Managed\UnityEngine.dll</HintPath>
-      <Private>False</Private>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -49,6 +47,13 @@
     <Compile Include="GenStep_CavernFloor.cs" />
     <Compile Include="GenStep_Cavern.cs" />
     <Compile Include="RWBTerrainDefOf.cs" />
+    <Compile Include="CompProperties_WaterPlant.cs" />
+    <Compile Include="GenStep_WaterPlant.cs" />
+    <Compile Include="CompWaterPlant.cs" />
+    <Compile Include="CompProperties_ReactiveDefense.cs" />
+    <Compile Include="CompReactiveDefense.cs" />
+    <Compile Include="CompProperties_AuraParticle.cs" />
+    <Compile Include="CompAuraParticle.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="RWBBuildingDefOf.cs" />

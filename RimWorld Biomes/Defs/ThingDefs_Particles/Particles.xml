@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>skulltop_spore</defName>
+		<label>skulltop spore</label>
+		<soundImpactDefault>BulletImpactGround</soundImpactDefault>
+		<selectable>false</selectable>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<filthLeaving>FilthDirt</filthLeaving>
+		<blockWind>false</blockWind>
+		<graphicData>
+		  <texPath>Particles/Skulltop_Spore</texPath>
+		  <graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<building>
+			<ai_chillDestination>false</ai_chillDestination>
+			<isInert>true</isInert>
+		  	<isEdifice>false</isEdifice>
+		  	<claimable>false</claimable>
+		</building>
+		<altitudeLayer>Gas</altitudeLayer>
+		<passability>Standable</passability>
+		<statBases>
+		  <MaxHitPoints>50</MaxHitPoints>
+		  <WorkToBuild>0</WorkToBuild>
+		  <Flammability>1.0</Flammability>
+		  <Beauty>-2</Beauty>
+		</statBases>
+		<rotatable>false</rotatable>
+		<neverMultiSelect>true</neverMultiSelect>
+			<castEdgeShadows>false</castEdgeShadows>
+		 <comps>
+		   	<li Class="rimworld_biomes.CompProperties_AuraParticle">
+		            <hediff>ToxicBuildup</hediff>
+		            <severity>0.0005</severity>
+		            
+		        </li>
+		</comps>
+        <tickerType>Normal</tickerType>
+	</ThingDef>
+</Defs>

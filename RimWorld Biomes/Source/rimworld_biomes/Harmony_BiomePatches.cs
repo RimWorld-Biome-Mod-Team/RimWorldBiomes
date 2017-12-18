@@ -27,28 +27,34 @@ namespace rimworld_biomes
             //Patches
             //Settling on Impassable Terrain Patch
             harmony.Patch(AccessTools.Method(typeof(TileFinder), "IsValidTileForNewSettlement"), new HarmonyMethod(typeof(Harmony_BiomePatches), nameof(IsValidTileForNewSettlement_PreFix)), null);
-            //Trying to get this one to work
+            harmony.Patch(AccessTools.Method(typeof(GenStep_CaveHives), "Generate"), new HarmonyMethod(typeof(Harmony_BiomePatches), nameof(GenerateHive_PreFix)), null);
             harmony.Patch(AccessTools.Method(typeof(GenStep_Terrain),"TerrainFrom"), new HarmonyMethod(typeof(Harmony_BiomePatches), nameof(TerrainFrom_PreFix)), null);
             harmony.Patch(AccessTools.Method(typeof(GenStep_Caves), "Generate"), new HarmonyMethod(typeof(Harmony_BiomePatches), nameof(Generate_PreFix)), null);
+            harmony.Patch(AccessTools.Method(typeof(Building_SteamGeyser), "SpawnSetup"), new HarmonyMethod(typeof(Harmony_BiomePatches), nameof(GeyserSpawnSetup_PreFix)), null);
             harmony.Patch(AccessTools.Method(typeof(Building_PlantGrower), "GetInspectString"), null, new HarmonyMethod(typeof(Harmony_BiomePatches), nameof(GetInspectString_PostFix)));
 
         }
 
+        public static bool GenerateHive_PreFix(Map map){
+            if(map.Biome.defName == "Cavern"){
+                return false;
+            }
+            return true;
+        }
+
+        public static bool GeyserSpawnSetup_PreFix(Map map, bool respawningAfterLoad, Building_SteamGeyser __instance){
+            //if (map.Biome.defName == "Cavern"){
+            //    __instance.Graphic
+            //}
+            return true;
+        }
+
         public static void GetInspectString_PostFix(Building_PlantGrower __instance, ref string __result){
-            //if(__result.Substring(0,1))
-            //Log.Error(__result.Substring(0,2));
-            //Log.Error(__result.Substring(0, 3));
-            //Log.Error(__result.Substring(1,1));
-            //Log.Error(__result.Substring(2,2));
+
             if(__result.Substring(1,1) == "G"){
                 __result = __result.Substring(1, __result.Length-1);
             }
-            //Log.Error(__result.Substring(2, __result.Length));
-            //if(__instance.GetInspectString() == null){
-            //    Log.Error("test");
-            //    //__result = "GrowSeasonHereNow".Translate();
-            //    //return false;
-            //}
+
             return;
         }
 

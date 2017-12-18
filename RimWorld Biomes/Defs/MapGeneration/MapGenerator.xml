@@ -13,4 +13,10 @@
       <order>213</order>
       <genStep Class="rimworld_biomes.GenStep_CavernFloor"/>
   </GenStepDef>
+  <GenStepDef>
+      <defName>WaterPlant</defName>
+      <linkWithMapGenerator>BasicMap</linkWithMapGenerator>
+      <order>215</order>
+      <genStep Class="rimworld_biomes.GenStep_WaterPlant"/>
+  </GenStepDef>
 </Defs>
