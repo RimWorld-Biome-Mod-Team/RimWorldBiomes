@@ -31,10 +31,69 @@ namespace rimworld_biomes
             harmony.Patch(AccessTools.Method(typeof(GenStep_Terrain),"TerrainFrom"), new HarmonyMethod(typeof(Harmony_BiomePatches), nameof(TerrainFrom_PreFix)), null);
             harmony.Patch(AccessTools.Method(typeof(GenStep_Caves), "Generate"), new HarmonyMethod(typeof(Harmony_BiomePatches), nameof(Generate_PreFix)), null);
             harmony.Patch(AccessTools.Method(typeof(Building_SteamGeyser), "SpawnSetup"), new HarmonyMethod(typeof(Harmony_BiomePatches), nameof(GeyserSpawnSetup_PreFix)), null);
+            harmony.Patch(AccessTools.Method(typeof(GenStep_CavePlants), "Generate"), new HarmonyMethod(typeof(Harmony_BiomePatches), nameof(GenerateCavePlant_PreFix)), null);
             harmony.Patch(AccessTools.Method(typeof(Building_PlantGrower), "GetInspectString"), null, new HarmonyMethod(typeof(Harmony_BiomePatches), nameof(GetInspectString_PostFix)));
+
 
         }
 
+        public static bool GenerateCavePlant_PreFix(Map map){
+			map.regionAndRoomUpdater.Enabled = false;
+			MapGenFloatGrid caves = MapGenerator.Caves;
+			List<ThingDef> source = (from x in DefDatabase<ThingDef>.AllDefsListForReading
+									 where x.category == ThingCategory.Plant && x.plant.cavePlant
+									 select x).ToList<ThingDef>();
+			foreach (IntVec3 c in map.AllCells.InRandomOrder(null))
+			{
+				if (c.GetEdifice(map) == null && c.GetCover(map) == null && caves[c] > 0f && c.Roofed(map) && map.fertilityGrid.FertilityAt(c) > 0f)
+				{
+
+					IEnumerable<ThingDef> source2 = from def in source
+													where def.CanEverPlantAt(c, map)
+													select def;
+                    if (source2.Any<ThingDef>())
+                    {
+                        ThingDef thingDef = source2.RandomElement<ThingDef>();
+                        int randomInRange = thingDef.plant.wildClusterSizeRange.RandomInRange;
+                        float chance;
+                        if (Math.Abs(map.Biome.CommonalityOfPlant(thingDef)) > Double.Epsilon)
+                        {
+                            chance = map.Biome.CommonalityOfPlant(thingDef);
+                        }
+                        else
+                        {
+                            chance = 0.18f;
+                        }
+                        if (Rand.Chance(chance))
+                        {
+                            for (int i = 0; i < randomInRange; i++)
+                            {
+                                IntVec3 c2;
+                                if (i == 0)
+                                {
+                                    c2 = c;
+                                }
+                                else if (!GenPlantReproduction.TryFindReproductionDestination(c, thingDef, SeedTargFindMode.MapGenCluster, map, out c2))
+                                {
+                                    break;
+                                }
+                                Plant plant = (Plant)ThingMaker.MakeThing(thingDef, null);
+                                plant.Growth = Rand.Range(0.07f, 1f);
+                                if (plant.def.plant.LimitedLifespan)
+                                {
+                                    plant.Age = Rand.Range(0, Mathf.Max(plant.def.plant.LifespanTicks - 50, 0));
+                                }
+                                GenSpawn.Spawn(plant, c2, map);
+                            }
+                        }
+                    }
+					
+				}
+
+			}
+			map.regionAndRoomUpdater.Enabled = true;
+			return false;
+        }
         public static bool GenerateHive_PreFix(Map map){
             if(map.Biome.defName == "Cavern"){
                 return false;

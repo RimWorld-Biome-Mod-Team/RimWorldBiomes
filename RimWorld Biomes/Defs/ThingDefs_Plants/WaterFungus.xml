@@ -17,13 +17,14 @@
 			<nutrition>0.18</nutrition>
 		</ingestible>
 		<plant>
+            <growMinGlow>0</growMinGlow>
 			<fertilityMin>0.01</fertilityMin>
 			<fertilitySensitivity>0.15</fertilitySensitivity>
 			<growDays>2.5</growDays>
             <dieIfLeafless>true</dieIfLeafless>
 <!--			<leaflessGraphicPath>Things/Plant/Grass_Leafless</leaflessGraphicPath>-->
 			<harvestWork>40</harvestWork>
-			<maxMeshCount>9</maxMeshCount>
+			<maxMeshCount>4</maxMeshCount>
 			<visualSizeRange>
 				<min>0.4</min>
 				<max>0.6</max>

@@ -23,7 +23,7 @@
             <dieIfLeafless>true</dieIfLeafless>
 <!--			<leaflessGraphicPath>Things/Plant/Grass_Leafless</leaflessGraphicPath>-->
 			<harvestWork>40</harvestWork>
-			<maxMeshCount>9</maxMeshCount>
+			<maxMeshCount>4</maxMeshCount>
 			<visualSizeRange>
 				<min>0.4</min>
 				<max>0.6</max>
@@ -39,6 +39,7 @@
         <defName>MushroomTree</defName>
         <label>mushroom tree</label>
         <description>A strong mushroom tree. Slow-going, but its fungus is very strong.</description>
+        
         <graphicData>
             <texPath>Plants/Mushroom_Tree</texPath>
             <graphicClass>Graphic_Random</graphicClass>
@@ -66,8 +67,8 @@
         </plant>
     </ThingDef>
     
-    <ThingDef ParentName="CavePlantBase">
-        <defName>skulltop</defName>
+    <ThingDef ParentName="PlantBase">
+        <defName>SkullTop</defName>
         <label>skulltop</label>
         <description>DEATH!</description>
         <statBases>
@@ -87,17 +88,18 @@
             <nutrition>0.18</nutrition>
         </ingestible>
         <plant>
+            <growMinGlow>0</growMinGlow>
             <fertilityMin>0.01</fertilityMin>
             <fertilitySensitivity>0.15</fertilitySensitivity>
             <growDays>2.5</growDays>
             <dieIfLeafless>true</dieIfLeafless>
             <!--			<leaflessGraphicPath>Things/Plant/Grass_Leafless</leaflessGraphicPath>-->
             <harvestWork>40</harvestWork>
-            <maxMeshCount>9</maxMeshCount>
             <visualSizeRange>
-                <min>0.4</min>
-                <max>0.6</max>
+                <min>0.7</min>
+                <max>1.2</max>
             </visualSizeRange>
+            <cavePlant>true</cavePlant>
             <topWindExposure>0.4</topWindExposure>
             <reproduceMtbDays>3</reproduceMtbDays>
             <neverBlightable>true</neverBlightable>

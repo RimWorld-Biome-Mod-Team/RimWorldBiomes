@@ -83,10 +83,10 @@
 <!--      <SnowHard>4</SnowHard>-->
     </baseWeatherCommonalities>
     <wildPlants>
-			<MushroomCluster>8.0</MushroomCluster>
-			<PlantDandelion>0.8</PlantDandelion>
+			<MushroomCluster>.3</MushroomCluster>
+			<SkullTop>0.05</SkullTop>
 			<PlantBush>0.7</PlantBush>
-			<MushroomTree>0.5</MushroomTree>
+			<MushroomTree>0.1</MushroomTree>
 			<PlantTreePoplar>0.5</PlantTreePoplar>
 			<PlantRaspberry>0.1</PlantRaspberry>
 			<PlantWildHealroot>0.05</PlantWildHealroot>
