@@ -27,9 +27,6 @@ namespace rimworld_biomes
             {
                 return;
             }
-            //Log.Error("start: " + count.ToString());
-            //Log.Error("End: " + (count + GenTicks.SecondsToTicks(Props.duration)));
-            //Log.Error("current: " + GenTicks.TicksGame);
 
             if (GenTicks.TicksGame > count + GenTicks.SecondsToTicks(Props.duration))
             {
@@ -45,13 +42,71 @@ namespace rimworld_biomes
                     {
                         if (p.Position == base.parent.Position)
                         {
+                            
                             HealthUtility.AdjustSeverity(p, HediffDef.Named(this.Props.hediff), this.Props.severity);
+
+                            //Log.Error("1");
+                            if (Math.Abs(p.health.hediffSet.GetFirstHediffOfDef(HediffDef.Named(this.Props.hediff)).Severity - this.Props.severity) < Double.Epsilon && p.Faction != null && p.Faction.IsPlayer)
+                            {
+                                Messages.Message(p.Name + " has walked into a " + this.parent.Label, p, MessageTypeDefOf.ThreatSmall);
+                            }
+							//Log.Error("2");
+                            if (p.health.hediffSet.GetFirstHediffOfDef(HediffDef.Named(this.Props.hediff)).Severity > 0.5 && !(p.Faction != null && p.Faction.IsPlayer && p.Drafted) && p.CurJob?.def != JobDefOf.Flee && !((this.Props.releasedBy == CompProperties_AuraParticle.parent.plant && Plant(p)) || (this.Props.releasedBy == CompProperties_AuraParticle.parent.animal && Animal(p)) || (this.Props.releasedBy == CompProperties_AuraParticle.parent.building && Building(p))))
+                            {
+
+                                if (GenTicks.TicksGame - count > GenTicks.SecondsToTicks(0.25f))
+                                {
+                                    if ( p.Faction != null && p.Faction.IsPlayer)
+                                    {
+                                        Messages.Message(p.Name + " is fleeing from a " + this.parent.Label, p, MessageTypeDefOf.ThreatSmall);
+                                    }
+                                    IntVec3 dest = CellFinderLoose.GetFleeDest(p, new List<Thing> { this.parent }, 5f);
+                                    if (dest == this.parent.Position)
+                                    {
+                                        dest = dest.RandomAdjacentCell8Way();
+                                    }
+                                    p.jobs?.TryTakeOrderedJob(new Job(JobDefOf.Flee, dest), JobTag.Escaping);
+                                }
+                            }
+                            else
+                            {
+								//Log.Error("3");
+                                if (p.Faction != null && p.Faction.IsPlayer && p.Drafted && p.health.hediffSet.GetFirstHediffOfDef(HediffDef.Named(this.Props.hediff)).Severity > 0.7)
+                                {
+                                    if (GenTicks.TicksGame - count > GenTicks.SecondsToTicks(0.25f))
+                                    {
+                                        if (p.Faction != null && p.Faction.IsPlayer)
+                                        {
+                                            Messages.Message(p.Name + " is fleeing from a " + this.parent.Label, p, MessageTypeDefOf.ThreatSmall);
+                                        }
+                                        IntVec3 dest = CellFinderLoose.GetFleeDest(p, new List<Thing> { this.parent }, 5f);
+                                        if (dest == this.parent.Position)
+                                        {
+                                            dest = dest.RandomAdjacentCell8Way();
+                                        }
+                                        p.jobs?.TryTakeOrderedJob(new Job(JobDefOf.Flee, dest), JobTag.Escaping);
+                                    }
+                                }
+                            }
                         }
                     }
                 }
             }
         }
 
+
+        private bool Plant(Pawn p){
+            return ((p.CurJob?.def == JobDefOf.Harvest || p.CurJob?.def == JobDefOf.CutPlant || p.CurJob?.def == JobDefOf.Ingest) && this.Props.parentThing != null && p.CurJob?.targetA.Thing.def.defName == this.Props.parentThing);
+        }
+		private bool Animal(Pawn p)
+		{
+            Log.Error("animal");
+			return ((p.CurJob?.def == JobDefOf.AttackMelee) && this.Props.parentThing != null && p.CurJob?.targetA.Thing.def.defName == this.Props.parentThing);
+		}
+        private bool Building(Pawn p){ 
+            Log.Error("building");
+            return ((p.CurJob?.def == JobDefOf.AttackMelee || p.CurJob?.def == JobDefOf.Deconstruct) && this.Props.parentThing != null && p.CurJob?.targetA.Thing.def.defName == this.Props.parentThing);
+        }
         public CompProperties_AuraParticle Props
         {
             get

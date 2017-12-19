@@ -68,7 +68,7 @@
     </ThingDef>
     
     <ThingDef ParentName="PlantBase">
-        <defName>SkullTop</defName>
+        <defName>skulltop</defName>
         <label>skulltop</label>
         <description>DEATH!</description>
         <statBases>

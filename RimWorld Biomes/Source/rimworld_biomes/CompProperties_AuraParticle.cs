@@ -20,6 +20,14 @@ namespace rimworld_biomes
 	[StaticConstructorOnStartup]
     public class CompProperties_AuraParticle : CompProperties
     {
+        public enum parent{
+            animal,
+            building,
+            item,
+            plant
+        }
+        public String parentThing;
+        public parent releasedBy = parent.item;
         public int duration = 3;
         public String hediff;
         public int damage;
