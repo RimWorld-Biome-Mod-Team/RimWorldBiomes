@@ -8,7 +8,7 @@
 			<MaxHitPoints>85</MaxHitPoints>
 		</statBases>
 		<graphicData>
-			<texPath>Plants/Mushroom_Cluster</texPath>
+			<texPath>Plants/Cave/Mushroom_Cluster</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
             <selectable>true</selectable>
@@ -41,7 +41,7 @@
         <description>A strong mushroom tree. Slow-going, but its fungus is very strong.</description>
         
         <graphicData>
-            <texPath>Plants/Mushroom_Tree</texPath>
+            <texPath>Plants/Cave/Mushroom_Tree</texPath>
             <graphicClass>Graphic_Random</graphicClass>
             <shadowData>
                 <volume>(0.2, 0.35, 0.13)</volume>
@@ -68,14 +68,59 @@
     </ThingDef>
     
     <ThingDef ParentName="PlantBase">
-        <defName>skulltop</defName>
+        <defName>SpectreCap</defName>
+        <label>spectrecap</label>
+        <description>SPECTRE</description>
+        <statBases>
+            <MaxHitPoints>85</MaxHitPoints>
+        </statBases>
+        <graphicData>
+            <texPath>Plants/Cave/SpectreCap</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shadowData>
+                <volume>(0.2, 0.3, 0.13)</volume>
+                <offset>(-0.03,0,-0.44)</offset>
+            </shadowData>
+        </graphicData>
+        <selectable>true</selectable>
+        <hideAtSnowDepth>0.5</hideAtSnowDepth>
+        <ingestible>
+            <nutrition>0.18</nutrition>
+        </ingestible>
+        <plant>
+            <growMinGlow>0</growMinGlow>
+            <fertilityMin>0.01</fertilityMin>
+            <fertilitySensitivity>0.15</fertilitySensitivity>
+            <growDays>2.5</growDays>
+            <dieIfLeafless>true</dieIfLeafless>
+            <!--			<leaflessGraphicPath>Things/Plant/Grass_Leafless</leaflessGraphicPath>-->
+            <harvestWork>40</harvestWork>
+            <visualSizeRange>
+                <min>0.9</min>
+                <max>1.5</max>
+            </visualSizeRange>
+            <cavePlant>true</cavePlant>
+            <topWindExposure>0.4</topWindExposure>
+            <reproduceMtbDays>3</reproduceMtbDays>
+            <neverBlightable>true</neverBlightable>
+        </plant>
+        <comps>
+            <li Class="CompProperties_Glower">
+                <glowRadius>5</glowRadius>
+                <glowColor>(113,141,117,0)</glowColor>
+            </li>
+        </comps>
+    </ThingDef>
+    
+    <ThingDef ParentName="PlantBase">
+        <defName>SkullTop</defName>
         <label>skulltop</label>
         <description>DEATH!</description>
         <statBases>
             <MaxHitPoints>85</MaxHitPoints>
         </statBases>
         <graphicData>
-            <texPath>Plants/Skulltop</texPath>
+            <texPath>Plants/Cave/Skulltop</texPath>
             <graphicClass>Graphic_Single</graphicClass>
             <shadowData>
                 <volume>(0.2, 0.3, 0.13)</volume>

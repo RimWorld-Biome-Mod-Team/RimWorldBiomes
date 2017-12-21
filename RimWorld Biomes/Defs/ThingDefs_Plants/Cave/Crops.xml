@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>	
+	<ThingDef ParentName="PlantBase">
+		<defName>PaleBeets</defName>
+		<label>pale beets</label>
+		<description>Pale beets.</description>
+		<statBases>
+			<MaxHitPoints>85</MaxHitPoints>
+		</statBases>
+		<graphicData>
+			<texPath>Plants/Crops/PaleBeets</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<selectable>true</selectable>
+		<pathCost>10</pathCost>
+		<ingestible>
+			<nutrition>0.16</nutrition>
+		</ingestible>
+		<plant>
+			<fertilitySensitivity>0.4</fertilitySensitivity>
+			<dieIfLeafless>true</dieIfLeafless>
+			<reproduces>false</reproduces>
+			<maxMeshCount>1</maxMeshCount>
+			<harvestTag>Standard</harvestTag>
+			<harvestedThingDef>RawPaleBeets</harvestedThingDef>
+			<harvestYield>7</harvestYield>
+			<sowTags>
+				<li>Ground</li>
+				<li>Hydroponic</li>
+			</sowTags>
+			<topWindExposure>0.1</topWindExposure>
+			<growDays>3</growDays>
+			<visualSizeRange>
+				<min>0.3</min>
+				<max>1.05</max>
+			</visualSizeRange>
+		</plant>
+	</ThingDef>
+</Defs>

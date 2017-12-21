@@ -8,7 +8,7 @@
 			<MaxHitPoints>85</MaxHitPoints>
 		</statBases>
 		<graphicData>
-			<texPath>Plants/WaterFungus</texPath>
+			<texPath>Plants/Cave/WaterFungus</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
             <selectable>true</selectable>

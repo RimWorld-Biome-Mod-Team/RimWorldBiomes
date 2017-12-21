@@ -26,7 +26,7 @@
         <li>Woody</li>
       </categories>
       <commonality>1.00</commonality>
-      <color>(175,165,116)</color>
+      <color>(195, 199, 198)</color>
       <constructEffect>ConstructWood</constructEffect>
       <appearance>Planks</appearance>
       <soundImpactStuff>BulletImpactWood</soundImpactStuff>

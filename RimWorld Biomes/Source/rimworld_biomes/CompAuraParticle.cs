@@ -42,21 +42,21 @@ namespace rimworld_biomes
                     {
                         if (p.Position == base.parent.Position)
                         {
-                            
+
                             HealthUtility.AdjustSeverity(p, HediffDef.Named(this.Props.hediff), this.Props.severity);
 
                             //Log.Error("1");
-                            if (Math.Abs(p.health.hediffSet.GetFirstHediffOfDef(HediffDef.Named(this.Props.hediff)).Severity - this.Props.severity) < Double.Epsilon && p.Faction != null && p.Faction.IsPlayer)
+                            if (GenTicks.TicksGame - count > GenTicks.SecondsToTicks(0.5f))
                             {
-                                Messages.Message(p.Name + " has walked into a " + this.parent.Label, p, MessageTypeDefOf.ThreatSmall);
-                            }
-							//Log.Error("2");
-                            if (p.health.hediffSet.GetFirstHediffOfDef(HediffDef.Named(this.Props.hediff)).Severity > 0.5 && !(p.Faction != null && p.Faction.IsPlayer && p.Drafted) && p.CurJob?.def != JobDefOf.Flee && !((this.Props.releasedBy == CompProperties_AuraParticle.parent.plant && Plant(p)) || (this.Props.releasedBy == CompProperties_AuraParticle.parent.animal && Animal(p)) || (this.Props.releasedBy == CompProperties_AuraParticle.parent.building && Building(p))))
-                            {
-
-                                if (GenTicks.TicksGame - count > GenTicks.SecondsToTicks(0.25f))
+                                if (Math.Abs(p.health.hediffSet.GetFirstHediffOfDef(HediffDef.Named(this.Props.hediff)).Severity - this.Props.severity) < Double.Epsilon && p.Faction != null && p.Faction.IsPlayer)
                                 {
-                                    if ( p.Faction != null && p.Faction.IsPlayer)
+                                    Messages.Message(p.Name + " has walked into a " + this.parent.Label, p, MessageTypeDefOf.ThreatSmall);
+                                }
+                                //Log.Error("2");
+                                if (p.health.hediffSet.GetFirstHediffOfDef(HediffDef.Named(this.Props.hediff)).Severity > 0.5 && !(p.Faction != null && p.Faction.IsPlayer && p.Drafted) && p.CurJob?.def != JobDefOf.Flee && !((this.Props.releasedBy == CompProperties_AuraParticle.parent.plant && Plant(p)) || (this.Props.releasedBy == CompProperties_AuraParticle.parent.animal && Animal(p)) || (this.Props.releasedBy == CompProperties_AuraParticle.parent.building && Building(p))))
+                                {
+
+                                    if (p.Faction != null && p.Faction.IsPlayer)
                                     {
                                         Messages.Message(p.Name + " is fleeing from a " + this.parent.Label, p, MessageTypeDefOf.ThreatSmall);
                                     }
@@ -67,24 +67,24 @@ namespace rimworld_biomes
                                     }
                                     p.jobs?.TryTakeOrderedJob(new Job(JobDefOf.Flee, dest), JobTag.Escaping);
                                 }
-                            }
-                            else
-                            {
-								//Log.Error("3");
-                                if (p.Faction != null && p.Faction.IsPlayer && p.Drafted && p.health.hediffSet.GetFirstHediffOfDef(HediffDef.Named(this.Props.hediff)).Severity > 0.7)
+                                else
                                 {
-                                    if (GenTicks.TicksGame - count > GenTicks.SecondsToTicks(0.25f))
+                                    //Log.Error("3");
+                                    if (p.Faction != null && p.Faction.IsPlayer && p.Drafted && p.health.hediffSet.GetFirstHediffOfDef(HediffDef.Named(this.Props.hediff)).Severity > 0.7)
                                     {
-                                        if (p.Faction != null && p.Faction.IsPlayer)
+                                        if (GenTicks.TicksGame - count > GenTicks.SecondsToTicks(0.25f))
                                         {
-                                            Messages.Message(p.Name + " is fleeing from a " + this.parent.Label, p, MessageTypeDefOf.ThreatSmall);
+                                            if (p.Faction != null && p.Faction.IsPlayer)
+                                            {
+                                                Messages.Message(p.Name + " is fleeing from a " + this.parent.Label, p, MessageTypeDefOf.ThreatSmall);
+                                            }
+                                            IntVec3 dest = CellFinderLoose.GetFleeDest(p, new List<Thing> { this.parent }, 5f);
+                                            if (dest == this.parent.Position)
+                                            {
+                                                dest = dest.RandomAdjacentCell8Way();
+                                            }
+                                            p.jobs?.TryTakeOrderedJob(new Job(JobDefOf.Flee, dest), JobTag.Escaping);
                                         }
-                                        IntVec3 dest = CellFinderLoose.GetFleeDest(p, new List<Thing> { this.parent }, 5f);
-                                        if (dest == this.parent.Position)
-                                        {
-                                            dest = dest.RandomAdjacentCell8Way();
-                                        }
-                                        p.jobs?.TryTakeOrderedJob(new Job(JobDefOf.Flee, dest), JobTag.Escaping);
                                     }
                                 }
                             }

@@ -35,7 +35,7 @@
 		            <hediff>ToxicBuildup</hediff>
 		            <severity>0.0005</severity>
 		            <releasedBy>plant</releasedBy>
-                    <parentThing>skulltop</parentThing>
+                    <parentThing>SkullTop</parentThing>
 		        </li>
 		</comps>
         <tickerType>Normal</tickerType>

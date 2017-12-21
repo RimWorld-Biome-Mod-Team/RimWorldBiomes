@@ -84,10 +84,10 @@
     </baseWeatherCommonalities>
     <wildPlants>
 			<MushroomCluster>.3</MushroomCluster>
-			<skulltop>0.05</skulltop>
+			<SkullTop>0.05</SkullTop>
 			<PlantBush>0.7</PlantBush>
-			<MushroomTree>0.60</MushroomTree>
-			<PlantTreePoplar>0.5</PlantTreePoplar>
+			<MushroomTree>0.30</MushroomTree>
+			<SpectreCap>0.04</SpectreCap>
 			<PlantRaspberry>0.1</PlantRaspberry>
 			<PlantWildHealroot>0.05</PlantWildHealroot>
 		</wildPlants>
