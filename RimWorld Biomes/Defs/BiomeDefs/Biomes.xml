@@ -75,21 +75,15 @@
     <baseWeatherCommonalities>
       <Clear>18</Clear>
       <Fog>1</Fog>
-<!--      <Rain>2</Rain>-->
-<!--      <DryThunderstorm>1</DryThunderstorm>-->
-<!--      <RainyThunderstorm>1</RainyThunderstorm>-->
-<!--      <FoggyRain>1</FoggyRain>-->
-<!--      <SnowGentle>4</SnowGentle>-->
-<!--      <SnowHard>4</SnowHard>-->
     </baseWeatherCommonalities>
     <wildPlants>
 			<MushroomCluster>.3</MushroomCluster>
 			<SkullTop>0.05</SkullTop>
 			<PlantBush>0.7</PlantBush>
 			<MushroomTree>0.30</MushroomTree>
+            <GlowfruitTree>0.012</GlowfruitTree>
 			<SpectreCap>0.04</SpectreCap>
-			<PlantRaspberry>0.1</PlantRaspberry>
-			<PlantWildHealroot>0.05</PlantWildHealroot>
+            <StarlightShroom>0.05</StarlightShroom>
 		</wildPlants>
     <wildAnimals>
 			<Hare>1.00</Hare>

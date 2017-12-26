@@ -9,7 +9,7 @@
         <graphicData>
                 <color>(126,104,94)</color>
             <drawSize>(2,2)</drawSize>
-            <texPath>Terrain/StalagmiteP2</texPath>
+            <texPath>Terrain/Stalagmite1</texPath>
             <graphicClass>Graphic_Single</graphicClass>
             <linkType>None</linkType>
         </graphicData>

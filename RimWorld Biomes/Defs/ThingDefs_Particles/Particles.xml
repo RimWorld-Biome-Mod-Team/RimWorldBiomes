@@ -33,7 +33,7 @@
 		 <comps>
 		   	<li Class="rimworld_biomes.CompProperties_AuraParticle">
 		            <hediff>ToxicBuildup</hediff>
-		            <severity>0.0005</severity>
+		            <severity>0.00025</severity>
 		            <releasedBy>plant</releasedBy>
                     <parentThing>SkullTop</parentThing>
 		        </li>

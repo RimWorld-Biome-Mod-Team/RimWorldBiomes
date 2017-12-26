@@ -17,6 +17,7 @@
 			<nutrition>0.18</nutrition>
 		</ingestible>
 		<plant>
+            <reproduces>true</reproduces>
 			<fertilityMin>0.01</fertilityMin>
 			<fertilitySensitivity>0.15</fertilitySensitivity>
 			<growDays>2.5</growDays>
@@ -52,10 +53,11 @@
             <Beauty>2</Beauty>
         </statBases>
         <plant>
+            <reproduceMtbDays>5</reproduceMtbDays>
             <harvestedThingDef>FungalLog</harvestedThingDef>
             <growMinGlow>0</growMinGlow>
             <growOptimalGlow>0</growOptimalGlow>
-            <reproduces>false</reproduces>
+            <reproduces>true</reproduces>
             <wildClusterRadius>8</wildClusterRadius>
             <cavePlant>true</cavePlant>
             <growDays>30</growDays>
@@ -88,6 +90,7 @@
             <nutrition>0.18</nutrition>
         </ingestible>
         <plant>
+            <reproduces>true</reproduces>
             <growMinGlow>0</growMinGlow>
             <fertilityMin>0.01</fertilityMin>
             <fertilitySensitivity>0.15</fertilitySensitivity>
@@ -101,7 +104,7 @@
             </visualSizeRange>
             <cavePlant>true</cavePlant>
             <topWindExposure>0.4</topWindExposure>
-            <reproduceMtbDays>3</reproduceMtbDays>
+            <reproduceMtbDays>5</reproduceMtbDays>
             <neverBlightable>true</neverBlightable>
         </plant>
         <comps>
@@ -110,6 +113,46 @@
                 <glowColor>(113,141,117,0)</glowColor>
             </li>
         </comps>
+    </ThingDef>
+    
+    <ThingDef ParentName="PlantBase">
+        <defName>StarlightShroom</defName>
+        <label>starlight mushroom</label>
+        <description>Little dots like stars</description>
+        <statBases>
+            <MaxHitPoints>85</MaxHitPoints>
+        </statBases>
+        <graphicData>
+            <texPath>Plants/Cave/StarlightShroom</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shadowData>
+                <volume>(0.2, 0.3, 0.13)</volume>
+                <offset>(-0.03,0,-0.44)</offset>
+            </shadowData>
+        </graphicData>
+        <selectable>true</selectable>
+        <hideAtSnowDepth>0.5</hideAtSnowDepth>
+        <ingestible>
+            <nutrition>0.18</nutrition>
+        </ingestible>
+        <plant>
+            <reproduces>true</reproduces>
+            <growMinGlow>0</growMinGlow>
+            <fertilityMin>0.01</fertilityMin>
+            <fertilitySensitivity>0.15</fertilitySensitivity>
+            <growDays>2.5</growDays>
+            <dieIfLeafless>true</dieIfLeafless>
+            <!--			<leaflessGraphicPath>Things/Plant/Grass_Leafless</leaflessGraphicPath>-->
+            <harvestWork>40</harvestWork>
+            <visualSizeRange>
+                <min>0.6</min>
+                <max>1</max>
+            </visualSizeRange>
+            <cavePlant>true</cavePlant>
+            <topWindExposure>0.4</topWindExposure>
+            <reproduceMtbDays>5</reproduceMtbDays>
+            <neverBlightable>true</neverBlightable>
+        </plant>
     </ThingDef>
     
     <ThingDef ParentName="PlantBase">
@@ -130,9 +173,11 @@
         <selectable>true</selectable>
         <hideAtSnowDepth>0.5</hideAtSnowDepth>
         <ingestible>
-            <nutrition>0.18</nutrition>
+            <preferability>NeverForNutrition</preferability>
+            <nutrition>0</nutrition>
         </ingestible>
         <plant>
+            <reproduces>true</reproduces>
             <growMinGlow>0</growMinGlow>
             <fertilityMin>0.01</fertilityMin>
             <fertilitySensitivity>0.15</fertilitySensitivity>
@@ -141,20 +186,23 @@
             <!--			<leaflessGraphicPath>Things/Plant/Grass_Leafless</leaflessGraphicPath>-->
             <harvestWork>40</harvestWork>
             <visualSizeRange>
-                <min>0.7</min>
-                <max>1.2</max>
+                <min>1</min>
+                <max>1.5</max>
             </visualSizeRange>
             <cavePlant>true</cavePlant>
             <topWindExposure>0.4</topWindExposure>
-            <reproduceMtbDays>3</reproduceMtbDays>
+            <reproduceMtbDays>5</reproduceMtbDays>
             <neverBlightable>true</neverBlightable>
+            <harvestWork>500</harvestWork>
+            <harvestTag>Standard</harvestTag>
+            <harvestYield>1</harvestYield>
+            <harvestedThingDef>SkulltopCap</harvestedThingDef>
         </plant>
         <comps>
             <li Class="rimworld_biomes.CompProperties_ReactiveDefense">
                 <defenseTrigger>proximity</defenseTrigger>
                 <defenseType>aura</defenseType>
                 <aura>skulltop_spore</aura>
-                
             </li>
         </comps>
         <tickerType>Normal</tickerType>

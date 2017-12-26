@@ -1,5 +1,5 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workbench ActiveDocument="rimworld_biomes/Harmony_BiomePatches.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="rimworld_biomes/CompAuraParticle.cs">
     <Files>
       <File FileName="rimworld_biomes/BiomeWorker_Cavern.cs" Line="2" Column="7" />
       <File FileName="rimworld_biomes/Harmony_BiomePatches.cs" Line="89" Column="22" />
@@ -9,9 +9,10 @@
       <File FileName="rimworld_biomes/CompProperties_WaterPlant.cs" Line="33" Column="6" />
       <File FileName="rimworld_biomes/GenStep_Cavern.cs" Line="151" Column="35" />
       <File FileName="rimworld_biomes/CompProperties_ReactiveDefense.cs" Line="46" Column="12" />
-      <File FileName="rimworld_biomes/CompProperties_AuraParticle.cs" Line="30" Column="23" />
-      <File FileName="rimworld_biomes/CompReactiveDefense.cs" Line="79" Column="13" />
-      <File FileName="rimworld_biomes/CompAuraParticle.cs" Line="49" Column="88" />
+      <File FileName="rimworld_biomes/CompProperties_AuraParticle.cs" Line="36" Column="1" />
+      <File FileName="rimworld_biomes/CompReactiveDefense.cs" Line="21" Column="1" />
+      <File FileName="rimworld_biomes/CompAuraParticle.cs" Line="56" Column="89" />
+      <File FileName="rimworld_biomes/CompWaterPlant.cs" Line="22" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" ActiveRuntime="Mono 3.12.1 (b7764aa)" />
