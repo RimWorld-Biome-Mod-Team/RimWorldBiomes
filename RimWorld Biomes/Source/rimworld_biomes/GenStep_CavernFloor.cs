@@ -12,7 +12,7 @@ namespace rimworld_biomes
     {
 		public override void Generate(Map map)
 		{
-			if (map.Biome.defName != "Cavern")
+			if (map.Biome.defName != "RWBCavern")
 			{
 				return; 
 			}

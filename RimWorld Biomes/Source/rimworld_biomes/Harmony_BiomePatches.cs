@@ -95,7 +95,7 @@ namespace rimworld_biomes
 			return false;
         }
         public static bool GenerateHive_PreFix(Map map){
-            if(map.Biome.defName == "Cavern"){
+            if(map.Biome.defName == "RWBCavern"){
                 return false;
             }
             return true;
@@ -123,7 +123,7 @@ namespace rimworld_biomes
             //Log.Error("test");
 			Tile temp_tile = Find.WorldGrid[tile];
             //Use Original method if the tile isn't a mountain or isn't a cavern
-            if (temp_tile.hilliness != Hilliness.Impassable || temp_tile.biome.defName != "Cavern"){
+            if (temp_tile.hilliness != Hilliness.Impassable || temp_tile.biome.defName != "RWBCavern"){
                 //Log.Error((temp_tile.biome.defName == "Cavern").ToString());
                 return true;
 			}
@@ -172,7 +172,7 @@ namespace rimworld_biomes
                         //HarmonyInstance.DEBUG = true;
             //Log.Error("test");
             //Log.Error(map.Biome.defName);
-            if (map.Biome.defName == "Cavern"){
+            if (map.Biome.defName == "RWBCavern"){
                 //Log.Error("Called");
                 TerrainDef terrainDef2;
                 for (int i = 0; i < map.Biome.terrainPatchMakers.Count; i++)
@@ -217,7 +217,7 @@ namespace rimworld_biomes
             Traverse traverseobj = Traverse.Create(__instance);
             ModuleBase directionNoise = new Perlin(0.0020500000100582838, 2.0, 0.5, 4, Rand.Int, QualityMode.Medium);
             //Log.Error("patching");
-            if (map.Biome.defName == "Cavern"){
+            if (map.Biome.defName == "RWBCavern"){
                 GenStep_Cavern test = new GenStep_Cavern();
                 test.Generate(map);
 				//test.Generate(map);

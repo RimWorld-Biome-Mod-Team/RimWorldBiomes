@@ -16,7 +16,7 @@
     <description>Crystal shards embedded in rock.</description>
     <building>
       <isResourceRock>true</isResourceRock>
-      <mineableThing>ChunkCrystal</mineableThing>
+      <mineableThing>RWBChunkCrystal</mineableThing>
       <mineableYield>1</mineableYield>
       <mineableScatterCommonality>1</mineableScatterCommonality>
       <mineableScatterLumpSizeRange>
@@ -43,7 +43,7 @@
       <description>Coal Deposits.</description>
       <building>
           <isResourceRock>true</isResourceRock>
-          <mineableThing>Coal</mineableThing>
+          <mineableThing>RWBCoal</mineableThing>
           <mineableYield>35</mineableYield>
           <mineableScatterCommonality>1</mineableScatterCommonality>
           <mineableScatterLumpSizeRange>

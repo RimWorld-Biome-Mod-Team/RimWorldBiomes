@@ -17,14 +17,13 @@ using Verse.AI.Group;
 using Verse.Noise;
 namespace rimworld_biomes
 {
-    public class CompWaterPlant : ThingComp
+    [StaticConstructorOnStartup]
+    public class CompProperties_IgnoreDeepWater : CompProperties
     {
-        public CompProperties_WaterPlant Props{
-            get{
-                return (CompProperties_WaterPlant)this.props;
-            }
-        }
-
+		public CompProperties_IgnoreDeepWater()
+		{
+			this.compClass = typeof(CompIgnoreDeepWater);
+		}
 
 
     }

@@ -36,7 +36,7 @@ namespace rimworld_biomes
             IntVec3 pos = base.parent.Position;
             Map map = base.parent.Map;
             if (props.defenseTrigger == CompProperties_ReactiveDefense.defTrigger.attacked){
-                
+                Attacked(pos,map,props);
             }
 			if (props.defenseTrigger == CompProperties_ReactiveDefense.defTrigger.health)
 			{
@@ -46,6 +46,9 @@ namespace rimworld_biomes
 			{
                 Proximity(pos, map, props);
 			}
+        }
+        public void Attacked(IntVec3 pos, Map map, CompProperties_ReactiveDefense props){
+            
         }
 
         public void React(IntVec3 pos, Map map, CompProperties_ReactiveDefense props){

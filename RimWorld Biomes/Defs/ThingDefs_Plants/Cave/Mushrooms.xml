@@ -30,7 +30,7 @@
 				<max>0.6</max>
 			</visualSizeRange>
 			<topWindExposure>0.4</topWindExposure>
-			<reproduceMtbDays>3</reproduceMtbDays>
+			<reproduceMtbDays>2</reproduceMtbDays>
             <neverBlightable>true</neverBlightable>
 		</plant>
 
@@ -193,7 +193,7 @@
             <topWindExposure>0.4</topWindExposure>
             <reproduceMtbDays>5</reproduceMtbDays>
             <neverBlightable>true</neverBlightable>
-            <harvestWork>500</harvestWork>
+            <harvestWork>250</harvestWork>
             <harvestTag>Standard</harvestTag>
             <harvestYield>1</harvestYield>
             <harvestedThingDef>SkulltopCap</harvestedThingDef>

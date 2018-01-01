@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="ResourceBase">
+    	<defName>RWBChitin</defName>
+    	<label>chitin</label>
+    	<description>An insect's shell.</description>
+    	<graphicData>
+    	 	<texPath>Things/AnimalProducts/Chitin</texPath>
+    	 	<graphicClass>Graphic_Single</graphicClass>
+            <color>(213,186,142)</color>
+    	</graphicData>
+    	    <useHitPoints>false</useHitPoints>
+    	<statBases>
+      		<MarketValue>10</MarketValue>
+      		<Mass>0.5</Mass>
+      		<SharpDamageMultiplier>1.1</SharpDamageMultiplier>
+      		<BluntDamageMultiplier>0.5</BluntDamageMultiplier>
+    	</statBases>
+    	<stuffProps>
+    		<statFactors>
+        		<MaxHitPoints>2.4</MaxHitPoints>
+        		<Beauty>1</Beauty>
+        		<Flammability>0.15</Flammability>
+    		</statFactors>
+		</stuffProps>
+        <comps>
+            <li>
+                <compClass>CompColorable</compClass>
+            </li>
+        </comps>
+    	<thingCategories>
+      		<li>ResourcesRaw</li>
+    	</thingCategories>
+  	</ThingDef>
+    
+    <ThingDef ParentName="OrganicProductBase">
+        <defName>RWBHoneyDew</defName>
+        <label>honeydew</label>
+        <description>Insect Secretions</description>
+        <graphicData>
+            <texPath>Things/AnimalProducts/HoneyDew</texPath>
+        </graphicData>
+        <socialPropernessMatters>true</socialPropernessMatters>
+        <statBases>
+            <MarketValue>3.1</MarketValue>
+            <Mass>0.045</Mass>
+            <MaxHitPoints>60</MaxHitPoints>
+        </statBases>
+        <comps>
+            <li Class="CompProperties_FoodPoisoningChance">
+                <humanlikeOnly>true</humanlikeOnly>
+            </li>
+            <li Class="CompProperties_Rottable">
+                <daysToRotStart>14</daysToRotStart>
+                <rotDestroys>true</rotDestroys>
+            </li>
+        </comps>
+        <ingestible>
+            <preferability>RawTasty</preferability>
+            <foodType>AnimalProduct, Fluid</foodType>
+            <nutrition>0.05</nutrition>
+        </ingestible>
+        <thingCategories>
+            <li>AnimalProductRaw</li>
+        </thingCategories>
+    </ThingDef>
+    
+    <!--  Eggs  -->
+    <ThingDef ParentName="EggFertBase">
+        <defName>RWBEggJellyPotFertilized</defName>
+        <label>jellypot egg (fert.)</label>
+        <description>Fertilized Jellypot egg. If all goes well, it should hatch into a baby jellypot. It can be eaten raw, but it's much better cooked.</description>
+        <graphicData>
+            <texPath>Things/Item/Resource/AnimalProductRaw/EggOval</texPath>
+            <color>(255,255,255)</color>
+        </graphicData>
+        <statBases>
+            <MarketValue>40.0</MarketValue>
+        </statBases>
+        <comps>
+            <li Class="CompProperties_Hatcher">
+                <hatcherDaystoHatch>4.5</hatcherDaystoHatch>
+                <hatcherPawn>RWBJellypotBug</hatcherPawn>
+            </li>
+        </comps>
+    </ThingDef>
+    
+    <ThingDef ParentName="EggFertBase">
+        <defName>RWBEggBovineBeetleFertilized</defName>
+        <label>bovine Beetle egg (fert.)</label>
+        <description>Fertilized bovine beetle egg. If all goes well, it should hatch into a baby bovine beetle. It can be eaten raw, but it's much better cooked.</description>
+        <graphicData>
+            <texPath>Things/Item/Resource/AnimalProductRaw/EggOval</texPath>
+            <color>(255,255,255)</color>
+        </graphicData>
+        <statBases>
+            <MarketValue>40.0</MarketValue>
+        </statBases>
+        <comps>
+            <li Class="CompProperties_Hatcher">
+                <hatcherDaystoHatch>4.5</hatcherDaystoHatch>
+                <hatcherPawn>RWBBovineBeetle</hatcherPawn>
+            </li>
+        </comps>
+    </ThingDef>
+    
+    <ThingDef ParentName="EggFertBase">
+        <defName>RWBEggRhinoBeetleFertilized</defName>
+        <label>rhino Beetle egg (fert.)</label>
+        <description>Fertilized rhino beetle egg. If all goes well, it should hatch into a baby rhino beetle. It can be eaten raw, but it's much better cooked.</description>
+        <graphicData>
+            <texPath>Things/Item/Resource/AnimalProductRaw/EggOval</texPath>
+            <color>(255,255,255)</color>
+        </graphicData>
+        <statBases>
+            <MarketValue>40.0</MarketValue>
+        </statBases>
+        <comps>
+            <li Class="CompProperties_Hatcher">
+                <hatcherDaystoHatch>4.5</hatcherDaystoHatch>
+                <hatcherPawn>RWBRhinoBeetle</hatcherPawn>
+            </li>
+        </comps>
+    </ThingDef>
+    
+    <ThingDef ParentName="EggFertBase">
+        <defName>RWBEggVampireMothFertilized</defName>
+        <label>vampire Moth egg (fert.)</label>
+        <description>Fertilized vampire moth egg. If all goes well, it should hatch into a baby vampire moth. It can be eaten raw, but it's much better cooked.</description>
+        <graphicData>
+            <texPath>Things/Item/Resource/AnimalProductRaw/EggOval</texPath>
+            <color>(255,255,255)</color>
+        </graphicData>
+        <statBases>
+            <MarketValue>40.0</MarketValue>
+        </statBases>
+        <comps>
+            <li Class="CompProperties_Hatcher">
+                <hatcherDaystoHatch>4.5</hatcherDaystoHatch>
+                <hatcherPawn>RWBVampireMoth</hatcherPawn>
+            </li>
+        </comps>
+    </ThingDef>
+    
+    <ThingDef ParentName="EggFertBase">
+        <defName>RWBEggCrystalCrabFertilized</defName>
+        <label>crystal Crab egg (fert.)</label>
+        <description>Fertilized crystal crab egg. If all goes well, it should hatch into a baby crystal crab. It can be eaten raw, but it's much better cooked.</description>
+        <graphicData>
+            <texPath>Things/Item/Resource/AnimalProductRaw/EggOval</texPath>
+            <color>(255,255,255)</color>
+        </graphicData>
+        <statBases>
+            <MarketValue>40.0</MarketValue>
+        </statBases>
+        <comps>
+            <li Class="CompProperties_Hatcher">
+                <hatcherDaystoHatch>4.5</hatcherDaystoHatch>
+                <hatcherPawn>RWBCrystalCrab</hatcherPawn>
+            </li>
+        </comps>
+    </ThingDef>
+    
+    <ThingDef ParentName="EggFertBase">
+        <defName>RWBEggPillbugFertilized</defName>
+        <label>pillbug egg (fert.)</label>
+        <description>Fertilized pillbug egg. If all goes well, it should hatch into a baby pillbug. It can be eaten raw, but it's much better cooked.</description>
+        <graphicData>
+            <texPath>Things/Item/Resource/AnimalProductRaw/EggOval</texPath>
+            <color>(255,255,255)</color>
+        </graphicData>
+        <statBases>
+            <MarketValue>40.0</MarketValue>
+        </statBases>
+        <comps>
+            <li Class="CompProperties_Hatcher">
+                <hatcherDaystoHatch>4.5</hatcherDaystoHatch>
+                <hatcherPawn>RWBPillbug</hatcherPawn>
+            </li>
+        </comps>
+    </ThingDef>
+</Defs>

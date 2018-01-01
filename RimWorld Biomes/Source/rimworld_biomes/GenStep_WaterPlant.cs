@@ -19,15 +19,15 @@ namespace rimworld_biomes
     public class GenStep_WaterPlant : GenStep
     {
         public override void Generate(Map map){
-            Log.Error("running");
+            //Log.Error("running");
 			List<ThingDef> source = (from x in DefDatabase<ThingDef>.AllDefsListForReading
 									 where x.category == ThingCategory.Plant && x.GetCompProperties<rimworld_biomes.CompProperties_WaterPlant>() != null
 									 && x.GetCompProperties<rimworld_biomes.CompProperties_WaterPlant>().allowedBiomes.Contains(map.Biome.defName) select x).ToList<ThingDef>();
-            Log.Error("1");
+            //Log.Error("1");
             if(source == null || source.Count == 0){
                 return;
             }
-            Log.Error(source[0].defName);
+            //Log.Error(source[0].defName);
 			foreach (IntVec3 c in map.AllCells)
 			{
 				ThingDef source2 = source[Rand.RangeInclusive(0, source.Count - 1)];

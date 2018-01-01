@@ -31,7 +31,8 @@ namespace rimworld_biomes
             aura,
             hide,
             buff,
-            trail
+            trail,
+            reflect
         }
         public float hpThreshold = 0.2f;
         public int proximity = 2;
@@ -40,7 +41,7 @@ namespace rimworld_biomes
         public String aura;
         public defTrigger defenseTrigger;
         public defType defenseType;
-
+        public float reflectPercent = 0.2f;
         public CompProperties_ReactiveDefense()
         {
             this.compClass = typeof(CompReactiveDefense);

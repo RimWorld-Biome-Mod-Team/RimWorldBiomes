@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<LifeStageDef>
+    	<defName>RWBInsectAdult</defName>
+    	<label>adult</label>
+    	<visible>false</visible>
+    	<reproductive>true</reproductive>
+    	<milkable>true</milkable>
+  	</LifeStageDef>
+    
+    <LifeStageDef>
+        <defName>RWBInsectGrub</defName>
+        <label>grub</label>
+        <visible>false</visible>
+        <reproductive>false</reproductive>
+        <milkable>false</milkable>
+        <voxPitch>1.2</voxPitch>
+        <bodySizeFactor>0.5</bodySizeFactor>
+        <foodMaxFactor>1.5</foodMaxFactor>
+        <healthScaleFactor>0.6</healthScaleFactor>
+        <hungerRateFactor>0.75</hungerRateFactor>
+        <marketValueFactor>0.75</marketValueFactor>
+        <statFactors>
+            <MoveSpeed>0.9</MoveSpeed>
+        </statFactors>
+    </LifeStageDef>
+</Defs>

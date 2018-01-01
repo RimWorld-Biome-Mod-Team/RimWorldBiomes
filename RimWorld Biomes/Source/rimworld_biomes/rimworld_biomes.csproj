@@ -54,6 +54,8 @@
     <Compile Include="CompReactiveDefense.cs" />
     <Compile Include="CompProperties_AuraParticle.cs" />
     <Compile Include="CompAuraParticle.cs" />
+    <Compile Include="CompProperties_IgnoreDeepWater.cs" />
+    <Compile Include="CompIgnoreDeepWater.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="RWBBuildingDefOf.cs" />
