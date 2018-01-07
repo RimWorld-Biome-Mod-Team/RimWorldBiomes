@@ -153,6 +153,8 @@
             </li>
         </comps>
         <race>
+            <herdAnimal>true</herdAnimal>
+            <herdMigrationAllowed>true</herdMigrationAllowed>
             <foodType>VegetarianRoughAnimal</foodType>
             <gestationPeriodDays>20</gestationPeriodDays>
             <fleshType>RWBInsectoid</fleshType>
@@ -186,7 +188,7 @@
         <label>bovine Beetle</label>
         <race>RWBBovineBeetle</race>
         <combatPower>10</combatPower>
-        <canArriveManhunter>false</canArriveManhunter>
+        <canArriveManhunter>true</canArriveManhunter>
         <wildSpawn_EcoSystemWeight>0.05</wildSpawn_EcoSystemWeight>
         <wildSpawn_spawnWild>true</wildSpawn_spawnWild>
         <lifeStages>
@@ -295,7 +297,7 @@
         <label>royal rhino Beetle</label>
         <race>RWBRhinoBeetle</race>
         <combatPower>10</combatPower>
-        <canArriveManhunter>false</canArriveManhunter>
+        <canArriveManhunter>true</canArriveManhunter>
         <wildSpawn_EcoSystemWeight>0.05</wildSpawn_EcoSystemWeight>
         <wildSpawn_spawnWild>true</wildSpawn_spawnWild>
         <lifeStages>
@@ -372,8 +374,8 @@
                         <volume>(0.4, 0.8, 0.4)</volume>
                     </shadowData>
                 </cycledGraphic>
-                <secondsPerStep>1.2</secondsPerStep>
-                <secondsBetweenSteps>0.5</secondsBetweenSteps>
+                <secondsPerStep>0.8</secondsPerStep>
+                <secondsBetweenSteps>0.4</secondsBetweenSteps>
             </li>
         </comps>
         <race>
@@ -407,7 +409,7 @@
         <label>vampire Moth</label>
         <race>RWBVampireMoth</race>
         <combatPower>10</combatPower>
-        <canArriveManhunter>false</canArriveManhunter>
+        <canArriveManhunter>true</canArriveManhunter>
         <wildSpawn_EcoSystemWeight>0.05</wildSpawn_EcoSystemWeight>
         <wildSpawn_spawnWild>true</wildSpawn_spawnWild>
         <lifeStages>
@@ -506,7 +508,7 @@
         <label>crystal Crab</label>
         <race>RWBCrystalCrab</race>
         <combatPower>10</combatPower>
-        <canArriveManhunter>false</canArriveManhunter>
+        <canArriveManhunter>true</canArriveManhunter>
         <wildSpawn_EcoSystemWeight>0.05</wildSpawn_EcoSystemWeight>
         <wildSpawn_spawnWild>true</wildSpawn_spawnWild>
         <lifeStages>
@@ -622,7 +624,7 @@
         <label>pillbug</label>
         <race>RWBPillbug</race>
         <combatPower>10</combatPower>
-        <canArriveManhunter>false</canArriveManhunter>
+        <canArriveManhunter>true</canArriveManhunter>
         <wildSpawn_EcoSystemWeight>0.05</wildSpawn_EcoSystemWeight>
         <wildSpawn_spawnWild>true</wildSpawn_spawnWild>
         <lifeStages>
@@ -648,4 +650,798 @@
             </li>
         </lifeStages>
     </PawnKindDef>
+    
+    <!-- Maxolotl   -->
+    <ThingDef ParentName="AnimalThingBase">
+        <defName>RWBMaxolotl</defName>
+        <label>maxolotl</label>
+        <description>A weird amphibian thingy.</description>
+        <statBases>
+            <MoveSpeed>5.25</MoveSpeed>
+            <ComfyTemperatureMin>-65</ComfyTemperatureMin>
+            <MarketValue>100</MarketValue>
+            <LeatherAmount>0</LeatherAmount>
+            <MeatAmount>30</MeatAmount>
+        </statBases>
+        <tools>
+            <li>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>10</power>
+                <cooldownTime>2.0</cooldownTime>
+                <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+            </li>
+            <li>
+                <label>head</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>6</power>
+                <cooldownTime>1.65</cooldownTime>
+                <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+                <commonality>0.2</commonality>
+            </li>
+        </tools>
+        <race>
+            <body>QuadrupedAnimalWithPawsAndTail</body>
+            <herdAnimal>false</herdAnimal>
+            <herdMigrationAllowed>false</herdMigrationAllowed>
+            <baseBodySize>1.5</baseBodySize>
+            <baseHungerRate>1.5</baseHungerRate>
+            <foodType>OmnivoreAnimal</foodType>
+            <gestationPeriodDays>20</gestationPeriodDays>
+            <manhunterOnDamageChance>1</manhunterOnDamageChance>
+            <manhunterOnTameFailChance>0.018</manhunterOnTameFailChance>
+            <wildness>0.4</wildness>
+            <lifeExpectancy>50</lifeExpectancy>
+            <thinkTreeMain>Amphibian</thinkTreeMain>
+            <thinkTreeConstant>AmphibianConstant</thinkTreeConstant>
+            <lifeStageAges>
+                <li>
+                    <def>AnimalJuvenile</def>
+                    <minAge>0.0</minAge>
+                </li>
+                <li>
+                    <def>AnimalAdult</def>
+                    <minAge>2.0</minAge>
+                </li>
+            </lifeStageAges>
+            <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+            <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+            <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+        </race>
+        <comps>
+            <li Class="CompProperties_EggLayer">
+                <eggFertilizedDef>RWBEggMaxolotlFertilized</eggFertilizedDef>
+                <eggFertilizationCountMax>1</eggFertilizationCountMax>
+                <eggLayIntervalDays>20</eggLayIntervalDays>
+                <eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+                <eggCountRange>1</eggCountRange>
+            </li>
+        </comps>
+        <tradeTags>
+            <li>StandardAnimal</li>
+        </tradeTags>
+    </ThingDef>
+    
+    <PawnKindDef ParentName="AnimalKindBase">
+        <defName>RWBMaxolotl</defName>
+        <label>maxolotl</label>
+        <race>RWBMaxolotl</race>
+        <combatPower>100</combatPower>
+        <canArriveManhunter>true</canArriveManhunter>
+        <wildSpawn_spawnWild>true</wildSpawn_spawnWild>
+        <lifeStages>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Pawns/Caves/Animals/Maxolotl/Maxolotl</texPath>
+                    <drawSize>1.3</drawSize>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Dessicated/CritterDessicatedMedium</texPath>
+                    <drawSize>1.4</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Pawns/Caves/Animals/Maxolotl/Maxolotl</texPath>
+                    <drawSize>2.2</drawSize>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Dessicated/CritterDessicatedMedium</texPath>
+                    <drawSize>2</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+        </lifeStages>
+    </PawnKindDef>
+    
+    <!--  Spectre Shrimp  -->
+    <ThingDef ParentName="AnimalThingBase">
+        <defName>RWBSpectreShrimp</defName>
+        <label>spectre Shrimp</label>
+        <description>A spectre shrimp thingy.</description>
+        <statBases>
+            <MoveSpeed>5.25</MoveSpeed>
+            <ComfyTemperatureMin>-65</ComfyTemperatureMin>
+            <MarketValue>100</MarketValue>
+            <LeatherAmount>0</LeatherAmount>
+            <MeatAmount>30</MeatAmount>
+        </statBases>
+        <tools>
+            <li>
+                <capacities>
+                    <li>Bite</li>
+                </capacities>
+                <power>10</power>
+                <cooldownTime>2.0</cooldownTime>
+                <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+            </li>
+            <li>
+                <label>head</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>6</power>
+                <cooldownTime>1.65</cooldownTime>
+                <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+                <commonality>0.2</commonality>
+            </li>
+        </tools>
+        <race>
+            <predator>true</predator>
+            <body>QuadrupedAnimalWithPawsAndTail</body>
+            <meatColor>(221, 239, 239)</meatColor>
+            <herdAnimal>true</herdAnimal>
+            <herdMigrationAllowed>false</herdMigrationAllowed>
+            <baseBodySize>0.3</baseBodySize>
+            <baseHungerRate>1.5</baseHungerRate>
+            <foodType>CarnivoreAnimalStrict</foodType>
+            <gestationPeriodDays>20</gestationPeriodDays>
+            <manhunterOnDamageChance>1</manhunterOnDamageChance>
+            <manhunterOnTameFailChance>0.018</manhunterOnTameFailChance>
+            <wildness>0.6</wildness>
+            <lifeExpectancy>20</lifeExpectancy>
+            <thinkTreeMain>Amphibian</thinkTreeMain>
+            <thinkTreeConstant>AmphibianConstant</thinkTreeConstant>
+            <lifeStageAges>
+                <li>
+                    <def>AnimalJuvenile</def>
+                    <minAge>0.0</minAge>
+                </li>
+                <li>
+                    <def>AnimalAdult</def>
+                    <minAge>2.0</minAge>
+                </li>
+            </lifeStageAges>
+            <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+            <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+            <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+        </race>
+        <comps>
+            <li Class="CompProperties_EggLayer">
+                <eggFertilizedDef>RWBEggSpectreShrimpFertilized</eggFertilizedDef>
+                <eggFertilizationCountMax>4</eggFertilizationCountMax>
+                <eggLayIntervalDays>20</eggLayIntervalDays>
+                <eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+                <eggCountRange>4</eggCountRange>
+            </li>
+        </comps>
+        <tradeTags>
+            <li>StandardAnimal</li>
+        </tradeTags>
+    </ThingDef>
+    
+    <PawnKindDef ParentName="AnimalKindBase">
+        <defName>RWBSpectreShrimp</defName>
+        <label>maxolotl</label>
+        <race>RWBSpectreShrimp</race>
+        <combatPower>100</combatPower>
+        <canArriveManhunter>true</canArriveManhunter>
+        <wildSpawn_spawnWild>true</wildSpawn_spawnWild>
+        <wildSpawn_GroupSizeRange>
+            <min>3</min>
+            <max>9</max>
+        </wildSpawn_GroupSizeRange>
+        <lifeStages>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Pawns/Caves/Animals/SpectreShrimp/SpectreShrimp</texPath>
+                    <drawSize>0.6</drawSize>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Dessicated/CritterDessicatedSmall</texPath>
+                    <drawSize>0.5</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Pawns/Caves/Animals/SpectreShrimp/SpectreShrimp</texPath>
+                    <drawSize>0.9</drawSize>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Dessicated/CritterDessicatedSmall</texPath>
+                    <drawSize>0.85</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+        </lifeStages>
+    </PawnKindDef>
+    
+    <!--  FruitBat  -->
+    <ThingDef ParentName="AnimalThingBase">
+        <defName>RWB_FruitBat</defName>
+        <label>bat</label>
+        <description>Before the dawn of the genetic editing age, this animal was once considered the only known mammal capable of flight.</description>
+        <statBases>
+            <MoveSpeed>2.1</MoveSpeed>
+            <ComfyTemperatureMin>0</ComfyTemperatureMin>
+            <MarketValue>75</MarketValue>
+            <LeatherAmount>0</LeatherAmount>
+        </statBases>
+        <comps>
+            <li Class="CompAnimated.CompProperties_Animated">
+                <movingFrames>
+                    <li>
+                        <texPath>Pawns/Caves/Animals/FruitBat/FruitBatA</texPath>
+                        <color>(110,95,82)</color>
+                        <drawSize>2.2</drawSize>
+                        <shaderType>CutoutComplex</shaderType>
+                        <graphicClass>Graphic_Multi</graphicClass>
+                    </li>
+                    <li>
+                        <texPath>Pawns/Caves/Animals/FruitBat/FruitBatB</texPath>
+                        <color>(110,95,82)</color>
+                        <drawSize>2.2</drawSize>
+                        <shaderType>CutoutComplex</shaderType>
+                        <graphicClass>Graphic_Multi</graphicClass>
+                    </li>
+                </movingFrames>
+                <stillFrames>
+                    <li>
+                        <texPath>Pawns/Caves/Animals/FruitBat/FruitBatSitting</texPath>
+                        <color>(110,95,82)</color>
+                        <drawSize>2.2</drawSize>
+                        <shaderType>CutoutComplex</shaderType>
+                        <graphicClass>Graphic_Multi</graphicClass>
+                    </li>
+                </stillFrames>
+                <sound/>
+                <secondsBetweenFrames>0.3</secondsBetweenFrames>
+            </li>
+        </comps>
+        <verbs>
+            <li>
+                <verbClass>Verb_MeleeAttack</verbClass>
+                <defaultCooldownTime>1.65</defaultCooldownTime>
+                <meleeDamageBaseAmount>3</meleeDamageBaseAmount>
+                <meleeDamageDef>Bite</meleeDamageDef>
+                <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+            </li>
+            <li>
+                <verbClass>Verb_MeleeAttack</verbClass>
+                <defaultCooldownTime>1.65</defaultCooldownTime>
+                <meleeDamageBaseAmount>1</meleeDamageBaseAmount>
+                <meleeDamageDef>Blunt</meleeDamageDef>
+                <commonality>0.01</commonality>
+                <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+            </li>
+        </verbs>
+        <race>
+            <body>RWB_BatBody</body>
+            <baseHungerRate>0.35</baseHungerRate>
+            <baseBodySize>0.22</baseBodySize>
+            <baseHealthScale>0.35</baseHealthScale>
+            <foodType>VegetarianRoughAnimal</foodType>
+            <trainableIntelligence>Advanced</trainableIntelligence>
+            <wildness>0.8</wildness>
+            <leatherColor>(185,125,79)</leatherColor>
+            <leatherLabel>capybaraskin</leatherLabel>
+            <leatherInsulation>0.75</leatherInsulation>
+            <wildness>0.75</wildness>
+            <nuzzleMtbHours>120</nuzzleMtbHours>
+            <gestationPeriodDays>14</gestationPeriodDays>
+            <litterSizeCurve>
+                <points>
+                    <li>(0.5, 0)</li>
+                    <li>(1, 1)</li>
+                    <li>(3, 1)</li>
+                    <li>(3.5, 0)</li>
+                </points>
+            </litterSizeCurve>
+            <lifeExpectancy>12</lifeExpectancy>
+            <lifeStageAges>
+                <li>
+                    <def>AnimalBaby</def>
+                    <minAge>0</minAge>
+                </li>
+                <li>
+                    <def>AnimalJuvenile</def>
+                    <minAge>0.2</minAge>
+                </li>
+                <li>
+                    <def>AnimalAdult</def>
+                    <minAge>0.4</minAge>
+                    <soundWounded>Pawn_Alphabeaver_Wounded</soundWounded>
+                    <soundDeath>Pawn_Alphabeaver_Death</soundDeath>
+                    <soundCall>Pawn_Alphabeaver_Call</soundCall>
+                    <soundAngry>Pawn_Alphabeaver_Angry</soundAngry>
+                </li>
+            </lifeStageAges>
+            <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+            <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+            <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+        </race>
+        <tradeTags>
+            <li>StandardAnimal</li>
+        </tradeTags>
+    </ThingDef>
+    
+    <PawnKindDef ParentName="AnimalKindBase">
+        <defName>RWB_FruitBat</defName>
+        <label>bat</label>
+        <race>RWB_FruitBat</race>
+        <combatPower>25</combatPower>
+        <wildSpawn_EcoSystemWeight>0.25</wildSpawn_EcoSystemWeight>
+        <wildSpawn_spawnWild>true</wildSpawn_spawnWild>
+        <lifeStages>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Pawns/Caves/Animals/FruitBat/FruitBatA</texPath>
+                    <color>(110,95,82)</color>
+                    <drawSize>2.2</drawSize>
+                    <shaderType>CutoutComplex</shaderType>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Dessicated/CritterDessicatedSmall</texPath>
+                    <drawSize>2.2</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Pawns/Caves/Animals/FruitBat/FruitBatA</texPath>
+                    <color>(110,95,82)</color>
+                    <drawSize>2.2</drawSize>
+                    <shaderType>CutoutComplex</shaderType>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Dessicated/CritterDessicatedSmall</texPath>
+                    <drawSize>2.2</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Pawns/Caves/Animals/FruitBat/FruitBatA</texPath>
+                    <color>(110,95,82)</color>
+                    <drawSize>2.2</drawSize>
+                    <shaderType>CutoutComplex</shaderType>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Dessicated/CritterDessicatedSmall</texPath>
+                    <drawSize>2.2</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+        </lifeStages>
+    </PawnKindDef>
+    
+    <!--  VampireBat  -->
+    <ThingDef ParentName="AnimalThingBase">
+        <defName>RWB_VampireBat</defName>
+        <label>bat</label>
+        <description>Before the dawn of the genetic editing age, this animal was once considered the only known mammal capable of flight.</description>
+        <statBases>
+            <MoveSpeed>2.1</MoveSpeed>
+            <ComfyTemperatureMin>0</ComfyTemperatureMin>
+            <MarketValue>75</MarketValue>
+            <LeatherAmount>0</LeatherAmount>
+        </statBases>
+        <comps>
+            <li Class="CompAnimated.CompProperties_Animated">
+                <movingFrames>
+                    <li>
+                        <texPath>Pawns/Caves/Animals/VampireBat/VampireBatA</texPath>
+                        <color>(110,95,82)</color>
+                        <drawSize>2.2</drawSize>
+                        <shaderType>CutoutComplex</shaderType>
+                        <graphicClass>Graphic_Multi</graphicClass>
+                    </li>
+                    <li>
+                        <texPath>Pawns/Caves/Animals/VampireBat/VampireBatB</texPath>
+                        <color>(110,95,82)</color>
+                        <drawSize>2.2</drawSize>
+                        <shaderType>CutoutComplex</shaderType>
+                        <graphicClass>Graphic_Multi</graphicClass>
+                    </li>
+                </movingFrames>
+                <stillFrames>
+                    <li>
+                        <texPath>Pawns/Caves/Animals/VampireBat/VampireBatSitting</texPath>
+                        <color>(110,95,82)</color>
+                        <drawSize>2.2</drawSize>
+                        <shaderType>CutoutComplex</shaderType>
+                        <graphicClass>Graphic_Multi</graphicClass>
+                    </li>
+                </stillFrames>
+                <sound/>
+                <secondsBetweenFrames>0.15</secondsBetweenFrames>
+            </li>
+        </comps>
+        <verbs>
+            <li>
+                <verbClass>Verb_MeleeAttack</verbClass>
+                <defaultCooldownTime>1.65</defaultCooldownTime>
+                <meleeDamageBaseAmount>6</meleeDamageBaseAmount>
+                <meleeDamageDef>Bite</meleeDamageDef>
+                <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+            </li>
+            <li>
+                <verbClass>Verb_MeleeAttack</verbClass>
+                <defaultCooldownTime>1.65</defaultCooldownTime>
+                <meleeDamageBaseAmount>4</meleeDamageBaseAmount>
+                <meleeDamageDef>Blunt</meleeDamageDef>
+                <commonality>0.01</commonality>
+                <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+            </li>
+        </verbs>
+        <race>
+            <body>RWB_BatBody</body>
+            <predator>true</predator>
+            <baseHungerRate>0.35</baseHungerRate>
+            <baseBodySize>0.22</baseBodySize>
+            <baseHealthScale>0.35</baseHealthScale>
+            <foodType>CarnivoreAnimal</foodType>
+            <trainableIntelligence>Advanced</trainableIntelligence>
+            <wildness>0.8</wildness>
+            <leatherColor>(185,125,79)</leatherColor>
+            <leatherLabel>capybaraskin</leatherLabel>
+            <leatherInsulation>0.75</leatherInsulation>
+            <wildness>0.75</wildness>
+            <nuzzleMtbHours>120</nuzzleMtbHours>
+            <gestationPeriodDays>14</gestationPeriodDays>
+            <litterSizeCurve>
+                <points>
+                    <li>(0.5, 0)</li>
+                    <li>(1, 1)</li>
+                    <li>(3, 1)</li>
+                    <li>(3.5, 0)</li>
+                </points>
+            </litterSizeCurve>
+            <lifeExpectancy>12</lifeExpectancy>
+            <lifeStageAges>
+                <li>
+                    <def>AnimalBaby</def>
+                    <minAge>0</minAge>
+                </li>
+                <li>
+                    <def>AnimalJuvenile</def>
+                    <minAge>0.2</minAge>
+                </li>
+                <li>
+                    <def>AnimalAdult</def>
+                    <minAge>0.4</minAge>
+                    <soundWounded>Pawn_Alphabeaver_Wounded</soundWounded>
+                    <soundDeath>Pawn_Alphabeaver_Death</soundDeath>
+                    <soundCall>Pawn_Alphabeaver_Call</soundCall>
+                    <soundAngry>Pawn_Alphabeaver_Angry</soundAngry>
+                </li>
+            </lifeStageAges>
+            <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+            <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+            <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+        </race>
+        <tradeTags>
+            <li>StandardAnimal</li>
+        </tradeTags>
+    </ThingDef>
+    
+    <PawnKindDef ParentName="AnimalKindBase">
+        <defName>RWB_VampireBat</defName>
+        <label>bat</label>
+        <race>RWB_VampireBat</race>
+        <combatPower>25</combatPower>
+        <wildSpawn_EcoSystemWeight>0.25</wildSpawn_EcoSystemWeight>
+        <wildSpawn_spawnWild>true</wildSpawn_spawnWild>
+        <lifeStages>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Pawns/Caves/Animals/VampireBat/VampireBatA</texPath>
+                    <color>(110,95,82)</color>
+                    <drawSize>2.2</drawSize>
+                    <shaderType>CutoutComplex</shaderType>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Dessicated/CritterDessicatedSmall</texPath>
+                    <drawSize>2.2</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Pawns/Caves/Animals/VampireBat/VampireBatA</texPath>
+                    <color>(110,95,82)</color>
+                    <drawSize>2.2</drawSize>
+                    <shaderType>CutoutComplex</shaderType>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Dessicated/CritterDessicatedSmall</texPath>
+                    <drawSize>2.2</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Pawns/Caves/Animals/VampireBat/VampireBatA</texPath>
+                    <color>(110,95,82)</color>
+                    <drawSize>2.2</drawSize>
+                    <shaderType>CutoutComplex</shaderType>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Dessicated/CritterDessicatedSmall</texPath>
+                    <drawSize>2.2</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+        </lifeStages>
+    </PawnKindDef>
+
+    <!--Mole-->
+    <ThingDef ParentName="AnimalThingBase">
+        <defName>RWBMole</defName>
+        <label>mole</label>
+        <description>A mole.</description>
+        <statBases>
+            <MoveSpeed>5.2</MoveSpeed>
+            <ComfyTemperatureMin>-50</ComfyTemperatureMin>
+            <MarketValue>300</MarketValue>
+        </statBases>
+        <tools>
+            <li>
+                <label>left claw</label>
+                <capacities>
+                    <li>Scratch</li>
+                </capacities>
+                <power>8</power>
+                <cooldownTime>1.65</cooldownTime>
+                <linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
+            </li>
+            <li>
+                <label>right claw</label>
+                <capacities>
+                    <li>Scratch</li>
+                </capacities>
+                <power>8</power>
+                <cooldownTime>1.65</cooldownTime>
+                <linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
+            </li>
+            <li>
+                <capacities>
+                    <li>Bite</li>
+                </capacities>
+                <power>9</power>
+                <cooldownTime>1.65</cooldownTime>
+                <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+            </li>
+            <li>
+                <label>head</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>3</power>
+                <cooldownTime>1.65</cooldownTime>
+                <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+                <commonality>0.2</commonality>
+            </li>
+        </tools>
+        <race>
+            <body>QuadrupedAnimalWithPaws</body>
+            <herdAnimal>false</herdAnimal>
+            <baseBodySize>1.0</baseBodySize>
+            <baseHungerRate>0.5</baseHungerRate>
+            <baseHealthScale>1.05</baseHealthScale>
+            <foodType>OmnivoreAnimal, OvivoreAnimal</foodType>
+            <leatherColor>(117,117,117)</leatherColor>
+            <leatherLabel>mole skin</leatherLabel>
+            <leatherInsulation>1.0</leatherInsulation>
+            <gestationPeriodDays>22.5</gestationPeriodDays>
+            <trainableIntelligence>Intermediate</trainableIntelligence>
+            <wildness>0.3</wildness>
+            <litterSizeCurve>
+                <points>
+                    <li>(0.5, 0)</li>
+                    <li>(1, 1)</li>
+                    <li>(2, 1.7)</li>
+                </points>
+            </litterSizeCurve>
+            <lifeExpectancy>12</lifeExpectancy>
+            <lifeStageAges>
+                <li>
+                    <def>AnimalBaby</def>
+                    <minAge>0</minAge>
+                </li>
+                <li>
+                    <def>AnimalJuvenile</def>
+                    <minAge>0.25</minAge>
+                </li>
+                <li>
+                    <def>AnimalAdult</def>
+                    <minAge>0.5</minAge>
+                    <soundWounded>Pawn_Dog_Injured</soundWounded>
+                    <soundDeath>Pawn_Dog_Death</soundDeath>
+                    <soundCall>Pawn_Dog_Call</soundCall>
+                    <soundAngry>Pawn_Dog_Angry</soundAngry>
+                </li>
+            </lifeStageAges>
+            <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+            <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+            <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+        </race>
+        <tradeTags>
+            <li>StandardAnimal</li>
+        </tradeTags>
+    </ThingDef>
+    <PawnKindDef ParentName="AnimalKindBase">
+        <defName>RWBMole</defName>
+        <label>mole</label>
+        <race>RWBMole</race>
+        <combatPower>60</combatPower>
+        <lifeStages>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Mole/Mole</texPath>
+                    <drawSize>1.0</drawSize>
+                    <color>(117,117,117)</color>
+                    <shaderType>CutoutComplex</shaderType>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Dessicated/CritterDessicatedMedium</texPath>
+                    <drawSize>1.0</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Pawns/Caves/Animals/Mole/Mole</texPath>
+                    <drawSize>1.5</drawSize>
+                    <color>(117,117,117)</color>
+                    <shaderType>CutoutComplex</shaderType>
+                    <shadowData>
+                        <volume>(0.25, 0.3, 0.25)</volume>
+                        <offset>(0,0,-0.15)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Dessicated/CritterDessicatedMedium</texPath>
+                    <drawSize>1.4</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Pawns/Caves/Animals/Mole/Mole</texPath>
+                    <drawSize>1.75</drawSize>
+                    <color>(117,117,117)</color>
+                    <shaderType>CutoutComplex</shaderType>
+                    <shadowData>
+                        <volume>(0.3, 0.4, 0.3)</volume>
+                        <offset>(0,0,-0.15)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Dessicated/CritterDessicatedMedium</texPath>
+                    <drawSize>1.7</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+        </lifeStages>
+        <wildSpawn_spawnWild>true</wildSpawn_spawnWild>
+    </PawnKindDef>
+    
+    <!--  Slime  -->
+    <ThingDef ParentName="AnimalThingBase">
+        <defName>RWBSlime</defName>
+        <label>slime</label>
+        <description>A slime.</description>
+        <butcherProducts>
+            <RWBSlimeChunk>10</RWBSlimeChunk>
+        </butcherProducts>
+        <statBases>
+            <MoveSpeed>5.2</MoveSpeed>
+            <ComfyTemperatureMin>-50</ComfyTemperatureMin>
+            <MarketValue>300</MarketValue>
+            <LeatherAmount>0</LeatherAmount>
+            <MeatAmount>0</MeatAmount>
+        </statBases>
+        <tools>
+            <li>
+                <capacities>
+                    <li>Bite</li>
+                </capacities>
+                <power>9</power>
+                <cooldownTime>1.65</cooldownTime>
+                <linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+            </li>
+            <li>
+                <label>head</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>5</power>
+                <cooldownTime>1.65</cooldownTime>
+                <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+                <commonality>0.2</commonality>
+            </li>
+        </tools>
+        <race>
+            <body>RWBSlime</body>
+            <herdAnimal>false</herdAnimal>
+            <baseBodySize>1.0</baseBodySize>
+            <baseHungerRate>0.5</baseHungerRate>
+            <baseHealthScale>1.05</baseHealthScale>
+            <foodType>OmnivoreAnimal</foodType>
+            <gestationPeriodDays>22.5</gestationPeriodDays>
+            <trainableIntelligence>Simple</trainableIntelligence>
+            <wildness>0.997</wildness>
+            <lifeExpectancy>12</lifeExpectancy>
+            <lifeStageAges>
+                <li>
+                    <def>AnimalJuvenile</def>
+                    <minAge>0.0</minAge>
+                </li>
+                <li>
+                    <def>AnimalAdult</def>
+                    <minAge>0.5</minAge>
+                </li>
+            </lifeStageAges>
+            <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+            <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+            <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+        </race>
+        <comps>
+            <li Class="CompProperties_EggLayer">
+                <eggFertilizedDef>RWBEggSlimeFertilized</eggFertilizedDef>
+                <eggFertilizationCountMax>1</eggFertilizationCountMax>
+                <eggLayIntervalDays>22.5</eggLayIntervalDays>
+                <eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+                <eggCountRange>1</eggCountRange>
+            </li>
+        </comps>
+        <tradeTags>
+            <li>StandardAnimal</li>
+        </tradeTags>
+    </ThingDef>
+    <PawnKindDef ParentName="AnimalKindBase">
+        <defName>RWBSlime</defName>
+        <label>slime</label>
+        <race>RWBSlime</race>
+        <combatPower>60</combatPower>
+        <lifeStages>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Pawns/Caves/Animals/Slime/Slime</texPath>
+                    <drawSize>1.5</drawSize>
+                    <color>(117,117,117)</color>
+                    <shaderType>CutoutComplex</shaderType>
+                    <shadowData>
+                        <volume>(0.25, 0.3, 0.25)</volume>
+                        <offset>(0,0,-0.15)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Dessicated/CritterDessicatedMedium</texPath>
+                    <drawSize>1.4</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Pawns/Caves/Animals/Slime/Slime</texPath>
+                    <drawSize>2</drawSize>
+                    <color>(117,117,117)</color>
+                    <shaderType>CutoutComplex</shaderType>
+                    <shadowData>
+                        <volume>(0.3, 0.4, 0.3)</volume>
+                        <offset>(0,0,-0.15)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Dessicated/CritterDessicatedMedium</texPath>
+                    <drawSize>1.7</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+        </lifeStages>
+        <wildSpawn_spawnWild>true</wildSpawn_spawnWild>
+    </PawnKindDef>
+
 </Defs>

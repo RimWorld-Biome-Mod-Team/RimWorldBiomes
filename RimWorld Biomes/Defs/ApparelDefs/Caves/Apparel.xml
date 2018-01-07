@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="ApparelMakeableBase">
+	    <defName>BeetlePlateArmor</defName>
+	    <label>beetle plate armor</label>
+	    <techLevel>Neolithic</techLevel>
+	    <description>Armor made from chitin</description>
+	    <graphicData> 
+	    	<texPath>Things/Apparel/BeetlePlateArmor/BeetleArmor</texPath>
+	    	<graphicClass>Graphic_Single</graphicClass> 
+	    </graphicData>
+	    <statBases>
+            <WorkToMake>12000</WorkToMake>
+            <MaxHitPoints>120</MaxHitPoints>
+            <Mass>1.2</Mass>
+            <ArmorRating_Blunt>0.13</ArmorRating_Blunt>
+            <ArmorRating_Sharp>0.40</ArmorRating_Sharp>
+	    </statBases>
+	     <costList>
+	       <RWBChitin>40</RWBChitin>
+	     </costList>
+	    <thingCategories>
+	      <li>Apparel</li>
+	    </thingCategories>
+	    <generateCommonality>0.1</generateCommonality>
+	    <apparel>
+	     <defaultOutfitTags>
+	        <li>Soldier</li>
+	     </defaultOutfitTags>
+	     <wornGraphicPath>Things/Apparel/BeetlePlateArmor/BeetleArmor</wornGraphicPath>
+         <layers>
+             <li>Middle</li>
+             <li>Shell</li>
+         </layers>
+				<bodyPartGroups>
+		    <li>Neck</li>
+	        <li>Shoulders</li>
+	        <li>Torso</li>
+	        <li>Arms</li>
+	        <li>Legs</li>
+				</bodyPartGroups>
+	    </apparel>
+        <colorGenerator Class="ColorGenerator_StandardApparel" />
+    </ThingDef>
+    
+    <ThingDef ParentName="HatMakeableBase">
+        <defName>BeetlePlateHelmet</defName>
+        <label>beetle plate helmet</label>
+        <techLevel>Neolithic</techLevel>
+        <description>Armor made from chitin</description>
+        <graphicData>
+            <texPath>Things/Apparel/BeetlePlateHelmet/BeetleHelm</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <costList>
+	       <RWBChitin>20</RWBChitin>
+        </costList>
+        <statBases>
+            <WorkToMake>12000</WorkToMake>
+            <MaxHitPoints>120</MaxHitPoints>
+            <Mass>1.2</Mass>
+            <ArmorRating_Blunt>0.13</ArmorRating_Blunt>
+            <ArmorRating_Sharp>0.40</ArmorRating_Sharp>
+        </statBases>
+        <equippedStatOffsets>
+            <MoveSpeed>-0.02</MoveSpeed>
+            <SocialImpact>-0.1</SocialImpact>
+        </equippedStatOffsets>
+        <generateCommonality>0.1</generateCommonality>
+        <apparel>
+            <defaultOutfitTags>
+                <li>Soldier</li>
+            </defaultOutfitTags>
+            <wornGraphicPath>Things/Apparel/BeetlePlateHelmet/BeetleHelm</wornGraphicPath>
+            <layers>
+                <li>Overhead</li>
+            </layers>		<bodyPartGroups>
+                <li>FullHead</li>
+            </bodyPartGroups>
+        </apparel>
+    </ThingDef>
+</Defs>

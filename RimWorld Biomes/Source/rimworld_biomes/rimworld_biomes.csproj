@@ -56,6 +56,9 @@
     <Compile Include="CompAuraParticle.cs" />
     <Compile Include="CompProperties_IgnoreDeepWater.cs" />
     <Compile Include="CompIgnoreDeepWater.cs" />
+    <Compile Include="JobGiver_WanderWater.cs" />
+    <Compile Include="JobGiver_WanderWaterAnywhere.cs" />
+    <Compile Include="JobGiver_WanderWaterHerd.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="RWBBuildingDefOf.cs" />
