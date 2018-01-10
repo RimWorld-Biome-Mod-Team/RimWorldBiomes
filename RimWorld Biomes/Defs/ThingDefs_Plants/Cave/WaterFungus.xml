@@ -40,7 +40,7 @@
 				</allowedTiles>
                 <spawnChance>0.07</spawnChance>
                 <allowedBiomes>
-                    <li>Cavern</li>
+                    <li>RWBCavern</li>
                 </allowedBiomes>
                 <growNearWater>true</growNearWater>
 			</li>

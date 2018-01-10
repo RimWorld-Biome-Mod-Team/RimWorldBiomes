@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ThingDef ParentName="BaseInsect">
+    <defName>RWBCaveSpider</defName>
+    <label>spider</label>
+    <description>This rabbit-sized genetically-engineered predator features eight legs, a hard shell, and a venomous bite.</description>
+    <thingClass>rimworld_biomes.Spider</thingClass>
+    <statBases>
+      <MoveSpeed>6.0</MoveSpeed>
+      <ArmorRating_Blunt>0.1</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.4</ArmorRating_Sharp>
+      <ComfyTemperatureMin>-15</ComfyTemperatureMin>
+      <MarketValue>5</MarketValue>
+      <LeatherAmount>0</LeatherAmount>
+      <Flammability>3.0</Flammability>
+    </statBases>
+	<tools>
+	  <li>
+		<label>jaws</label>
+		<capacities>
+		  <li>ToxicBite</li>
+		</capacities>
+		<power>5</power>
+		<cooldownTime>1.65</cooldownTime>
+		<linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+	  </li>
+	</tools>
+    <comps>
+      <li Class="CompProperties_EggLayer">
+        <eggFertilizedDef>RWBEggCaveSpiderFertilized</eggFertilizedDef>
+        <eggFertilizationCountMax>1</eggFertilizationCountMax>
+        <eggLayIntervalDays>14</eggLayIntervalDays>
+        <eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+        <eggCountRange>1</eggCountRange>
+      </li>
+    </comps>
+    <race>
+        <thinkTreeMain>Animal</thinkTreeMain>
+        <thinkTreeConstant>AnimalConstant</thinkTreeConstant>
+      <body>RWBSpiderBody</body>
+      <foodType>CarnivoreAnimal</foodType>
+      <predator>true</predator>
+      <manhunterOnDamageChance>1</manhunterOnDamageChance>
+      <baseBodySize>0.3</baseBodySize>
+      <baseHungerRate>0.10</baseHungerRate>
+      <baseHealthScale>0.4</baseHealthScale>
+      <mateMtbHours>8</mateMtbHours>
+      <wildness>0.75</wildness>
+      <lifeExpectancy>10</lifeExpectancy>
+      <lifeStageAges>
+        <li>
+          <def>EusocialInsectLarva</def>
+          <minAge>0</minAge>
+        </li>
+        <li>
+          <def>EusocialInsectJuvenile</def>
+          <minAge>0.03</minAge>
+        </li>
+        <li>
+          <def>RWBInsectAdult</def>
+          <minAge>0.4</minAge>
+          <soundWounded>Pawn_Megascarab_Wounded</soundWounded>
+          <soundDeath>Pawn_Megascarab_Death</soundDeath>
+          <soundCall>Pawn_Megascarab_Call</soundCall>
+          <soundAngry>Pawn_Megascarab_Angry</soundAngry>
+        </li>
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+    </race>
+    <tradeTags>
+      <li>Insectoid</li>
+    </tradeTags>
+  </ThingDef>
+
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>RWBCaveSpider</defName>
+    <label>cave spider</label>
+    <race>RWBCaveSpider</race>
+    <combatPower>100</combatPower>
+    <wildSpawn_spawnWild>true</wildSpawn_spawnWild>
+    <lifeStages>
+      <li>
+        <label>spiderling</label>
+        <bodyGraphicData>
+          <texPath>Pawns/Caves/Animals/CaveSpider/Spider</texPath>
+          <drawSize>2</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Dessicated/CritterDessicatedSmall</texPath>
+          <drawSize>1.8</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <label>juvenile spider</label>
+        <bodyGraphicData>
+          <texPath>Pawns/Caves/Animals/CaveSpider/Spider</texPath>
+          <drawSize>2.8</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Dessicated/CritterDessicatedSmall</texPath>
+          <drawSize>2.6</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Pawns/Caves/Animals/CaveSpider/Spider</texPath>
+          <drawSize>4</drawSize>
+          <shadowData>
+            <volume>(0.3, 0.4, 0.3)</volume>
+            <offset>(0,0,-0.05)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <femaleGraphicData>
+          <texPath>Pawns/Caves/Animals/CaveSpider/Spider</texPath>
+          <drawSize>3.8</drawSize>
+        </femaleGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Dessicated/CritterDessicatedSmall</texPath>
+          <drawSize>3.6</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+</Defs>

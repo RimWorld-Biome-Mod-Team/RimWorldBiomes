@@ -18,13 +18,25 @@ namespace rimworld_biomes
 {
     public class CompReactiveDefense : ThingComp
     {
+        private IDictionary<StatDef, float> stats = new Dictionary<StatDef, float>();
+        bool initalized = false;
+        bool hidden = false;
+        bool stoppedAttacker = false;
+        DamageInfo lastattack = new DamageInfo();
+        bool newattack = false;
 		public override void CompTick()
 		{
             if(this.Props == null){
                 return;
             }
-			base.CompTick();
+            if(!initalized){
+                foreach(StatModifier stat in parent.def.statBases){
+                    stats.Add(stat.stat,stat.value);
+                }
+                initalized = true;
+            }
             Defend(this.Props);
+			base.CompTick();
 		}
         public CompProperties_ReactiveDefense Props{
             get{
@@ -40,7 +52,9 @@ namespace rimworld_biomes
             }
 			if (props.defenseTrigger == CompProperties_ReactiveDefense.defTrigger.health)
 			{
-
+                if(((Pawn)parent).health.summaryHealth.SummaryHealthPercent < props.hpThreshold || ((Pawn)parent).health.hediffSet.GetPartHealth(((Pawn)parent).RaceProps.body.corePart) < ((Pawn)parent).RaceProps.body.corePart.def.hitPoints * props.hpThreshold * ((Pawn)parent).def.race.baseHealthScale){
+                    React(pos, map, props);
+                }
 			}
 			if (props.defenseTrigger == CompProperties_ReactiveDefense.defTrigger.proximity)
 			{
@@ -48,7 +62,9 @@ namespace rimworld_biomes
 			}
         }
         public void Attacked(IntVec3 pos, Map map, CompProperties_ReactiveDefense props){
-            
+            if(newattack){
+                newattack = false;
+            }
         }
 
         public void React(IntVec3 pos, Map map, CompProperties_ReactiveDefense props){
@@ -61,7 +77,7 @@ namespace rimworld_biomes
 			}
             if (props.defenseType == CompProperties_ReactiveDefense.defType.hide)
 			{
-
+                Hide(pos, map,  props);
 			}
 			if (props.defenseType == CompProperties_ReactiveDefense.defType.projectile)
 			{
@@ -107,6 +123,111 @@ namespace rimworld_biomes
 						}
 					}
 				}
+            }
+        }
+
+        public void Hide(IntVec3 pos, Map map, CompProperties_ReactiveDefense props){
+            if(props.statDefs == null || props.statDefs.Count == 0 || props.statValues == null || props.statValues.Count == 0 || props.statDefs.Count != props.statValues.Count){
+                return;
+            }
+            Pawn pawn = (Pawn)parent;
+            if(pawn.Dead){
+                if(pawn.apparel.WornApparel.Count > 0){
+                    List<Apparel> tap = pawn.apparel.WornApparel.ToList();
+                    foreach(Apparel apparel in tap){
+                        pawn.apparel.Remove(apparel);
+                    }
+                }
+                return;
+            }
+            if((pawn.health.summaryHealth.SummaryHealthPercent < props.hpThreshold || ((Pawn)parent).health.hediffSet.GetPartHealth(((Pawn)parent).RaceProps.body.corePart) < ((Pawn)parent).RaceProps.body.corePart.def.hitPoints * props.hpThreshold * ((Pawn)parent).def.race.baseHealthScale)){
+                if(!hidden){
+                    if(Props.apparel != null){
+                        Apparel apparel = (Apparel)ThingMaker.MakeThing(Props.apparel);
+                        for (int i = 0; i < props.statDefs.Count; i++)
+                        {
+                            apparel.def.SetStatBaseValue(props.statDefs[i], props.statValues[i]);
+                        }
+                        if (ApparelUtility.HasPartsToWear(pawn, apparel.def))
+                        {
+                            if(pawn.apparel == null){
+                                pawn.apparel = new Pawn_ApparelTracker(pawn);
+                            }
+                            pawn.apparel.Wear(apparel, false);
+                        }
+                    }
+                    if (Props.stopAttacker && !stoppedAttacker)
+                    {
+                        ((Pawn)lastattack.Instigator).jobs.StartJob(new Job(JobDefOf.WaitWander), JobCondition.InterruptForced);
+                        stoppedAttacker = true;
+                    }
+                    ResolveHideGraphic();
+                    hidden = true;
+                }
+            }else{
+                if (hidden){
+                    if (Props.apparel != null && pawn.apparel != null)
+                    {
+                        pawn.apparel.DestroyAll();
+                    }
+                    ResolveBaseGraphic();
+                    hidden = false;
+                    stoppedAttacker = false;
+                }
+            }
+        }
+
+        public override void PostPostApplyDamage(DamageInfo dinfo, float totalDamageDealt)
+        {
+            lastattack = dinfo;
+            newattack = true;
+            base.PostPostApplyDamage(dinfo, totalDamageDealt);
+            Pawn pawn = (Pawn)parent;
+            if (pawn.Dead){
+                if (Props.apparel != null && pawn.apparel != null)
+                {
+                    pawn.apparel.DestroyAll();
+                }
+                ResolveBaseGraphic();
+                hidden = false;
+            }
+        }
+
+        public void ResolveHideGraphic()
+        {
+            if (Props.hideGraphic != null &&
+                ((Pawn)parent).Drawer?.renderer?.graphics != null)
+            {
+                PawnGraphicSet pawnGraphicSet = ((Pawn)parent).Drawer?.renderer?.graphics;
+                pawnGraphicSet = ((Pawn)parent).Drawer?.renderer?.graphics;
+                pawnGraphicSet.ClearCache();
+                pawnGraphicSet.nakedGraphic = Props.hideGraphic.Graphic;
+            }
+        }
+
+        public void ResolveBaseGraphic()
+        {
+            if (Props.hideGraphic != null &&
+                ((Pawn)parent).Drawer?.renderer?.graphics != null)
+            {
+                PawnGraphicSet pawnGraphicSet = ((Pawn)parent).Drawer?.renderer?.graphics;
+                pawnGraphicSet.ClearCache();
+
+                //Duplicated code from -> Verse.PawnGrapic -> ResolveAllGraphics
+                var curKindLifeStage = ((Pawn)parent).ageTracker.CurKindLifeStage;
+                if (((Pawn)parent).gender != Gender.Female || curKindLifeStage.femaleGraphicData == null)
+                    pawnGraphicSet.nakedGraphic = curKindLifeStage.bodyGraphicData.Graphic;
+                else
+                    pawnGraphicSet.nakedGraphic = curKindLifeStage.femaleGraphicData.Graphic;
+                pawnGraphicSet.rottingGraphic = pawnGraphicSet.nakedGraphic.GetColoredVersion(ShaderDatabase.CutoutSkin,
+                    PawnGraphicSet.RottingColor, PawnGraphicSet.RottingColor);
+                if (((Pawn)parent).RaceProps.packAnimal)
+                    pawnGraphicSet.packGraphic = GraphicDatabase.Get<Graphic_Multi>(
+                        pawnGraphicSet.nakedGraphic.path + "Pack", ShaderDatabase.Cutout,
+                        pawnGraphicSet.nakedGraphic.drawSize, Color.white);
+                if (curKindLifeStage.dessicatedBodyGraphicData != null)
+                    pawnGraphicSet.dessicatedGraphic =
+                                      curKindLifeStage.dessicatedBodyGraphicData.GraphicColoredFor(((Pawn)parent));
             }
         }
     }

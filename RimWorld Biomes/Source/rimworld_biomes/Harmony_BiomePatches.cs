@@ -20,23 +20,31 @@ namespace rimworld_biomes
     [StaticConstructorOnStartup]
     static class Harmony_BiomePatches
     {
-        static Harmony_BiomePatches(){
-			//HarmonyInstance.DEBUG = true;
+        static Harmony_BiomePatches()
+        {
+            //HarmonyInstance.DEBUG = true;
             //Harmony Object Instantialization
             HarmonyInstance harmony = HarmonyInstance.Create("rimworld.swenzi.biomepatches");
             //Patches
             //Settling on Impassable Terrain Patch
             harmony.Patch(AccessTools.Method(typeof(TileFinder), "IsValidTileForNewSettlement"), new HarmonyMethod(typeof(Harmony_BiomePatches), nameof(IsValidTileForNewSettlement_PreFix)), null);
             harmony.Patch(AccessTools.Method(typeof(GenStep_CaveHives), "Generate"), new HarmonyMethod(typeof(Harmony_BiomePatches), nameof(GenerateHive_PreFix)), null);
-            harmony.Patch(AccessTools.Method(typeof(GenStep_Terrain),"TerrainFrom"), new HarmonyMethod(typeof(Harmony_BiomePatches), nameof(TerrainFrom_PreFix)), null);
+            harmony.Patch(AccessTools.Method(typeof(GenStep_Terrain), "TerrainFrom"), new HarmonyMethod(typeof(Harmony_BiomePatches), nameof(TerrainFrom_PreFix)), null);
             harmony.Patch(AccessTools.Method(typeof(GenStep_Caves), "Generate"), new HarmonyMethod(typeof(Harmony_BiomePatches), nameof(Generate_PreFix)), null);
             harmony.Patch(AccessTools.Method(typeof(Building_SteamGeyser), "SpawnSetup"), new HarmonyMethod(typeof(Harmony_BiomePatches), nameof(GeyserSpawnSetup_PreFix)), null);
             harmony.Patch(AccessTools.Method(typeof(GenStep_CavePlants), "Generate"), new HarmonyMethod(typeof(Harmony_BiomePatches), nameof(GenerateCavePlant_PreFix)), null);
             harmony.Patch(AccessTools.Method(typeof(Building_PlantGrower), "GetInspectString"), null, new HarmonyMethod(typeof(Harmony_BiomePatches), nameof(GetInspectString_PostFix)));
-
+            harmony.Patch(AccessTools.Method(typeof(Pawn_ApparelTracker), "ApparelChanged"), new HarmonyMethod(typeof(Harmony_BiomePatches), nameof(ApparelChanged_PreFix)), null);
 
         }
 
+        public static bool ApparelChanged_PreFix(PawnGraphicSet  __instance){
+            if(__instance.pawn.story == null){
+                return false;
+            }
+            return true;
+        }
+                                                           
         public static bool GenerateCavePlant_PreFix(Map map){
 			map.regionAndRoomUpdater.Enabled = false;
 			MapGenFloatGrid caves = MapGenerator.Caves;

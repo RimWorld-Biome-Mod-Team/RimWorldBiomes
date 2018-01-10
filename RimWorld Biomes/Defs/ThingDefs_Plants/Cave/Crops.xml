@@ -109,7 +109,7 @@
             <topWindExposure>0.1</topWindExposure>
             <visualSizeRange>
                 <min>0.6</min>
-                <max>1.4</max>
+                <max>2.8</max>
             </visualSizeRange>
         </plant>
         <comps>

@@ -42,9 +42,15 @@ namespace rimworld_biomes
         public defTrigger defenseTrigger;
         public defType defenseType;
         public float reflectPercent = 0.2f;
+        public GraphicData hideGraphic = null;
         public CompProperties_ReactiveDefense()
         {
             this.compClass = typeof(CompReactiveDefense);
         }
+        public ThingDef apparel = null;
+        public float moveSpeedPenalty = 0.5f;
+        public bool stopAttacker = true;
+        public List<StatDef> statDefs;
+        public List<float> statValues;
     }
 }
