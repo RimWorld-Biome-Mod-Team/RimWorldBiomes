@@ -124,7 +124,7 @@
     </ThingDef>
     
     <PawnKindDef ParentName="AnimalKindBase">
-        <defName>RWB_VampireBat</defName>
+        <defName>RWBVampireBat</defName>
         <label>vampire Bat</label>
         <race>RWB_VampireBat</race>
         <combatPower>25</combatPower>

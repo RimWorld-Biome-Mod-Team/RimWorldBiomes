@@ -86,27 +86,18 @@
             <StarlightShroom>0.05</StarlightShroom>
 		</wildPlants>
     <wildAnimals>
-			<RWBBovineBeetle>0.2</RWBBovineBeetle>
-			<RWBSpectreShrimp>0.1</RWBSpectreShrimp>
-			<Deer>0.5</Deer>
-			<WildBoar>0.5</WildBoar>
-			<Turkey>0.5</Turkey>
-			<Raccoon>0.4</Raccoon>
-			<Tortoise>0.4</Tortoise>
-			<Ibex>0.3</Ibex>
-			<Boomrat>0.25</Boomrat>
-			<Muffalo>0.2</Muffalo>
-			<Boomalope>0.2</Boomalope>
-			<Alpaca>0.1</Alpaca>
-			<Emu>0.1</Emu>
-			<Ostrich>0.1</Ostrich>
-			<Gazelle>0.05</Gazelle>
-			<WolfTimber>0.04</WolfTimber>
-			<RWBJellypotBug>0.04</RWBJellypotBug>
-			<Megasloth>0.04</Megasloth>
-			<GrizzlyBear>0.022</GrizzlyBear>
-			<Warg>0.012</Warg>
-			<Cougar>0.012</Cougar>
+        <RWBBovineBeetle>0.2</RWBBovineBeetle>
+        <RWBFruitBat>0.1</RWBFruitBat>
+        <RWBVampireBat>0.1</RWBVampireBat>
+        <RWBVampireMoth>0.1</RWBVampireMoth>
+        <RWBCaveSpider>0.1</RWBCaveSpider>
+        <RWBCrystalCrab>0.1</RWBCrystalCrab>
+        <RWBJellypotBug>0.04</RWBJellypotBug>
+        <RWBGiantSnail>0.1</RWBGiantSnail>
+        <RWBMole>0.1</RWBMole>
+        <RWBPillbug>0.1</RWBPillbug>
+        <RWBRhinoBeetle>0.1</RWBRhinoBeetle>
+        <RWBSlime>0.1</RWBSlime>
       <Lynx>0.008</Lynx>
     </wildAnimals>
     <allowedPackAnimals>

@@ -112,7 +112,7 @@
     </ThingDef>
     
     <PawnKindDef ParentName="AnimalKindBase">
-        <defName>RWB_FruitBat</defName>
+        <defName>RWBFruitBat</defName>
         <label>fruit Bat</label>
         <race>RWB_FruitBat</race>
         <combatPower>25</combatPower>

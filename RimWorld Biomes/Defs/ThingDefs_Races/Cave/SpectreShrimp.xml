@@ -20,7 +20,7 @@
                 </capacities>
                 <power>4</power>
                 <cooldownTime>2.0</cooldownTime>
-                <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+                <linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
             </li>
             <li>
                 <label>head</label>
