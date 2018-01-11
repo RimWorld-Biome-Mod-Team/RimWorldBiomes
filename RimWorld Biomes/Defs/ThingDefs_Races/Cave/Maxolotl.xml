@@ -40,7 +40,7 @@
             <herdMigrationAllowed>false</herdMigrationAllowed>
             <baseBodySize>1.5</baseBodySize>
             <baseHungerRate>1.5</baseHungerRate>
-            <foodType>OmnivoreAnimal</foodType>
+            <foodType>OmnivoreAnimal,VegetarianAnimal</foodType>
             <gestationPeriodDays>20</gestationPeriodDays>
             <manhunterOnDamageChance>1</manhunterOnDamageChance>
             <manhunterOnTameFailChance>0.018</manhunterOnTameFailChance>
@@ -74,7 +74,7 @@
                 <submergedGraphic>
                     <texPath>Pawns/Caves/Animals/Maxolotl/MaxolotlSub</texPath>
                     <graphicClass>Graphic_Multi</graphicClass>
-                    <drawSize>2.9</drawSize>
+                    <drawSize>4</drawSize>
                 </submergedGraphic>
                 <allowedTiles>
                     <li>WaterShallow</li>

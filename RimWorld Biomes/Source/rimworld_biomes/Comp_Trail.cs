@@ -29,24 +29,10 @@ namespace rimworld_biomes
                 return;
             }
             Thing trail = ThingMaker.MakeThing(Props.trail);
-            if(!parent.Position.GetThingList(parent.Map).Contains(trail)){
-                Filth filth = (Filth)(from t in parent.Position.GetThingList(parent.Map)
-                                      where t.def == Props.trail
-                                      select t).FirstOrDefault<Thing>();
-                if (filth != null)
-                {
-                }
-                else
-                {
-                    Filth filth2 = (Filth)ThingMaker.MakeThing(Props.trail, null);
-                    filth2.thickness = Props.maxStacks;
-                    //for (int i = 0; i < Props.maxStacks;i++){
-                    //    filth.ThickenFilth();
-                    //}
-                    GenSpawn.Spawn(filth2, parent.Position, parent.Map);
-                    filth2.ThickenFilth();
-
-                }
+            if(!parent.Position.GetThingList(parent.Map).Contains(trail) && (from t in parent.Position.GetThingList(parent.Map)
+                                                                          where t.def == Props.trail
+                                                                         select t).FirstOrDefault<Thing>() == null){
+                    GenSpawn.Spawn(trail, parent.Position, parent.Map);
             }
         }
     }

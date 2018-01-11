@@ -9,6 +9,9 @@ namespace rimworld_biomes
         bool submerged = false;
         public override void CompTick()
         {
+            if(parent == null || ((Pawn)parent).Dead || parent.Map == null){
+                return;
+            }
             if(Props.allowedTiles.Contains(parent.Position.GetTerrain(parent.Map))){
                 if(!submerged){
                     ResolveSubmergedGraphic();

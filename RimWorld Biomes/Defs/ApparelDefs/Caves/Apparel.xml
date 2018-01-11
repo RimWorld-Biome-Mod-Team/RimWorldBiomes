@@ -16,9 +16,14 @@
             <ArmorRating_Blunt>0.13</ArmorRating_Blunt>
             <ArmorRating_Sharp>0.40</ArmorRating_Sharp>
 	    </statBases>
-	     <costList>
-	       <RWBChitin>40</RWBChitin>
-	     </costList>
+        <costList>
+            <RWBChitin>40</RWBChitin>
+            <Steel>10</Steel>
+        </costList>
+        <costStuffCount>20</costStuffCount>
+        <stuffCategories>
+            <li>Fabric</li>
+        </stuffCategories>
 	    <thingCategories>
 	      <li>Apparel</li>
 	    </thingCategories>
@@ -53,8 +58,13 @@
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <costList>
-	       <RWBChitin>20</RWBChitin>
+            <RWBChitin>20</RWBChitin>
+            <Steel>10</Steel>
         </costList>
+        <costStuffCount>20</costStuffCount>
+        <stuffCategories>
+            <li>Fabric</li>
+        </stuffCategories>
         <statBases>
             <WorkToMake>12000</WorkToMake>
             <MaxHitPoints>120</MaxHitPoints>

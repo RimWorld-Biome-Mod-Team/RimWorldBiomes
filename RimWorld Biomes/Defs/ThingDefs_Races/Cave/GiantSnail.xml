@@ -32,7 +32,7 @@
         </tools>
         <comps>
             <li Class="rimworld_biomes.CompProperties_Trail">
-                <trail>FilthSlime</trail>
+                <trail>RWBFilthSlime</trail>
             </li>
             <li Class="CompProperties_EggLayer">
                 <eggFertilizedDef>RWBEggGiantSnailFertilized</eggFertilizedDef>
@@ -82,9 +82,9 @@
                     <minAge>0.4</minAge>
                 </li>
             </lifeStageAges>
-            <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
-            <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
-            <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+            <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+            <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+            <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
         </race>
         <tradeTags>
             <li>Insectoid</li>

@@ -72,6 +72,21 @@
                 <eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
                 <eggCountRange>4</eggCountRange>
             </li>
+            <li Class="rimworld_biomes.CompProperties_WaterAnimal">
+                <submergedGraphic>
+                    <texPath>Pawns/Caves/Animals/SpectreShrimp/SpectreShrimpSub</texPath>
+                    <graphicClass>Graphic_Multi</graphicClass>
+                    <drawSize>0.9</drawSize>
+                </submergedGraphic>
+                <allowedTiles>
+                    <li>WaterShallow</li>
+                    <li>WaterDeep</li>
+                </allowedTiles>
+                <spawnChance>0.005</spawnChance>
+                <allowedBiomes>
+                    <li>RWBCavern</li>
+                </allowedBiomes>
+            </li>
         </comps>
         <tradeTags>
             <li>StandardAnimal</li>
@@ -87,7 +102,7 @@
         <wildSpawn_spawnWild>true</wildSpawn_spawnWild>
         <wildSpawn_GroupSizeRange>
             <min>3</min>
-            <max>9</max>
+            <max>6</max>
         </wildSpawn_GroupSizeRange>
         <lifeStages>
             <li>

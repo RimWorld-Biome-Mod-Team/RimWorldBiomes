@@ -49,6 +49,8 @@
             <Beauty>2</Beauty>
         </statBases>
         <plant>
+            <wildClusterSizeRange>10</wildClusterSizeRange>
+            <wildClusterRadius>4</wildClusterRadius>
             <reproduceMtbDays>5</reproduceMtbDays>
             <harvestedThingDef>FungalLog</harvestedThingDef>
             <growMinGlow>0</growMinGlow>

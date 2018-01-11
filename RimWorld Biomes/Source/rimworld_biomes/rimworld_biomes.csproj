@@ -70,6 +70,8 @@
     <Compile Include="GenStep_WaterPlant.cs" />
     <Compile Include="Comp_Trail.cs" />
     <Compile Include="CompProperties_Trail.cs" />
+    <Compile Include="Comp_TempThing.cs" />
+    <Compile Include="CompProperties_TempThing.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="RWBBuildingDefOf.cs" />
