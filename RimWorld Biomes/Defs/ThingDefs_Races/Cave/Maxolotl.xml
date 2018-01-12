@@ -6,7 +6,7 @@
     <ThingDef ParentName="AnimalThingBase">
         <defName>RWBMaxolotl</defName>
         <label>maxolotl</label>
-        <description>A weird amphibian thingy.</description>
+        <description>Giant relatives of the Axolotl, these salamanders have grown to huge proportions within the cavern environment they call home by eating and competing with the giant bugs that live within the caverns. While they are almost exclusively aquatic they can go onto land if need be. </description>
         <statBases>
             <MoveSpeed>5.25</MoveSpeed>
             <ComfyTemperatureMin>-65</ComfyTemperatureMin>

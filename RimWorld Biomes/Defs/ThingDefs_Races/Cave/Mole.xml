@@ -5,7 +5,7 @@
     <ThingDef ParentName="AnimalThingBase">
         <defName>RWBMole</defName>
         <label>mole</label>
-        <description>A mole.</description>
+        <description>Moles roughly the size of a dog, These creatures can burrow through stone and soil with their incredibly strong claws which are often used as weapons by cave dwellers.</description>
         <statBases>
             <MoveSpeed>5.2</MoveSpeed>
             <ComfyTemperatureMin>-50</ComfyTemperatureMin>

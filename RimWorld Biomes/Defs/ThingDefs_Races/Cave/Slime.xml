@@ -4,7 +4,7 @@
     <ThingDef ParentName="AnimalThingBase">
         <defName>RWBSlime</defName>
         <label>slime</label>
-        <description>A slime.</description>
+        <description>A moving mass of goo, this bizarre creature is actually millions of microorganisms working in tandem. Due to the fact that its “flesh” is acidic they have virtually no natural predators. Their slime can be used to craft dangerous moats and can be used as a bio-fuel.</description>
         <butcherProducts>
             <RWBSlimeChunk>10</RWBSlimeChunk>
         </butcherProducts>

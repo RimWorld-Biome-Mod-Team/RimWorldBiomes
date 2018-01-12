@@ -5,7 +5,7 @@
     <ThingDef ParentName="AnimalThingBase">
         <defName>RWBSpectreShrimp</defName>
         <label>spectre Shrimp</label>
-        <description>A spectre shrimp thingy.</description>
+        <description>Small and blind from adapting to the underground environment these arthropods are a considerable threat when they swarm, their sharp mouthparts slicing into soft prey with ease.</description>
         <statBases>
             <MoveSpeed>5.25</MoveSpeed>
             <ComfyTemperatureMin>-65</ComfyTemperatureMin>

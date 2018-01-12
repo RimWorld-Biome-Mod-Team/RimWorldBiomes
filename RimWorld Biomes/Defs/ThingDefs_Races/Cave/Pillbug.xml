@@ -6,7 +6,7 @@
     <ThingDef ParentName="BaseInsect">
         <defName>RWBPillbug</defName>
         <label>Pillbug</label>
-        <description>A pillbug</description>
+        <description>Roughly the size of a cow and with the temperment of one, these bugs have natural armor difficult for any predator to pierce through let alone the spikes that are on each segment that can impale foes</description>
         <butcherProducts>
             <RWBChitin>30</RWBChitin>
         </butcherProducts>

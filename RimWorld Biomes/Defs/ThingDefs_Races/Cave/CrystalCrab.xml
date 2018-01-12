@@ -5,7 +5,7 @@
     <ThingDef ParentName="BaseInsect">
         <defName>RWBCrystalCrab</defName>
         <label>crystal Crab</label>
-        <description>A crystalline crab</description>
+        <description>Once a species of large land crab, this species has adapted to the cavern environment with large eyes and a crystal covered stone shell. From the moment they are born they are given a shell of hollowed out rock that their parents have chosen specially for the crystal that will continue to grow throughout their lives</description>
         <butcherProducts>
             <RWBChitin>30</RWBChitin>
             <RWBCrystalShards>10</RWBCrystalShards>

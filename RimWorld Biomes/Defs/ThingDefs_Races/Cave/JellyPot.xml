@@ -4,7 +4,7 @@
 	<ThingDef ParentName="BaseInsect">
     	<defName>RWBJellypotBug</defName>
     	<label>jellypot Bug</label>
-	    <description>Produces insect jelly</description>
+	    <description>This comparatively small insect is a much desired livestock for any cave dwelling faction due to their hardiness and their ability to produce insect jelly over time</description>
         <butcherProducts>
             <RWBChitin>20</RWBChitin>
         </butcherProducts>

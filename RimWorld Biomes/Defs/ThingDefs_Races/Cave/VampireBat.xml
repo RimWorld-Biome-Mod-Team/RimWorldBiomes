@@ -6,7 +6,7 @@
     <ThingDef ParentName="AnimalThingBase">
         <defName>RWB_VampireBat</defName>
         <label>bat</label>
-        <description>Before the dawn of the genetic editing age, this animal was once considered the only known mammal capable of flight.</description>
+        <description>These flying mammals live deep in the caves and navigate via echolocation. Feeding off the blood of creature large enough they can be an easy vector for disease.</description>
         <statBases>
             <MoveSpeed>2.1</MoveSpeed>
             <ComfyTemperatureMin>0</ComfyTemperatureMin>

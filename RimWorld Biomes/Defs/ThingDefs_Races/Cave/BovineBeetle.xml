@@ -5,7 +5,7 @@
     <ThingDef ParentName="BaseInsect">
         <defName>RWBBovineBeetle</defName>
         <label>bovine Beetle</label>
-        <description>Big Beetle</description>
+        <description>This gigantic relative of the ladybug is one of the few creatures in the caverns worth keeping as livestock. Providing a conglomerate of different resources, from chitin when killed and honeydew when milked, and being quite easy to tame it is of considerable use to any cave dweller </description>
         <butcherProducts>
             <RWBChitin>40</RWBChitin>
         </butcherProducts>
