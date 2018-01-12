@@ -104,7 +104,7 @@
         <lifeStages>
             <li>
                 <bodyGraphicData>
-                    <texPath>Things/Pawn/Animal/Mole/Mole</texPath>
+                    <texPath>Pawns/Caves/Animals/Mole/Mole</texPath>
                     <drawSize>1.0</drawSize>
                     <color>(117,117,117)</color>
                     <shaderType>CutoutComplex</shaderType>

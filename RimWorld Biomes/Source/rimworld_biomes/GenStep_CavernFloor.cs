@@ -116,50 +116,50 @@ namespace rimworld_biomes
                     if (r2 < 10)
                     {
                         //Log.Error(r2.ToString());
-                        string str = "Stalagmite";
-                        int r = rand.Next(1, 5);
-                        for (int i = 0; i < 100; i++)
-                        {
-                            r = Rand.RangeInclusive(1,4);
-                            //Log.Error(r.ToString());
-                            r = r + 0;
-                        }
-                        if (GenStep_RocksFromGrid.RockDefAt(current).naturalTerrain.defName.Contains("Sand"))
-                        {
-                            str = str + "A";
-                        }
-                        if (GenStep_RocksFromGrid.RockDefAt(current).naturalTerrain.defName.Contains("Marble"))
-                        {
-                            str = str + "E";
-                        }
-                        if (GenStep_RocksFromGrid.RockDefAt(current).naturalTerrain.defName.Contains("Slate"))
-                        {
-                            str = str + "D";
-                        }
-                        if (GenStep_RocksFromGrid.RockDefAt(current).naturalTerrain.defName.Contains("Granite"))
-                        {
-                            str = str + "B";
-                        }
-                        if (GenStep_RocksFromGrid.RockDefAt(current).naturalTerrain.defName.Contains("Lime"))
-                        {
-                            str = str + "C";
-                        }
-                        if (r == 1)
-                        {
-                            str = str + "A";
-                        }
-                        if (r == 2)
-                        {
-                            str = str + "B";
-                        }
-                        if (r == 3)
-                        {
-                            str = str + "C";
-                        }
-                        if (r == 4)
-                        {
-                            str = str + "D";
-                        }
+                        string str = "RWBStalagmite";
+                        //int r = rand.Next(1, 5);
+                        //for (int i = 0; i < 100; i++)
+                        //{
+                        //    r = Rand.RangeInclusive(1,4);
+                        //    //Log.Error(r.ToString());
+                        //    r = r + 0;
+                        //}
+                        //if (GenStep_RocksFromGrid.RockDefAt(current).naturalTerrain.defName.Contains("Sand"))
+                        //{
+                        //    str = str + "A";
+                        //}
+                        //if (GenStep_RocksFromGrid.RockDefAt(current).naturalTerrain.defName.Contains("Marble"))
+                        //{
+                        //    str = str + "E";
+                        //}
+                        //if (GenStep_RocksFromGrid.RockDefAt(current).naturalTerrain.defName.Contains("Slate"))
+                        //{
+                        //    str = str + "D";
+                        //}
+                        //if (GenStep_RocksFromGrid.RockDefAt(current).naturalTerrain.defName.Contains("Granite"))
+                        //{
+                        //    str = str + "B";
+                        //}
+                        //if (GenStep_RocksFromGrid.RockDefAt(current).naturalTerrain.defName.Contains("Lime"))
+                        //{
+                        //    str = str + "C";
+                        //}
+                        //if (r == 1)
+                        //{
+                        //    str = str + "A";
+                        //}
+                        //if (r == 2)
+                        //{
+                        //    str = str + "B";
+                        //}
+                        //if (r == 3)
+                        //{
+                        //    str = str + "C";
+                        //}
+                        //if (r == 4)
+                        //{
+                        //    str = str + "D";
+                        //}
                         GenSpawn.Spawn(ThingDef.Named(str), current, map);
                     }
 				}

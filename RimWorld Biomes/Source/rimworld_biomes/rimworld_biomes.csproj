@@ -72,6 +72,7 @@
     <Compile Include="CompProperties_Trail.cs" />
     <Compile Include="Comp_TempThing.cs" />
     <Compile Include="CompProperties_TempThing.cs" />
+    <Compile Include="Building_Stalagmite.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="RWBBuildingDefOf.cs" />

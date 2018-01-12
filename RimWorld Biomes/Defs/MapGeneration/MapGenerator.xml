@@ -16,13 +16,13 @@
   <GenStepDef>
       <defName>WaterPlant</defName>
       <linkWithMapGenerator>BasicMap</linkWithMapGenerator>
-      <order>215</order>
+      <order>802</order>
       <genStep Class="rimworld_biomes.GenStep_WaterPlant"/>
   </GenStepDef>
   <GenStepDef>
       <defName>WaterAnimal</defName>
       <linkWithMapGenerator>BasicMap</linkWithMapGenerator>
-      <order>217</order>
+      <order>1001</order>
       <genStep Class="rimworld_biomes.GenStep_WaterAnimal"/>
   </GenStepDef>
 </Defs>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<TerrainDef ParentName="FloorBase">
+		<defName>RWBCrystalTile</defName>
+		<label>crystal tile</label>
+		<renderPrecedence>230</renderPrecedence>
+		<description>Crystal Tiles</description>
+		<texturePath>Terrain/CrystalFloor</texturePath>
+		<statBases>
+			<WorkToBuild>400</WorkToBuild>
+		</statBases>
+		<costList>
+			<RWBCrystalShards>15</RWBCrystalShards>
+		</costList>
+		<designationHotKey>Misc5</designationHotKey>
+	</TerrainDef>
+</Defs>

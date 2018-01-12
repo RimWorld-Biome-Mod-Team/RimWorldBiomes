@@ -35,9 +35,14 @@ namespace rimworld_biomes
             harmony.Patch(AccessTools.Method(typeof(GenStep_CavePlants), "Generate"), new HarmonyMethod(typeof(Harmony_BiomePatches), nameof(GenerateCavePlant_PreFix)), null);
             harmony.Patch(AccessTools.Method(typeof(Building_PlantGrower), "GetInspectString"), null, new HarmonyMethod(typeof(Harmony_BiomePatches), nameof(GetInspectString_PostFix)));
             harmony.Patch(AccessTools.Method(typeof(Pawn_ApparelTracker), "ApparelChanged"), new HarmonyMethod(typeof(Harmony_BiomePatches), nameof(ApparelChanged_PreFix)), null);
+            harmony.Patch(AccessTools.Method(typeof(GenStep_Animals), "Generate"), new HarmonyMethod(typeof(Harmony_BiomePatches), nameof(GenerateAnimal_PreFix)), null);
 
         }
 
+        public static void GenerateAnimal_PreFix(Map map){
+            Log.Error("Called");
+            Log.Error(map.wildSpawner.AnimalEcosystemFull.ToString());
+        }
         public static bool ApparelChanged_PreFix(PawnGraphicSet  __instance){
             if(__instance.pawn.story == null){
                 return false;

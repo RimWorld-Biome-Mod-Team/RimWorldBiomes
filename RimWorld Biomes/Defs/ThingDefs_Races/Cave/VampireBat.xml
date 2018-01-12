@@ -47,7 +47,7 @@
         <tools>
             <li>
                 <capacities>
-                    <li>RWBFeedBite</li>
+                    <li>Bite</li>
                 </capacities>
                 <power>10</power>
                 <cooldownTime>1.65</cooldownTime>
