@@ -70,7 +70,7 @@
     <ThingDef ParentName="PlantBase">
         <defName>SpectreCap</defName>
         <label>spectrecap</label>
-        <description>SPECTRE</description>
+        <description>This mushroom was once thought to be a ghost by lost tribals within the caverns due to its eerie glow and pale color.</description>
         <statBases>
             <MaxHitPoints>85</MaxHitPoints>
         </statBases>
@@ -116,7 +116,7 @@
     <ThingDef ParentName="PlantBase">
         <defName>StarlightShroom</defName>
         <label>starlight mushroom</label>
-        <description>Little dots like stars</description>
+        <description>A deep blue capped mushroom whose spots reflect the smallest bit of light which gives it the appearance of a night sky.</description>
         <statBases>
             <MaxHitPoints>85</MaxHitPoints>
         </statBases>

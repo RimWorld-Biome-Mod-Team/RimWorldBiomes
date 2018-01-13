@@ -3,7 +3,7 @@
 	<ThingDef ParentName="PlantBase">
 		<defName>WaterFungus</defName>
 		<label>water fungus</label>
-		<description>Water Fungus. Grows in water.</description>
+		<description>A strange aquatic fungus that has adapted jointed fungal plating to deter smaller predators.</description>
 		<statBases>
 			<MaxHitPoints>85</MaxHitPoints>
 		</statBases>
