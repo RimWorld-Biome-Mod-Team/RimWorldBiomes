@@ -3,15 +3,15 @@
 	<!--  JellyPot Bug  -->
 	<ThingDef ParentName="BaseInsect">
     	<defName>RWBJellypotBug</defName>
-    	<label>jellypot Bug</label>
+    	<label>jellypot bug</label>
 	    <description>This comparatively small insect is a much desired livestock for any cave dwelling faction due to their hardiness and their ability to produce insect jelly over time</description>
         <butcherProducts>
             <RWBChitin>20</RWBChitin>
         </butcherProducts>
 	    <statBases>
-	      <MoveSpeed>4.7</MoveSpeed>
+	      <MoveSpeed>4</MoveSpeed>
 	      <ArmorRating_Blunt>0.1</ArmorRating_Blunt>
-	      <ArmorRating_Sharp>0.4</ArmorRating_Sharp>
+	      <ArmorRating_Sharp>0.1</ArmorRating_Sharp>
 	      <ComfyTemperatureMin>0</ComfyTemperatureMin>
 	      <MarketValue>100</MarketValue>
 	      <LeatherAmount>0</LeatherAmount>
@@ -85,7 +85,7 @@
 	    <defName>RWBJellypotBug</defName>
 	    <label>jellypot Bug</label>
 	    <race>RWBJellypotBug</race>
-	    <combatPower>5</combatPower>
+	    <combatPower>25</combatPower>
 			<canArriveManhunter>false</canArriveManhunter>
 			<wildSpawn_EcoSystemWeight>0.05</wildSpawn_EcoSystemWeight>
 	    <wildSpawn_spawnWild>true</wildSpawn_spawnWild>

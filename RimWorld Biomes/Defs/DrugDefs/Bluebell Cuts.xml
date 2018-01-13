@@ -22,7 +22,7 @@
       <nutrition>0.20</nutrition>
 			<baseIngestTicks>100</baseIngestTicks>
 			<chairSearchRadius>4</chairSearchRadius>
-      <preferability>RawTasty</preferability>
+      <preferability>NeverForNutrition</preferability>
       <tasteThought></tasteThought>
       <foodType>VegetableOrFruit</foodType>
       <joy>0.5</joy>
@@ -71,7 +71,28 @@
       </li>
     </comps>
     <stages>
-      <li/>
+      <li>
+        <label>mild</label>
+        <capMods>
+          <li>
+            <capacity>Sight</capacity>
+            <offset>-0.1</offset>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <label>intense</label>
+        <capMods>
+          <li>
+            <capacity>Sight</capacity>
+            <offset>-0.3</offset>
+          </li>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>-0.1</offset>
+          </li>
+        </capMods>
+      </li>
     </stages>
   </HediffDef>
 

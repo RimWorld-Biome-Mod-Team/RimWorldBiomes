@@ -8,22 +8,32 @@
     <statBases>
       <MoveSpeed>6.0</MoveSpeed>
       <ArmorRating_Blunt>0.1</ArmorRating_Blunt>
-      <ArmorRating_Sharp>0.4</ArmorRating_Sharp>
+      <ArmorRating_Sharp>0.25</ArmorRating_Sharp>
       <ComfyTemperatureMin>-15</ComfyTemperatureMin>
-      <MarketValue>5</MarketValue>
+      <MarketValue>240</MarketValue>
       <LeatherAmount>0</LeatherAmount>
       <Flammability>3.0</Flammability>
     </statBases>
 	<tools>
 	  <li>
-		<label>jaws</label>
-		<capacities>
-		  <li>ToxicBite</li>
-		</capacities>
-		<power>5</power>
-		<cooldownTime>1.65</cooldownTime>
-		<linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+  		<label>jaws</label>
+  		<capacities>
+  		  <li>ToxicBite</li>
+  		</capacities>
+  		<power>7</power>
+  		<cooldownTime>1.65</cooldownTime>
+  		<linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
 	  </li>
+    <li>
+      <label>head</label>
+      <capacities>
+        <li>Blunt</li>
+      </capacities>
+      <power>4</power>
+      <cooldownTime>1.65</cooldownTime>
+      <commonality>0.2</commonality>
+      <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+    </li>
 	</tools>
     <comps>
       <li Class="CompProperties_EggLayer">
@@ -43,7 +53,7 @@
       <manhunterOnDamageChance>1</manhunterOnDamageChance>
       <baseBodySize>0.3</baseBodySize>
       <baseHungerRate>0.10</baseHungerRate>
-      <baseHealthScale>0.4</baseHealthScale>
+      <baseHealthScale>0.5</baseHealthScale>
       <mateMtbHours>8</mateMtbHours>
       <wildness>0.75</wildness>
       <lifeExpectancy>10</lifeExpectancy>
@@ -78,7 +88,7 @@
     <defName>RWBCaveSpider</defName>
     <label>cave spider</label>
     <race>RWBCaveSpider</race>
-    <combatPower>100</combatPower>
+    <combatPower>105</combatPower>
     <wildSpawn_spawnWild>true</wildSpawn_spawnWild>
     <lifeStages>
       <li>

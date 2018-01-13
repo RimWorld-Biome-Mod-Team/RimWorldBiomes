@@ -4,8 +4,8 @@
     <!--  Vampire Moth  -->
     <ThingDef ParentName="BaseInsect">
         <defName>RWBVampireMoth</defName>
-        <label>vampire Moth</label>
-        <description> Deceptively cute and literally bloodthirsty, these giant moths will drink the blood of any creature big enough.</description>
+        <label>vampire moth</label>
+        <description>Deceptively cute and literally bloodthirsty, these giant moths will drink the blood of any creature big enough.</description>
         <statBases>
             <MoveSpeed>5</MoveSpeed>
             <ArmorRating_Blunt>0.1</ArmorRating_Blunt>
@@ -13,14 +13,13 @@
             <ComfyTemperatureMin>0</ComfyTemperatureMin>
             <MarketValue>100</MarketValue>
             <LeatherAmount>0</LeatherAmount>
-            <MeatAmount>30</MeatAmount>
         </statBases>
         <tools>
             <li>
                 <capacities>
                     <li>Bite</li>
                 </capacities>
-                <power>10</power>
+                <power>9</power>
                 <cooldownTime>1.65</cooldownTime>
                 <linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
                 <surpriseAttack>
@@ -37,7 +36,7 @@
                 <capacities>
                     <li>Blunt</li>
                 </capacities>
-                <power>4</power>
+                <power>5</power>
                 <cooldownTime>1.65</cooldownTime>
                 <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
                 <commonality>0.01</commonality>
@@ -70,9 +69,9 @@
             <gestationPeriodDays>20</gestationPeriodDays>
             <fleshType>RWBInsectoid</fleshType>
             <body>BeetleLike</body>
-            <baseBodySize>0.2</baseBodySize>
+            <baseBodySize>1.2</baseBodySize>
             <baseHungerRate>0.10</baseHungerRate>
-            <baseHealthScale>0.4</baseHealthScale>
+            <baseHealthScale>0.9</baseHealthScale>
             <wildness>0.8</wildness>
             <lifeExpectancy>10</lifeExpectancy>
             <lifeStageAges>
@@ -94,7 +93,7 @@
         <defName>RWBVampireMoth</defName>
         <label>vampire Moth</label>
         <race>RWBVampireMoth</race>
-        <combatPower>10</combatPower>
+        <combatPower>115</combatPower>
         <canArriveManhunter>true</canArriveManhunter>
         <wildSpawn_EcoSystemWeight>0.05</wildSpawn_EcoSystemWeight>
         <wildSpawn_spawnWild>true</wildSpawn_spawnWild>

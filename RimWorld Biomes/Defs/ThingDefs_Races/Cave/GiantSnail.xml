@@ -10,7 +10,7 @@
             <RWBChitin>30</RWBChitin>
         </butcherProducts>
         <statBases>
-            <MoveSpeed>4.7</MoveSpeed>
+            <MoveSpeed>3.1</MoveSpeed>
             <ArmorRating_Blunt>0.1</ArmorRating_Blunt>
             <ArmorRating_Sharp>0.4</ArmorRating_Sharp>
             <ComfyTemperatureMin>0</ComfyTemperatureMin>
@@ -24,7 +24,7 @@
                 <capacities>
                     <li>Blunt</li>
                 </capacities>
-                <power>4</power>
+                <power>6</power>
                 <cooldownTime>1.65</cooldownTime>
                 <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
                 <commonality>0.2</commonality>
@@ -50,7 +50,7 @@
                     <li>ArmorRating_Blunt</li>
                 </statDefs>
                 <statValues>
-                    <li>0.7</li>
+                    <li>0.25</li>
                     <li>0.7</li>
                 </statValues>
                 <hideGraphic>
@@ -67,9 +67,9 @@
             <gestationPeriodDays>25</gestationPeriodDays>
             <fleshType>RWBInsectoid</fleshType>
             <body>BeetleLike</body>
-            <baseBodySize>0.2</baseBodySize>
+            <baseBodySize>1.5</baseBodySize>
             <baseHungerRate>0.10</baseHungerRate>
-            <baseHealthScale>0.4</baseHealthScale>
+            <baseHealthScale>1.2</baseHealthScale>
             <wildness>0.5</wildness>
             <lifeExpectancy>10</lifeExpectancy>
             <lifeStageAges>
@@ -95,7 +95,7 @@
         <defName>RWBGiantSnail</defName>
         <label>giant Snail</label>
         <race>RWBGiantSnail</race>
-        <combatPower>10</combatPower>
+        <combatPower>95</combatPower>
         <canArriveManhunter>true</canArriveManhunter>
         <wildSpawn_EcoSystemWeight>0.05</wildSpawn_EcoSystemWeight>
         <wildSpawn_spawnWild>true</wildSpawn_spawnWild>

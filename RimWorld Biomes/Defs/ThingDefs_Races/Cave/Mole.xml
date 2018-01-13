@@ -100,7 +100,7 @@
         <defName>RWBMole</defName>
         <label>mole</label>
         <race>RWBMole</race>
-        <combatPower>60</combatPower>
+        <combatPower>95</combatPower>
         <lifeStages>
             <li>
                 <bodyGraphicData>

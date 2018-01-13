@@ -5,10 +5,10 @@
     <!--  VampireBat  -->
     <ThingDef ParentName="AnimalThingBase">
         <defName>RWB_VampireBat</defName>
-        <label>bat</label>
+        <label>vampire bat</label>
         <description>These flying mammals live deep in the caves and navigate via echolocation. Feeding off the blood of creature large enough they can be an easy vector for disease.</description>
         <statBases>
-            <MoveSpeed>2.1</MoveSpeed>
+            <MoveSpeed>5.5</MoveSpeed>
             <ComfyTemperatureMin>0</ComfyTemperatureMin>
             <MarketValue>75</MarketValue>
             <LeatherAmount>0</LeatherAmount>
@@ -69,7 +69,7 @@
                 <power>4</power>
                 <cooldownTime>1.65</cooldownTime>
                 <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
-                <commonality>0.01</commonality>
+                <commonality>0.2</commonality>
             </li>
         </tools>
         <race>
@@ -127,7 +127,7 @@
         <defName>RWBVampireBat</defName>
         <label>vampire Bat</label>
         <race>RWB_VampireBat</race>
-        <combatPower>25</combatPower>
+        <combatPower>60</combatPower>
         <wildSpawn_EcoSystemWeight>0.25</wildSpawn_EcoSystemWeight>
         <wildSpawn_spawnWild>true</wildSpawn_spawnWild>
         <lifeStages>

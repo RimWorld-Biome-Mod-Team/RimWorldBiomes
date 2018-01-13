@@ -8,7 +8,7 @@
         <label>bat</label>
         <description>These flying mammals live deep in the caves and navigate via echolocation. Feeding off the Glowfruit of the caverns they can be a hassle to anyone that grows it</description>
         <statBases>
-            <MoveSpeed>2.1</MoveSpeed>
+            <MoveSpeed>4.3</MoveSpeed>
             <ComfyTemperatureMin>0</ComfyTemperatureMin>
             <MarketValue>75</MarketValue>
             <LeatherAmount>0</LeatherAmount>
@@ -44,23 +44,26 @@
                 <secondsBetweenFrames>0.3</secondsBetweenFrames>
             </li>
         </comps>
-        <verbs>
+        <tools>
             <li>
-                <verbClass>Verb_MeleeAttack</verbClass>
-                <defaultCooldownTime>1.65</defaultCooldownTime>
-                <meleeDamageBaseAmount>3</meleeDamageBaseAmount>
-                <meleeDamageDef>Bite</meleeDamageDef>
+                <capacities>
+                    <li>Bite</li>
+                </capacities>
+                <power>3</power>
+                <cooldownTime>1.65</cooldownTime>
                 <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
             </li>
             <li>
-                <verbClass>Verb_MeleeAttack</verbClass>
-                <defaultCooldownTime>1.65</defaultCooldownTime>
-                <meleeDamageBaseAmount>1</meleeDamageBaseAmount>
-                <meleeDamageDef>Blunt</meleeDamageDef>
-                <commonality>0.01</commonality>
+                <label>head</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>1</power>
+                <cooldownTime>1.65</cooldownTime>
+                <commonality>0.2</commonality>
                 <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
             </li>
-        </verbs>
+        </tools>
         <race>
             <body>RWB_BatBody</body>
             <baseHungerRate>0.35</baseHungerRate>
@@ -115,7 +118,7 @@
         <defName>RWBFruitBat</defName>
         <label>fruit Bat</label>
         <race>RWB_FruitBat</race>
-        <combatPower>25</combatPower>
+        <combatPower>20</combatPower>
         <wildSpawn_EcoSystemWeight>0.25</wildSpawn_EcoSystemWeight>
         <wildSpawn_spawnWild>true</wildSpawn_spawnWild>
         <lifeStages>
