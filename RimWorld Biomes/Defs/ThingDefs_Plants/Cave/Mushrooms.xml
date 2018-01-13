@@ -156,7 +156,7 @@
     <ThingDef ParentName="PlantBase">
         <defName>SkullTop</defName>
         <label>skulltop</label>
-        <description>DEATH!</description>
+        <description>This purple capped mushroom is perhaps the most dangerous in the caverns due to its ability to release toxic spores that rapidly poison anything alive if they are close enough. Its spores are used to create toxic weapons and traps.</description>
         <statBases>
             <MaxHitPoints>85</MaxHitPoints>
         </statBases>
