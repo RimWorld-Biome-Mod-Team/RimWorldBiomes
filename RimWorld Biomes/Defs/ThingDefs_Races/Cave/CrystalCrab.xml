@@ -12,15 +12,15 @@
         </butcherProducts>
         <statBases>
             <MoveSpeed>3</MoveSpeed>
-            <ArmorRating_Blunt>0.9</ArmorRating_Blunt>
-            <ArmorRating_Sharp>0.9</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.2</ArmorRating_Blunt>
+            <ArmorRating_Sharp>0.55</ArmorRating_Sharp>
             <ComfyTemperatureMin>0</ComfyTemperatureMin>
             <MarketValue>100</MarketValue>
             <LeatherAmount>0</LeatherAmount>
-            <MeatAmount>30</MeatAmount>
         </statBases>
         <tools>
             <li>
+                <label>claw</label>
                 <capacities>
                     <li>Cut</li>
                 </capacities>
@@ -33,7 +33,7 @@
                 <capacities>
                     <li>Blunt</li>
                 </capacities>
-                <power>7</power>
+                <power>2</power>
                 <cooldownTime>1.65</cooldownTime>
                 <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
                 <commonality>0.2</commonality>
@@ -81,7 +81,7 @@
         <defName>RWBCrystalCrab</defName>
         <label>crystal Crab</label>
         <race>RWBCrystalCrab</race>
-        <combatPower>10</combatPower>
+        <combatPower>45</combatPower>
         <canArriveManhunter>true</canArriveManhunter>
         <wildSpawn_EcoSystemWeight>0.05</wildSpawn_EcoSystemWeight>
         <wildSpawn_spawnWild>true</wildSpawn_spawnWild>

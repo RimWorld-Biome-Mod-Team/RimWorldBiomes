@@ -9,7 +9,7 @@
             <RWBSlimeChunk>10</RWBSlimeChunk>
         </butcherProducts>
         <statBases>
-            <MoveSpeed>5.2</MoveSpeed>
+            <MoveSpeed>2.8</MoveSpeed>
             <ComfyTemperatureMin>-50</ComfyTemperatureMin>
             <MarketValue>300</MarketValue>
             <LeatherAmount>0</LeatherAmount>
@@ -41,7 +41,7 @@
             <herdAnimal>false</herdAnimal>
             <baseBodySize>1.0</baseBodySize>
             <baseHungerRate>0.5</baseHungerRate>
-            <baseHealthScale>1.05</baseHealthScale>
+            <baseHealthScale>2.2</baseHealthScale>
             <foodType>CarnivoreAnimalStrict</foodType>
             <gestationPeriodDays>22.5</gestationPeriodDays>
             <trainableIntelligence>Simple</trainableIntelligence>

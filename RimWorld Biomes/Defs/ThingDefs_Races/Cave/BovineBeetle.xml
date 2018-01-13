@@ -16,7 +16,6 @@
             <ComfyTemperatureMin>0</ComfyTemperatureMin>
             <MarketValue>100</MarketValue>
             <LeatherAmount>0</LeatherAmount>
-            <MeatAmount>40</MeatAmount>
         </statBases>
         <tools>
             <li>
@@ -92,7 +91,7 @@
         <defName>RWBBovineBeetle</defName>
         <label>bovine Beetle</label>
         <race>RWBBovineBeetle</race>
-        <combatPower>10</combatPower>
+        <combatPower>45</combatPower>
         <canArriveManhunter>true</canArriveManhunter>
         <wildSpawn_EcoSystemWeight>0.05</wildSpawn_EcoSystemWeight>
         <wildSpawn_spawnWild>true</wildSpawn_spawnWild>

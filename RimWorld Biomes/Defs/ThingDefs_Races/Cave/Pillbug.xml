@@ -12,12 +12,11 @@
         </butcherProducts>
         <statBases>
             <MoveSpeed>4</MoveSpeed>
-            <ArmorRating_Blunt>0.9</ArmorRating_Blunt>
-            <ArmorRating_Sharp>0.9</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.3</ArmorRating_Blunt>
+            <ArmorRating_Sharp>0.8</ArmorRating_Sharp>
             <ComfyTemperatureMin>0</ComfyTemperatureMin>
             <MarketValue>100</MarketValue>
             <LeatherAmount>0</LeatherAmount>
-            <MeatAmount>30</MeatAmount>
         </statBases>
         <tools>
             <li>
@@ -58,9 +57,9 @@
             <gestationPeriodDays>20</gestationPeriodDays>
             <fleshType>RWBInsectoid</fleshType>
             <body>BeetleLike</body>
-            <baseBodySize>0.2</baseBodySize>
+            <baseBodySize>1.1</baseBodySize>
             <baseHungerRate>0.10</baseHungerRate>
-            <baseHealthScale>0.4</baseHealthScale>
+            <baseHealthScale>1.75</baseHealthScale>
             <wildness>0.5</wildness>
             <lifeExpectancy>10</lifeExpectancy>
             <lifeStageAges>
@@ -90,7 +89,7 @@
         <defName>RWBPillbug</defName>
         <label>pillbug</label>
         <race>RWBPillbug</race>
-        <combatPower>10</combatPower>
+        <combatPower>145</combatPower>
         <canArriveManhunter>true</canArriveManhunter>
         <wildSpawn_EcoSystemWeight>0.05</wildSpawn_EcoSystemWeight>
         <wildSpawn_spawnWild>true</wildSpawn_spawnWild>
