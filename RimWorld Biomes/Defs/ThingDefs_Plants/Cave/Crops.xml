@@ -53,6 +53,8 @@
             <nutrition>0.15</nutrition>
         </ingestible>
         <plant>
+        	<growMinGlow>0</growMinGlow>
+            <growOptimalGlow>0</growOptimalGlow>
             <fertilitySensitivity>0.4</fertilitySensitivity>
             <growDays>5</growDays>
             <dieIfLeafless>true</dieIfLeafless>
@@ -77,7 +79,7 @@
         <label>glowfruit tree</label>
         <description>Produces a slightly glowing fruit.</description>
         <statBases>
-            <MaxHitPoints>85</MaxHitPoints>
+            <MaxHitPoints>300</MaxHitPoints>
         </statBases>
         <graphicData>
             <texPath>Plants/Crops/GlowfruitTree</texPath>
@@ -86,22 +88,24 @@
         <selectable>true</selectable>
         <pathCost>10</pathCost>
         <ingestible>
-            <nutrition>0.15</nutrition>
+            <nutrition>1.8</nutrition>
         </ingestible>
         <plant>
             <blockAdjacentSow>true</blockAdjacentSow>
-            <harvestFailable>false</harvestFailable>
             <growMinGlow>0</growMinGlow>
             <growOptimalGlow>0</growOptimalGlow>
             <cavePlant>true</cavePlant>
             <fertilitySensitivity>0.4</fertilitySensitivity>
             <growDays>13</growDays>
+            <lifespanFraction>6.925</lifespanFraction>
             <dieIfLeafless>true</dieIfLeafless>
             <reproduces>false</reproduces>
+            <sowWork>1500</sowWork>
+      		<harvestWork>400</harvestWork>
             <harvestTag>Standard</harvestTag>
             <harvestedThingDef>Glowfruit</harvestedThingDef>
             <harvestYield>50</harvestYield>
-            <harvestAfterGrowth>0.30</harvestAfterGrowth>
+            <harvestAfterGrowth>0.50</harvestAfterGrowth>
             <immatureGraphicPath>Plants/Immature/GlowfruitTree</immatureGraphicPath>
             <sowTags>
                 <li>Ground</li>
@@ -137,13 +141,15 @@
             <nutrition>0.15</nutrition>
         </ingestible>
         <plant>
+        	<growMinGlow>0</growMinGlow>
+            <growOptimalGlow>0</growOptimalGlow>
             <fertilitySensitivity>0.4</fertilitySensitivity>
             <growDays>7</growDays>
             <dieIfLeafless>true</dieIfLeafless>
             <reproduces>false</reproduces>
             <harvestTag>Standard</harvestTag>
             <harvestedThingDef>FungalFiber</harvestedThingDef>
-            <harvestYield>15</harvestYield>
+            <harvestYield>5</harvestYield>
             <neverBlightable>true</neverBlightable>
             <sowTags>
                 <li>Ground</li>
@@ -159,7 +165,7 @@
     <ThingDef ParentName="PlantBase">
         <defName>BluebellShroom</defName>
         <label>bluebell mushroom</label>
-        <description>This mushroom produces hallucinatory drugs.</description>
+        <description>This mushroom produces hallucinogenic drugs.</description>
         <statBases>
             <MaxHitPoints>85</MaxHitPoints>
         </statBases>
@@ -173,8 +179,10 @@
             <nutrition>0.15</nutrition>
         </ingestible>
         <plant>
+        	<growMinGlow>0</growMinGlow>
+            <growOptimalGlow>0</growOptimalGlow>
             <fertilitySensitivity>0.4</fertilitySensitivity>
-            <growDays>7</growDays>
+            <growDays>7.5</growDays>
             <dieIfLeafless>true</dieIfLeafless>
             <reproduces>false</reproduces>
             <harvestTag>Standard</harvestTag>

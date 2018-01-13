@@ -14,13 +14,13 @@
             <selectable>true</selectable>
 		<hideAtSnowDepth>0.5</hideAtSnowDepth>
 		<ingestible>
-			<nutrition>0.18</nutrition>
+			<nutrition>0.15</nutrition>
 		</ingestible>
 		<plant>
             <growMinGlow>0</growMinGlow>
 			<fertilityMin>0.01</fertilityMin>
 			<fertilitySensitivity>0.15</fertilitySensitivity>
-			<growDays>2.5</growDays>
+			<growDays>2.2</growDays>
             <dieIfLeafless>true</dieIfLeafless>
 <!--			<leaflessGraphicPath>Things/Plant/Grass_Leafless</leaflessGraphicPath>-->
 			<harvestWork>40</harvestWork>

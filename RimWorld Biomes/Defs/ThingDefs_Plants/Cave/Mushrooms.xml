@@ -14,13 +14,13 @@
             <selectable>true</selectable>
 		<hideAtSnowDepth>0.5</hideAtSnowDepth>
 		<ingestible>
-			<nutrition>0.18</nutrition>
+			<nutrition>0.15</nutrition>
 		</ingestible>
 		<plant>
             <reproduces>true</reproduces>
 			<fertilityMin>0.01</fertilityMin>
 			<fertilitySensitivity>0.15</fertilitySensitivity>
-			<growDays>2.5</growDays>
+			<growDays>2.2</growDays>
             <dieIfLeafless>true</dieIfLeafless>
 <!--			<leaflessGraphicPath>Things/Plant/Grass_Leafless</leaflessGraphicPath>-->
 			<harvestWork>40</harvestWork>
@@ -39,8 +39,7 @@
     <ThingDef ParentName="TreeBase">
         <defName>MushroomTree</defName>
         <label>mushroom tree</label>
-        <description>A strong mushroom tree. Slow-going, but its fungus is very strong.</description>
-        
+        <description>A strong mushroom tree. Slow-growing, but its fungus is very strong.</description>
         <graphicData>
             <texPath>Plants/Cave/Mushroom_Tree</texPath>
             <graphicClass>Graphic_Random</graphicClass>
@@ -61,7 +60,7 @@
             <growDays>30</growDays>
             <dieIfLeafless>true</dieIfLeafless>
             <harvestWork>1000</harvestWork>
-            <harvestYield>45</harvestYield>
+            <harvestYield>36</harvestYield>
             <harvestTag>FungalLog</harvestTag>
             <neverBlightable>true</neverBlightable>
         </plant>
@@ -85,15 +84,18 @@
         <selectable>true</selectable>
         <hideAtSnowDepth>0.5</hideAtSnowDepth>
         <ingestible>
-            <nutrition>0.18</nutrition>
+            <nutrition>0.15</nutrition>
         </ingestible>
         <plant>
             <reproduces>true</reproduces>
             <growMinGlow>0</growMinGlow>
             <fertilityMin>0.01</fertilityMin>
             <fertilitySensitivity>0.15</fertilitySensitivity>
-            <growDays>2.5</growDays>
+            <growDays>2.2</growDays>
             <dieIfLeafless>true</dieIfLeafless>
+            <harvestYield>3</harvestYield>
+            <harvestTag>Standard</harvestTag>
+            <harvestedThingDef>RawFungus</harvestedThingDef>
             <!--			<leaflessGraphicPath>Things/Plant/Grass_Leafless</leaflessGraphicPath>-->
             <harvestWork>40</harvestWork>
             <visualSizeRange>
@@ -131,15 +133,18 @@
         <selectable>true</selectable>
         <hideAtSnowDepth>0.5</hideAtSnowDepth>
         <ingestible>
-            <nutrition>0.18</nutrition>
+            <nutrition>0.15</nutrition>
         </ingestible>
         <plant>
             <reproduces>true</reproduces>
             <growMinGlow>0</growMinGlow>
             <fertilityMin>0.01</fertilityMin>
             <fertilitySensitivity>0.15</fertilitySensitivity>
-            <growDays>2.5</growDays>
+            <growDays>2.2</growDays>
             <dieIfLeafless>true</dieIfLeafless>
+            <harvestYield>2</harvestYield>
+            <harvestTag>Standard</harvestTag>
+            <harvestedThingDef>RawFungus</harvestedThingDef>
             <!--			<leaflessGraphicPath>Things/Plant/Grass_Leafless</leaflessGraphicPath>-->
             <harvestWork>40</harvestWork>
             <visualSizeRange>
