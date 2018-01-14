@@ -4,7 +4,7 @@
   <BiomeDef>
     <defName>RWBCavern</defName>
     <label>cavern</label>
-    <description>Caverns</description>
+    <description>A cavern system deep underground. Despite how little light reaches down here there is a considerable diversity within the environment. Due to the limited space within the biome most colonies are dug into the cavern walls.</description>
     <workerClass>rimworld_biomes.BiomeWorker_Cavern</workerClass>
     <animalDensity>2.8</animalDensity>
     <plantDensity>0</plantDensity>
@@ -13,7 +13,7 @@
     <pathCost_spring>1750</pathCost_spring>
     <pathCost_summer>1750</pathCost_summer>
     <pathCost_fall>1750</pathCost_fall>
-    <pathCost_winter>44000</pathCost_winter>
+    <pathCost_winter>1750</pathCost_winter>
     <texture>World/Biomes/Cavern</texture>
     <soundsAmbient>
       <li>AmbientNightInsects_Standard</li>
