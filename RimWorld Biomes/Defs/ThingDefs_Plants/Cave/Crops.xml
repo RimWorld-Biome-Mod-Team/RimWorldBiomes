@@ -3,7 +3,7 @@
 	<ThingDef ParentName="PlantBase">
 		<defName>PaleBeets</defName>
 		<label>pale beets</label>
-		<description>Pale beets.</description>
+		<description>A pale purple beet that has been genetically engineered to be able to burrow its roots through stone and survive off what little nutrients it can get in the caverns.</description>
 		<statBases>
 			<MaxHitPoints>85</MaxHitPoints>
 		</statBases>
@@ -39,7 +39,7 @@
     <ThingDef ParentName="PlantBase">
         <defName>MortalMorel</defName>
         <label>mortal morel</label>
-        <description>A medicinal plant.</description>
+        <description>This fungus has long been used as an herbal medicine analog by cavern dwellers. Its name comes from its use in staving off the end of mortality.</description>
         <statBases>
             <MaxHitPoints>85</MaxHitPoints>
         </statBases>
@@ -77,7 +77,7 @@
     <ThingDef ParentName="PlantBase">
         <defName>GlowfruitTree</defName>
         <label>glowfruit tree</label>
-        <description>Produces a slightly glowing fruit.</description>
+        <description>The lone tree species that has adapted to the dark environment of the caverns, this tree produces a citrus like fruit that glows in the dark. It is a considerable source of food and a favorite of the fruit bats that call the caverns home. </description>
         <statBases>
             <MaxHitPoints>300</MaxHitPoints>
         </statBases>
@@ -127,7 +127,7 @@
     <ThingDef ParentName="PlantBase">
         <defName>InkCap</defName>
         <label>ink cap</label>
-        <description>This fragile mushroom produces an alternative to cloth.</description>
+        <description>A large capped mushroom that produces an inky black cloth-like fiber.</description>
         <statBases>
             <MaxHitPoints>85</MaxHitPoints>
         </statBases>
@@ -165,7 +165,7 @@
     <ThingDef ParentName="PlantBase">
         <defName>BluebellShroom</defName>
         <label>bluebell mushroom</label>
-        <description>This mushroom produces hallucinogenic drugs.</description>
+        <description>This small mushroom tends to grow in small clusters and is often used by cavern dwelling humanoids to cause vivid hallucinations.</description>
         <statBases>
             <MaxHitPoints>85</MaxHitPoints>
         </statBases>

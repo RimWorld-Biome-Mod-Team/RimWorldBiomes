@@ -3,7 +3,7 @@
 	<ThingDef ParentName="ResourceBase">
     	<defName>RWBChitin</defName>
     	<label>chitin</label>
-    	<description>An insect's shell.</description>
+    	<description>A rough plated material gathered from arthropods, often used to make armor and clothing.</description>
     	<graphicData>
     	 	<texPath>Things/AnimalProducts/Chitin</texPath>
     	 	<graphicClass>Graphic_Single</graphicClass>
@@ -36,7 +36,7 @@
     <ThingDef ParentName="ResourceBase">
         <defName>RWBSlimeChunk</defName>
         <label>slime chunk</label>
-        <description>A chunk of a slime.</description>
+        <description>A pile of acidic slime, be careful when holding it.</description>
         <graphicData>
             <texPath>Things/AnimalProducts/SlimeChunk</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -61,7 +61,7 @@
     <ThingDef ParentName="OrganicProductBase">
         <defName>RWBHoneyDew</defName>
         <label>honeydew</label>
-        <description>Insect Secretions</description>
+        <description>A nutritious liquid gathered from Bovine Beetles.</description>
         <graphicData>
             <texPath>Things/AnimalProducts/HoneyDew</texPath>
         </graphicData>
