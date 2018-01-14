@@ -8,7 +8,7 @@
         
         <graphicData>
             <drawSize>(2,2)</drawSize>
-            <texPath>Terrain/Stalagmite_type1</texPath>
+            <texPath>Terrain/Stalagmite_style1</texPath>
             <graphicClass>Graphic_Single</graphicClass>
             <linkType>None</linkType>
         </graphicData>

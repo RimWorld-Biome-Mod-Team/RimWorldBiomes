@@ -92,6 +92,7 @@
             <offset>-0.1</offset>
           </li>
         </capMods>
+        <minSeverity>0.5</minSeverity>
       </li>
     </stages>
   </HediffDef>

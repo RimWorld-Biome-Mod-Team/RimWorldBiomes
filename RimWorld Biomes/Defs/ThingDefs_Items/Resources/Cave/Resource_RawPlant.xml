@@ -107,7 +107,7 @@
   <ThingDef ParentName="ResourceBase">
       <defName>FungalFiber</defName>
       <label>fungal fiber</label>
-      <description>The dark mycelium fibers gathered from an Inkcap.description>
+      <description>The dark mycelium fibers gathered from an Inkcap.</description>
       <graphicData>
           <texPath>Things/Item/Resource/Cloth</texPath>
           <graphicClass>Graphic_Single</graphicClass>

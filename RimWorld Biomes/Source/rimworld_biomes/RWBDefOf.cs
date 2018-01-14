@@ -10,6 +10,7 @@ namespace rimworld_biomes
     public class RWBDefOf
     {
         public static JobDef RWBSpinCocoon;
+        public static JobDef RWBVampireBite;
         public static ThingDef RWBSmallCocoon;
         public static ThingDef RWBMediumCocoon;
         public static ThingDef RWBLargeCocoon;

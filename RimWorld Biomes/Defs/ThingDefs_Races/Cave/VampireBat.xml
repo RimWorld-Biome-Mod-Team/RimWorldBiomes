@@ -14,6 +14,8 @@
             <LeatherAmount>0</LeatherAmount>
         </statBases>
         <comps>
+            <li Class="rimworld_biomes.CompProperties_Vampire">
+            </li>
             <li Class="CompAnimated.CompProperties_Animated">
                 <movingFrames>
                     <li>
@@ -47,7 +49,7 @@
         <tools>
             <li>
                 <capacities>
-                    <li>Bite</li>
+                    <li>RWBVampireBite</li>
                 </capacities>
                 <power>10</power>
                 <cooldownTime>1.65</cooldownTime>

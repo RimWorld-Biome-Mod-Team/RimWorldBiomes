@@ -18,7 +18,7 @@
 	  <li>
   		<label>jaws</label>
   		<capacities>
-  		  <li>ToxicBite</li>
+  		  <li>RWBSpiderBite</li>
   		</capacities>
   		<power>7</power>
   		<cooldownTime>1.65</cooldownTime>
@@ -29,7 +29,7 @@
       <capacities>
         <li>Blunt</li>
       </capacities>
-      <power>4</power>
+      <power>1</power>
       <cooldownTime>1.65</cooldownTime>
       <commonality>0.2</commonality>
       <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
