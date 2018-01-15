@@ -1,13 +1,24 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-  <DamageDef ParentName="Bite">
-    <defName>RWBFeedBite</defName>
-    <label>feed bite</label>
-    <additionalHediffs>
-      <li>
-        <hediff>BloodLoss</hediff>
-        <severityPerDamageDealt>0.001</severityPerDamageDealt>
-      </li>
-    </additionalHediffs>
-  </DamageDef>
+	<DamageDef ParentName="Bite">
+    	<defName>RWBSpiderBite</defName>
+    	<label>toxic bite</label>
+    	<additionalHediffs>
+     	 	<li>
+        		<hediff>ToxicBuildup</hediff>
+        		<severityPerDamageDealt>0.05</severityPerDamageDealt>
+      		</li>
+    	</additionalHediffs>
+  	</DamageDef>
+
+  	<DamageDef ParentName="Bite">
+    	<defName>RWBVampireBite</defName>
+    	<label>vampire bite</label>
+    	<additionalHediffs>
+      	<li>
+        	<hediff>BloodLoss</hediff>
+        	<severityPerDamageDealt>0.03</severityPerDamageDealt>
+      	</li>
+    	</additionalHediffs>
+  	</DamageDef>
 </Defs>

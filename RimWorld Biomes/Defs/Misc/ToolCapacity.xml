@@ -2,8 +2,11 @@
 
 <Defs>
 	<ToolCapacityDef>
-    	<defName>RWBFeedBite</defName>
+    	<defName>RWBVampireBite</defName>
     	<label>feeding</label>
   	</ToolCapacityDef>
-
+    <ToolCapacityDef>
+        <defName>RWBSpiderBite</defName>
+        <label>spider biting</label>
+    </ToolCapacityDef>
 </Defs>

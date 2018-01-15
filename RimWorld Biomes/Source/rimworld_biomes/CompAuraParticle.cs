@@ -117,11 +117,9 @@ namespace rimworld_biomes
         }
 		private bool Animal(Pawn p)
 		{
-            Log.Error("animal");
 			return ((p.CurJob?.def == JobDefOf.AttackMelee) && this.Props.parentThing != null && p.CurJob?.targetA.Thing.def.defName == this.Props.parentThing);
 		}
         private bool Building(Pawn p){ 
-            Log.Error("building");
             return ((p.CurJob?.def == JobDefOf.AttackMelee || p.CurJob?.def == JobDefOf.Deconstruct) && this.Props.parentThing != null && p.CurJob?.targetA.Thing.def.defName == this.Props.parentThing);
         }
         public CompProperties_AuraParticle Props

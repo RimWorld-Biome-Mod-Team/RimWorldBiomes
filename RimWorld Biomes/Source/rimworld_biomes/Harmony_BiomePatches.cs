@@ -35,13 +35,46 @@ namespace rimworld_biomes
             harmony.Patch(AccessTools.Method(typeof(GenStep_CavePlants), "Generate"), new HarmonyMethod(typeof(Harmony_BiomePatches), nameof(GenerateCavePlant_PreFix)), null);
             harmony.Patch(AccessTools.Method(typeof(Building_PlantGrower), "GetInspectString"), null, new HarmonyMethod(typeof(Harmony_BiomePatches), nameof(GetInspectString_PostFix)));
             harmony.Patch(AccessTools.Method(typeof(Pawn_ApparelTracker), "ApparelChanged"), new HarmonyMethod(typeof(Harmony_BiomePatches), nameof(ApparelChanged_PreFix)), null);
-            harmony.Patch(AccessTools.Method(typeof(GenStep_Animals), "Generate"), new HarmonyMethod(typeof(Harmony_BiomePatches), nameof(GenerateAnimal_PreFix)), null);
-
+            harmony.Patch(AccessTools.Method(typeof(Mineable), "TrySpawnYield"), null, new HarmonyMethod(typeof(Harmony_BiomePatches), nameof(TrySpawnYield_PostFix)));
+            harmony.Patch(AccessTools.Method(typeof(JobGiver_GetFood), "TryGiveJob"), null, new HarmonyMethod(typeof(Harmony_BiomePatches), nameof(TryGiveJob_PostFix)));
         }
 
-        public static void GenerateAnimal_PreFix(Map map){
-            Log.Error("Called");
-            Log.Error(map.wildSpawner.AnimalEcosystemFull.ToString());
+        public static void TryGiveJob_PostFix(JobGiver_GetFood __instance, ref Job __result, Pawn pawn){
+            if(__result?.def == JobDefOf.PredatorHunt && pawn?.GetComp<CompVampire>() != null){
+                __result = new Job(RWBDefOf.RWBVampireBite, __result.targetA);
+            }
+        }
+        public static void TrySpawnYield_PostFix(Map map, float yieldChance, bool moteOnWaste, Mineable __instance){
+            if(__instance.def.defName == "RWBStalagmite"){
+                IntVec3 current = __instance.Position;
+                String thing = "";
+                if (current.GetTerrain(map).defName.Contains("Sandstone"))
+                {
+                    thing = "ChunkSandstone";
+                }
+                if (current.GetTerrain(map).defName.Contains("Marble"))
+                {
+                    thing = "ChunkMarble";
+                }
+                if (current.GetTerrain(map).defName.Contains("Slate"))
+                {
+                    thing = "ChunkSlate";
+                }
+                if (current.GetTerrain(map).defName.Contains("Granite"))
+                {
+                    thing = "ChunkGranite";
+                }
+                if (current.GetTerrain(map).defName.Contains("Limestone"))
+                {
+                    thing = "ChunkLimestone";
+                }
+
+                int R = Rand.RangeInclusive(0, 100);
+                if (R < 50 && thing != "")
+                {
+                    GenSpawn.Spawn(ThingDef.Named(thing), current, map);
+                }
+            }
         }
         public static bool ApparelChanged_PreFix(PawnGraphicSet  __instance){
             if(__instance.pawn.story == null){

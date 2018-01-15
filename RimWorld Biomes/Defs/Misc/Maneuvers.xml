@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>  
+	<ManeuverDef>
+		<defName>RWBSpiderBite</defName>
+		<requiredCapacity>RWBSpiderBite</requiredCapacity>
+		<verb>
+		  	<verbClass>Verb_MeleeAttack</verbClass>
+		  	<meleeDamageDef>RWBSpiderBite</meleeDamageDef>
+		</verb>
+		<combatLogRules>Bite</combatLogRules>
+	</ManeuverDef>
+
+	<ManeuverDef>
+		<defName>RWBVampireBite</defName>
+		<requiredCapacity>RWBVampireBite</requiredCapacity>
+		<verb>
+		  	<verbClass>Verb_MeleeAttack</verbClass>
+		  	<meleeDamageDef>RWBVampireBite</meleeDamageDef>
+		</verb>
+		<combatLogRules>Bite</combatLogRules>
+	</ManeuverDef>	
+</Defs>

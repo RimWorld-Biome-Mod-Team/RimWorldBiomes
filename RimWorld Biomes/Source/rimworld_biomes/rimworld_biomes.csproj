@@ -73,6 +73,9 @@
     <Compile Include="Comp_TempThing.cs" />
     <Compile Include="CompProperties_TempThing.cs" />
     <Compile Include="Building_Stalagmite.cs" />
+    <Compile Include="CompVampire.cs" />
+    <Compile Include="JobDriver_VampireBite.cs" />
+    <Compile Include="CompProperties_Vampire.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="RWBBuildingDefOf.cs" />
