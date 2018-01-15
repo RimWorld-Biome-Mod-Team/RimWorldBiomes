@@ -7,7 +7,7 @@
         <label>mole</label>
         <description>Moles roughly the size of a dog, These creatures can burrow through stone and soil with their incredibly strong claws which are often used as weapons by cave dwellers.</description>
         <statBases>
-            <MoveSpeed>5.2</MoveSpeed>
+            <MoveSpeed>4.5</MoveSpeed>
             <ComfyTemperatureMin>-50</ComfyTemperatureMin>
             <MarketValue>300</MarketValue>
         </statBases>
@@ -34,7 +34,7 @@
                 <capacities>
                     <li>Bite</li>
                 </capacities>
-                <power>9</power>
+                <power>6</power>
                 <cooldownTime>1.65</cooldownTime>
                 <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
             </li>
@@ -52,9 +52,9 @@
         <race>
             <body>QuadrupedAnimalWithPaws</body>
             <herdAnimal>false</herdAnimal>
-            <baseBodySize>1.0</baseBodySize>
+            <baseBodySize>0.9</baseBodySize>
             <baseHungerRate>0.5</baseHungerRate>
-            <baseHealthScale>1.05</baseHealthScale>
+            <baseHealthScale>0.85</baseHealthScale>
             <foodType>OmnivoreAnimal, OvivoreAnimal</foodType>
             <leatherColor>(117,117,117)</leatherColor>
             <leatherLabel>mole skin</leatherLabel>
@@ -100,7 +100,7 @@
         <defName>RWBMole</defName>
         <label>mole</label>
         <race>RWBMole</race>
-        <combatPower>95</combatPower>
+        <combatPower>65</combatPower>
         <lifeStages>
             <li>
                 <bodyGraphicData>

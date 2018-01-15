@@ -12,6 +12,7 @@
             <MoveSpeed>2.8</MoveSpeed>
             <ComfyTemperatureMin>-50</ComfyTemperatureMin>
             <MarketValue>300</MarketValue>
+            <ArmorRating_Blunt>0.35</ArmorRating_Blunt>
             <LeatherAmount>0</LeatherAmount>
             <MeatAmount>0</MeatAmount>
         </statBases>
@@ -20,7 +21,7 @@
                 <capacities>
                     <li>Bite</li>
                 </capacities>
-                <power>9</power>
+                <power>7</power>
                 <cooldownTime>1.65</cooldownTime>
                 <linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
             </li>

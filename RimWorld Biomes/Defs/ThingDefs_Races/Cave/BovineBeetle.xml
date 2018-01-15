@@ -10,9 +10,9 @@
             <RWBChitin>40</RWBChitin>
         </butcherProducts>
         <statBases>
-            <MoveSpeed>4.7</MoveSpeed>
+            <MoveSpeed>3.3</MoveSpeed>
             <ArmorRating_Blunt>0.1</ArmorRating_Blunt>
-            <ArmorRating_Sharp>0.4</ArmorRating_Sharp>
+            <ArmorRating_Sharp>0.3</ArmorRating_Sharp>
             <ComfyTemperatureMin>0</ComfyTemperatureMin>
             <MarketValue>100</MarketValue>
             <LeatherAmount>0</LeatherAmount>
@@ -22,8 +22,8 @@
                 <capacities>
                     <li>Bite</li>
                 </capacities>
-                <power>5</power>
-                <cooldownTime>2.5</cooldownTime>
+                <power>8</power>
+                <cooldownTime>1.85</cooldownTime>
                 <linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
             </li>
             <li>
@@ -59,9 +59,9 @@
             <gestationPeriodDays>20</gestationPeriodDays>
             <fleshType>RWBInsectoid</fleshType>
             <body>BeetleLike</body>
-            <baseBodySize>0.2</baseBodySize>
-            <baseHungerRate>0.10</baseHungerRate>
-            <baseHealthScale>0.4</baseHealthScale>
+            <baseBodySize>2.1</baseBodySize>
+            <baseHungerRate>0.85</baseHungerRate>
+            <baseHealthScale>1.25</baseHealthScale>
             <wildness>0.5</wildness>
             <lifeExpectancy>10</lifeExpectancy>
             <lifeStageAges>
@@ -91,7 +91,7 @@
         <defName>RWBBovineBeetle</defName>
         <label>bovine Beetle</label>
         <race>RWBBovineBeetle</race>
-        <combatPower>45</combatPower>
+        <combatPower>80</combatPower>
         <canArriveManhunter>true</canArriveManhunter>
         <wildSpawn_EcoSystemWeight>0.05</wildSpawn_EcoSystemWeight>
         <wildSpawn_spawnWild>true</wildSpawn_spawnWild>

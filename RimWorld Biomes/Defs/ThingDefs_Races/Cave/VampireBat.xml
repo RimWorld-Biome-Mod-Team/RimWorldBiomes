@@ -8,7 +8,7 @@
         <label>vampire bat</label>
         <description>These flying mammals live deep in the caves and navigate via echolocation. Feeding off the blood of creature large enough they can be an easy vector for disease.</description>
         <statBases>
-            <MoveSpeed>5.5</MoveSpeed>
+            <MoveSpeed>4.84</MoveSpeed>
             <ComfyTemperatureMin>0</ComfyTemperatureMin>
             <MarketValue>75</MarketValue>
             <LeatherAmount>0</LeatherAmount>
@@ -51,7 +51,7 @@
                 <capacities>
                     <li>RWBVampireBite</li>
                 </capacities>
-                <power>10</power>
+                <power>4</power>
                 <cooldownTime>1.65</cooldownTime>
                 <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
                 <surpriseAttack>
@@ -68,7 +68,7 @@
                 <capacities>
                     <li>Blunt</li>
                 </capacities>
-                <power>4</power>
+                <power>1</power>
                 <cooldownTime>1.65</cooldownTime>
                 <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
                 <commonality>0.2</commonality>
@@ -79,7 +79,7 @@
             <predator>true</predator>
             <baseHungerRate>0.35</baseHungerRate>
             <baseBodySize>0.22</baseBodySize>
-            <baseHealthScale>0.35</baseHealthScale>
+            <baseHealthScale>0.4</baseHealthScale>
             <foodType>CarnivoreAnimal</foodType>
             <trainableIntelligence>Advanced</trainableIntelligence>
             <wildness>0.8</wildness>
@@ -129,7 +129,7 @@
         <defName>RWBVampireBat</defName>
         <label>vampire Bat</label>
         <race>RWB_VampireBat</race>
-        <combatPower>60</combatPower>
+        <combatPower>45</combatPower>
         <wildSpawn_EcoSystemWeight>0.25</wildSpawn_EcoSystemWeight>
         <wildSpawn_spawnWild>true</wildSpawn_spawnWild>
         <lifeStages>

@@ -6,7 +6,7 @@
     <label>cavern</label>
     <description>A cavern system deep underground. Despite how little light reaches down here there is a considerable diversity within the environment. Due to the limited space within the biome most colonies are dug into the cavern walls.</description>
     <workerClass>rimworld_biomes.BiomeWorker_Cavern</workerClass>
-    <animalDensity>2.8</animalDensity>
+    <animalDensity>2</animalDensity>
     <plantDensity>0</plantDensity>
     <allowRivers>true</allowRivers>
     <factionBaseSelectionWeight>1</factionBaseSelectionWeight>
@@ -77,28 +77,27 @@
       <Fog>1</Fog>
     </baseWeatherCommonalities>
     <wildPlants>
-			<MushroomCluster>.4</MushroomCluster>
-			<SkullTop>0.05</SkullTop>
-			<PlantBush>0.7</PlantBush>
-			<MushroomTree>0.30</MushroomTree>
-            <GlowfruitTree>0.012</GlowfruitTree>
-			<SpectreCap>0.04</SpectreCap>
-            <StarlightShroom>0.05</StarlightShroom>
+      <MushroomCluster>.4</MushroomCluster>
+      <SkullTop>0.05</SkullTop>
+      <PlantBush>0.7</PlantBush>
+      <MushroomTree>0.30</MushroomTree>
+      <GlowfruitTree>0.012</GlowfruitTree>
+      <SpectreCap>0.04</SpectreCap>
+      <StarlightShroom>0.05</StarlightShroom>
 		</wildPlants>
     <wildAnimals>
-        <RWBBovineBeetle>0.2</RWBBovineBeetle>
-        <RWBFruitBat>0.1</RWBFruitBat>
-        <RWBVampireBat>0.1</RWBVampireBat>
-        <RWBVampireMoth>0.1</RWBVampireMoth>
-        <RWBCaveSpider>0.1</RWBCaveSpider>
-        <RWBCrystalCrab>0.1</RWBCrystalCrab>
-        <RWBJellypotBug>0.04</RWBJellypotBug>
-        <RWBGiantSnail>0.1</RWBGiantSnail>
-        <RWBMole>0.1</RWBMole>
-        <RWBPillbug>0.1</RWBPillbug>
-        <RWBRhinoBeetle>0.1</RWBRhinoBeetle>
-        <RWBSlime>0.1</RWBSlime>
-        <Lynx>0.005</Lynx>
+      <RWBJellypotBug>0.3</RWBJellypotBug>
+      <RWBMole>0.3</RWBMole>
+      <RWBFruitBat>0.2</RWBFruitBat>
+      <RWBVampireBat>0.18</RWBVampireBat>
+      <RWBBovineBeetle>0.15</RWBBovineBeetle>
+      <RWBGiantSnail>0.12</RWBGiantSnail>
+      <RWBCrystalCrab>0.1</RWBCrystalCrab>
+      <RWBRhinoBeetle>0.1</RWBRhinoBeetle>
+      <RWBSlime>0.1</RWBSlime>
+      <RWBVampireMoth>0.1</RWBVampireMoth>
+      <RWBPillbug>0.08</RWBPillbug>
+      <RWBCaveSpider>0.07</RWBCaveSpider>
     </wildAnimals>
     <allowedPackAnimals>
       <li>Muffalo</li>

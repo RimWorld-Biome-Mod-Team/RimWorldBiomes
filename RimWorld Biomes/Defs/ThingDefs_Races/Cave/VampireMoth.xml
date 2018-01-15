@@ -8,10 +8,10 @@
         <description>Deceptively cute and literally bloodthirsty, these giant moths will drink the blood of any creature big enough.</description>
         <statBases>
             <MoveSpeed>5</MoveSpeed>
-            <ArmorRating_Blunt>0.1</ArmorRating_Blunt>
-            <ArmorRating_Sharp>0.4</ArmorRating_Sharp>
             <ComfyTemperatureMin>0</ComfyTemperatureMin>
             <MarketValue>100</MarketValue>
+            <ArmorRating_Blunt>0.05</ArmorRating_Blunt>
+            <ArmorRating_Sharp>0.15</ArmorRating_Sharp>
             <LeatherAmount>0</LeatherAmount>
         </statBases>
         <tools>
@@ -19,7 +19,7 @@
                 <capacities>
                     <li>RWBVampireBite</li>
                 </capacities>
-                <power>9</power>
+                <power>5</power>
                 <cooldownTime>1.65</cooldownTime>
                 <linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
                 <surpriseAttack>
@@ -36,10 +36,10 @@
                 <capacities>
                     <li>Blunt</li>
                 </capacities>
-                <power>5</power>
+                <power>2</power>
                 <cooldownTime>1.65</cooldownTime>
                 <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
-                <commonality>0.01</commonality>
+                <commonality>0.2</commonality>
             </li>
         </tools>
         <comps>
@@ -71,9 +71,9 @@
             <gestationPeriodDays>20</gestationPeriodDays>
             <fleshType>RWBInsectoid</fleshType>
             <body>BeetleLike</body>
-            <baseBodySize>1.2</baseBodySize>
-            <baseHungerRate>0.10</baseHungerRate>
-            <baseHealthScale>0.9</baseHealthScale>
+            <baseBodySize>0.8</baseBodySize>
+            <baseHungerRate>0.15</baseHungerRate>
+            <baseHealthScale>0.6</baseHealthScale>
             <wildness>0.8</wildness>
             <lifeExpectancy>10</lifeExpectancy>
             <lifeStageAges>
@@ -95,7 +95,7 @@
         <defName>RWBVampireMoth</defName>
         <label>vampire Moth</label>
         <race>RWBVampireMoth</race>
-        <combatPower>115</combatPower>
+        <combatPower>90</combatPower>
         <canArriveManhunter>true</canArriveManhunter>
         <wildSpawn_EcoSystemWeight>0.05</wildSpawn_EcoSystemWeight>
         <wildSpawn_spawnWild>true</wildSpawn_spawnWild>

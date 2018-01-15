@@ -66,11 +66,10 @@
             <foodType>VegetarianRoughAnimal</foodType>
             <gestationPeriodDays>25</gestationPeriodDays>
             <fleshType>RWBInsectoid</fleshType>
-            <body>BeetleLike</body>
             <baseBodySize>1.5</baseBodySize>
-            <baseHungerRate>0.10</baseHungerRate>
+            <baseHungerRate>0.8</baseHungerRate>
             <baseHealthScale>1.2</baseHealthScale>
-            <wildness>0.5</wildness>
+            <wildness>0.35</wildness>
             <lifeExpectancy>10</lifeExpectancy>
             <lifeStageAges>
                 <li>
@@ -95,7 +94,7 @@
         <defName>RWBGiantSnail</defName>
         <label>giant Snail</label>
         <race>RWBGiantSnail</race>
-        <combatPower>95</combatPower>
+        <combatPower>75</combatPower>
         <canArriveManhunter>true</canArriveManhunter>
         <wildSpawn_EcoSystemWeight>0.05</wildSpawn_EcoSystemWeight>
         <wildSpawn_spawnWild>true</wildSpawn_spawnWild>

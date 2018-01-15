@@ -6,7 +6,7 @@
     	<additionalHediffs>
      	 	<li>
         		<hediff>ToxicBuildup</hediff>
-        		<severityPerDamageDealt>0.05</severityPerDamageDealt>
+        		<severityPerDamageDealt>0.075</severityPerDamageDealt>
       		</li>
     	</additionalHediffs>
   	</DamageDef>
@@ -17,7 +17,7 @@
     	<additionalHediffs>
       	<li>
         	<hediff>BloodLoss</hediff>
-        	<severityPerDamageDealt>0.03</severityPerDamageDealt>
+        	<severityPerDamageDealt>0.0125</severityPerDamageDealt>
       	</li>
     	</additionalHediffs>
   	</DamageDef>

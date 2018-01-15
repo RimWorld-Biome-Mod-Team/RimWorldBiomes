@@ -11,16 +11,23 @@
             <ComfyTemperatureMin>-65</ComfyTemperatureMin>
             <MarketValue>100</MarketValue>
             <LeatherAmount>0</LeatherAmount>
-            <MeatAmount>45</MeatAmount>
         </statBases>
         <tools>
             <li>
                 <capacities>
                     <li>Bite</li>
                 </capacities>
-                <power>4</power>
+                <power>3</power>
                 <cooldownTime>2.0</cooldownTime>
                 <linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+                <surpriseAttack>
+                    <extraMeleeDamages>
+                        <li>
+                            <def>Stun</def>
+                            <amount>20</amount>
+                        </li>
+                    </extraMeleeDamages>
+                </surpriseAttack>
             </li>
             <li>
                 <label>head</label>
@@ -39,9 +46,9 @@
             <meatColor>(221, 239, 239)</meatColor>
             <herdAnimal>true</herdAnimal>
             <herdMigrationAllowed>false</herdMigrationAllowed>
-            <baseBodySize>0.3</baseBodySize>
+            <baseBodySize>0.15</baseBodySize>
             <baseHungerRate>0.12</baseHungerRate>
-            <baseHealthScale>0.4</baseHealthScale>
+            <baseHealthScale>0.25</baseHealthScale>
             <foodType>CarnivoreAnimalStrict</foodType>
             <gestationPeriodDays>20</gestationPeriodDays>
             <manhunterOnDamageChance>1</manhunterOnDamageChance>
@@ -82,7 +89,7 @@
                     <li>WaterShallow</li>
                     <li>WaterDeep</li>
                 </allowedTiles>
-                <spawnChance>0.005</spawnChance>
+                <spawnChance>0.00375</spawnChance>
                 <allowedBiomes>
                     <li>RWBCavern</li>
                 </allowedBiomes>
@@ -97,7 +104,7 @@
         <defName>RWBSpectreShrimp</defName>
         <label>spectre Shrimp</label>
         <race>RWBSpectreShrimp</race>
-        <combatPower>30</combatPower>
+        <combatPower>25</combatPower>
         <canArriveManhunter>true</canArriveManhunter>
         <wildSpawn_spawnWild>true</wildSpawn_spawnWild>
         <wildSpawn_GroupSizeRange>

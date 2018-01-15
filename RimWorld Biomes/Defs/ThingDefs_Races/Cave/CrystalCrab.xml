@@ -24,8 +24,8 @@
                 <capacities>
                     <li>Cut</li>
                 </capacities>
-                <power>7</power>
-                <cooldownTime>2.5</cooldownTime>
+                <power>9</power>
+                <cooldownTime>2.2</cooldownTime>
                 <linkedBodyPartsGroup>HeadClaw</linkedBodyPartsGroup>
             </li>
             <li>
@@ -33,7 +33,7 @@
                 <capacities>
                     <li>Blunt</li>
                 </capacities>
-                <power>2</power>
+                <power>4</power>
                 <cooldownTime>1.65</cooldownTime>
                 <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
                 <commonality>0.2</commonality>
@@ -53,10 +53,10 @@
             <gestationPeriodDays>25</gestationPeriodDays>
             <fleshType>RWBInsectoid</fleshType>
             <body>BeetleLikeWithClaw</body>
-            <baseBodySize>0.2</baseBodySize>
-            <baseHungerRate>0.10</baseHungerRate>
-            <baseHealthScale>0.4</baseHealthScale>
-            <wildness>0.5</wildness>
+            <baseBodySize>1.7</baseBodySize>
+            <baseHungerRate>0.65</baseHungerRate>
+            <baseHealthScale>1.25</baseHealthScale>
+            <wildness>0.7</wildness>
             <lifeExpectancy>10</lifeExpectancy>
             <lifeStageAges>
                 <li>
@@ -81,7 +81,7 @@
         <defName>RWBCrystalCrab</defName>
         <label>crystal Crab</label>
         <race>RWBCrystalCrab</race>
-        <combatPower>45</combatPower>
+        <combatPower>95</combatPower>
         <canArriveManhunter>true</canArriveManhunter>
         <wildSpawn_EcoSystemWeight>0.05</wildSpawn_EcoSystemWeight>
         <wildSpawn_spawnWild>true</wildSpawn_spawnWild>
