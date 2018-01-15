@@ -65,6 +65,7 @@ namespace rimworld_biomes
                     foreach(Hediff h in toremove){
                         prey.health.RemoveHediff(h);
                     }
+                    prey.jobs.EndCurrentJob(JobCondition.InterruptForced);
                 }else{
                     if(this.pawn.needs.food.CurLevelPercentage >= 0.8){
                         this.pawn.jobs.curDriver.ReadyForNextToil();

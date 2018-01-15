@@ -14,28 +14,31 @@ namespace rimworld_biomes
         private void UpdateGraphics()
         {
             // Check if graphic is already filled
-            if (graphic != null && graphic.Length > 0 && graphic[0] != null){
+            //if (graphic != null && graphic.Length > 0 && graphic[0] != null){
                 
-            }else{
-                graphic = new Graphic_Single[arraySize];
+            //}else{
+            //    graphic = new Graphic_Single[arraySize];
 
-                // Get the base path (without _frameXX)
-                int indexOf_frame = def.graphicData.texPath.ToLower().LastIndexOf(graphicPathAdditionWoNumber);
-                string graphicRealPathBase = def.graphicData.texPath.Remove(indexOf_frame);
+            //    // Get the base path (without _frameXX)
+            //    int indexOf_frame = def.graphicData.texPath.ToLower().LastIndexOf(graphicPathAdditionWoNumber);
+            //    string graphicRealPathBase = def.graphicData.texPath.Remove(indexOf_frame);
 
-                // fill the graphic array
-                for (int i = 0; i < arraySize; i++)
-                {
-                    string graphicRealPath = graphicRealPathBase + graphicPathAdditionWoNumber + (i + 1).ToString();
+            //    // fill the graphic array
+            //    for (int i = 0; i < arraySize; i++)
+            //    {
+            //        string graphicRealPath = graphicRealPathBase + graphicPathAdditionWoNumber + (i + 1).ToString();
 
-                    // Set the graphic, use additional info from the xml data
-                    graphic[i] = GraphicDatabase.Get<Graphic_Single>(graphicRealPath, def.graphic.Shader, def.graphic.drawSize, base.Position.GetTerrain(base.Map).color, def.graphic.ColorTwo, def.graphic.data);
-                }
-            }
-            // resize the graphic array
+            //        // Set the graphic, use additional info from the xml data
+            //        graphic[i] = GraphicDatabase.Get<Graphic_Single>(graphicRealPath, def.graphic.Shader, def.graphic.drawSize, base.Position.GetTerrain(base.Map).color, def.graphic.ColorTwo, def.graphic.data);
+            //    }
+            //}
+            //// resize the graphic array
+
+            int indexOf = def.graphicData.texPath.ToLower().LastIndexOf(graphicPathAdditionWoNumber);
+            string graphicRealPath = def.graphicData.texPath.Remove(indexOf);
 
             while (graph == null){
-                graph = graphic[Rand.RangeInclusive(0, arraySize - 1)];
+                graph = GraphicDatabase.Get<Graphic_Single>(graphicRealPath + graphicPathAdditionWoNumber + Rand.RangeInclusive(1, arraySize).ToString(), def.graphic.Shader, def.graphic.drawSize, base.Position.GetTerrain(base.Map).color, def.graphic.ColorTwo, def.graphic.data);
             }
         }
 
@@ -70,7 +73,8 @@ namespace rimworld_biomes
                 //{
                 //    color = new UnityEngine.Color(158, 153, 135);
                 //}
-                return graph;
+                //graph.data. = base.Position.GetTerrain(base.Map).color;
+                return graph;   
             }
         }
 
