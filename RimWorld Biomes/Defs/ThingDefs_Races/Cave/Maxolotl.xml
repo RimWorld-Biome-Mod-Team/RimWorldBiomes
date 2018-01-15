@@ -8,7 +8,7 @@
         <label>maxolotl</label>
         <description>Giant relatives of the Axolotl, these salamanders have grown to huge proportions within the cavern environment they call home by eating and competing with the giant bugs that live within the caverns. While they are almost exclusively aquatic they can go onto land if need be.</description>
         <statBases>
-            <MoveSpeed>5.25</MoveSpeed>
+            <MoveSpeed>4.93</MoveSpeed>
             <ComfyTemperatureMin>-65</ComfyTemperatureMin>
             <MarketValue>100</MarketValue>
             <LeatherAmount>0</LeatherAmount>
@@ -18,7 +18,7 @@
                 <capacities>
                     <li>Bite</li>
                 </capacities>
-                <power>10</power>
+                <power>9</power>
                 <cooldownTime>2.0</cooldownTime>
                 <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
             </li>
@@ -27,7 +27,7 @@
                 <capacities>
                     <li>Blunt</li>
                 </capacities>
-                <power>6</power>
+                <power>4</power>
                 <cooldownTime>1.65</cooldownTime>
                 <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
                 <commonality>0.2</commonality>
@@ -37,8 +37,9 @@
             <body>QuadrupedAnimalWithPawsAndTail</body>
             <herdAnimal>false</herdAnimal>
             <herdMigrationAllowed>false</herdMigrationAllowed>
-            <baseBodySize>1.5</baseBodySize>
-            <baseHungerRate>1.5</baseHungerRate>
+            <baseBodySize>1.1</baseBodySize>
+            <baseHungerRate>0.7</baseHungerRate>
+            <baseHealthScale>1</baseHealthScale>
             <foodType>OmnivoreAnimal,VegetarianAnimal</foodType>
             <gestationPeriodDays>20</gestationPeriodDays>
             <manhunterOnDamageChance>1</manhunterOnDamageChance>
@@ -79,7 +80,7 @@
                     <li>WaterShallow</li>
                     <li>WaterDeep</li>
                 </allowedTiles>
-                <spawnChance>0.01</spawnChance>
+                <spawnChance>0.0075</spawnChance>
                 <allowedBiomes>
                     <li>RWBCavern</li>
                 </allowedBiomes>

@@ -23,7 +23,7 @@
 	          <li>Bite</li>
 	        </capacities>
 	        <power>2</power>
-	        <cooldownTime>2.5</cooldownTime>
+	        <cooldownTime>1.5</cooldownTime>
 	        <linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
 	      </li>
 	      <li>
@@ -40,8 +40,8 @@
 	    <comps>
       		<li Class="CompProperties_Milkable">
        			<milkDef>InsectJelly</milkDef>
-        		<milkIntervalDays>1</milkIntervalDays>
-        		<milkAmount>15</milkAmount>
+        		<milkIntervalDays>3</milkIntervalDays>
+        		<milkAmount>12</milkAmount>
                 <milkFemaleOnly>false</milkFemaleOnly>
       		</li>
             <li Class="CompProperties_EggLayer">
@@ -58,7 +58,7 @@
           <fleshType>RWBInsectoid</fleshType>
 	      <body>BeetleLike</body>
 	      <baseBodySize>0.2</baseBodySize>
-	      <baseHungerRate>0.10</baseHungerRate>
+	      <baseHungerRate>0.24</baseHungerRate>
 	      <baseHealthScale>0.4</baseHealthScale>
 	      <wildness>0.05</wildness>
 	      <lifeExpectancy>10</lifeExpectancy>
