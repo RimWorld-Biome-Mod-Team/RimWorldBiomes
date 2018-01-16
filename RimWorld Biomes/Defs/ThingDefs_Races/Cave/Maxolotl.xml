@@ -40,7 +40,7 @@
             <baseBodySize>1.1</baseBodySize>
             <baseHungerRate>0.7</baseHungerRate>
             <baseHealthScale>1</baseHealthScale>
-            <foodType>OmnivoreAnimal,VegetarianAnimal</foodType>
+            <foodType>OmnivoreRoughAnimal</foodType>
             <gestationPeriodDays>20</gestationPeriodDays>
             <manhunterOnDamageChance>1</manhunterOnDamageChance>
             <manhunterOnTameFailChance>0.018</manhunterOnTameFailChance>
