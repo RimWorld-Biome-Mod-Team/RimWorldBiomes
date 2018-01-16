@@ -55,7 +55,7 @@
             <baseBodySize>0.9</baseBodySize>
             <baseHungerRate>0.5</baseHungerRate>
             <baseHealthScale>0.85</baseHealthScale>
-            <foodType>OmnivoreAnimal, OvivoreAnimal</foodType>
+            <foodType>OmnivoreRoughAnimal, OvivoreAnimal</foodType>
             <leatherColor>(117,117,117)</leatherColor>
             <leatherLabel>mole skin</leatherLabel>
             <leatherInsulation>1.0</leatherInsulation>
