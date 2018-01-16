@@ -3,7 +3,7 @@
 	<BodyPartDef>
 	    <defName>SlimeBody</defName>
 	    <label>body</label>
-	    <hitPoints>30</hitPoints>
+	    <hitPoints>40</hitPoints>
 	    <oldInjuryBaseChance>0.08</oldInjuryBaseChance>
 	    <skinCovered>true</skinCovered>
 	    <tags>
