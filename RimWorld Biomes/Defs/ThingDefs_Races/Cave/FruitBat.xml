@@ -6,7 +6,7 @@
     <ThingDef ParentName="AnimalThingBase">
         <defName>RWB_FruitBat</defName>
         <label>fruit bat</label>
-        <description>These flying mammals live deep in the caves and navigate via echolocation. Feeding off the Glowfruit of the caverns they can be a hassle to anyone that grows it</description>
+        <description>These flying mammals live deep in the caves and navigate via echolocation. Feeding off the Glowfruit of the caverns they can be a hassle to anyone that grows it.</description>
         <statBases>
             <MoveSpeed>4.3</MoveSpeed>
             <ComfyTemperatureMin>0</ComfyTemperatureMin>

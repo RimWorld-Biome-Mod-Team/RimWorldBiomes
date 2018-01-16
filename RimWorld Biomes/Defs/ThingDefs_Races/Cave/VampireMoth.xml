@@ -5,7 +5,7 @@
     <ThingDef ParentName="BaseInsect">
         <defName>RWBVampireMoth</defName>
         <label>vampire moth</label>
-        <description>Deceptively cute and literally bloodthirsty, these giant moths will drink the blood of any creature big enough.</description>
+        <description>Deceptively cute and literally bloodthirsty, these giant moths will drink the blood of nearly any creature.</description>
         <statBases>
             <MoveSpeed>5</MoveSpeed>
             <ComfyTemperatureMin>0</ComfyTemperatureMin>

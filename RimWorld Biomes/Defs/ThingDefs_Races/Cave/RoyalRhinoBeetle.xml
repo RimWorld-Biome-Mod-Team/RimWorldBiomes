@@ -5,7 +5,7 @@
     <ThingDef ParentName="BaseInsect">
         <defName>RWBRhinoBeetle</defName>
         <label>royal rhino Beetle</label>
-        <description>Horned beetles almost the size of a muffalo. They get their names from the royal purple color of their chitinous shells. Predators or mating rivals beware their strong horns</description>
+        <description>Horned beetles almost the size of a muffalo. They get their names from the royal purple color of their chitinous shells. Predators or mating rivals beware their strong horns.</description>
         <butcherProducts>
             <RWBChitin>30</RWBChitin>
         </butcherProducts>

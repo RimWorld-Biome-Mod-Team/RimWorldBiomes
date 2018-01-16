@@ -3,7 +3,7 @@
   <ThingDef ParentName="BaseInsect">
     <defName>RWBCaveSpider</defName>
     <label>spider</label>
-    <description> These huge spiders are one of, if not the top, predator of the caverns. Living in holes within the walls of the cavern they lie in wait for prey to get close enough and they attack. They will wrap their prey in webbing to preserve them for later. Explorers beware getting too close to their den</description>
+    <description> These huge spiders are one of, if not the top, predator of the caverns. Living in holes within the walls of the cavern they lie in wait for prey to get close enough and they attack. They will wrap their prey in webbing to preserve them for later. Explorers beware getting too close to their den.</description>
     <thingClass>rimworld_biomes.Spider</thingClass>
     <statBases>
       <MoveSpeed>5.6</MoveSpeed>
