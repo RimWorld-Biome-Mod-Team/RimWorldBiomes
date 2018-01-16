@@ -16,7 +16,6 @@
             <ComfyTemperatureMin>0</ComfyTemperatureMin>
             <MarketValue>100</MarketValue>
             <LeatherAmount>0</LeatherAmount>
-            <MeatAmount>30</MeatAmount>
         </statBases>
         <tools>
             <li>
@@ -45,6 +44,7 @@
                 <defenseTrigger>health</defenseTrigger>
                 <defenseType>hide</defenseType>
                 <hpThreshold>0.8</hpThreshold>
+                <moveSpeedPenalty>0.3</moveSpeedPenalty>
                 <statDefs>
                     <li>ArmorRating_Sharp</li>
                     <li>ArmorRating_Blunt</li>
