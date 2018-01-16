@@ -15,18 +15,5 @@
 		</value>
 	</Operation>
 
-	<Operation Class="PatchOperationReplace">
-		<xpath>*/ThingDef[defName="Glowstool"]/plant/growDays</xpath>
-		<value>
-			<growDays>6</growDays>
-		</value>
-	</Operation>
-
-	<Operation Class="PatchOperationReplace">
-		<xpath>*/ThingDef[defName="Glowstool"]/plant/harvestYield</xpath>
-		<value>
-			<harvestYield>3</harvestYield>
-		</value>
-	</Operation>
 
 </Patch>
