@@ -68,5 +68,15 @@
 	    </tags>
   	</BodyPartDef>
     
+    <BodyPartDef>
+        <defName>SnailFoot</defName>
+        <label>snail foot</label>
+        <hitPoints>30</hitPoints>
+        <oldInjuryBaseChance>0</oldInjuryBaseChance>
+        <skinCovered>false</skinCovered>
+        <tags>
+            <li>MovingLimbCore</li>
+        </tags>
+    </BodyPartDef>
     
 </Defs>
