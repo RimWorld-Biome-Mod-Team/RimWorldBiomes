@@ -68,7 +68,7 @@
       <foodType>CarnivoreAnimal</foodType>
       <predator>true</predator>
       <manhunterOnDamageChance>1</manhunterOnDamageChance>
-      <baseBodySize>1.5</baseBodySize>
+      <baseBodySize>2.0</baseBodySize>
       <baseHungerRate>0.25</baseHungerRate>
       <baseHealthScale>1.15</baseHealthScale>
       <mateMtbHours>8</mateMtbHours>
