@@ -5,7 +5,7 @@
     <ThingDef ParentName="AnimalThingBase">
         <defName>RWBGiantSnail</defName>
         <label>giant snail</label>
-        <description>Their size, strength, and surprising speed allows them to be used as pack animals. When threatened they will retract inside of their shell in an attempt to prevent further harm</description>
+        <description>Their size, strength, and surprising speed allows them to be used as pack animals. When threatened they will retract inside of their shell in an attempt to prevent further harm.</description>
         <butcherProducts>
             <RWBChitin>30</RWBChitin>
         </butcherProducts>
