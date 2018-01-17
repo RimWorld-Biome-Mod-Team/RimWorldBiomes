@@ -40,6 +40,9 @@ namespace rimworld_biomes
         }
 
         public static void TryGiveJob_PostFix(JobGiver_GetFood __instance, ref Job __result, Pawn pawn){
+            if(__result?.targetA.Thing != null && __result?.targetA.Thing as Corpse != null){
+                return;
+            }
             if(__result?.def == JobDefOf.PredatorHunt && pawn?.GetComp<CompVampire>() != null){
                 __result = new Job(RWBDefOf.RWBVampireBite, __result.targetA);
             }
