@@ -55,7 +55,7 @@ namespace rimworld_biomes
                         return;
                     }
 
-                    prey.stances.stunner.StunFor((int)450);
+                    prey.stances.stunner.StunFor((int)700);
                     IEnumerable<Hediff> visibleDiffs = prey.health.hediffSet.hediffs;
                     List<Hediff> toremove = new List<Hediff>();
                     foreach(Hediff h in visibleDiffs){

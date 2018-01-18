@@ -33,6 +33,10 @@
             <li Class="rimworld_biomes.CompProperties_Trail">
                 <trail>RWBFilthSlime</trail>
             </li>
+            <li Class="rimworld_biomes.CompProperties_Regenerate">
+                <amount>0.1</amount>
+                <startThreshold>0.6</startThreshold>
+            </li>
             <li Class="CompProperties_EggLayer">
                 <eggFertilizedDef>RWBEggGiantSnailFertilized</eggFertilizedDef>
                 <eggFertilizationCountMax>1</eggFertilizationCountMax>
@@ -40,10 +44,11 @@
                 <eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
                 <eggCountRange>1</eggCountRange>
             </li>
+            
             <li Class="rimworld_biomes.CompProperties_ReactiveDefense">
                 <defenseTrigger>health</defenseTrigger>
                 <defenseType>hide</defenseType>
-                <hpThreshold>0.8</hpThreshold>
+                <hpThreshold>0.6</hpThreshold>
                 <moveSpeedPenalty>0.3</moveSpeedPenalty>
                 <statDefs>
                     <li>ArmorRating_Sharp</li>
@@ -141,6 +146,9 @@
             <li>Apparel</li>
         </thingCategories>
         <generateCommonality>0</generateCommonality>
+        <equippedStatOffsets>
+            <MoveSpeed>-3</MoveSpeed>
+        </equippedStatOffsets>
         <apparel>
             <defaultOutfitTags>
                 <li>Soldier</li>

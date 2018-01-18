@@ -70,6 +70,11 @@
                 <eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
                 <eggCountRange>1</eggCountRange>
             </li>
+            <li Class="rimworld_biomes.CompProperties_Regenerate">
+                <restoreBodyParts>True</restoreBodyParts>
+                <amount>0.5</amount>
+                <startThreshold>1</startThreshold>
+            </li>
         </comps>
         <tradeTags>
             <li>StandardAnimal</li>
