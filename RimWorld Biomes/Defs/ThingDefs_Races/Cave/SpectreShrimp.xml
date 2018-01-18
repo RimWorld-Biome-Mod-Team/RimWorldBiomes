@@ -89,7 +89,7 @@
                     <li>WaterShallow</li>
                     <li>WaterDeep</li>
                 </allowedTiles>
-                <spawnChance>0.00375</spawnChance>
+                <spawnChance>0.001875</spawnChance>
                 <allowedBiomes>
                     <li>RWBCavern</li>
                 </allowedBiomes>
