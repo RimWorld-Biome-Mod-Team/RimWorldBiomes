@@ -67,6 +67,7 @@
             </li>
         </comps>
         <race>
+            <packAnimal>true</packAnimal>
             <body>RWBSnail</body>
             <foodType>VegetarianRoughAnimal</foodType>
             <gestationPeriodDays>25</gestationPeriodDays>

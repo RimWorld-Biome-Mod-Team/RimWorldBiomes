@@ -62,13 +62,14 @@
       </li>
     </comps>
     <race>
+        <packAnimal>true</packAnimal>
         <thinkTreeMain>Animal</thinkTreeMain>
         <thinkTreeConstant>AnimalConstant</thinkTreeConstant>
       <body>RWBSpiderBody</body>
       <foodType>CarnivoreAnimal</foodType>
       <predator>true</predator>
       <manhunterOnDamageChance>1</manhunterOnDamageChance>
-      <baseBodySize>2.0</baseBodySize>
+      <baseBodySize>1.5</baseBodySize>
       <baseHungerRate>0.25</baseHungerRate>
       <baseHealthScale>1.15</baseHealthScale>
       <mateMtbHours>8</mateMtbHours>

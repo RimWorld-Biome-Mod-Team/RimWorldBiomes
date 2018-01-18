@@ -1,0 +1,18 @@
+<Patch>
+
+<!--	<Operation Class="PatchOperationRemove">-->
+<!--		<xpath>/Defs/TerrainDef[defName = "Glowstool"]/plant</xpath>-->
+<!--	</Operation>-->
+<!--    -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName = "DrugLab"]</xpath>
+		<value>
+<!--			<changeable>true</changeable>-->
+                <recipes>
+                    <li>MakeSporeContainer</li>
+                </recipes>
+		</value>
+	</Operation>
+
+
+</Patch>

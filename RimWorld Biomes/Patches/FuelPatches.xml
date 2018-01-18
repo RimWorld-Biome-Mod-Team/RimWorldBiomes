@@ -1,0 +1,12 @@
+<Patch>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName = "WoodFiredGenerator"]/comps/li[@Class = "CompProperties_Refuelable"]/fuelFilter/thingDefs</xpath>
+		<value>
+                    <li>FungalLog</li>
+                    <li>RWBCoal</li>
+		</value>
+	</Operation>
+
+
+</Patch>

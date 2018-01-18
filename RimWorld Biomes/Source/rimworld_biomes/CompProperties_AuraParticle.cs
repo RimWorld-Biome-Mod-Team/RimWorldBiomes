@@ -33,6 +33,8 @@ namespace rimworld_biomes
         public int damage;
         public DamageDef damageType;
         public float severity = 1f;
+        public bool forceFlee = false;
+        public bool warn = false;
         public CompProperties_AuraParticle()
         {
 			this.compClass = typeof(CompAuraParticle);

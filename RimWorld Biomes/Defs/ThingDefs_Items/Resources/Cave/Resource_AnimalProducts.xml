@@ -58,6 +58,31 @@
         </thingCategories>
     </ThingDef>
     
+    <ThingDef ParentName="ResourceBase">
+        <defName>RWBMoleClaw</defName>
+        <label>mole claw</label>
+        <description>A claw from a dead mole.</description>
+        <graphicData>
+            <texPath>Things/AnimalProducts/MoleClaw</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <useHitPoints>false</useHitPoints>
+        <statBases>
+            <MarketValue>10</MarketValue>
+            <Mass>0.5</Mass>
+        </statBases>
+        <stuffProps>
+            <statFactors>
+                <MaxHitPoints>2.4</MaxHitPoints>
+                <Beauty>1</Beauty>
+                <Flammability>0.15</Flammability>
+            </statFactors>
+        </stuffProps>
+        <thingCategories>
+            <li>ResourcesRaw</li>
+        </thingCategories>
+    </ThingDef>
+    
     <ThingDef ParentName="OrganicProductBase">
         <defName>RWBHoneyDew</defName>
         <label>honeydew</label>

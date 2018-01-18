@@ -205,7 +205,7 @@
             <li Class="rimworld_biomes.CompProperties_ReactiveDefense">
                 <defenseTrigger>proximity</defenseTrigger>
                 <defenseType>aura</defenseType>
-                <aura>skulltop_spore</aura>
+                <aura>RWBSkulltopSpore</aura>
             </li>
         </comps>
         <tickerType>Normal</tickerType>

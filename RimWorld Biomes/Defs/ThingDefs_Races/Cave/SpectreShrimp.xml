@@ -89,7 +89,7 @@
                     <li>WaterShallow</li>
                     <li>WaterDeep</li>
                 </allowedTiles>
-                <spawnChance>0.00275</spawnChance>
+                <spawnChance>0.00375</spawnChance>
                 <allowedBiomes>
                     <li>RWBCavern</li>
                 </allowedBiomes>
@@ -104,7 +104,7 @@
         <defName>RWBSpectreShrimp</defName>
         <label>spectre Shrimp</label>
         <race>RWBSpectreShrimp</race>
-        <combatPower>25</combatPower>
+        <combatPower>100</combatPower>
         <canArriveManhunter>true</canArriveManhunter>
         <wildSpawn_spawnWild>true</wildSpawn_spawnWild>
         <wildSpawn_GroupSizeRange>
