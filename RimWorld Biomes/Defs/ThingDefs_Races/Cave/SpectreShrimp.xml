@@ -7,7 +7,7 @@
         <label>spectre Shrimp</label>
         <description>Small and blind from adapting to the underground environment these arthropods are a considerable threat when they swarm, their sharp mouthparts slicing into soft prey with ease.</description>
         <statBases>
-            <MoveSpeed>5.25</MoveSpeed>
+            <MoveSpeed>4.3</MoveSpeed>
             <ComfyTemperatureMin>-65</ComfyTemperatureMin>
             <MarketValue>100</MarketValue>
             <LeatherAmount>0</LeatherAmount>
@@ -18,7 +18,7 @@
                     <li>Bite</li>
                 </capacities>
                 <power>3</power>
-                <cooldownTime>2.0</cooldownTime>
+                <cooldownTime>2.5</cooldownTime>
                 <linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
                 <surpriseAttack>
                     <extraMeleeDamages>
@@ -46,8 +46,8 @@
             <meatColor>(221, 239, 239)</meatColor>
             <herdAnimal>true</herdAnimal>
             <herdMigrationAllowed>false</herdMigrationAllowed>
-            <baseBodySize>0.15</baseBodySize>
-            <baseHungerRate>0.12</baseHungerRate>
+            <baseBodySize>0.12</baseBodySize>
+            <baseHungerRate>0.04</baseHungerRate>
             <baseHealthScale>0.25</baseHealthScale>
             <foodType>CarnivoreAnimalStrict</foodType>
             <gestationPeriodDays>20</gestationPeriodDays>
@@ -104,7 +104,7 @@
         <defName>RWBSpectreShrimp</defName>
         <label>spectre Shrimp</label>
         <race>RWBSpectreShrimp</race>
-        <combatPower>100</combatPower>
+        <combatPower>18</combatPower>
         <canArriveManhunter>true</canArriveManhunter>
         <wildSpawn_spawnWild>true</wildSpawn_spawnWild>
         <wildSpawn_GroupSizeRange>

@@ -9,7 +9,7 @@
             <color>(255,255,255)</color>
         </graphicData>
         <statBases>
-            <MarketValue>40.0</MarketValue>
+            <MarketValue>15</MarketValue>
         </statBases>
         <comps>
             <li Class="CompProperties_Hatcher">
@@ -28,7 +28,7 @@
             <color>(255,255,255)</color>
         </graphicData>
         <statBases>
-            <MarketValue>40.0</MarketValue>
+            <MarketValue>15</MarketValue>
         </statBases>
         <comps>
             <li Class="CompProperties_Hatcher">
@@ -47,7 +47,7 @@
             <color>(255,255,255)</color>
         </graphicData>
         <statBases>
-            <MarketValue>40.0</MarketValue>
+            <MarketValue>10</MarketValue>
         </statBases>
         <comps>
             <li Class="CompProperties_Hatcher">
@@ -66,7 +66,7 @@
             <color>(255,255,255)</color>
         </graphicData>
         <statBases>
-            <MarketValue>40.0</MarketValue>
+            <MarketValue>15</MarketValue>
         </statBases>
         <comps>
             <li Class="CompProperties_Hatcher">
@@ -85,7 +85,7 @@
             <color>(255,255,255)</color>
         </graphicData>
         <statBases>
-            <MarketValue>40.0</MarketValue>
+            <MarketValue>15</MarketValue>
         </statBases>
         <comps>
             <li Class="CompProperties_Hatcher">
@@ -104,7 +104,7 @@
             <color>(255,255,255)</color>
         </graphicData>
         <statBases>
-            <MarketValue>40.0</MarketValue>
+            <MarketValue>25</MarketValue>
         </statBases>
         <comps>
             <li Class="CompProperties_Hatcher">
@@ -124,7 +124,7 @@
             <!--            <color>(255,255,255)</color>-->
         </graphicData>
         <statBases>
-            <MarketValue>40.0</MarketValue>
+            <MarketValue>20</MarketValue>
         </statBases>
         <comps>
             <li Class="CompProperties_Hatcher">
@@ -144,7 +144,7 @@
             <color>(221, 239, 239)</color>
         </graphicData>
         <statBases>
-            <MarketValue>40.0</MarketValue>
+            <MarketValue>10</MarketValue>
         </statBases>
         <comps>
             <li Class="CompProperties_Hatcher">
@@ -164,7 +164,7 @@
             <!--            <color>(221, 239, 239)</color>-->
         </graphicData>
         <statBases>
-            <MarketValue>40.0</MarketValue>
+            <MarketValue>10</MarketValue>
         </statBases>
         <comps>
             <li Class="CompProperties_Hatcher">
@@ -183,7 +183,7 @@
             <graphicClass>Graphic_StackCount</graphicClass>
         </graphicData>
         <statBases>
-            <MarketValue>40.0</MarketValue>
+            <MarketValue>25</MarketValue>
         </statBases>
         <comps>
             <li Class="CompProperties_Hatcher">
@@ -202,7 +202,7 @@
             <color>(255,255,255)</color>
         </graphicData>
         <statBases>
-            <MarketValue>40.0</MarketValue>
+            <MarketValue>15</MarketValue>
         </statBases>
         <comps>
             <li Class="CompProperties_Hatcher">

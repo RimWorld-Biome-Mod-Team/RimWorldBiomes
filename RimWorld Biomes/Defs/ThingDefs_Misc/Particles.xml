@@ -119,7 +119,7 @@
             <li Class="rimworld_biomes.CompProperties_AuraParticle">
                 <duration>5</duration>
                 <hediff>ToxicBuildup</hediff>
-                <severity>0.001</severity>
+                <severity>0.00075</severity>
                 <releasedBy>item</releasedBy>
                 <parentThing>RWBProj_GrenadePoisonStrong</parentThing>
                 <forceFlee>false</forceFlee>
