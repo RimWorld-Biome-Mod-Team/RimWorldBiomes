@@ -109,7 +109,7 @@
         <wildSpawn_spawnWild>true</wildSpawn_spawnWild>
         <wildSpawn_GroupSizeRange>
             <min>3</min>
-            <max>6</max>
+            <max>3</max>
         </wildSpawn_GroupSizeRange>
         <lifeStages>
             <li>

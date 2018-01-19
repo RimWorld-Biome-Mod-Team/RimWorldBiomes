@@ -65,6 +65,8 @@
             </li>
         </tools>
         <race>
+            <herdAnimal>true</herdAnimal>
+            <herdMigrationAllowed>true</herdMigrationAllowed>
             <body>RWB_BatBody</body>
             <baseHungerRate>0.35</baseHungerRate>
             <baseBodySize>0.22</baseBodySize>
