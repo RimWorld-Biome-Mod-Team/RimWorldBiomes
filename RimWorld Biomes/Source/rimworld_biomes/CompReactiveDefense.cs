@@ -52,9 +52,7 @@ namespace rimworld_biomes
             }
 			if (props.defenseTrigger == CompProperties_ReactiveDefense.defTrigger.health)
 			{
-                if(((Pawn)parent).health.summaryHealth.SummaryHealthPercent < props.hpThreshold || ((Pawn)parent).health.hediffSet.GetPartHealth(((Pawn)parent).RaceProps.body.corePart) < ((Pawn)parent).RaceProps.body.corePart.def.hitPoints * props.hpThreshold * ((Pawn)parent).def.race.baseHealthScale){
                     React(pos, map, props);
-                }
 			}
 			if (props.defenseTrigger == CompProperties_ReactiveDefense.defTrigger.proximity)
 			{
@@ -140,7 +138,8 @@ namespace rimworld_biomes
                 }
                 return;
             }
-            if((pawn.health.summaryHealth.SummaryHealthPercent < props.hpThreshold || ((Pawn)parent).health.hediffSet.GetPartHealth(((Pawn)parent).RaceProps.body.corePart) < ((Pawn)parent).RaceProps.body.corePart.def.hitPoints * props.hpThreshold * ((Pawn)parent).def.race.baseHealthScale)){
+            if(((Pawn)parent).health.hediffSet.GetPartHealth(((Pawn)parent).RaceProps.body.corePart) < ((Pawn)parent).RaceProps.body.corePart.def.hitPoints * props.hpThreshold * ((Pawn)parent).def.race.baseHealthScale){
+               //Log.Error("a");
                 if(!hidden){
                     if(Props.apparel != null){
                         Apparel apparel = (Apparel)ThingMaker.MakeThing(Props.apparel);
@@ -163,8 +162,10 @@ namespace rimworld_biomes
                     }
                     ResolveHideGraphic();
                     hidden = true;
+                    pawn.jobs.StartJob(new Job(JobDefOf.FleeAndCower, pawn.Position),JobCondition.InterruptForced);
                 }
             }else{
+                //Log.Error("b");
                 if (hidden){
                     if (Props.apparel != null && pawn.apparel != null)
                     {

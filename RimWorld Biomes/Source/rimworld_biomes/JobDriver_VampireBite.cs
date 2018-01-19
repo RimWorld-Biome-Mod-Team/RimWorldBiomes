@@ -45,6 +45,7 @@ namespace rimworld_biomes
             {
             Pawn prey = this.Prey;
             bool surpriseAttack = this.firstHit && !prey.IsColonist;
+                Job tjob = prey.CurJob;
                 if (this.pawn.needs.food.CurLevelPercentage < 0.8 && !prey.Dead && this.pawn.meleeVerbs.TryMeleeAttack(prey, this.job.verbToUse, surpriseAttack)){
                     float new_food = this.pawn.needs.food.CurLevelPercentage + 0.5f;
                     if (new_food > 1)
@@ -54,18 +55,18 @@ namespace rimworld_biomes
                         return;
                     }
 
-                    prey.stances.stunner.StunFor((int)250);
+                    prey.stances.stunner.StunFor((int)700);
                     IEnumerable<Hediff> visibleDiffs = prey.health.hediffSet.hediffs;
                     List<Hediff> toremove = new List<Hediff>();
                     foreach(Hediff h in visibleDiffs){
-                        if(h.source == this.pawn.def && h.def != HediffDefOf.BloodLoss){
+                        if((h.source == this.pawn.def || (h.def == HediffDefOf.MissingBodyPart && h.ageTicks < 100))  && h.def != HediffDefOf.BloodLoss){
                             toremove.Add(h);
                         }
                     }
                     foreach(Hediff h in toremove){
                         prey.health.RemoveHediff(h);
                     }
-                    prey.jobs.EndCurrentJob(JobCondition.InterruptForced);
+                    prey.jobs.StartJob(tjob,JobCondition.InterruptForced);
                 }else{
                     if(this.pawn.needs.food.CurLevelPercentage >= 0.8){
                         this.pawn.jobs.curDriver.ReadyForNextToil();

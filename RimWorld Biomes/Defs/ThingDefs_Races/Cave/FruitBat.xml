@@ -11,7 +11,7 @@
             <MoveSpeed>4.3</MoveSpeed>
             <ComfyTemperatureMin>0</ComfyTemperatureMin>
             <MarketValue>75</MarketValue>
-            <LeatherAmount>0</LeatherAmount>
+            <LeatherAmount>25</LeatherAmount>
         </statBases>
         <comps>
             <li Class="CompAnimated.CompProperties_Animated">
@@ -65,17 +65,18 @@
             </li>
         </tools>
         <race>
+            <herdAnimal>true</herdAnimal>
+            <herdMigrationAllowed>true</herdMigrationAllowed>
             <body>RWB_BatBody</body>
             <baseHungerRate>0.35</baseHungerRate>
             <baseBodySize>0.22</baseBodySize>
             <baseHealthScale>0.4</baseHealthScale>
             <foodType>VegetarianRoughAnimal</foodType>
             <trainableIntelligence>Advanced</trainableIntelligence>
-            <wildness>0.8</wildness>
-            <leatherColor>(185,125,79)</leatherColor>
-            <leatherLabel>capybaraskin</leatherLabel>
-            <leatherInsulation>0.75</leatherInsulation>
-            <wildness>0.75</wildness>
+            <wildness>0.4</wildness>
+            <leatherColor>(110,95,82)</leatherColor>
+            <leatherLabel>batskin</leatherLabel>
+            <leatherInsulation>0.4</leatherInsulation>
             <nuzzleMtbHours>120</nuzzleMtbHours>
             <gestationPeriodDays>14</gestationPeriodDays>
             <litterSizeCurve>

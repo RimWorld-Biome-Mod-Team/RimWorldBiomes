@@ -104,12 +104,12 @@
         <defName>RWBSpectreShrimp</defName>
         <label>spectre Shrimp</label>
         <race>RWBSpectreShrimp</race>
-        <combatPower>25</combatPower>
+        <combatPower>100</combatPower>
         <canArriveManhunter>true</canArriveManhunter>
         <wildSpawn_spawnWild>true</wildSpawn_spawnWild>
         <wildSpawn_GroupSizeRange>
             <min>3</min>
-            <max>6</max>
+            <max>3</max>
         </wildSpawn_GroupSizeRange>
         <lifeStages>
             <li>

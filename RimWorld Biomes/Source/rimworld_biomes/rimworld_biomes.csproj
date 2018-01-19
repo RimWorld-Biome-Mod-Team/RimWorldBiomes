@@ -76,6 +76,8 @@
     <Compile Include="CompVampire.cs" />
     <Compile Include="JobDriver_VampireBite.cs" />
     <Compile Include="CompProperties_Vampire.cs" />
+    <Compile Include="CompRegenerate.cs" />
+    <Compile Include="CompProperties_Regenerate.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="RWBBuildingDefOf.cs" />

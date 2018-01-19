@@ -18,10 +18,10 @@
       <isResourceRock>true</isResourceRock>
       <mineableThing>RWBChunkCrystal</mineableThing>
       <mineableYield>1</mineableYield>
-      <mineableScatterCommonality>1</mineableScatterCommonality>
+      <mineableScatterCommonality>0.4</mineableScatterCommonality>
       <mineableScatterLumpSizeRange>
-        <min>20</min>
-        <max>40</max>
+        <min>15</min>
+        <max>30</max>
       </mineableScatterLumpSizeRange>
     </building>
   </ThingDef>
@@ -45,10 +45,10 @@
           <isResourceRock>true</isResourceRock>
           <mineableThing>RWBCoal</mineableThing>
           <mineableYield>35</mineableYield>
-          <mineableScatterCommonality>1</mineableScatterCommonality>
+          <mineableScatterCommonality>0.3</mineableScatterCommonality>
           <mineableScatterLumpSizeRange>
-              <min>20</min>
-              <max>40</max>
+              <min>15</min>
+              <max>30</max>
           </mineableScatterLumpSizeRange>
       </building>
   </ThingDef>

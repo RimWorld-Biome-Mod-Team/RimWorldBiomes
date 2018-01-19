@@ -101,6 +101,9 @@
     </wildAnimals>
     <allowedPackAnimals>
       <li>Muffalo</li>
+      <li>RWBBovineBeetle</li>
+      <li>RWBCaveSpider</li>
+      <li>RWBGiantSnail</li>
     </allowedPackAnimals>
   </BiomeDef>
 </Defs>

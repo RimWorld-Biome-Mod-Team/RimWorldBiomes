@@ -62,6 +62,7 @@
       </li>
     </comps>
     <race>
+        <packAnimal>true</packAnimal>
         <thinkTreeMain>Animal</thinkTreeMain>
         <thinkTreeConstant>AnimalConstant</thinkTreeConstant>
       <body>RWBSpiderBody</body>

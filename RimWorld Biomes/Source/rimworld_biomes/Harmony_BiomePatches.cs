@@ -37,9 +37,27 @@ namespace rimworld_biomes
             harmony.Patch(AccessTools.Method(typeof(Pawn_ApparelTracker), "ApparelChanged"), new HarmonyMethod(typeof(Harmony_BiomePatches), nameof(ApparelChanged_PreFix)), null);
             harmony.Patch(AccessTools.Method(typeof(Mineable), "TrySpawnYield"), null, new HarmonyMethod(typeof(Harmony_BiomePatches), nameof(TrySpawnYield_PostFix)));
             harmony.Patch(AccessTools.Method(typeof(JobGiver_GetFood), "TryGiveJob"), null, new HarmonyMethod(typeof(Harmony_BiomePatches), nameof(TryGiveJob_PostFix)));
+            harmony.Patch(AccessTools.Method(typeof(World), "Impassable"), null, new HarmonyMethod(typeof(Harmony_BiomePatches), nameof(Impassable_PostFix)));
+            harmony.Patch(AccessTools.Method(typeof(WorldPathGrid), "CalculatedCostAt"), null, new HarmonyMethod(typeof(Harmony_BiomePatches), nameof(CalculatedCostAt_PostFix)));
         }
 
+        public static void CalculatedCostAt_PostFix(int tile, bool perceivedStatic, ref int __result, float yearPercent = -1f){
+            Tile tile2 = Find.WorldGrid[tile];
+            if(tile2.biome.defName == "RWBCavern"){
+                __result = 30000;
+            }
+        }
+
+        public static void Impassable_PostFix(World __instance, ref bool __result, int tileID){
+            Tile tile = __instance.grid[tileID];
+            if(tile.biome.defName == "RWBCavern"){
+                __result = false;
+            }
+        }
         public static void TryGiveJob_PostFix(JobGiver_GetFood __instance, ref Job __result, Pawn pawn){
+            if(__result?.targetA.Thing != null && __result?.targetA.Thing as Corpse != null){
+                return;
+            }
             if(__result?.def == JobDefOf.PredatorHunt && pawn?.GetComp<CompVampire>() != null){
                 __result = new Job(RWBDefOf.RWBVampireBite, __result.targetA);
             }

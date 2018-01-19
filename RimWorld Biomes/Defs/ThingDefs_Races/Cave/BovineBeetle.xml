@@ -53,6 +53,7 @@
             </li>
         </comps>
         <race>
+            <packAnimal>true</packAnimal>
             <herdAnimal>true</herdAnimal>
             <herdMigrationAllowed>true</herdMigrationAllowed>
             <foodType>VegetarianRoughAnimal</foodType>
