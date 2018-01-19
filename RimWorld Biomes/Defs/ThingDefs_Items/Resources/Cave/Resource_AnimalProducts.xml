@@ -11,16 +11,16 @@
     	</graphicData>
     	    <useHitPoints>false</useHitPoints>
     	<statBases>
-      		<MarketValue>10</MarketValue>
+      		<MarketValue>2.1</MarketValue>
       		<Mass>0.5</Mass>
       		<SharpDamageMultiplier>1.1</SharpDamageMultiplier>
       		<BluntDamageMultiplier>0.5</BluntDamageMultiplier>
     	</statBases>
     	<stuffProps>
     		<statFactors>
-        		<MaxHitPoints>2.4</MaxHitPoints>
-        		<Beauty>1</Beauty>
-        		<Flammability>0.15</Flammability>
+        		<MaxHitPoints>1.1</MaxHitPoints>
+        		<Beauty>0.8</Beauty>
+        		<Flammability>0.3</Flammability>
     		</statFactors>
 		</stuffProps>
         <comps>
@@ -43,14 +43,14 @@
         </graphicData>
         <useHitPoints>false</useHitPoints>
         <statBases>
-            <MarketValue>10</MarketValue>
+            <MarketValue>2.1</MarketValue>
             <Mass>0.5</Mass>
         </statBases>
         <stuffProps>
             <statFactors>
-                <MaxHitPoints>2.4</MaxHitPoints>
-                <Beauty>1</Beauty>
-                <Flammability>0.15</Flammability>
+                <MaxHitPoints>1.5</MaxHitPoints>
+                <Beauty>0.8</Beauty>
+                <Flammability>0.3</Flammability>
             </statFactors>
         </stuffProps>
         <thingCategories>
