@@ -20,7 +20,6 @@
     <passability>PassThroughOnly</passability>
     <pathCost>60</pathCost>
     <castEdgeShadows>true</castEdgeShadows>
-    <constructEffect>ConstructMetal</constructEffect>
     <fillPercent>0.30</fillPercent>
     <canOverlapZones>false</canOverlapZones>
     <statBases>
