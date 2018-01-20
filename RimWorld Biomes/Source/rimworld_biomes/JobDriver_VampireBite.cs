@@ -46,7 +46,7 @@ namespace rimworld_biomes
             Pawn prey = this.Prey;
             bool surpriseAttack = this.firstHit && !prey.IsColonist;
                 Job tjob = prey.CurJob;
-                if (this.pawn.needs.food.CurLevelPercentage < 0.8 && !prey.Dead && this.pawn.meleeVerbs.TryMeleeAttack(prey, this.job.verbToUse, surpriseAttack)){
+                if (this.pawn.needs.food.CurLevelPercentage < 1 && !prey.Dead && this.pawn.meleeVerbs.TryMeleeAttack(prey, this.job.verbToUse, surpriseAttack)){
                     float new_food = this.pawn.needs.food.CurLevelPercentage + 0.5f;
                     if (new_food > 1)
                         new_food = 1;
@@ -68,7 +68,8 @@ namespace rimworld_biomes
                     }
                     prey.jobs.StartJob(tjob,JobCondition.InterruptForced);
                 }else{
-                    if(this.pawn.needs.food.CurLevelPercentage >= 0.8){
+                    if(Math.Abs(this.pawn.needs.food.CurLevelPercentage - 1) < float.Epsilon)
+                    {
                         this.pawn.jobs.curDriver.ReadyForNextToil();
                     }
                 }

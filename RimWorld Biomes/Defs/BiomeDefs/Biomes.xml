@@ -86,9 +86,10 @@
       <StarlightShroom>0.05</StarlightShroom>
 		</wildPlants>
     <wildAnimals>
-      <RWBJellypotBug>0.3</RWBJellypotBug>
-      <RWBMole>0.3</RWBMole>
-      <RWBFruitBat>0.2</RWBFruitBat>
+      <RWBPaleLizard>0.3</RWBPaleLizard>
+      <RWBJellypotBug>0.08</RWBJellypotBug>
+      <RWBMole>0.2</RWBMole>
+      <RWBFruitBat>0.19</RWBFruitBat>
       <RWBVampireBat>0.18</RWBVampireBat>
       <RWBBovineBeetle>0.15</RWBBovineBeetle>
       <RWBGiantSnail>0.12</RWBGiantSnail>
