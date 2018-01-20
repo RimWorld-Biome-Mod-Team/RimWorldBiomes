@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+    <Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[defName = "PassiveCooler"]/costList</xpath>
+			</li>
+            <li Class="PatchOperationRemove">
+                <xpath>Defs/ThingDef[defName = "PassiveCooler"]/constructEffect</xpath>
+            </li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "PassiveCooler"]</xpath>
+				<value>
+					<stuffCategories>
+                      <li>Woody</li>
+                    </stuffCategories>
+                    <costStuffCount>50</costStuffCount>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+    <Operation Class="PatchOperationSequence">
+        <success>Always</success>
+        <operations>
+            <li Class="PatchOperationRemove">
+                <xpath>Defs/ThingDef[defName = "Campfire"]/costList</xpath>
+            </li>
+            <li Class="PatchOperationRemove">
+                <xpath>Defs/ThingDef[defName = "Campfire"]/constructEffect</xpath>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName = "Campfire"]</xpath>
+                <value>
+                    <stuffCategories>
+                        <li>Woody</li>
+                    </stuffCategories>
+                    <costStuffCount>20</costStuffCount>
+                </value>
+            </li>
+            
+        </operations>
+    </Operation>
+    
+    
+</Patch>
