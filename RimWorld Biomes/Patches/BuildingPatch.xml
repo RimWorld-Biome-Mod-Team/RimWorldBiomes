@@ -11,6 +11,9 @@
             <li Class="PatchOperationRemove">
                 <xpath>Defs/ThingDef[defName = "PassiveCooler"]/constructEffect</xpath>
             </li>
+            <li Class="PatchOperationRemove">
+                <xpath>Defs/ThingDef[defName = "PassiveCooler"]/graphicData/texPath</xpath>
+            </li>
 			<li Class="PatchOperationAdd">
 				<xpath>Defs/ThingDef[defName = "PassiveCooler"]</xpath>
 				<value>
@@ -20,6 +23,12 @@
                     <costStuffCount>50</costStuffCount>
 				</value>
 			</li>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName = "PassiveCooler"]/graphicData</xpath>
+                <value>
+                    <texPath>Buildings/Patches/PassiveCooler</texPath>
+                </value>
+            </li>
 		</operations>
 	</Operation>
 	
@@ -32,6 +41,9 @@
             <li Class="PatchOperationRemove">
                 <xpath>Defs/ThingDef[defName = "Campfire"]/constructEffect</xpath>
             </li>
+            <li Class="PatchOperationRemove">
+                <xpath>Defs/ThingDef[defName = "Campfire"]/graphicData/texPath</xpath>
+            </li>
             <li Class="PatchOperationAdd">
                 <xpath>Defs/ThingDef[defName = "Campfire"]</xpath>
                 <value>
@@ -41,7 +53,12 @@
                     <costStuffCount>20</costStuffCount>
                 </value>
             </li>
-            
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName = "Campfire"]/graphicData</xpath>
+                <value>
+                    <texPath>Buildings/Patches/Campfire</texPath>
+                </value>
+            </li>
         </operations>
     </Operation>
     
