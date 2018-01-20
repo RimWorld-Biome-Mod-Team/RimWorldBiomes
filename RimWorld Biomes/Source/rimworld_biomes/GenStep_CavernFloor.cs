@@ -21,7 +21,6 @@ namespace rimworld_biomes
             //Log.Error("Called");
 			foreach (IntVec3 current in map.AllCells)
 			{
-                map.roofGrid.SetRoof(current, RoofDefOf.RoofRockThick);
                 //Thing thing = map.edificeGrid.InnerArray[map.cellIndices.CellToIndex(current)];
                 if (current.GetFirstBuilding(map) == null)
 				{
@@ -30,6 +29,7 @@ namespace rimworld_biomes
                     }
                     //Log.Error("change?");
 
+					map.roofGrid.SetRoof(current, RoofDefOf.RoofRockThick);
 				}
 
                 if(isWater(current, map)){
@@ -43,7 +43,7 @@ namespace rimworld_biomes
                                     tvec.GetFirstBuilding(map).Destroy();
                                 }
                                 map.terrainGrid.SetTerrain(tvec, TerrainDefOf.Soil);
-                                //map.roofGrid.SetRoof(tvec, RoofDefOf.RoofRockThick);
+                                map.roofGrid.SetRoof(tvec, RoofDefOf.RoofRockThick);
 							}
                         }
                     }
@@ -56,7 +56,7 @@ namespace rimworld_biomes
                 if (current.GetTerrain(map).defName == "SoilRich")
 				{
 					map.terrainGrid.SetTerrain(current, GenStep_RocksFromGrid.RockDefAt(current).naturalTerrain);
-					//map.roofGrid.SetRoof(current, RoofDefOf.RoofRockThick);
+					map.roofGrid.SetRoof(current, RoofDefOf.RoofRockThick);
 				}
                 if (current.GetTerrain(map) == TerrainDefOf.WaterShallow){
 					for (int i = -2; i < 3; i++)
@@ -71,7 +71,7 @@ namespace rimworld_biomes
 									tvec.GetFirstBuilding(map).Destroy();
 								}
 								map.terrainGrid.SetTerrain(tvec, TerrainDefOf.Soil);
-								//map.roofGrid.SetRoof(tvec, RoofDefOf.RoofRockThick);
+								map.roofGrid.SetRoof(tvec, RoofDefOf.RoofRockThick);
 							}
 						}
 					}

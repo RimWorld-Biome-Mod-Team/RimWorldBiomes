@@ -69,7 +69,7 @@ namespace rimworld_biomes
                                         hasWarned = true;
                                         lastWarned = GenTicks.TicksGame;
                                     }
-                                    IntVec3 dest = CellFinderLoose.GetFleeDest(p, new List<Thing> { this.parent }, 8f);
+                                    IntVec3 dest = CellFinderLoose.GetFleeDest(p, new List<Thing> { this.parent }, 5f);
                                     if (dest == this.parent.Position)
                                     {
                                         dest = dest.RandomAdjacentCell8Way();
@@ -90,7 +90,7 @@ namespace rimworld_biomes
                                                 hasWarned = true;
                                                 lastWarned = GenTicks.TicksGame;
                                             }
-                                            IntVec3 dest = CellFinderLoose.GetFleeDest(p, new List<Thing> { this.parent }, 8f);
+                                            IntVec3 dest = CellFinderLoose.GetFleeDest(p, new List<Thing> { this.parent }, 5f);
                                             if (dest == this.parent.Position)
                                             {
                                                 dest = dest.RandomAdjacentCell8Way();
