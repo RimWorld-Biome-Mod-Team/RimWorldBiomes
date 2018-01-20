@@ -32,8 +32,11 @@
     <size>(1,1)</size>
     <costList>
       <Steel>25</Steel>
-      <WoodLog>50</WoodLog>
     </costList>
+    <stuffCategories>
+        <li>Woody</li>
+    </stuffCategories>
+    <costStuffCount>50</costStuffCount>
     <fertility>1</fertility>
     <building>
       <defaultPlantToGrow>PlantPotato</defaultPlantToGrow>
