@@ -92,6 +92,7 @@ namespace rimworld_biomes
                 {
                     GenSpawn.Spawn(ThingDef.Named(thing), current, map);
                 }
+
             }
         }
         public static bool ApparelChanged_PreFix(PawnGraphicSet  __instance){

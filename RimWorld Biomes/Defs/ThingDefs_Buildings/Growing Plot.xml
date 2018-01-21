@@ -20,7 +20,6 @@
     <passability>PassThroughOnly</passability>
     <pathCost>60</pathCost>
     <castEdgeShadows>true</castEdgeShadows>
-    <constructEffect>ConstructMetal</constructEffect>
     <fillPercent>0.30</fillPercent>
     <canOverlapZones>false</canOverlapZones>
     <statBases>
@@ -32,8 +31,11 @@
     <size>(1,1)</size>
     <costList>
       <Steel>25</Steel>
-      <WoodLog>50</WoodLog>
     </costList>
+    <stuffCategories>
+        <li>Woody</li>
+    </stuffCategories>
+    <costStuffCount>50</costStuffCount>
     <fertility>1</fertility>
     <building>
       <defaultPlantToGrow>PlantPotato</defaultPlantToGrow>
