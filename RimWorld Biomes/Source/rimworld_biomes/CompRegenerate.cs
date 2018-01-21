@@ -16,23 +16,6 @@ namespace rimworld_biomes
             }
         }
 
-        public void DeadNotDowned()
-        {
-            //Gets pawn this ThingComp is attached to
-            // Pawn pawn declares a variable of type Pawn that is named pawn
-            //base.parent gets the parent object of type ThingWithComps while (Pawn) casts aka converts
-            //that object into the type Pawn
-            Pawn pawn = (Pawn)base.parent;
-
-            //Calls the method Downed that is located inside the Pawn class
-            //What this method does is return whether or not the pawn is currently downed
-            if(pawn.Downed){
-                //Kill the pawn
-                GenExplosion.DoExplosion(pawn.Position, pawn.Map, 10, DamageDefOf.Bomb, pawn,50,,ThingDefOf.Explosion,null,,);
-                pawn.Destroy();
-            }
-
-        }
         public override void CompTick()
         {
             Pawn pawn = (Pawn)base.parent;

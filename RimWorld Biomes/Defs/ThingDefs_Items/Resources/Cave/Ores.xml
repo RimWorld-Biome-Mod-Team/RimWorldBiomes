@@ -79,6 +79,9 @@
 	        <SharpDamageMultiplier>2</SharpDamageMultiplier>
 	    </statBases>
 	    <stuffProps>
+            <categories>
+                <li>Metallic</li>
+            </categories>
 	              <color>(170,219,255)</color>
 	        <soundImpactStuff>BulletImpactGround</soundImpactStuff>
 	        <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>

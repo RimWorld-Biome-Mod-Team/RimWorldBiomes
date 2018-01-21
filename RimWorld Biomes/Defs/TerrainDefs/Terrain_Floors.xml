@@ -14,4 +14,23 @@
 		</costList>
 		<designationHotKey>Misc5</designationHotKey>
 	</TerrainDef>
+    
+    <TerrainDef  ParentName="FloorBase">
+        <defName>FungalPlankFloor</defName>
+        <label>fungal plank floor</label>
+        <renderPrecedence>250</renderPrecedence>
+        <description>Fungal plank flooring. For that warm, homey feeling. While it is easy to lay, it is also flammable.</description>
+        <texturePath>Terrain/Surfaces/WoodFloor</texturePath>
+        <burnedDef>BurnedWoodPlankFloor</burnedDef>
+        <color>(195, 199, 198)</color>
+        <statBases>
+            <WorkToBuild>85</WorkToBuild>
+            <Flammability>0.22</Flammability>
+        </statBases>
+        <costList>
+            <FungalLog>3</FungalLog>
+        </costList>
+        <constructEffect>ConstructWood</constructEffect>
+        <designationHotKey>Misc7</designationHotKey>
+    </TerrainDef>
 </Defs>
