@@ -72,6 +72,7 @@
         <defName>SpectreCap</defName>
         <label>spectrecap</label>
         <description>This mushroom was once thought to be a ghost by lost tribals within the caverns due to its eerie glow and pale color.</description>
+        <altitudeLayer>Building</altitudeLayer>
         <statBases>
             <MaxHitPoints>85</MaxHitPoints>
         </statBases>
@@ -165,6 +166,7 @@
     <ThingDef ParentName="PlantBase">
         <defName>SkullTop</defName>
         <label>skulltop</label>
+        <altitudeLayer>Building</altitudeLayer>
         <description>This purple capped mushroom is perhaps the most dangerous in the caverns due to its ability to release toxic spores that rapidly poison anything alive if they are close enough. Its spores are used to create toxic weapons and traps.</description>
         <statBases>
             <MaxHitPoints>85</MaxHitPoints>

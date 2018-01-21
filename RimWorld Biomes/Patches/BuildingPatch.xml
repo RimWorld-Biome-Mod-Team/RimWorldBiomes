@@ -183,5 +183,19 @@
         </operations>
     </Operation>
     
-    
+    <Operation Class="PatchOperationSequence">
+        <success>Always</success>
+        <operations>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName = "GlowPod"]</xpath>
+                <value>
+                    <costList>
+                        <RWBChitin>2</RWBChitin>
+                        <Glowfruit>5</Glowfruit>
+                    </costList>
+                    <designationCategory>Furniture</designationCategory>
+                </value>
+            </li>
+        </operations>
+    </Operation>
 </Patch>

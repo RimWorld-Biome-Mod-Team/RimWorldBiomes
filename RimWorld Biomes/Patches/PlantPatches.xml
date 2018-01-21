@@ -1,14 +1,25 @@
 <Patch>
 
-	<Operation Class="PatchOperationAdd">
-		<xpath>/Defs/ThingDef[defName = "Glowstool"]/plant</xpath>
-		<value>
-                <sowTags>
-                    <li>Ground</li>
-                </sowTags>
-			
-		</value>
-	</Operation>
+    <Operation Class="PatchOperationSequence">
+        <success>Always</success>
+        <operations>
+            <li Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName = "Glowstool"]/plant</xpath>
+                <value>
+                    <sowTags>
+                        <li>Ground</li>
+                    </sowTags>
+                    
+                </value>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName = "Glowstool"]</xpath>
+                <value>
+                    <altitudeLayer>Building</altitudeLayer>
+                </value>
+            </li>
+        </operations>
+    </Operation>
     
     <Operation Class="PatchOperationSequence">
         <success>Always</success>
@@ -23,6 +34,12 @@
                             <glowRadius>10</glowRadius>
                             <glowColor>(137, 119, 115,1)</glowColor>
                         </li>
+                </value>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName = "Agarilux"]</xpath>
+                <value>
+                    <altitudeLayer>Building</altitudeLayer>
                 </value>
             </li>
         </operations>

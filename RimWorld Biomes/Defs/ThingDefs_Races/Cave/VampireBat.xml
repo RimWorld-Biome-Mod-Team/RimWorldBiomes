@@ -44,7 +44,7 @@
                     </li>
                 </stillFrames>
                 <sound/>
-                <secondsBetweenFrames>0.45</secondsBetweenFrames>
+                <secondsBetweenFrames>0.6</secondsBetweenFrames>
             </li>
         </comps>
         <tools>
