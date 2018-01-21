@@ -14,13 +14,13 @@
             <selectable>true</selectable>
 		<hideAtSnowDepth>0.5</hideAtSnowDepth>
 		<ingestible>
-			<nutrition>0.15</nutrition>
+			<nutrition>0.25</nutrition>
 		</ingestible>
 		<plant>
             <reproduces>true</reproduces>
 			<fertilityMin>0.01</fertilityMin>
 			<fertilitySensitivity>0.15</fertilitySensitivity>
-			<growDays>2.2</growDays>
+			<growDays>1.5</growDays>
             <dieIfLeafless>true</dieIfLeafless>
 <!--			<leaflessGraphicPath>Things/Plant/Grass_Leafless</leaflessGraphicPath>-->
 			<harvestWork>40</harvestWork>
@@ -84,14 +84,14 @@
         <selectable>true</selectable>
         <hideAtSnowDepth>0.5</hideAtSnowDepth>
         <ingestible>
-            <nutrition>0.15</nutrition>
+            <nutrition>0.2</nutrition>
         </ingestible>
         <plant>
             <reproduces>true</reproduces>
             <growMinGlow>0</growMinGlow>
             <fertilityMin>0.01</fertilityMin>
             <fertilitySensitivity>0.15</fertilitySensitivity>
-            <growDays>2.2</growDays>
+            <growDays>4</growDays>
             <dieIfLeafless>true</dieIfLeafless>
             <harvestYield>3</harvestYield>
             <harvestTag>Standard</harvestTag>
@@ -133,14 +133,14 @@
         <selectable>true</selectable>
         <hideAtSnowDepth>0.5</hideAtSnowDepth>
         <ingestible>
-            <nutrition>0.15</nutrition>
+            <nutrition>0.25</nutrition>
         </ingestible>
         <plant>
             <reproduces>true</reproduces>
             <growMinGlow>0</growMinGlow>
             <fertilityMin>0.01</fertilityMin>
             <fertilitySensitivity>0.15</fertilitySensitivity>
-            <growDays>2.2</growDays>
+            <growDays>3</growDays>
             <dieIfLeafless>true</dieIfLeafless>
             <harvestYield>2</harvestYield>
             <harvestTag>Standard</harvestTag>

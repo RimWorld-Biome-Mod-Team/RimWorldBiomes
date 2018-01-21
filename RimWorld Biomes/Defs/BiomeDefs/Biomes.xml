@@ -77,13 +77,12 @@
       <Fog>1</Fog>
     </baseWeatherCommonalities>
     <wildPlants>
-      <MushroomCluster>.4</MushroomCluster>
+      <MushroomCluster>.7</MushroomCluster>
       <SkullTop>0.05</SkullTop>
-      <PlantBush>0.7</PlantBush>
       <MushroomTree>0.30</MushroomTree>
       <GlowfruitTree>0.012</GlowfruitTree>
-      <SpectreCap>0.04</SpectreCap>
-      <StarlightShroom>0.05</StarlightShroom>
+      <SpectreCap>0.08</SpectreCap>
+      <StarlightShroom>0.1</StarlightShroom>
 		</wildPlants>
     <wildAnimals>
       <RWBPaleLizard>0.3</RWBPaleLizard>
