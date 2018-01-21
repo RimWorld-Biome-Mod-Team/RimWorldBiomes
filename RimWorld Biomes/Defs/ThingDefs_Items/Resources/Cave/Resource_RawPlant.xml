@@ -39,6 +39,9 @@
           </li>
       </comps>
       <tickerType>Rare</tickerType>
+      <thingCategories>
+          <li>PlantMatter</li>
+      </thingCategories>
   </ThingDef>
   
   <ThingDef ParentName="ResourceBase">

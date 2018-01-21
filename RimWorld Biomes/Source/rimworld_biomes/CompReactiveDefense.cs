@@ -179,19 +179,24 @@ namespace rimworld_biomes
         }
 
         public override void PostPostApplyDamage(DamageInfo dinfo, float totalDamageDealt)
-        {
+        {   
             lastattack = dinfo;
             newattack = true;
             base.PostPostApplyDamage(dinfo, totalDamageDealt);
-            Pawn pawn = (Pawn)parent;
-            if (pawn.Dead){
-                if (Props.apparel != null && pawn.apparel != null)
+            if (parent as Pawn != null)
+            {
+                Pawn pawn = (Pawn)parent;
+                if (pawn.Dead)
                 {
-                    pawn.apparel.DestroyAll();
+                    if (Props.apparel != null && pawn.apparel != null)
+                    {
+                        pawn.apparel.DestroyAll();
+                    }
+                    ResolveBaseGraphic();
+                    hidden = false;
                 }
-                ResolveBaseGraphic();
-                hidden = false;
             }
+
         }
 
         public void ResolveHideGraphic()

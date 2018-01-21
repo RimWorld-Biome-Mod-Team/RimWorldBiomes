@@ -17,6 +17,7 @@
 			<nutrition>0.15</nutrition>
 		</ingestible>
 		<plant>
+<!--            <MinOptimalGrowthTemperature>5</MinOptimalGrowthTemperature>-->
             <growMinGlow>0</growMinGlow>
 			<fertilityMin>0.01</fertilityMin>
 			<fertilitySensitivity>0.15</fertilitySensitivity>
