@@ -110,7 +110,7 @@ namespace rimworld_biomes
 									 select x).ToList<ThingDef>();
 			foreach (IntVec3 c in map.AllCells.InRandomOrder(null))
 			{
-				if (c.GetEdifice(map) == null && c.GetCover(map) == null && caves[c] > 0f && c.Roofed(map) && map.fertilityGrid.FertilityAt(c) > 0f)
+                if (c.GetEdifice(map) == null && c.GetCover(map) == null && (caves[c] > 0f || map.Biome.defName == "RWBCavern") && c.Roofed(map) && map.fertilityGrid.FertilityAt(c) > 0f)
 				{
 
 					IEnumerable<ThingDef> source2 = from def in source

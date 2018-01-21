@@ -61,8 +61,8 @@
                         <volume>(0.4, 0.8, 0.4)</volume>
                     </shadowData>
                 </cycledGraphic>
-                <secondsPerStep>0.8</secondsPerStep>
-                <secondsBetweenSteps>0.4</secondsBetweenSteps>
+                <secondsPerStep>1.2</secondsPerStep>
+                <secondsBetweenSteps>0.8</secondsBetweenSteps>
             </li>
         </comps>
         <race>

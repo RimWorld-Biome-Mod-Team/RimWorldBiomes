@@ -9,6 +9,22 @@
 			
 		</value>
 	</Operation>
-
-
+    
+    <Operation Class="PatchOperationSequence">
+        <success>Always</success>
+        <operations>
+            <li Class="PatchOperationRemove">
+                <xpath>Defs/ThingDef[defName = "Agarilux"]//comps/li[@Class = "CompProperties_Glower"]</xpath>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName = "Agarilux"]/comps</xpath>
+                <value>
+                        <li Class="CompProperties_Glower">
+                            <glowRadius>10</glowRadius>
+                            <glowColor>(137, 119, 115,1)</glowColor>
+                        </li>
+                </value>
+            </li>
+        </operations>
+    </Operation>
 </Patch>

@@ -64,6 +64,12 @@
 	    <butcherProducts>
 	        <RWBCrystalShards>20</RWBCrystalShards>
 	    </butcherProducts>
+<!--        <comps>-->
+<!--            <li Class="CompProperties_Glower">-->
+<!--                <glowRadius>2</glowRadius>-->
+<!--                <glowColor>(170,219,255,0.5)</glowColor>-->
+<!--            </li>-->
+<!--        </comps>-->
 	</ThingDef>
 
 	<ThingDef ParentName="StoneBlocksBase">
@@ -93,7 +99,12 @@
 	            <MaxHitPoints>1.4</MaxHitPoints>
 	        </statFactors>
 	    </stuffProps>
-	    
+        <comps>
+            <li Class="CompProperties_Glower">
+                <glowRadius>3</glowRadius>
+                <glowColor>(170,219,255,1)</glowColor>
+            </li>
+        </comps>
 	</ThingDef>
 
 	<RecipeDef ParentName="MakeStoneBlocksBase">
