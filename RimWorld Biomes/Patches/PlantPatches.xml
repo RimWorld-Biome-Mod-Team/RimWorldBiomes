@@ -12,6 +12,12 @@
                     
                 </value>
             </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName = "Glowstool"]/plant/growDays</xpath>
+                <value>
+                    <growDays>5</growDays>
+                </value>
+            </li>
             <li Class="PatchOperationAdd">
                 <xpath>Defs/ThingDef[defName = "Glowstool"]</xpath>
                 <value>
