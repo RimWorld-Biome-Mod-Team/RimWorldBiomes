@@ -35,7 +35,9 @@ Vampire Bat: Bloodthirsty flying mammals that feed on anything large enough.
 
 Vampire Moth: A moth whose fluttering foretells the drinking of blood.
 
-# Plants and Fungi:
+#### Note: We made deep water passable due to the semiaquatic creatures.
+
+### Plants and Fungi:
 
 Giant Mushrooms: Tree sized mushrooms that produce a fungal material as strong as wood.
 
@@ -55,16 +57,16 @@ Water Fungus: Fungi that can grow on water.
 
 Starlight Shroom: Small, dark capped mushrooms with tiny spots that glimmer.
 
-Note: We tweaked glowstool a bit and gave players the ability to grow it so as to have a potato speed/output crop.
+#### Note: We tweaked glowstool a bit and gave players the ability to grow it so as to have a potato speed/output crop.
 
-# New Ore:
+### New Ore:
 
 Coal: A good source of fuel for generators.
 
 Crystal: Strong crystal that can be used to build a great variety of things.
 
 
-# New Items:
+### New Items:
 
 Beetle Armor: Armor made from chitin, steel, and textiles.
 
@@ -78,4 +80,12 @@ Honeydew: A sweet nectar produces by Bovine Beetles.
 - Chinese Simplified (by ?)
 
 ## Acknowledgements
-- Pardeike/Brrainz?
+- Jecrell for all his help with code and the many useful bits and bobs in Jecstools. Many more thanks to him for creating the new Logo!
+
+ChickenPlucker for creating the beetle armor.
+
+spdskatr for the code to allow for swimming pawns.
+
+Shotgunfrenzy for tons of help with bugfixing.
+
+Curious™ for the Simplified Chinese translation.
