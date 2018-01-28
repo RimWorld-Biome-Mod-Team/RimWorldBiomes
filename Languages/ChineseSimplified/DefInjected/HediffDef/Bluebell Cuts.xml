@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <BluebellCutsHigh.label>蓝蕈菇切片致幻</BluebellCutsHigh.label>
+  <BluebellCutsHigh.stages.0.label>轻微</BluebellCutsHigh.stages.0.label>
+  <BluebellCutsHigh.stages.1.label>强烈</BluebellCutsHigh.stages.1.label>
+
+
+  <!-- Shroom addiction -->
+
+  <BluebellCutsTolerance.label>蓝蕈菇切片耐受</BluebellCutsTolerance.label>
+  <BluebellCutsTolerance.stages.0.label>弱</BluebellCutsTolerance.stages.0.label>
+  <BluebellCutsTolerance.stages.1.label>弱</BluebellCutsTolerance.stages.1.label>
+  <BluebellCutsTolerance.stages.2.label>强</BluebellCutsTolerance.stages.2.label>
+  <BluebellCutsTolerance.stages.3.label>严重</BluebellCutsTolerance.stages.3.label>
+
+  <BluebellCutsAddiction.label>蓝蕈菇切片成瘾</BluebellCutsAddiction.label>
+  <BluebellCutsAddiction.stages.1.label>戒断</BluebellCutsAddiction.stages.1.label>
+
+
+</LanguageData>

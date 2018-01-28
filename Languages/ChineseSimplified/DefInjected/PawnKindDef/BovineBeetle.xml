@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Bovine Beetle -->
+
+  <RWBBovineBeetle.label>牛甲虫</RWBBovineBeetle.label>
+  <RWBBovineBeetle.labelPlural>牛甲虫</RWBBovineBeetle.labelPlural>
+  <RWBBovineBeetle.lifeStages.0.label>牛甲虫</RWBBovineBeetle.lifeStages.0.label>
+  <RWBBovineBeetle.lifeStages.0.labelPlural>牛甲虫</RWBBovineBeetle.lifeStages.0.labelPlural>
+  <RWBBovineBeetle.lifeStages.0.labelMale>雄牛甲虫</RWBBovineBeetle.lifeStages.0.labelMale>
+  <RWBBovineBeetle.lifeStages.0.labelMalePlural>雄牛甲虫</RWBBovineBeetle.lifeStages.0.labelMalePlural>
+  <RWBBovineBeetle.lifeStages.0.labelFemale>雌牛甲虫</RWBBovineBeetle.lifeStages.0.labelFemale>
+  <RWBBovineBeetle.lifeStages.0.labelFemalePlural>雌牛甲虫</RWBBovineBeetle.lifeStages.0.labelFemalePlural>
+  <RWBBovineBeetle.lifeStages.1.label>牛甲虫</RWBBovineBeetle.lifeStages.1.label>
+  <RWBBovineBeetle.lifeStages.1.labelPlural>牛甲虫</RWBBovineBeetle.lifeStages.1.labelPlural>
+  <RWBBovineBeetle.lifeStages.1.labelMale>雄牛甲虫</RWBBovineBeetle.lifeStages.1.labelMale>
+  <RWBBovineBeetle.lifeStages.1.labelMalePlural>牛甲虫</RWBBovineBeetle.lifeStages.1.labelMalePlural>
+  <RWBBovineBeetle.lifeStages.1.labelFemale>雌牛甲虫</RWBBovineBeetle.lifeStages.1.labelFemale>
+  <RWBBovineBeetle.lifeStages.1.labelFemalePlural>雌牛甲虫</RWBBovineBeetle.lifeStages.1.labelFemalePlural>
+  <RWBBovineBeetle.labelMale>雄牛甲虫</RWBBovineBeetle.labelMale>
+  <RWBBovineBeetle.labelMalePlural>雄牛甲虫</RWBBovineBeetle.labelMalePlural>
+  <RWBBovineBeetle.labelFemale>雌牛甲虫</RWBBovineBeetle.labelFemale>
+  <RWBBovineBeetle.labelFemalePlural>雌牛甲虫</RWBBovineBeetle.labelFemalePlural>
+
+
+</LanguageData>

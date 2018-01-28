@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Mole -->
+
+  <RWBMole.label>鼹鼠</RWBMole.label>
+  <RWBMole.description>鼹鼠大约和狗一样大，这些生物可以用它们难以置信的强壮的爪子在石头和土壤中挖洞，它们通常被穴居人用作武器。</RWBMole.description>
+  <RWBMole.tools.0.label>左爪</RWBMole.tools.0.label>
+  <RWBMole.tools.1.label>右爪</RWBMole.tools.1.label>
+  <RWBMole.tools.3.label>头</RWBMole.tools.3.label>
+  <!-- No Leather: Butcher Products -->
+  <RWBMole_Meat.label>鼹鼠肉</RWBMole_Meat.label>
+  <RWBMole_Meat.description>鼹鼠的肉</RWBMole_Meat.description>
+  <RWBMole_Corpse.label>鼹鼠尸体</RWBMole_Corpse.label>
+  <RWBMole_Corpse.description>鼹鼠的尸体</RWBMole_Corpse.description>
+
+
+</LanguageData>

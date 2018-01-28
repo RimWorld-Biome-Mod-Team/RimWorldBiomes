@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Spectre Shrimp -->
+
+  <RWBSpectreShrimp.label>幽灵虾</RWBSpectreShrimp.label>
+  <RWBSpectreShrimp.description>这些适应地下环境又小又盲的节肢动物当他们群集在一起时是一个相当大的威胁,  其尖锐的口器能轻松切割他的猎物。</RWBSpectreShrimp.description>
+  <RWBSpectreShrimp.tools.1.label>头</RWBSpectreShrimp.tools.1.label>
+  <!-- Leather Amount: 0 -->
+  <RWBSpectreShrimp_Meat.label>幽灵虾肉</RWBSpectreShrimp_Meat.label>
+  <RWBSpectreShrimp_Meat.description>幽灵虾的肉</RWBSpectreShrimp_Meat.description>
+  <RWBSpectreShrimp_Corpse.label>幽灵虾尸体</RWBSpectreShrimp_Corpse.label>
+  <RWBSpectreShrimp_Corpse.description>幽灵虾的尸体</RWBSpectreShrimp_Corpse.description>
+
+
+</LanguageData>

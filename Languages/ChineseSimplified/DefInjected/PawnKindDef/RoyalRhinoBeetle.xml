@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Royal Rhino Beetle -->
+
+  <RWBRhinoBeetle.label>皇家犀甲虫</RWBRhinoBeetle.label>
+  <RWBRhinoBeetle.labelPlural>皇家犀甲虫</RWBRhinoBeetle.labelPlural>
+  <RWBRhinoBeetle.lifeStages.0.label>皇家犀甲虫</RWBRhinoBeetle.lifeStages.0.label>
+  <RWBRhinoBeetle.lifeStages.0.labelPlural>皇家犀甲虫</RWBRhinoBeetle.lifeStages.0.labelPlural>
+  <RWBRhinoBeetle.lifeStages.0.labelMale>雄性皇家犀甲虫</RWBRhinoBeetle.lifeStages.0.labelMale>
+  <RWBRhinoBeetle.lifeStages.0.labelMalePlural>雄性皇家犀甲虫</RWBRhinoBeetle.lifeStages.0.labelMalePlural>
+  <RWBRhinoBeetle.lifeStages.0.labelFemale>雌性皇家犀甲虫</RWBRhinoBeetle.lifeStages.0.labelFemale>
+  <RWBRhinoBeetle.lifeStages.0.labelFemalePlural>雌性皇家犀甲虫</RWBRhinoBeetle.lifeStages.0.labelFemalePlural>
+  <RWBRhinoBeetle.lifeStages.1.label>犀甲犀甲虫</RWBRhinoBeetle.lifeStages.1.label>
+  <RWBRhinoBeetle.lifeStages.1.labelPlural>皇家犀甲虫</RWBRhinoBeetle.lifeStages.1.labelPlural>
+  <RWBRhinoBeetle.lifeStages.1.labelMale>雄性皇家犀甲虫</RWBRhinoBeetle.lifeStages.1.labelMale>
+  <RWBRhinoBeetle.lifeStages.1.labelMalePlural>雄性皇家犀甲虫</RWBRhinoBeetle.lifeStages.1.labelMalePlural>
+  <RWBRhinoBeetle.lifeStages.1.labelFemale>雌性皇家犀甲虫</RWBRhinoBeetle.lifeStages.1.labelFemale>
+  <RWBRhinoBeetle.lifeStages.1.labelFemalePlural>雌性皇家犀甲虫</RWBRhinoBeetle.lifeStages.1.labelFemalePlural>
+  <RWBRhinoBeetle.labelMale>雄性皇家犀甲虫</RWBRhinoBeetle.labelMale>
+  <RWBRhinoBeetle.labelMalePlural>雄性皇家犀甲虫</RWBRhinoBeetle.labelMalePlural>
+  <RWBRhinoBeetle.labelFemale>雌性皇家犀甲虫</RWBRhinoBeetle.labelFemale>
+  <RWBRhinoBeetle.labelFemalePlural>雌性皇家犀甲虫</RWBRhinoBeetle.labelFemalePlural>
+
+
+</LanguageData>

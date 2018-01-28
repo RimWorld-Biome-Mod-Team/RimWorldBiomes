@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Maxolotl -->
+
+  <RWBMaxolotl.label>螈</RWBMaxolotl.label>
+  <RWBMaxolotl.description>蝾螈的巨型亲属, 在洞穴环境这些蝾螈已经成长到巨大的比例,和生活在洞穴内巨型昆虫竞争着吃喝。尽管它们几乎完全是水生动物, 但如果有必要, 他们可以去土地上。</RWBMaxolotl.description>
+  <RWBMaxolotl.tools.1.label>头</RWBMaxolotl.tools.1.label>
+  <!-- Leather Amount: 0 -->
+  <RWBMaxolotl_Meat.label>螈肉</RWBMaxolotl_Meat.label>
+  <RWBMaxolotl_Meat.description>螈的肉</RWBMaxolotl_Meat.description>
+  <RWBMaxolotl_Corpse.label>螈尸体</RWBMaxolotl_Corpse.label>
+  <RWBMaxolotl_Corpse.description>螈的尸体</RWBMaxolotl_Corpse.description>
+
+
+</LanguageData>

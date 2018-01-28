@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <RWBChitin.label>几丁质</RWBChitin.label>
+  <RWBChitin.description>一种从节肢动物身上收集的粗糙的电镀材料，常用来制作盔甲和衣服。</RWBChitin.description>
+  <RWBChitin.stuffProps.stuffAdjective>几丁质</RWBChitin.stuffProps.stuffAdjective>
+
+  <RWBSlimeChunk.label>史莱姆块</RWBSlimeChunk.label>
+  <RWBSlimeChunk.description>一堆酸性粘液, 拿着的时候要小心。</RWBSlimeChunk.description>
+  <RWBSlimeChunk.stuffProps.stuffAdjective>史莱姆块k</RWBSlimeChunk.stuffProps.stuffAdjective>
+
+  <RWBMoleClaw.label>鼹鼠爪</RWBMoleClaw.label>
+  <RWBMoleClaw.description>来自死鼹鼠的爪子.</RWBMoleClaw.description>
+  <RWBMoleClaw.stuffProps.stuffAdjective>鼹鼠爪</RWBMoleClaw.stuffProps.stuffAdjective>
+
+  <RWBHoneyDew.label>蜜露</RWBHoneyDew.label>
+  <RWBHoneyDew.description>从牛甲虫中收集的一种营养液体.</RWBHoneyDew.description>
+
+
+</LanguageData>

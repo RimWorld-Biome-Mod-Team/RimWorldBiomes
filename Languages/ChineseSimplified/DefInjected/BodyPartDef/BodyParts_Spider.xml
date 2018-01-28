@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <Cephalothorax.label>头胸部</Cephalothorax.label>
+  <LeftPedipalp.label>左触肢</LeftPedipalp.label>
+  <RightPedipalp.label>右触肢</RightPedipalp.label>
+  <SecondMiddleLeftInsectLeg.label>左二中足</SecondMiddleLeftInsectLeg.label>
+  <SecondMiddleRightInsectLeg.label>右二中足</SecondMiddleRightInsectLeg.label>
+
+
+</LanguageData>

@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Slime -->
+
+  <RWBSlime.label>史莱姆</RWBSlime.label>
+  <RWBSlime.labelPlural>史莱姆</RWBSlime.labelPlural>
+  <RWBSlime.lifeStages.0.label>史莱姆</RWBSlime.lifeStages.0.label>
+  <RWBSlime.lifeStages.0.labelPlural>史莱姆</RWBSlime.lifeStages.0.labelPlural>
+  <RWBSlime.lifeStages.0.labelMale>雄性史莱姆</RWBSlime.lifeStages.0.labelMale>
+  <RWBSlime.lifeStages.0.labelMalePlural>雄性史莱姆</RWBSlime.lifeStages.0.labelMalePlural>
+  <RWBSlime.lifeStages.0.labelFemale>雄性史莱姆</RWBSlime.lifeStages.0.labelFemale>
+  <RWBSlime.lifeStages.0.labelFemalePlural>雄性史莱姆</RWBSlime.lifeStages.0.labelFemalePlural>
+  <RWBSlime.lifeStages.1.label>史莱姆</RWBSlime.lifeStages.1.label>
+  <RWBSlime.lifeStages.1.labelPlural>史莱姆</RWBSlime.lifeStages.1.labelPlural>
+  <RWBSlime.lifeStages.1.labelMale>雄性史莱姆</RWBSlime.lifeStages.1.labelMale>
+  <RWBSlime.lifeStages.1.labelMalePlural>雄性史莱姆</RWBSlime.lifeStages.1.labelMalePlural>
+  <RWBSlime.lifeStages.1.labelFemale>雄性史莱姆</RWBSlime.lifeStages.1.labelFemale>
+  <RWBSlime.lifeStages.1.labelFemalePlural>雄性史莱姆</RWBSlime.lifeStages.1.labelFemalePlural>
+  <RWBSlime.labelMale>雄性史莱姆</RWBSlime.labelMale>
+  <RWBSlime.labelMalePlural>雄性史莱姆</RWBSlime.labelMalePlural>
+  <RWBSlime.labelFemale>雄性史莱姆</RWBSlime.labelFemale>
+  <RWBSlime.labelFemalePlural>雄性史莱姆</RWBSlime.labelFemalePlural>
+
+
+</LanguageData>

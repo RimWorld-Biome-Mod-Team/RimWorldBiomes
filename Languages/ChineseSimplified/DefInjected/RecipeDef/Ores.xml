@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Crystal -->
+
+  <MakeCrystalShards.label>制作水晶砖块</MakeCrystalShards.label>
+  <MakeCrystalShards.description>将水晶块切割成可用的砖块.</MakeCrystalShards.description>
+  <MakeCrystalShards.jobString>正在切割石材.</MakeCrystalShards.jobString>
+
+
+</LanguageData>

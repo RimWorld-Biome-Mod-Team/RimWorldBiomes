@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Maxolotl -->
+
+  <RWBPaleLizard.label>白蜥蜴</RWBPaleLizard.label>
+  <RWBPaleLizard.labelPlural>白蜥蜴</RWBPaleLizard.labelPlural>
+  <RWBPaleLizard.lifeStages.0.label>白蜥蜴</RWBPaleLizard.lifeStages.0.label>
+  <RWBPaleLizard.lifeStages.0.labelPlural>白蜥蜴</RWBPaleLizard.lifeStages.0.labelPlural>
+  <RWBPaleLizard.lifeStages.0.labelMale>雄白蜥蜴</RWBPaleLizard.lifeStages.0.labelMale>
+  <RWBPaleLizard.lifeStages.0.labelMalePlural>雄白蜥蜴</RWBPaleLizard.lifeStages.0.labelMalePlural>
+  <RWBPaleLizard.lifeStages.0.labelFemale>雌白蜥蜴</RWBPaleLizard.lifeStages.0.labelFemale>
+  <RWBPaleLizard.lifeStages.0.labelFemalePlural>雌白蜥蜴</RWBPaleLizard.lifeStages.0.labelFemalePlural>
+  <RWBPaleLizard.lifeStages.1.label>白蜥蜴</RWBPaleLizard.lifeStages.1.label>
+  <RWBPaleLizard.lifeStages.1.labelPlural>白蜥蜴</RWBPaleLizard.lifeStages.1.labelPlural>
+  <RWBPaleLizard.lifeStages.1.labelMale>雄白蜥蜴</RWBPaleLizard.lifeStages.1.labelMale>
+  <RWBPaleLizard.lifeStages.1.labelMalePlural>雄白蜥蜴</RWBPaleLizard.lifeStages.1.labelMalePlural>
+  <RWBPaleLizard.lifeStages.1.labelFemale>雌白蜥蜴</RWBPaleLizard.lifeStages.1.labelFemale>
+  <RWBPaleLizard.lifeStages.1.labelFemalePlural>雌白蜥蜴</RWBPaleLizard.lifeStages.1.labelFemalePlural>
+  <RWBPaleLizard.labelMale>雄白蜥蜴</RWBPaleLizard.labelMale>
+  <RWBPaleLizard.labelMalePlural>雄白蜥蜴</RWBPaleLizard.labelMalePlural>
+  <RWBPaleLizard.labelFemale>雌白蜥蜴</RWBPaleLizard.labelFemale>
+  <RWBPaleLizard.labelFemalePlural>雌白蜥蜴</RWBPaleLizard.labelFemalePlural>
+
+
+</LanguageData>

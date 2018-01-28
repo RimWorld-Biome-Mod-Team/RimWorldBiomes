@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <PaleBeets.label>甜菜</PaleBeets.label>
+  <PaleBeets.description>一种经过基因改造工程，能穿透岩石从中获取少量养分从而生存下来的淡紫色甜菜</PaleBeets.description>
+
+  <MortalMorel.label>扁鹊菌</MortalMorel.label>
+  <MortalMorel.description>这种真菌长期被穴居居民用作做草药使用. 它的名字来源于它能延缓在死亡边缘的人的生命.</MortalMorel.description>
+
+  <GlowfruitTree.label>荧光果树</GlowfruitTree.label>
+  <GlowfruitTree.description>一种适应了洞穴黑暗环境的孤独的树种, 树上类似柑橘的水果能在黑暗中发光. 对于果蝠和穴居居民来说是大量食物的来源. </GlowfruitTree.description>
+
+  <InkCap.label>墨帽菌</InkCap.label>
+  <InkCap.description>一种大盖状蘑菇, 生产出漆黑的布样纤维.</InkCap.description>
+
+  <BluebellShroom.label>蓝顶菇</BluebellShroom.label>
+  <BluebellShroom.description>这种小蘑菇通常一以小簇生长, 经常被穴居人食用以生动的幻觉.</BluebellShroom.description>
+
+
+</LanguageData>

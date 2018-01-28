@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- JellyPot Bug -->
+
+  <RWBJellypotBug.label>果酱虫</RWBJellypotBug.label>
+  <RWBJellypotBug.description>这种相对较小的昆虫是每一个穴居居民都想将其作为家畜饲养的，原因在于它能够随着时间的推移而生产出果酱</RWBJellypotBug.description>
+  <RWBJellypotBug.tools.1.label>头</RWBJellypotBug.tools.1.label>
+  <!-- No Leather: Butcher Products -->
+  <RWBJellypotBug_Meat.label>果酱虫肉</RWBJellypotBug_Meat.label>
+  <RWBJellypotBug_Meat.description>果酱虫的肉</RWBJellypotBug_Meat.description>
+  <RWBJellypotBug_Corpse.label>果酱虫尸体</RWBJellypotBug_Corpse.label>
+  <RWBJellypotBug_Corpse.description>果酱虫的尸体</RWBJellypotBug_Corpse.description>
+
+
+</LanguageData>

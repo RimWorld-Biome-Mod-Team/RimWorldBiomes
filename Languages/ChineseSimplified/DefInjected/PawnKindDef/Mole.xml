@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Mole -->
+
+  <RWBMole.label>鼹鼠</RWBMole.label>
+  <RWBMole.labelPlural>鼹鼠</RWBMole.labelPlural>
+  <RWBMole.lifeStages.0.label>鼹鼠</RWBMole.lifeStages.0.label>
+  <RWBMole.lifeStages.0.labelPlural>鼹鼠</RWBMole.lifeStages.0.labelPlural>
+  <RWBMole.lifeStages.0.labelMale>雄鼹鼠</RWBMole.lifeStages.0.labelMale>
+  <RWBMole.lifeStages.0.labelMalePlural>雄鼹鼠</RWBMole.lifeStages.0.labelMalePlural>
+  <RWBMole.lifeStages.0.labelFemale>雌鼹鼠</RWBMole.lifeStages.0.labelFemale>
+  <RWBMole.lifeStages.0.labelFemalePlural>雌鼹鼠</RWBMole.lifeStages.0.labelFemalePlural>
+  <RWBMole.lifeStages.1.label>鼹鼠</RWBMole.lifeStages.1.label>
+  <RWBMole.lifeStages.1.labelPlural>鼹鼠</RWBMole.lifeStages.1.labelPlural>
+  <RWBMole.lifeStages.1.labelMale>雄 鼹鼠</RWBMole.lifeStages.1.labelMale>
+  <RWBMole.lifeStages.1.labelMalePlural>雄鼹鼠</RWBMole.lifeStages.1.labelMalePlural>
+  <RWBMole.lifeStages.1.labelFemale>雌鼹鼠</RWBMole.lifeStages.1.labelFemale>
+  <RWBMole.lifeStages.1.labelFemalePlural>雌鼹鼠</RWBMole.lifeStages.1.labelFemalePlural>
+  <RWBMole.lifeStages.2.label>鼹鼠</RWBMole.lifeStages.2.label>
+  <RWBMole.lifeStages.2.labelPlural>鼹鼠</RWBMole.lifeStages.2.labelPlural>
+  <RWBMole.lifeStages.2.labelMale>雄鼹鼠</RWBMole.lifeStages.2.labelMale>
+  <RWBMole.lifeStages.2.labelMalePlural>雄鼹鼠</RWBMole.lifeStages.2.labelMalePlural>
+  <RWBMole.lifeStages.2.labelFemale>雌鼹鼠</RWBMole.lifeStages.2.labelFemale>
+  <RWBMole.lifeStages.2.labelFemalePlural>雌鼹鼠</RWBMole.lifeStages.2.labelFemalePlural>
+  <RWBMole.labelMale>雄 鼹鼠</RWBMole.labelMale>
+  <RWBMole.labelMalePlural>雄鼹鼠</RWBMole.labelMalePlural>
+  <RWBMole.labelFemale>雌鼹鼠</RWBMole.labelFemale>
+  <RWBMole.labelFemalePlural>雌鼹鼠</RWBMole.labelFemalePlural>
+
+
+</LanguageData>

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <RWBSmallCocoon.label>茧</RWBSmallCocoon.label>
+  <RWBSmallCocoon.description>用丝制的茧来包裹着的被制服活着或死去的猎物.</RWBSmallCocoon.description>
+
+  <RWBMediumCocoon.label>中型茧</RWBMediumCocoon.label>
+  <RWBMediumCocoon.description>较大的丝纺网, 用于抓较大猎物.</RWBMediumCocoon.description>
+
+  <RWBLargeCocoon.label>巨型茧</RWBLargeCocoon.label>
+  <RWBLargeCocoon.description>巨大的丝纺网, 用于抓大型猎物.</RWBLargeCocoon.description>
+
+
+</LanguageData>

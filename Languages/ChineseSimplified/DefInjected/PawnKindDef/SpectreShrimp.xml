@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Spectre Shrimp -->
+
+  <RWBSpectreShrimp.label>幽灵虾</RWBSpectreShrimp.label>
+  <RWBSpectreShrimp.labelPlural>幽灵虾</RWBSpectreShrimp.labelPlural>
+  <RWBSpectreShrimp.lifeStages.0.label>幽灵虾</RWBSpectreShrimp.lifeStages.0.label>
+  <RWBSpectreShrimp.lifeStages.0.labelPlural>幽灵虾</RWBSpectreShrimp.lifeStages.0.labelPlural>
+  <RWBSpectreShrimp.lifeStages.0.labelMale>雄幽灵虾</RWBSpectreShrimp.lifeStages.0.labelMale>
+  <RWBSpectreShrimp.lifeStages.0.labelMalePlural>雄幽灵虾</RWBSpectreShrimp.lifeStages.0.labelMalePlural>
+  <RWBSpectreShrimp.lifeStages.0.labelFemale>雌幽灵虾</RWBSpectreShrimp.lifeStages.0.labelFemale>
+  <RWBSpectreShrimp.lifeStages.0.labelFemalePlural>雌幽灵虾</RWBSpectreShrimp.lifeStages.0.labelFemalePlural>
+  <RWBSpectreShrimp.lifeStages.1.label>幽灵虾</RWBSpectreShrimp.lifeStages.1.label>
+  <RWBSpectreShrimp.lifeStages.1.labelPlural>幽灵虾</RWBSpectreShrimp.lifeStages.1.labelPlural>
+  <RWBSpectreShrimp.lifeStages.1.labelMale>雄幽灵虾</RWBSpectreShrimp.lifeStages.1.labelMale>
+  <RWBSpectreShrimp.lifeStages.1.labelMalePlural>雄幽灵虾</RWBSpectreShrimp.lifeStages.1.labelMalePlural>
+  <RWBSpectreShrimp.lifeStages.1.labelFemale>雌幽灵虾</RWBSpectreShrimp.lifeStages.1.labelFemale>
+  <RWBSpectreShrimp.lifeStages.1.labelFemalePlural>雌幽灵虾</RWBSpectreShrimp.lifeStages.1.labelFemalePlural>
+  <RWBSpectreShrimp.labelMale>雄幽灵虾</RWBSpectreShrimp.labelMale>
+  <RWBSpectreShrimp.labelMalePlural>雄幽灵虾</RWBSpectreShrimp.labelMalePlural>
+  <RWBSpectreShrimp.labelFemale>雌幽灵虾</RWBSpectreShrimp.labelFemale>
+  <RWBSpectreShrimp.labelFemalePlural>雌幽灵虾</RWBSpectreShrimp.labelFemalePlural>
+
+
+</LanguageData>

@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Crystal Crab -->
+
+  <RWBCrystalCrab.label>水晶蟹</RWBCrystalCrab.label>
+  <RWBCrystalCrab.labelPlural>水晶蟹</RWBCrystalCrab.labelPlural>
+  <RWBCrystalCrab.lifeStages.0.label>水晶蟹</RWBCrystalCrab.lifeStages.0.label>
+  <RWBCrystalCrab.lifeStages.0.labelPlural>水晶蟹</RWBCrystalCrab.lifeStages.0.labelPlural>
+  <RWBCrystalCrab.lifeStages.0.labelMale>雄水晶蟹</RWBCrystalCrab.lifeStages.0.labelMale>
+  <RWBCrystalCrab.lifeStages.0.labelMalePlural>雄水晶蟹</RWBCrystalCrab.lifeStages.0.labelMalePlural>
+  <RWBCrystalCrab.lifeStages.0.labelFemale>雌水晶蟹</RWBCrystalCrab.lifeStages.0.labelFemale>
+  <RWBCrystalCrab.lifeStages.0.labelFemalePlural>雌水晶蟹</RWBCrystalCrab.lifeStages.0.labelFemalePlural>
+  <RWBCrystalCrab.lifeStages.1.label>水晶蟹</RWBCrystalCrab.lifeStages.1.label>
+  <RWBCrystalCrab.lifeStages.1.labelPlural>水晶蟹</RWBCrystalCrab.lifeStages.1.labelPlural>
+  <RWBCrystalCrab.lifeStages.1.labelMale>雄水晶蟹</RWBCrystalCrab.lifeStages.1.labelMale>
+  <RWBCrystalCrab.lifeStages.1.labelMalePlural>雄水晶蟹</RWBCrystalCrab.lifeStages.1.labelMalePlural>
+  <RWBCrystalCrab.lifeStages.1.labelFemale>雌水晶蟹</RWBCrystalCrab.lifeStages.1.labelFemale>
+  <RWBCrystalCrab.lifeStages.1.labelFemalePlural>雌水晶蟹</RWBCrystalCrab.lifeStages.1.labelFemalePlural>
+  <RWBCrystalCrab.labelMale>雄水晶蟹</RWBCrystalCrab.labelMale>
+  <RWBCrystalCrab.labelMalePlural>雄水晶蟹</RWBCrystalCrab.labelMalePlural>
+  <RWBCrystalCrab.labelFemale>雌水晶蟹</RWBCrystalCrab.labelFemale>
+  <RWBCrystalCrab.labelFemalePlural>雌水晶蟹</RWBCrystalCrab.labelFemalePlural>
+
+
+</LanguageData>

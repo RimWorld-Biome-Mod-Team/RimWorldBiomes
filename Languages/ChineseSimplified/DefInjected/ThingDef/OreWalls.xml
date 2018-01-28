@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <MineableCrystal.label>压埋的水晶</MineableCrystal.label>
+  <MineableCrystal.description>嵌在岩石中的水晶碎片.</MineableCrystal.description>
+
+  <MineableCoal.label>煤矿</MineableCoal.label>
+  <MineableCoal.description>煤矿床.</MineableCoal.description>
+
+
+</LanguageData>

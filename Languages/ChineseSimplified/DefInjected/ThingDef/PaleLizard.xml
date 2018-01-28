@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Maxolotl -->
+
+  <RWBPaleLizard.label>白蜥蜴</RWBPaleLizard.label>
+  <RWBPaleLizard.description>这钟小蜥蜴已经失去了大部分的颜色, 为了适应洞穴环境, 退化了眼睛。它是洞穴中食肉动物的常见猎物.</RWBPaleLizard.description>
+  <RWBPaleLizard.tools.1.label>头</RWBPaleLizard.tools.1.label>
+  <!-- Leather Amount: 0 -->
+  <RWBPaleLizard_Meat.label>白蜥蜴肉</RWBPaleLizard_Meat.label>
+  <RWBPaleLizard_Meat.description>白蜥蜴的肉</RWBPaleLizard_Meat.description>
+  <RWBPaleLizard_Corpse.label>白蜥蜴尸体</RWBPaleLizard_Corpse.label>
+  <RWBPaleLizard_Corpse.description>白蜥蜴的尸体</RWBPaleLizard_Corpse.description>
+
+
+</LanguageData>

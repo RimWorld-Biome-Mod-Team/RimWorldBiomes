@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <BeetlePlateArmor.label>甲虫盔甲</BeetlePlateArmor.label>
+  <BeetlePlateArmor.description>将甲壳制作成盔甲</BeetlePlateArmor.description>
+
+  <BeetlePlateHelmet.label>甲虫头盔</BeetlePlateHelmet.label>
+  <BeetlePlateHelmet.description>将甲壳制作成头盔</BeetlePlateHelmet.description>
+
+  <BatMask.label>蝙蝠面罩</BatMask.label>
+  <BatMask.description>制作类似蝙蝠头部的面罩</BatMask.description>
+
+
+</LanguageData>

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Vampire Moth -->
+
+  <RWBVampireMoth.label>吸血蛾</RWBVampireMoth.label>
+  <RWBVampireMoth.description>别被它可爱的一面迷惑了，如同字面上的意思，这些巨蛾几乎会吸干所有动物的血。</RWBVampireMoth.description>
+  <RWBVampireMoth.tools.1.label>头</RWBVampireMoth.tools.1.label>
+  <!-- Leather Amount: 0 -->
+  <RWBVampireMoth_Meat.label>吸血蛾肉</RWBVampireMoth_Meat.label>
+  <RWBVampireMoth_Meat.description>吸血蛾的肉</RWBVampireMoth_Meat.description>
+  <RWBVampireMoth_Corpse.label>吸血蛾尸体</RWBVampireMoth_Corpse.label>
+  <RWBVampireMoth_Corpse.description>吸血蛾的尸体</RWBVampireMoth_Corpse.description>
+
+
+</LanguageData>

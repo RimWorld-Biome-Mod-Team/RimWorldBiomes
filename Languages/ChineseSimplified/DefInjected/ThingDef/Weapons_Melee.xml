@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <RWB_MoleGloveBasic.label>鼹鼠爪手套</RWB_MoleGloveBasic.label>
+  <RWB_MoleGloveBasic.description>由鼹鼠爪制成的简易武器.</RWB_MoleGloveBasic.description>
+  <RWB_MoleGloveBasic.tools.0.label>爪</RWB_MoleGloveBasic.tools.0.label>
+
+  <RWB_MoleGloveAdvanced.label>先进鼹爪手套</RWB_MoleGloveAdvanced.label>
+  <RWB_MoleGloveAdvanced.description>由鼹爪制成的升级版武器.</RWB_MoleGloveAdvanced.description>
+  <RWB_MoleGloveAdvanced.tools.0.label>爪</RWB_MoleGloveAdvanced.tools.0.label>
+
+
+</LanguageData>

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <RWBCaveSpider.label>蜘蛛</RWBCaveSpider.label>
+  <RWBCaveSpider.description> 这种巨型蜘蛛是居住在洞穴的捕食者.居住在洞穴的墙洞里，躺在那里等待着猎物靠近从而袭击他们.他们会把猎物裹在茧里面以备日后.探险家们要小心别里他的巢穴太近了. </RWBCaveSpider.description>
+  <RWBCaveSpider.tools.0.label>下巴</RWBCaveSpider.tools.0.label>
+  <RWBCaveSpider.tools.1.label>左腿</RWBCaveSpider.tools.1.label>
+  <RWBCaveSpider.tools.2.label>右腿</RWBCaveSpider.tools.2.label>
+  <RWBCaveSpider.tools.3.label>头</RWBCaveSpider.tools.3.label>
+  <!-- Leather Amount: 0 -->
+  <RWBCaveSpider_Meat.label>蜘蛛肉</RWBCaveSpider_Meat.label>
+  <RWBCaveSpider_Meat.description>巨型蜘蛛的肉</RWBCaveSpider_Meat.description>
+  <RWBCaveSpider_Corpse.label>蜘蛛尸体</RWBCaveSpider_Corpse.label>
+  <RWBCaveSpider_Corpse.description>巨型蜘蛛的尸体</RWBCaveSpider_Corpse.description>
+
+
+</LanguageData>
