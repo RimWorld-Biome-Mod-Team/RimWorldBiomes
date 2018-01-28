@@ -82,10 +82,10 @@ It's RimWorld with more biomes!
 ## Acknowledgements
 - Jecrell for all his help with code and the many useful bits and bobs in Jecstools. Many more thanks to him for creating the new Logo!
 
-ChickenPlucker for creating the beetle armor.
+ - ChickenPlucker for creating the beetle armor.
 
-spdskatr for the code to allow for swimming pawns.
+ - spdskatr for the code to allow for swimming pawns.
 
-Shotgunfrenzy for tons of help with bugfixing.
+ - Shotgunfrenzy for tons of help with bugfixing.
 
-Curious™ for the Simplified Chinese translation.
+ - Curious™ for the Simplified Chinese translation.
