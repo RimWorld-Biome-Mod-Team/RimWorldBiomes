@@ -3,47 +3,35 @@
 It's RimWorld with more biomes!
 
 ## Features
--
-Biomes! New Environments to Diversify the World.
-« on: January 20, 2018, 05:13:48 AM »
-ReplyQuoteModifyModifyRemoveRemove
-
- 
-
-The intention of the mod is to make the world of Rimworld more varied and interesting, This mod will add multiple new Biomes to the world along with the plants and animals to populate them. A few Biomes have been planned out so far but suggestions are always welcome.
-
-The current team is composed of:
-Draegon1993: Team Leader and Artist
-Swenzi: C# and XML Programmer
-XeoNovaDan: XML Programmer and Beta Tester
-
-Steam: http://steamcommunity.com/sharedfiles/filedetails/?id=1275333892
-Dropbox: https://www.dropbox.com/s/5t5fpmw4uvq3ic2/RimWorld%20Biomes.rar?dl=0
-This mod requires Jecstools to work!
-
-This will be the initial release of the mod and will only include the Cavern biome. We will progressively tweak and add more to the biome until we deem it finished.
-
-Known Compatability
-Rainbeau's Bridges and Fishing Add-on
-
-Known Incompatability
-Stuffed Floors (The fertile stone types all turn bright white)
-
-Animals:
+New Animals:
 Fruit Bats: Flappy herbivorous mammals.
+
 Pale Lizards: Tiny lizards that are often preyed on by cavern carnivores.
+
 Crystal Crab: Crabs with a shell of stone covered in crystal.
+
 Jellypot Bug: Small, jelly producing insects.
+
 Bovine Beetle: Muffalo sized beetles, great for meat, chitin, and honeydew. They can be used as a caravan animal.
+
 Mole: Dog sized mammals that inhabit the caverns.
+
 Pillbug: Heavily armored plated insects.
+
 Royal Rhino Beetle: Horned beetles that make for decent defenders.
+
 Maxolotl: Huge omnivorous salamanders that dwell within the waters of the caverns.
+
 Slime: Living piles of slime with acidic flesh.
+
 Giant Snail: Surprisingly fast snails the size of a cow that can be used as caravan animals.
+
 Spectre Shrimp: Small yet ferocious blind shrimp that dwell within the lakes and rivers of the caverns.
+
 Cave Spider: The top predator of the biome, these ferocious spiders have a venemous bite and considerable strength. When tamed they can be used as caravan animals.
+
 Vampire Bat: Bloodthirsty flying mammals that feed on anything large enough.
+
 Vampire Moth: A moth whose fluttering foretells the drinking of blood.
 
 Plants and Fungi:
