@@ -3,7 +3,7 @@
 It's RimWorld with more biomes!
 
 ## Features
-## New Animals:
+### New Animals:
 
 Fruit Bats: Flappy herbivorous mammals.
 
