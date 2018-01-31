@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <GenStepDef>
+      <defName>WaterPlant</defName>
+      <linkWithMapGenerator>BasicMap</linkWithMapGenerator>
+      <order>802</order>
+      <genStep Class=" RimWorldBiomesCore.GenStep_WaterPlant"/>
+  </GenStepDef>
+  <GenStepDef>
+      <defName>WaterAnimal</defName>
+      <linkWithMapGenerator>BasicMap</linkWithMapGenerator>
+      <order>1001</order>
+      <genStep Class=" RimWorldBiomesCore.GenStep_WaterAnimal"/>
+  </GenStepDef>
+</Defs>

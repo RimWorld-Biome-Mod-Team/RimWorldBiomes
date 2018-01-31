@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<BodyPartDef>
+	    <defName>RWBSlimeBody</defName>
+	    <label>body</label>
+	    <hitPoints>40</hitPoints>
+	    <oldInjuryBaseChance>0.08</oldInjuryBaseChance>
+	    <skinCovered>true</skinCovered>
+	    <tags>
+	      <li>MovingLimbCore</li>
+	    </tags>
+  	</BodyPartDef>
+
+  	<BodyPartDef>
+	    <defName>RWBSlimeHead</defName>
+	    <label>head</label>
+	    <hitPoints>30</hitPoints>
+	    <oldInjuryBaseChance>0.08</oldInjuryBaseChance>
+	    <skinCovered>true</skinCovered>
+	    <tags>
+	      <li>HearingSource</li>
+	    </tags>
+  	</BodyPartDef>
+
+  	<BodyPartDef>
+	    <defName>RWBSlimeMouth</defName>
+	    <label>mouth</label>
+	    <hitPoints>20</hitPoints>
+	    <oldInjuryBaseChance>0.08</oldInjuryBaseChance>
+	    <skinCovered>true</skinCovered>
+	    <tags>
+	      <li>EatingSource</li>
+	      <li>TalkingSource</li>
+	      <li>ManipulationLimbCore</li>
+	    </tags>
+  	</BodyPartDef>
+</Defs>

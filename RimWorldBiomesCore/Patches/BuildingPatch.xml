@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+    <Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[defName = "PassiveCooler"]/costList</xpath>
+			</li>
+            <li Class="PatchOperationRemove">
+                <xpath>Defs/ThingDef[defName = "PassiveCooler"]/constructEffect</xpath>
+            </li>
+            <li Class="PatchOperationRemove">
+                <xpath>Defs/ThingDef[defName = "PassiveCooler"]/graphicData/texPath</xpath>
+            </li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "PassiveCooler"]</xpath>
+				<value>
+					<stuffCategories>
+                      <li>Woody</li>
+                    </stuffCategories>
+                    <costStuffCount>50</costStuffCount>
+				</value>
+			</li>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName = "PassiveCooler"]/graphicData</xpath>
+                <value>
+                    <texPath>Buildings/Patches/PassiveCooler</texPath>
+                </value>
+            </li>
+		</operations>
+	</Operation>
+	
+    <Operation Class="PatchOperationSequence">
+        <success>Always</success>
+        <operations>
+            <li Class="PatchOperationRemove">
+                <xpath>Defs/ThingDef[defName = "TableButcher"]/costList</xpath>
+            </li>
+            <li Class="PatchOperationRemove">
+                <xpath>Defs/ThingDef[defName = "TableButcher"]/stuffCategories</xpath>
+            </li>
+            <li Class="PatchOperationRemove">
+                <xpath>Defs/ThingDef[defName = "TableButcher"]/costStuffCount</xpath>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName = "TableButcher"]</xpath>
+                <value>
+                    <stuffCategories>
+                        <li>Metallic</li>
+                        <li>Woody</li>
+                    </stuffCategories>
+                    <costStuffCount>90</costStuffCount>
+                </value>
+            </li>
+        </operations>
+    </Operation>
+    
+    <Operation Class="PatchOperationSequence">
+        <success>Always</success>
+        <operations>
+            <li Class="PatchOperationRemove">
+                <xpath>Defs/ThingDef[defName = "TorchLamp"]/costList</xpath>
+            </li>
+            <li Class="PatchOperationRemove">
+                <xpath>Defs/ThingDef[defName = "TorchLamp"]/constructEffect</xpath>
+            </li>
+            <li Class="PatchOperationRemove">
+                <xpath>Defs/ThingDef[defName = "TorchLamp"]/graphicData/texPath</xpath>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName = "TorchLamp"]/graphicData</xpath>
+                <value>
+                    <texPath>Buildings/Patches/Torch</texPath>
+                </value>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName = "TorchLamp"]</xpath>
+                <value>
+                    <stuffCategories>
+                        <li>Woody</li>
+                    </stuffCategories>
+                    <costStuffCount>20</costStuffCount>
+                </value>
+            </li>
+        </operations>
+    </Operation>
+    
+    <Operation Class="PatchOperationSequence">
+        <success>Always</success>
+        <operations>
+            <li Class="PatchOperationRemove">
+                <xpath>Defs/ThingDef[defName = "FermentingBarrel"]/costList</xpath>
+            </li>
+            <li Class="PatchOperationRemove">
+                <xpath>Defs/ThingDef[defName = "FermentingBarrel"]/constructEffect</xpath>
+            </li>
+            <li Class="PatchOperationRemove">
+                <xpath>Defs/ThingDef[defName = "FermentingBarrel"]/graphicData/texPath</xpath>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName = "FermentingBarrel"]/graphicData</xpath>
+                <value>
+                    <texPath>Buildings/Patches/FermentingBarrel/FermentingBarrel</texPath>
+                </value>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName = "FermentingBarrel"]</xpath>
+                <value>
+                    <costList>
+                        <Steel>10</Steel>
+                    </costList>
+                    <stuffCategories>
+                        <li>Woody</li>
+                    </stuffCategories>
+                    <costStuffCount>30</costStuffCount>
+                </value>
+            </li>
+        </operations>
+    </Operation>
+    
+    <Operation Class="PatchOperationSequence">
+        <success>Always</success>
+        <operations>
+            <li Class="PatchOperationRemove">
+                <xpath>Defs/ThingDef[defName = "Brewery"]/costList</xpath>
+            </li>
+            <li Class="PatchOperationRemove">
+                <xpath>Defs/ThingDef[defName = "Brewery"]/constructEffect</xpath>
+            </li>
+            <li Class="PatchOperationRemove">
+                <xpath>Defs/ThingDef[defName = "Brewery"]/graphicData/texPath</xpath>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName = "Brewery"]/graphicData</xpath>
+                <value>
+                    <texPath>Buildings/Patches/TableBrewery/TableBrewery</texPath>
+                </value>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName = "Brewery"]</xpath>
+                <value>
+                    <costList>
+                        <Steel>30</Steel>
+                    </costList>
+                    <stuffCategories>
+                        <li>Woody</li>
+                    </stuffCategories>
+                    <costStuffCount>120</costStuffCount>
+                </value>
+            </li>
+        </operations>
+    </Operation>
+    
+    <Operation Class="PatchOperationSequence">
+        <success>Always</success>
+        <operations>
+            <li Class="PatchOperationRemove">
+                <xpath>Defs/ThingDef[defName = "Campfire"]/costList</xpath>
+            </li>
+            <li Class="PatchOperationRemove">
+                <xpath>Defs/ThingDef[defName = "Campfire"]/constructEffect</xpath>
+            </li>
+            <li Class="PatchOperationRemove">
+                <xpath>Defs/ThingDef[defName = "Campfire"]/graphicData/texPath</xpath>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName = "Campfire"]</xpath>
+                <value>
+                    <stuffCategories>
+                        <li>Woody</li>
+                    </stuffCategories>
+                    <costStuffCount>20</costStuffCount>
+                </value>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName = "Campfire"]/graphicData</xpath>
+                <value>
+                    <texPath>Buildings/Patches/Campfire</texPath>
+                </value>
+            </li>
+        </operations>
+    </Operation>
+    
+</Patch>

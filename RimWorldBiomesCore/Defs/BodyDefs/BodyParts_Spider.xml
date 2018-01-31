@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <BodyPartDef>
+        <defName>RWBCephalothorax</defName>
+        <label>caphalothorax</label>
+        <hitPoints>20</hitPoints>
+        <oldInjuryBaseChance>0</oldInjuryBaseChance>
+        <skinCovered>false</skinCovered>
+        <tags>
+            <li>BreathingPathway</li>
+            <li>EatingPathway</li>
+            <li>TalkingPathway</li>
+        </tags>
+    </BodyPartDef>
+    
+    <BodyPartDef>
+        <defName>RWBLeftPedipalp</defName>
+        <label>left pedipalp</label>
+        <hitPoints>15</hitPoints>
+        <oldInjuryBaseChance>0</oldInjuryBaseChance>
+        <skinCovered>false</skinCovered>
+        <tags>
+            <li>ManipulationLimbCore</li>
+        </tags>
+    </BodyPartDef>
+    
+    <BodyPartDef>
+        <defName>RWBRightPedipalp</defName>
+        <label>right pedipalp</label>
+        <hitPoints>15</hitPoints>
+        <oldInjuryBaseChance>0</oldInjuryBaseChance>
+        <skinCovered>false</skinCovered>
+        <tags>
+            <li>ManipulationLimbCore</li>
+        </tags>
+    </BodyPartDef>
+    
+    <BodyPartDef>
+        <defName>RWBSecondMiddleLeftInsectLeg</defName>
+        <label>second middle left leg</label>
+        <hitPoints>20</hitPoints>
+        <frostbiteVulnerability>0.1</frostbiteVulnerability>
+        <oldInjuryBaseChance>0</oldInjuryBaseChance>
+        <skinCovered>false</skinCovered>
+        <tags>
+            <li>MovingLimbCore</li>
+        </tags>
+    </BodyPartDef>
+    
+    <BodyPartDef>
+        <defName>RWBSecondMiddleRightInsectLeg</defName>
+        <label>second middle right leg</label>
+        <hitPoints>20</hitPoints>
+        <frostbiteVulnerability>0.1</frostbiteVulnerability>
+        <oldInjuryBaseChance>0</oldInjuryBaseChance>
+        <skinCovered>false</skinCovered>
+        <tags>
+            <li>MovingLimbCore</li>
+        </tags>
+    </BodyPartDef>
+</Defs>

@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <BodyDef>
+    <defName>RWBSlime</defName>
+    <label>slime</label>
+    <corePart>
+      <def>RWBSlimeBody</def>
+      <height>Middle</height>
+      <depth>Outside</depth>
+      <parts>
+        <li>
+          <def>Stomach</def>
+          <coverage>0.05</coverage>
+          <depth>Inside</depth>
+        </li>
+        <li>
+          <def>Heart</def>
+          <coverage>0.03</coverage>
+          <depth>Inside</depth>
+        </li>
+        <li>
+          <def>RWBSlimeHead</def>
+          <coverage>0.20</coverage>
+          <groups>
+            <li>HeadAttackTool</li>
+          </groups>
+          <parts>
+            <li>
+              <def>Skull</def>
+              <coverage>0.30</coverage>
+              <depth>Inside</depth>
+              <parts>
+                <li>
+                  <def>Brain</def>
+                  <coverage>0.50</coverage>
+                  <depth>Inside</depth>
+                </li>
+              </parts>
+            </li>
+            <li>
+              <def>LeftEye</def>
+              <coverage>0.10</coverage>
+            </li>
+            <li>
+              <def>RightEye</def>
+              <coverage>0.10</coverage>
+            </li>
+            <li>
+              <def>Nose</def>
+              <coverage>0.15</coverage>
+            </li>
+            <li>
+              <def>RWBSlimeMouth</def>
+              <coverage>0.15</coverage>
+              <groups>
+                <li>Mouth</li>
+              </groups>
+            </li>
+          </parts>
+        </li>
+      </parts>
+    </corePart>
+  </BodyDef>
+
+</Defs>

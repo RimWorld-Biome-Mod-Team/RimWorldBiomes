@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    
+    <ThingDef ParentName="BuildingNaturalBase">
+        <defName>RWBFilthSlime</defName>
+        <thingClass>Building</thingClass>
+        <label>snail slime</label>
+        <category>Filth</category>
+        <statBases>
+            <Beauty>-25</Beauty>
+            <Cleanliness>-5</Cleanliness>
+        </statBases>
+        <graphicData>
+            <texPath>Things/Filth/Spatter</texPath>
+            <color>(130, 142, 120, 50)</color>
+            <graphicClass>Graphic_Random</graphicClass>
+            <shaderType>Transparent</shaderType>
+        </graphicData>
+        <altitudeLayer>Filth</altitudeLayer>
+        <rotatable>false</rotatable>
+        <destroyable>true</destroyable>
+        <useHitPoints>false</useHitPoints>
+        <tickerType>Normal</tickerType>
+        <selectable>false</selectable>
+        <description>snail from a slime</description>
+        <size>(1,1)</size>
+        <neverOverlapFloors>true</neverOverlapFloors>
+        <blockPlants>false</blockPlants>
+        <building>
+            <isEdifice>false</isEdifice>
+            <claimable>false</claimable>
+            <deconstructible>false</deconstructible>
+        </building>
+        <comps>
+            <li Class="RimWorldBiomesCore.CompProperties_TempThing">
+            </li>
+        </comps>
+    </ThingDef>
+<!--    -->
+<!--  <ThingDef ParentName="BaseFilth">-->
+<!--    <defName>RWBFilthSlime</defName>-->
+<!--    <label>snail slime</label>-->
+<!--    <statBases>-->
+<!--      <Beauty>-25</Beauty>-->
+<!--      <Cleanliness>-5</Cleanliness>-->
+<!--    </statBases>-->
+<!--    <graphicData>-->
+<!--      <texPath>Things/Filth/Spatter</texPath>-->
+<!--      <color>(130, 142, 120, 170)</color>-->
+<!--    </graphicData>-->
+<!--    <filth>-->
+<!--      <rainWashes>true</rainWashes>-->
+<!--      <cleaningWorkToReduceThickness>50</cleaningWorkToReduceThickness>-->
+<!--      <canFilthAttach>true</canFilthAttach>-->
+<!--    </filth>-->
+<!--    <comps>-->
+<!--        <li Class="rimworld_biomes.CompProperties_TempThing">-->
+<!--        </li>-->
+<!--    </comps>-->
+<!--  </ThingDef>-->
+
+
+
+</Defs>

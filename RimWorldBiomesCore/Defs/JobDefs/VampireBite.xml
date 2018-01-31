@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <JobDef>
+    <defName>RWBVampireBite</defName>
+    <driverClass>RimWorldBiomesCore.JobDriver_VampireBite</driverClass>
+    <reportString>feeding.</reportString>
+    <casualInterruptible>false</casualInterruptible>
+  </JobDef>
+
+
+</Defs>
