@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>	
+	<ThingDef ParentName="PlantBase">
+		<defName>WaterFungus</defName>
+		<label>water fungus</label>
+		<description>A strange aquatic fungus that has adapted jointed fungal plating to deter smaller predators.</description>
+		<statBases>
+			<MaxHitPoints>85</MaxHitPoints>
+		</statBases>
+		<graphicData>
+			<texPath>Plants/Cave/WaterFungus</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+            <selectable>true</selectable>
+		<hideAtSnowDepth>0.5</hideAtSnowDepth>
+		<ingestible>
+			<nutrition>0.15</nutrition>
+		</ingestible>
+		<plant>
+<!--            <MinOptimalGrowthTemperature>5</MinOptimalGrowthTemperature>-->
+            <growMinGlow>0</growMinGlow>
+			<fertilityMin>0.01</fertilityMin>
+			<fertilitySensitivity>0.15</fertilitySensitivity>
+			<growDays>2.2</growDays>
+            <dieIfLeafless>true</dieIfLeafless>
+<!--			<leaflessGraphicPath>Things/Plant/Grass_Leafless</leaflessGraphicPath>-->
+			<harvestWork>40</harvestWork>
+			<maxMeshCount>4</maxMeshCount>
+			<visualSizeRange>
+				<min>0.4</min>
+				<max>0.6</max>
+			</visualSizeRange>
+			<topWindExposure>0.4</topWindExposure>
+			<reproduceMtbDays>3</reproduceMtbDays>
+            <neverBlightable>true</neverBlightable>
+		</plant>
+		<comps>
+			<li Class="RimWorldBiomesCore.CompProperties_WaterPlant">
+				<allowedTiles>
+					<li>WaterShallow</li>
+				</allowedTiles>
+                <spawnChance>0.07</spawnChance>
+                <allowedBiomes>
+                    <li>RWBCavern</li>
+                </allowedBiomes>
+                <growNearWater>true</growNearWater>
+			</li>
+		</comps>
+	</ThingDef>
+</Defs>

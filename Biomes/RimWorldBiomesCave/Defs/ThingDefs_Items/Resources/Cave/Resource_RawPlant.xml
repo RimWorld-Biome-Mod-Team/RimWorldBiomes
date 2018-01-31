@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>RawPaleBeets</defName>
+    <label>pale beets</label>
+    <description>Raw pale beets.</description>
+    <graphicData>
+      <texPath>Things/CropHarvests/BeetCrop</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>1.1</MarketValue>
+    </statBases>
+    <ingestible>
+      <foodType>Seed</foodType>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>40</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+    </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="ResourceBase">
+      <defName>SkulltopCap</defName>
+      <label>skulltop cap</label>
+      <description>The cap of a Skulltop.</description>
+      <graphicData>
+          <texPath>Things/CropHarvests/SkulltopCap</texPath>
+          <graphicClass>Graphic_Single</graphicClass>
+      </graphicData>
+      <statBases>
+          <MarketValue>1.1</MarketValue>
+      </statBases>
+      <comps>
+          <li Class="CompProperties_Rottable">
+              <daysToRotStart>40</daysToRotStart>
+              <rotDestroys>true</rotDestroys>
+          </li>
+      </comps>
+      <tickerType>Rare</tickerType>
+      <thingCategories>
+          <li>PlantMatter</li>
+      </thingCategories>
+  </ThingDef>
+  
+  <ThingDef ParentName="ResourceBase">
+      <defName>FungalMedicine</defName>
+      <label>fungal medicine</label>
+      <description>A pack of herbal concoctions typically extracted from the mortal morel plant. Less potent than herbal medicine, but much better than nothing.</description>
+      <thingClass>Medicine</thingClass>
+      <graphicData>
+          <texPath>Things/CropHarvests/FungalMedicine</texPath>
+          <graphicClass>Graphic_Single</graphicClass>
+      </graphicData>
+      <soundInteract>Standard_Drop</soundInteract>
+      <soundDrop>Standard_Drop</soundDrop>
+      <techLevel>Neolithic</techLevel>
+      <statBases>
+          <MaxHitPoints>60</MaxHitPoints>
+          <MarketValue>6</MarketValue>
+          <Mass>0.35</Mass>
+          <Flammability>1.0</Flammability>
+          <MedicalPotency>0.40</MedicalPotency>
+          <DeteriorationRate>6</DeteriorationRate>
+      </statBases>
+      <thingCategories>
+          <li>Medicine</li>
+      </thingCategories>
+      <tickerType>Rare</tickerType>
+      <comps>
+          <li Class="CompProperties_Rottable">
+              <daysToRotStart>150</daysToRotStart>
+              <rotDestroys>true</rotDestroys>
+          </li>
+      </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="PlantFoodRawBase">
+      <defName>Glowfruit</defName>
+      <label>glowfruit</label>
+      <description>Glowing fruit.</description>
+      <graphicData>
+          <texPath>Things/CropHarvests/Glowfruit</texPath>
+      </graphicData>
+      <statBases>
+          <MarketValue>1.3</MarketValue>
+      </statBases>
+      <ingestible>
+          <preferability>RawTasty</preferability>
+          <tasteThought></tasteThought>
+          <nutrition>0.05</nutrition>
+          <joyKind>Gluttonous</joyKind>
+          <ingestEffect>EatVegetarian</ingestEffect>
+          <ingestSound>RawVegetable_Eat</ingestSound>
+          <foodType>VegetableOrFruit</foodType>
+      </ingestible>
+      <comps>
+          <li Class="CompProperties_Rottable">
+              <daysToRotStart>40</daysToRotStart>
+              <rotDestroys>true</rotDestroys>
+          </li>
+          <li Class="CompProperties_Glower">
+              <glowRadius>2</glowRadius>
+              <glowColor>(113,141,117,1)</glowColor>
+          </li>
+      </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="ResourceBase">
+      <defName>FungalFiber</defName>
+      <label>fungal fiber</label>
+      <description>The dark mycelium fibers gathered from an Inkcap.</description>
+      <graphicData>
+          <texPath>Things/Item/Resource/Cloth</texPath>
+          <graphicClass>Graphic_Single</graphicClass>
+          <color>(0, 0, 0)</color>
+      </graphicData>
+      <statBases>
+          <MaxHitPoints>80</MaxHitPoints>
+          <MarketValue>1.5</MarketValue>
+          <Mass>0.026</Mass>
+          <Flammability>1.0</Flammability>
+          <DeteriorationRate>4</DeteriorationRate>
+      </statBases>
+      <stuffProps>
+          <categories>
+              <li>Fabric</li>
+          </categories>
+          <color>(30,30,30)</color>
+          <commonality>1.2</commonality>
+          <allowColorGenerators>true</allowColorGenerators>
+      </stuffProps>
+      <thingCategories>
+          <li>Textiles</li>
+      </thingCategories>
+      <comps>
+          <li>
+              <compClass>CompColorable</compClass>
+          </li>
+      </comps>
+  </ThingDef>
+  
+</Defs>

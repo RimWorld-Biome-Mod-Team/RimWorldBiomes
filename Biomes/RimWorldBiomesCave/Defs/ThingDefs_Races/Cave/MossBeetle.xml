@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    <ThingDef ParentName="BaseInsect">
+        <defName>RWBMossBeetle</defName>
+        <label>moss Beetle</label>
+        <description>This comparatively small beetle hides among the glowing moss within the cavern, attmpting to avoid detection
+        </description>
+        <butcherProducts>
+            <RWBChitin>30</RWBChitin>
+        </butcherProducts>
+        <statBases>
+            <MoveSpeed>4.7</MoveSpeed>
+            <ArmorRating_Blunt>0.1</ArmorRating_Blunt>
+            <ArmorRating_Sharp>0.15</ArmorRating_Sharp>
+            <ComfyTemperatureMin>0</ComfyTemperatureMin>
+            <MarketValue>100</MarketValue>
+            <LeatherAmount>0</LeatherAmount>
+
+        </statBases>
+        <tools>
+            <li>
+                <capacities>
+                    <li>Bite</li>
+                </capacities>
+                <power>5</power>
+                <cooldownTime>2.5</cooldownTime>
+                <linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+            </li>
+            <li>
+                <label>head</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>3</power>
+                <cooldownTime>1.65</cooldownTime>
+                <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+                <commonality>0.2</commonality>
+
+            </li>
+        </tools>
+        <race>
+            <body>BeetleLike</body>
+            <foodType>VegetarianRoughAnimal</foodType>
+            <gestationPeriodDays>12</gestationPeriodDays>
+            <fleshType>RWBInsectoid</fleshType>
+            <baseBodySize>0.07</baseBodySize>
+            <baseHungerRate>0.10</baseHungerRate>
+            <baseHealthScale>0.4</baseHealthScale>
+            <wildness>0.2</wildness>
+            <lifeExpectancy>5</lifeExpectancy>
+            <lifeStageAges>
+                <li>
+                    <def>EusocialInsectLarva</def>
+                    <minAge>0</minAge>
+
+                </li>
+                <li>
+                    <def>EusocialInsectJuvenile</def>
+                    <minAge>0.03</minAge>
+                </li>
+                <li>
+                    <def>EusocialInsectAdult</def>
+                    <minAge>0.3</minAge>
+                    <soundWounded>Pawn_Megascarab_Wounded</soundWounded>
+                    <soundDeath>Pawn_Megascarab_Death</soundDeath>
+                    <soundCall>Pawn_Megascarab_Call</soundCall>
+                    <soundAngry>Pawn_Megascarab_Angry</soundAngry>
+                </li>
+            </lifeStageAges>
+            <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+            <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+            <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+        </race>
+        <tradeTags>
+            <li>Insectoid</li>
+        </tradeTags>
+        <comps>
+            <li Class="CompProperties_EggLayer">
+                <eggFertilizedDef>RWBEggMossBeetleFertilized</eggFertilizedDef>
+                <eggFertilizationCountMax>1</eggFertilizationCountMax>
+                <eggLayIntervalDays>12</eggLayIntervalDays>
+                <eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+                <eggCountRange>1</eggCountRange>
+            </li>
+        </comps>
+    </ThingDef>
+    
+    <PawnKindDef ParentName="AnimalKindBase">
+        <defName>RWBMossBeetle</defName>
+        <label>moss Beetle</label>
+        <race>RWBMossBeetle</race>
+        <combatPower>30</combatPower>
+        <canArriveManhunter>true</canArriveManhunter>
+        <wildSpawn_EcoSystemWeight>10</wildSpawn_EcoSystemWeight>
+        <wildSpawn_spawnWild>true</wildSpawn_spawnWild>
+        <lifeStages>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Pawns/Caves/Animals/MossBeetle/MossBeetle</texPath>
+                    <drawSize>1</drawSize>
+                    <color>(114,107,84)</color>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Dessicated/CritterDessicatedSmall</texPath>
+                    <drawSize>0.8</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Pawns/Caves/Animals/MossBeetle/MossBeetle</texPath>
+                    <drawSize>1.25</drawSize>
+                    <color>(114,107,84)</color>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Dessicated/CritterDessicatedSmall</texPath>
+                    <drawSize>0.9</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Pawns/Caves/Animals/MossBeetle/MossBeetle</texPath>
+                    <drawSize>1.5</drawSize>
+                    <color>(114,107,84)</color>
+                    <shadowData>
+                        <volume>(0.2, 0.3, 0.2)</volume>
+                        <offset>(0,0,0)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Dessicated/CritterDessicatedSmall</texPath>
+                    <drawSize>1.0</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+        </lifeStages>
+    </PawnKindDef>
+
+</Defs>

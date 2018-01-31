@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!--  Crystal Crab  -->
+    <ThingDef ParentName="BaseInsect">
+        <defName>RWBCrystalCrab</defName>
+        <label>crystal Crab</label>
+        <description>Once a species of large land crab, this species has adapted to the cavern environment with large eyes and a crystal covered stone shell. From the moment they are born they are given a shell of hollowed out rock that their parents have chosen specially for the crystal that will continue to grow throughout their lives.</description>
+        <butcherProducts>
+            <RWBChitin>30</RWBChitin>
+            <RWBCrystalShards>10</RWBCrystalShards>
+        </butcherProducts>
+        <statBases>
+            <MoveSpeed>3</MoveSpeed>
+            <ArmorRating_Blunt>0.2</ArmorRating_Blunt>
+            <ArmorRating_Sharp>0.55</ArmorRating_Sharp>
+            <ComfyTemperatureMin>0</ComfyTemperatureMin>
+            <MarketValue>100</MarketValue>
+            <LeatherAmount>0</LeatherAmount>
+        </statBases>
+        <tools>
+            <li>
+                <label>claw</label>
+                <capacities>
+                    <li>Cut</li>
+                </capacities>
+                <power>9</power>
+                <cooldownTime>2.2</cooldownTime>
+                <linkedBodyPartsGroup>HeadClaw</linkedBodyPartsGroup>
+            </li>
+            <li>
+                <label>head</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>4</power>
+                <cooldownTime>1.65</cooldownTime>
+                <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+                <commonality>0.2</commonality>
+            </li>
+        </tools>
+        <comps>
+            <li Class="CompProperties_EggLayer">
+                <eggFertilizedDef>RWBEggCrystalCrabFertilized</eggFertilizedDef>
+                <eggFertilizationCountMax>1</eggFertilizationCountMax>
+                <eggLayIntervalDays>20</eggLayIntervalDays>
+                <eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+                <eggCountRange>1</eggCountRange>
+            </li>
+        </comps>
+        <race>
+            <foodType>VegetarianRoughAnimal</foodType>
+            <gestationPeriodDays>25</gestationPeriodDays>
+            <fleshType>RWBInsectoid</fleshType>
+            <body>BeetleLikeWithClaw</body>
+            <baseBodySize>1.7</baseBodySize>
+            <baseHungerRate>0.65</baseHungerRate>
+            <baseHealthScale>1.25</baseHealthScale>
+            <wildness>0.7</wildness>
+            <lifeExpectancy>10</lifeExpectancy>
+            <lifeStageAges>
+                <li>
+                    <def>RWBInsectGrub</def>
+                    <minAge>0</minAge>
+                </li>
+                <li>
+                    <def>RWBInsectAdult</def>
+                    <minAge>0.45</minAge>
+                </li>
+            </lifeStageAges>
+            <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+            <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+            <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+        </race>
+        <tradeTags>
+            <li>Insectoid</li>
+        </tradeTags>
+    </ThingDef>
+    
+    <PawnKindDef ParentName="AnimalKindBase">
+        <defName>RWBCrystalCrab</defName>
+        <label>crystal Crab</label>
+        <race>RWBCrystalCrab</race>
+        <combatPower>95</combatPower>
+        <canArriveManhunter>true</canArriveManhunter>
+        <wildSpawn_EcoSystemWeight>0.05</wildSpawn_EcoSystemWeight>
+        <wildSpawn_spawnWild>true</wildSpawn_spawnWild>
+        <lifeStages>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Pawns/Caves/Animals/CrystalCrabF/CrystalCrab</texPath>
+                    <drawSize>1.5</drawSize>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Muffalo/MuffaloDessicated</texPath>
+                    <drawSize>1.3</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Pawns/Caves/Animals/CrystalCrabM/CrystalCrab</texPath>
+                    <drawSize>3.1</drawSize>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Muffalo/MuffaloDessicated</texPath>
+                    <drawSize>2.5</drawSize>
+                </dessicatedBodyGraphicData>
+                <femaleGraphicData>
+                    <texPath>Pawns/Caves/Animals/CrystalCrabF/CrystalCrab</texPath>
+                    <drawSize>2.9</drawSize>
+                </femaleGraphicData>
+            </li>
+        </lifeStages>
+    </PawnKindDef>
+</Defs>

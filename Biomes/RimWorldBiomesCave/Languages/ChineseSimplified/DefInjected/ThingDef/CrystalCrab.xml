@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Crystal Crab -->
+
+  <RWBCrystalCrab.label>水晶蟹</RWBCrystalCrab.label>
+  <RWBCrystalCrab.description>该物种曾经是大型陆地蟹的一种, 它适应了洞穴黑暗的环境和被水晶覆盖的壳.从他们出生的那一刻起, 他们就被赋予了一个被挖空的岩石壳, 他们的父母特意为他们选择了带水晶的岩石, 一生中与他们继续成长。</RWBCrystalCrab.description>
+  <RWBCrystalCrab.tools.0.label>鳌</RWBCrystalCrab.tools.0.label>
+  <RWBCrystalCrab.tools.1.label>头</RWBCrystalCrab.tools.1.label>
+  <!-- No Leather: Butcher Products -->
+  <RWBCrystalCrab_Meat.label>水晶蟹肉</RWBCrystalCrab_Meat.label>
+  <RWBCrystalCrab_Meat.description>水晶蟹的肉</RWBCrystalCrab_Meat.description>
+  <RWBCrystalCrab_Corpse.label>水晶蟹尸体</RWBCrystalCrab_Corpse.label>
+  <RWBCrystalCrab_Corpse.description>水晶蟹的尸体</RWBCrystalCrab_Corpse.description>
+
+
+</LanguageData>

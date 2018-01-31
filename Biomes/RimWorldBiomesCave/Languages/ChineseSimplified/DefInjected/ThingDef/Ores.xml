@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Coal -->
+
+  <RWBCoal.label>煤碳</RWBCoal.label>
+  <RWBCoal.description>碳是一种很常见的元素，一种不错的能力来源</RWBCoal.description>
+  <RWBCoal.stuffProps.stuffAdjective>煤碳</RWBCoal.stuffProps.stuffAdjective>
+
+
+  <!-- Crystal -->
+
+  <RWBChunkCrystal.label>水晶块</RWBChunkCrystal.label>
+  <RWBChunkCrystal.description>一块岩石，可将其切割成可用的石砖。</RWBChunkCrystal.description>
+
+  <RWBCrystalShards.label>水晶砖块</RWBCrystalShards.label>
+  <RWBCrystalShards.description>水晶砖块.</RWBCrystalShards.description>
+  <RWBCrystalShards.stuffProps.stuffAdjective>水晶砖块</RWBCrystalShards.stuffProps.stuffAdjective>
+
+
+</LanguageData>

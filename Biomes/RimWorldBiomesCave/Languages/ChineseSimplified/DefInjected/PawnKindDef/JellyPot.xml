@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- JellyPot Bug -->
+
+  <RWBJellypotBug.label>果酱虫</RWBJellypotBug.label>
+  <RWBJellypotBug.labelPlural>果酱虫</RWBJellypotBug.labelPlural>
+  <RWBJellypotBug.labelMale>雄果酱虫</RWBJellypotBug.labelMale>
+  <RWBJellypotBug.labelMalePlural>雄果酱虫</RWBJellypotBug.labelMalePlural>
+  <RWBJellypotBug.labelFemale>雌果酱虫</RWBJellypotBug.labelFemale>
+  <RWBJellypotBug.labelFemalePlural>雌果酱虫</RWBJellypotBug.labelFemalePlural>
+
+
+</LanguageData>

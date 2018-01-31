@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Pillbug -->
+
+  <RWBPillbug.label>鼠妇</RWBPillbug.label>
+  <RWBPillbug.labelPlural>鼠妇</RWBPillbug.labelPlural>
+  <RWBPillbug.lifeStages.0.label>鼠妇</RWBPillbug.lifeStages.0.label>
+  <RWBPillbug.lifeStages.0.labelPlural>鼠妇</RWBPillbug.lifeStages.0.labelPlural>
+  <RWBPillbug.lifeStages.0.labelMale>雄鼠妇</RWBPillbug.lifeStages.0.labelMale>
+  <RWBPillbug.lifeStages.0.labelMalePlural>雄鼠妇</RWBPillbug.lifeStages.0.labelMalePlural>
+  <RWBPillbug.lifeStages.0.labelFemale>雌鼠妇</RWBPillbug.lifeStages.0.labelFemale>
+  <RWBPillbug.lifeStages.0.labelFemalePlural>雌鼠妇</RWBPillbug.lifeStages.0.labelFemalePlural>
+  <RWBPillbug.lifeStages.1.label>鼠妇</RWBPillbug.lifeStages.1.label>
+  <RWBPillbug.lifeStages.1.labelPlural>鼠妇</RWBPillbug.lifeStages.1.labelPlural>
+  <RWBPillbug.lifeStages.1.labelMale>雄鼠妇</RWBPillbug.lifeStages.1.labelMale>
+  <RWBPillbug.lifeStages.1.labelMalePlural>雄鼠妇</RWBPillbug.lifeStages.1.labelMalePlural>
+  <RWBPillbug.lifeStages.1.labelFemale>雌鼠妇</RWBPillbug.lifeStages.1.labelFemale>
+  <RWBPillbug.lifeStages.1.labelFemalePlural>雌鼠妇</RWBPillbug.lifeStages.1.labelFemalePlural>
+  <RWBPillbug.labelMale>雄鼠妇</RWBPillbug.labelMale>
+  <RWBPillbug.labelMalePlural>雄鼠妇</RWBPillbug.labelMalePlural>
+  <RWBPillbug.labelFemale>雌鼠妇</RWBPillbug.labelFemale>
+  <RWBPillbug.labelFemalePlural>雌鼠妇</RWBPillbug.labelFemalePlural>
+
+
+</LanguageData>

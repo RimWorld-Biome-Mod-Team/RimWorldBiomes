@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Bovine Beetle -->
+
+  <RWBBovineBeetle.label>牛甲虫</RWBBovineBeetle.label>
+  <RWBBovineBeetle.description>这种瓢虫的巨大近亲是洞穴中为数不多的动物之一.能提供各种不同的资源, 从杀死他获得的几丁质到饲养他获得牛奶般的蜜露, 且极易驯服，对穴居人来说是相当不错的选择. </RWBBovineBeetle.description>
+  <RWBBovineBeetle.tools.1.label>头</RWBBovineBeetle.tools.1.label>
+  <!-- No Leather: Butcher Products -->
+  <RWBBovineBeetle_Meat.label>牛甲虫肉</RWBBovineBeetle_Meat.label>
+  <RWBBovineBeetle_Meat.description>牛甲虫肉</RWBBovineBeetle_Meat.description>
+  <RWBBovineBeetle_Corpse.label>牛甲虫尸体</RWBBovineBeetle_Corpse.label>
+  <RWBBovineBeetle_Corpse.description>牛甲虫的尸体</RWBBovineBeetle_Corpse.description>
+
+
+</LanguageData>

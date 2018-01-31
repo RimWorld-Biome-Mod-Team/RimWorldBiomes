@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Poison grenade -->
+
+  <RWBProj_GrenadePoisonWeak.label>毒气手雷</RWBProj_GrenadePoisonWeak.label>
+
+  <RWBPoisonGrenadeBasic.label>毒气手雷</RWBPoisonGrenadeBasic.label>
+  <RWBPoisonGrenadeBasic.description>手榴弹受到撞击释放毒气云.</RWBPoisonGrenadeBasic.description>
+  <RWBPoisonGrenadeBasic.verbs.0.label>投掷毒气手雷</RWBPoisonGrenadeBasic.verbs.0.label>
+
+
+  <!-- (advanced) -->
+
+  <RWBProj_GrenadePoisonStrong.label>毒气手雷</RWBProj_GrenadePoisonStrong.label>
+
+  <RWBPoisonGrenadeAdvanced.label>高级毒气手雷.</RWBPoisonGrenadeAdvanced.label>
+  <RWBPoisonGrenadeAdvanced.description>手榴弹受到撞击释放毒气云.</RWBPoisonGrenadeAdvanced.description>
+  <RWBPoisonGrenadeAdvanced.verbs.0.label>投掷毒气手雷</RWBPoisonGrenadeAdvanced.verbs.0.label>
+
+
+</LanguageData>

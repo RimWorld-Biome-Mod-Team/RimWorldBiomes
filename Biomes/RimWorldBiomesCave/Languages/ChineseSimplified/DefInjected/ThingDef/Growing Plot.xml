@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <RWBPlanterBox.label>种植箱</RWBPlanterBox.label>
+  <RWBPlanterBox.description>一种能快速种植物的盆.</RWBPlanterBox.description>
+  <RWBPlanterBox_Blueprint.label>种植箱(蓝图)</RWBPlanterBox_Blueprint.label>
+  <RWBPlanterBox_Frame.label>种植箱(建设中)</RWBPlanterBox_Frame.label>
+  <RWBPlanterBox_Frame.description>一种能快速种植物的盆.</RWBPlanterBox_Frame.description>
+
+
+</LanguageData>

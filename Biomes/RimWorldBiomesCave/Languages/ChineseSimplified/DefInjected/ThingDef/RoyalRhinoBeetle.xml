@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Royal Rhino Beetle -->
+
+  <RWBRhinoBeetle.label>皇家犀甲虫</RWBRhinoBeetle.label>
+  <RWBRhinoBeetle.description>这种带角的甲虫大小如同水牛。 他们的名字得于他们皇家紫色外壳。食肉动物或交配对手都要当心它们的强壮的角。</RWBRhinoBeetle.description>
+  <RWBRhinoBeetle.tools.0.label>角</RWBRhinoBeetle.tools.0.label>
+  <RWBRhinoBeetle.tools.2.label>头</RWBRhinoBeetle.tools.2.label>
+  <!-- No Leather: Butcher Products -->
+  <RWBRhinoBeetle_Meat.label>皇家犀甲虫肉</RWBRhinoBeetle_Meat.label>
+  <RWBRhinoBeetle_Meat.description>皇家犀甲虫的肉</RWBRhinoBeetle_Meat.description>
+  <RWBRhinoBeetle_Corpse.label>皇家犀甲虫尸体</RWBRhinoBeetle_Corpse.label>
+  <RWBRhinoBeetle_Corpse.description>皇家犀甲虫的尸体</RWBRhinoBeetle_Corpse.description>
+
+
+</LanguageData>

@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Giant Snail -->
+
+  <RWBGiantSnail.label>巨型蜗牛</RWBGiantSnail.label>
+  <RWBGiantSnail.description>它们的大小、强度和惊人的速度使它们能被用作驮畜。当受到威胁时, 他们会收回自己的壳内, 以防止进一步的伤害</RWBGiantSnail.description>
+  <RWBGiantSnail.tools.0.label>头</RWBGiantSnail.tools.0.label>
+  <!-- No Leather: Butcher Products -->
+  <RWBGiantSnail_Meat.label>巨型蜗牛肉</RWBGiantSnail_Meat.label>
+  <RWBGiantSnail_Meat.description>巨型蜗牛的肉</RWBGiantSnail_Meat.description>
+  <RWBGiantSnail_Corpse.label>型蜗牛肉尸体</RWBGiantSnail_Corpse.label>
+  <RWBGiantSnail_Corpse.description>型蜗牛肉的尸体</RWBGiantSnail_Corpse.description>
+
+
+  <!-- Giant Snail -->
+
+  <RWBSnailDefense.label>蜗牛防御</RWBSnailDefense.label>
+  <RWBSnailDefense.description>你应该不想看到这个</RWBSnailDefense.description>
+
+
+</LanguageData>

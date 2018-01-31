@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<TerrainDef ParentName="FloorBase">
+		<defName>RWBCrystalTile</defName>
+		<label>crystal tile</label>
+		<renderPrecedence>230</renderPrecedence>
+		<description>Crystal Tiles</description>
+		<texturePath>Terrain/CrystalFloor</texturePath>
+		<statBases>
+			<WorkToBuild>400</WorkToBuild>
+		</statBases>
+		<costList>
+			<RWBCrystalShards>15</RWBCrystalShards>
+		</costList>
+		<designationHotKey>Misc5</designationHotKey>
+	</TerrainDef>
+    
+    <TerrainDef  ParentName="FloorBase">
+        <defName>FungalPlankFloor</defName>
+        <label>fungal plank floor</label>
+        <renderPrecedence>250</renderPrecedence>
+        <description>Fungal plank flooring. For that warm, homey feeling. While it is easy to lay, it is also flammable.</description>
+        <texturePath>Terrain/Surfaces/WoodFloor</texturePath>
+        <burnedDef>BurnedWoodPlankFloor</burnedDef>
+        <color>(195, 199, 198)</color>
+        <statBases>
+            <WorkToBuild>85</WorkToBuild>
+            <Flammability>0.22</Flammability>
+        </statBases>
+        <costList>
+            <FungalLog>3</FungalLog>
+        </costList>
+        <constructEffect>ConstructWood</constructEffect>
+        <designationHotKey>Misc7</designationHotKey>
+    </TerrainDef>
+</Defs>

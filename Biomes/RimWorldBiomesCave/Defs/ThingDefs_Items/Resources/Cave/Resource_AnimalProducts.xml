@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="ResourceBase">
+    	<defName>RWBChitin</defName>
+    	<label>chitin</label>
+    	<description>A rough plated material gathered from arthropods, often used to make armor and clothing.</description>
+    	<graphicData>
+    	 	<texPath>Things/AnimalProducts/Chitin</texPath>
+    	 	<graphicClass>Graphic_Single</graphicClass>
+            <color>(213,186,142)</color>
+    	</graphicData>
+    	    <useHitPoints>false</useHitPoints>
+    	<statBases>
+      		<MarketValue>2.1</MarketValue>
+      		<Mass>0.5</Mass>
+      		<SharpDamageMultiplier>1.1</SharpDamageMultiplier>
+      		<BluntDamageMultiplier>0.5</BluntDamageMultiplier>
+    	</statBases>
+    	<stuffProps>
+    		<statFactors>
+        		<MaxHitPoints>1.1</MaxHitPoints>
+        		<Beauty>0.8</Beauty>
+        		<Flammability>0.3</Flammability>
+    		</statFactors>
+		</stuffProps>
+        <comps>
+            <li>
+                <compClass>CompColorable</compClass>
+            </li>
+        </comps>
+    	<thingCategories>
+      		<li>ResourcesRaw</li>
+    	</thingCategories>
+  	</ThingDef>
+    
+    <ThingDef ParentName="ResourceBase">
+        <defName>RWBSlimeChunk</defName>
+        <label>slime chunk</label>
+        <description>A pile of acidic slime, be careful when holding it.</description>
+        <graphicData>
+            <texPath>Things/AnimalProducts/SlimeChunk</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <useHitPoints>false</useHitPoints>
+        <statBases>
+            <MarketValue>2.1</MarketValue>
+            <Mass>0.5</Mass>
+        </statBases>
+        <stuffProps>
+            <statFactors>
+                <MaxHitPoints>1.5</MaxHitPoints>
+                <Beauty>0.8</Beauty>
+                <Flammability>0.3</Flammability>
+            </statFactors>
+        </stuffProps>
+        <thingCategories>
+            <li>ResourcesRaw</li>
+        </thingCategories>
+    </ThingDef>
+    
+    <ThingDef ParentName="ResourceBase">
+        <defName>RWBMoleClaw</defName>
+        <label>mole claw</label>
+        <description>A claw from a dead mole.</description>
+        <graphicData>
+            <texPath>Things/AnimalProducts/MoleClaw</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <useHitPoints>false</useHitPoints>
+        <statBases>
+            <MarketValue>10</MarketValue>
+            <Mass>0.5</Mass>
+        </statBases>
+        <stuffProps>
+            <statFactors>
+                <MaxHitPoints>2.4</MaxHitPoints>
+                <Beauty>1</Beauty>
+                <Flammability>0.15</Flammability>
+            </statFactors>
+        </stuffProps>
+        <thingCategories>
+            <li>ResourcesRaw</li>
+        </thingCategories>
+    </ThingDef>
+    
+    <ThingDef ParentName="OrganicProductBase">
+        <defName>RWBHoneyDew</defName>
+        <label>honeydew</label>
+        <description>A nutritious liquid gathered from Bovine Beetles.</description>
+        <graphicData>
+            <texPath>Things/AnimalProducts/HoneyDew</texPath>
+        </graphicData>
+        <socialPropernessMatters>true</socialPropernessMatters>
+        <statBases>
+            <MarketValue>3.1</MarketValue>
+            <Mass>0.045</Mass>
+            <MaxHitPoints>60</MaxHitPoints>
+        </statBases>
+        <comps>
+            <li Class="CompProperties_FoodPoisoningChance">
+                <humanlikeOnly>true</humanlikeOnly>
+            </li>
+            <li Class="CompProperties_Rottable">
+                <daysToRotStart>14</daysToRotStart>
+                <rotDestroys>true</rotDestroys>
+            </li>
+        </comps>
+        <ingestible>
+            <preferability>RawTasty</preferability>
+            <foodType>AnimalProduct, Fluid</foodType>
+            <nutrition>0.05</nutrition>
+        </ingestible>
+        <thingCategories>
+            <li>AnimalProductRaw</li>
+        </thingCategories>
+    </ThingDef>
+
+</Defs>

@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <RawPaleBeets.label>甜菜</RawPaleBeets.label>
+  <RawPaleBeets.description>生的白甜菜。</RawPaleBeets.description>
+
+  <SkulltopCap.label>骷髅菇盖</SkulltopCap.label>
+  <SkulltopCap.description>骷髅菇的菇盖。</SkulltopCap.description>
+
+  <FungalMedicine.label>真菌药物</FungalMedicine.label>
+  <FungalMedicine.description>一包从扁鹊菇提取出的草药混合物.药性比草药弱，但总比没有好。</FungalMedicine.description>
+
+  <Glowfruit.label>荧光果</Glowfruit.label>
+  <Glowfruit.description>散发着荧光的水果</Glowfruit.description>
+
+  <FungalFiber.label>真菌纤维</FungalFiber.label>
+  <FungalFiber.description>从墨盖菇中采集的深色菌丝纤维</FungalFiber.description>
+  <FungalFiber.stuffProps.stuffAdjective>真菌纤维</FungalFiber.stuffProps.stuffAdjective>
+
+
+</LanguageData>

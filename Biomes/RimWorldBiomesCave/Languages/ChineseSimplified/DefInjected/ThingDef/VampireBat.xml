@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- VampireBat -->
+
+  <RWB_VampireBat.label>吸血蝙蝠</RWB_VampireBat.label>
+  <RWB_VampireBat.description>这些飞行哺乳动物生活在洞穴里通过回声定位导航，只有足够大的动物的血液才能满足他们的胃，极易带来疾病的病媒生物</RWB_VampireBat.description>
+  <RWB_VampireBat.tools.1.label>头</RWB_VampireBat.tools.1.label>
+  <RWB_VampireBat_Leather.label>蝙蝠皮</RWB_VampireBat_Leather.label>
+  <RWB_VampireBat_Leather.description>蝙蝠皮</RWB_VampireBat_Leather.description>
+  <RWB_VampireBat_Leather.stuffProps.stuffAdjective>蝙蝠皮</RWB_VampireBat_Leather.stuffProps.stuffAdjective>
+  <RWB_VampireBat_Meat.label>吸血蝙蝠肉</RWB_VampireBat_Meat.label>
+  <RWB_VampireBat_Meat.description>吸血蝙蝠的肉</RWB_VampireBat_Meat.description>
+  <RWB_VampireBat_Corpse.label>吸血蝙蝠尸体</RWB_VampireBat_Corpse.label>
+  <RWB_VampireBat_Corpse.description>吸血蝙蝠的尸体</RWB_VampireBat_Corpse.description>
+
+
+</LanguageData>

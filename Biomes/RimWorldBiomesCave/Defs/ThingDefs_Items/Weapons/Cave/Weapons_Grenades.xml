@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- ==================== Poison grenade ========================== -->
+
+  	<ThingDef ParentName="BaseGrenadeProjectile">
+		<defName>RWBProj_GrenadePoisonWeak</defName>
+		<label>poison grenade</label>
+		<thingClass>Projectile_Explosive</thingClass>
+		<graphicData>
+			<texPath>Things/Projectile/Grenade</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<explosionRadius>2</explosionRadius>
+			<damageDef>Smoke</damageDef>
+			<damageAmountBase>0</damageAmountBase>
+			<explosionDelay>0</explosionDelay>
+            <postExplosionSpawnThingDef>RWBPoisonGasWeak</postExplosionSpawnThingDef>
+            <postExplosionSpawnChance>1</postExplosionSpawnChance>
+            <postExplosionSpawnThingCount>1</postExplosionSpawnThingCount>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseWeapon">
+		<defName>RWBPoisonGrenadeBasic</defName>
+		<label>poison grenades</label>
+		<description>Grenades that release poison clouds on impact.</description>
+		<graphicData>
+			<texPath>Things/Weapons/Caves/PoisonGrenade/PoisonGrenades</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>InteractGrenade</soundInteract>
+		<techLevel>Industrial</techLevel>
+		<statBases>
+			<MarketValue>200</MarketValue>
+			<Mass>1</Mass>
+			<RangedWeapon_Cooldown>3</RangedWeapon_Cooldown>
+      		<Weapon_Bulk>0.2</Weapon_Bulk>
+		</statBases>
+		<weaponTags>
+			<li>GrenadeDestructive</li>
+		</weaponTags>
+		<thingCategories>
+			<li>Grenades</li>
+		</thingCategories>
+        <costList>
+            <RWBSporeContainer>10</RWBSporeContainer>
+            <Steel>50</Steel>
+        </costList>
+		<verbs>
+			<li>
+				<label>throw poison grenade</label>
+				<verbClass>Verb_LaunchProjectile</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<range>12.9</range>
+				<forcedMissRadius>3.5</forcedMissRadius>
+				<warmupTime>1.5</warmupTime>
+				<noiseRadius>4</noiseRadius>
+				<!--<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>-->
+				<soundCast>ThrowGrenade</soundCast>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<defaultProjectile>RWBProj_GrenadePoisonWeak</defaultProjectile>
+			</li>
+		</verbs>
+        <recipeMaker>
+            <recipeUsers>
+                <li>ElectricSmithy</li>
+                <li>FueledSmithy</li>
+            </recipeUsers>
+        </recipeMaker>
+		<smeltProducts>
+			<Steel>10</Steel>
+		</smeltProducts>
+	</ThingDef>
+
+	<!-- (advanced) -->
+
+	    <ThingDef ParentName="BaseGrenadeProjectile">
+        <defName>RWBProj_GrenadePoisonStrong</defName>
+        <label>poison grenade</label>
+        <thingClass>Projectile_Explosive</thingClass>
+        <graphicData>
+            <texPath>Things/Projectile/Grenade</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <explosionRadius>2.4</explosionRadius>
+            <damageDef>Smoke</damageDef>
+            <damageAmountBase>0</damageAmountBase>
+            <explosionDelay>0</explosionDelay>
+            <postExplosionSpawnThingDef>RWBPoisonGasStrong</postExplosionSpawnThingDef>
+            <postExplosionSpawnChance>1</postExplosionSpawnChance>
+            <postExplosionSpawnThingCount>1</postExplosionSpawnThingCount>
+        </projectile>
+    </ThingDef>
+
+	<ThingDef ParentName="BaseWeapon">
+	    <defName>RWBPoisonGrenadeAdvanced</defName>
+	    <label>poison grenades adv.</label>
+	    <description>Grenades that release poison clouds on impact.</description>
+	    <graphicData>
+	        <texPath>Things/Weapons/Caves/PoisonGrenade/PoisonGrenades</texPath>
+	        <graphicClass>Graphic_Single</graphicClass>
+	    </graphicData>
+	    <soundInteract>InteractGrenade</soundInteract>
+	    <techLevel>Industrial</techLevel>
+	    <statBases>
+	        <MarketValue>400</MarketValue>
+	        <Mass>1</Mass>
+	        <RangedWeapon_Cooldown>3</RangedWeapon_Cooldown>
+	        <Weapon_Bulk>0.2</Weapon_Bulk>
+	    </statBases>
+	    <weaponTags>
+	        <li>GrenadeDestructive</li>
+	    </weaponTags>
+	    <thingCategories>
+	        <li>Grenades</li>
+	    </thingCategories>
+	    <costList>
+	        <RWBPoisonGrenadeBasic>1</RWBPoisonGrenadeBasic>
+	        <RWBSporeContainer>10</RWBSporeContainer>
+	        <Steel>60</Steel>
+	    </costList>
+	    <verbs>
+	        <li>
+	            <label>throw poison grenade</label>
+	            <verbClass>Verb_LaunchProjectile</verbClass>
+	            <hasStandardCommand>true</hasStandardCommand>
+	            <range>12.9</range>
+	            <forcedMissRadius>3.5</forcedMissRadius>
+	            <warmupTime>1</warmupTime>
+	            <noiseRadius>4</noiseRadius>
+	            <!--<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>-->
+	            <soundCast>ThrowGrenade</soundCast>
+	            <targetParams>
+	                <canTargetLocations>true</canTargetLocations>
+	            </targetParams>
+	            <defaultProjectile>RWBProj_GrenadePoisonStrong</defaultProjectile>
+	        </li>
+	    </verbs>
+	    <recipeMaker>
+	        <recipeUsers>
+	            <li>ElectricSmithy</li>
+	            <li>FueledSmithy</li>
+	        </recipeUsers>
+	    </recipeMaker>
+	    <smeltProducts>
+	        <Steel>10</Steel>
+	    </smeltProducts>
+	</ThingDef>
+
+</Defs>

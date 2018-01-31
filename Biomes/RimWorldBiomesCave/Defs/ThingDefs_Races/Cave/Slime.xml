@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <!--  Slime  -->
+    <ThingDef ParentName="AnimalThingBase">
+        <defName>RWBSlime</defName>
+        <label>slime</label>
+        <description>A moving mass of goo, this bizarre creature is actually millions of microorganisms working in tandem. Due to the fact that its flesh is acidic they have virtually no natural predators. Their slime can be used to craft dangerous moats and can be used as a bio-fuel.</description>
+        <butcherProducts>
+            <RWBSlimeChunk>10</RWBSlimeChunk>
+        </butcherProducts>
+        <statBases>
+            <MoveSpeed>2.8</MoveSpeed>
+            <ComfyTemperatureMin>-50</ComfyTemperatureMin>
+            <MarketValue>300</MarketValue>
+            <ArmorRating_Blunt>0.35</ArmorRating_Blunt>
+            <LeatherAmount>0</LeatherAmount>
+            <MeatAmount>0</MeatAmount>
+        </statBases>
+        <tools>
+            <li>
+                <capacities>
+                    <li>Bite</li>
+                </capacities>
+                <power>7</power>
+                <cooldownTime>1.65</cooldownTime>
+                <linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+            </li>
+            <li>
+                <label>head</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>5</power>
+                <cooldownTime>1.65</cooldownTime>
+                <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+                <commonality>0.2</commonality>
+            </li>
+        </tools>
+        <race>
+            <predator>true</predator>
+            <body>RWBSlime</body>
+            <herdAnimal>false</herdAnimal>
+            <baseBodySize>1.0</baseBodySize>
+            <baseHungerRate>0.5</baseHungerRate>
+            <baseHealthScale>2.2</baseHealthScale>
+            <foodType>CarnivoreAnimalStrict</foodType>
+            <gestationPeriodDays>22.5</gestationPeriodDays>
+            <trainableIntelligence>Simple</trainableIntelligence>
+            <wildness>0.997</wildness>
+            <lifeExpectancy>12</lifeExpectancy>
+            <lifeStageAges>
+                <li>
+                    <def>AnimalJuvenile</def>
+                    <minAge>0.0</minAge>
+                </li>
+                <li>
+                    <def>AnimalAdult</def>
+                    <minAge>0.5</minAge>
+                </li>
+            </lifeStageAges>
+            <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+            <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+            <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+        </race>
+        <comps>
+            <li Class="CompProperties_EggLayer">
+                <eggFertilizedDef>RWBEggSlimeFertilized</eggFertilizedDef>
+                <eggFertilizationCountMax>1</eggFertilizationCountMax>
+                <eggLayIntervalDays>22.5</eggLayIntervalDays>
+                <eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+                <eggCountRange>1</eggCountRange>
+            </li>
+            <li Class="RimWorldBiomesCore.CompProperties_Regenerate">
+                <restoreBodyParts>True</restoreBodyParts>
+                <amount>0.5</amount>
+                <startThreshold>1</startThreshold>
+            </li>
+        </comps>
+        <tradeTags>
+            <li>StandardAnimal</li>
+        </tradeTags>
+    </ThingDef>
+    <PawnKindDef ParentName="AnimalKindBase">
+        <defName>RWBSlime</defName>
+        <label>slime</label>
+        <race>RWBSlime</race>
+        <combatPower>60</combatPower>
+        <lifeStages>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Pawns/Caves/Animals/Slime/Slime</texPath>
+                    <drawSize>1.5</drawSize>
+                    <color>(117,117,117)</color>
+                    <shaderType>CutoutComplex</shaderType>
+                    <shadowData>
+                        <volume>(0.25, 0.3, 0.25)</volume>
+                        <offset>(0,0,-0.15)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Dessicated/CritterDessicatedMedium</texPath>
+                    <drawSize>1.4</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Pawns/Caves/Animals/Slime/Slime</texPath>
+                    <drawSize>2</drawSize>
+                    <color>(117,117,117)</color>
+                    <shaderType>CutoutComplex</shaderType>
+                    <shadowData>
+                        <volume>(0.3, 0.4, 0.3)</volume>
+                        <offset>(0,0,-0.15)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Dessicated/CritterDessicatedMedium</texPath>
+                    <drawSize>1.7</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+        </lifeStages>
+        <wildSpawn_spawnWild>true</wildSpawn_spawnWild>
+    </PawnKindDef>
+
+</Defs>

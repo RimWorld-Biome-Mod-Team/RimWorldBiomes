@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    
+    <!-- Maxolotl   -->
+    <ThingDef ParentName="AnimalThingBase">
+        <defName>RWBMaxolotl</defName>
+        <label>maxolotl</label>
+        <description>Giant relatives of the Axolotl, these salamanders have grown to huge proportions within the cavern environment they call home by eating and competing with the giant bugs that live within the caverns. While they are almost exclusively aquatic they can go onto land if need be.</description>
+        <statBases>
+            <MoveSpeed>4.93</MoveSpeed>
+            <ComfyTemperatureMin>-65</ComfyTemperatureMin>
+            <MarketValue>100</MarketValue>
+            <LeatherAmount>0</LeatherAmount>
+        </statBases>
+        <tools>
+            <li>
+                <capacities>
+                    <li>Bite</li>
+                </capacities>
+                <power>9</power>
+                <cooldownTime>2.0</cooldownTime>
+                <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+            </li>
+            <li>
+                <label>head</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>4</power>
+                <cooldownTime>1.65</cooldownTime>
+                <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+                <commonality>0.2</commonality>
+            </li>
+        </tools>
+        <race>
+            <body>QuadrupedAnimalWithPawsAndTail</body>
+            <herdAnimal>false</herdAnimal>
+            <herdMigrationAllowed>false</herdMigrationAllowed>
+            <baseBodySize>1.1</baseBodySize>
+            <baseHungerRate>0.7</baseHungerRate>
+            <baseHealthScale>1</baseHealthScale>
+            <foodType>OmnivoreRoughAnimal</foodType>
+            <gestationPeriodDays>20</gestationPeriodDays>
+            <manhunterOnDamageChance>1</manhunterOnDamageChance>
+            <manhunterOnTameFailChance>0.018</manhunterOnTameFailChance>
+            <wildness>0.4</wildness>
+            <lifeExpectancy>50</lifeExpectancy>
+            <thinkTreeMain>Amphibian</thinkTreeMain>
+            <thinkTreeConstant>AmphibianConstant</thinkTreeConstant>
+            <lifeStageAges>
+                <li>
+                    <def>AnimalJuvenile</def>
+                    <minAge>0.0</minAge>
+                </li>
+                <li>
+                    <def>AnimalAdult</def>
+                    <minAge>2.0</minAge>
+                </li>
+            </lifeStageAges>
+            <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+            <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+            <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+        </race>
+        <comps>
+            <li Class="CompProperties_EggLayer">
+                <eggFertilizedDef>RWBEggMaxolotlFertilized</eggFertilizedDef>
+                <eggFertilizationCountMax>1</eggFertilizationCountMax>
+                <eggLayIntervalDays>20</eggLayIntervalDays>
+                <eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+                <eggCountRange>1</eggCountRange>
+            </li>
+            <li Class="RimWorldBiomesCore.CompProperties_WaterAnimal">
+                <submergedGraphic>
+                    <texPath>Pawns/Caves/Animals/Maxolotl/MaxolotlSub</texPath>
+                    <graphicClass>Graphic_Multi</graphicClass>
+                    <drawSize>4</drawSize>
+                </submergedGraphic>
+                <allowedTiles>
+                    <li>WaterShallow</li>
+                    <li>WaterDeep</li>
+                </allowedTiles>
+                <spawnChance>0.00375</spawnChance>
+                <allowedBiomes>
+                    <li>RWBCavern</li>
+                </allowedBiomes>
+            </li>
+        </comps>
+        <tradeTags>
+            <li>StandardAnimal</li>
+        </tradeTags>
+    </ThingDef>
+    
+    <PawnKindDef ParentName="AnimalKindBase">
+        <defName>RWBMaxolotl</defName>
+        <label>maxolotl</label>
+        <race>RWBMaxolotl</race>
+        <combatPower>85</combatPower>
+        <canArriveManhunter>true</canArriveManhunter>
+        <wildSpawn_spawnWild>true</wildSpawn_spawnWild>
+        <lifeStages>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Pawns/Caves/Animals/Maxolotl/Maxolotl</texPath>
+                    <drawSize>2.2</drawSize>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Dessicated/CritterDessicatedMedium</texPath>
+                    <drawSize>1.4</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Pawns/Caves/Animals/Maxolotl/Maxolotl</texPath>
+                    <drawSize>3</drawSize>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Dessicated/CritterDessicatedMedium</texPath>
+                    <drawSize>2</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+        </lifeStages>
+    </PawnKindDef>
+</Defs>

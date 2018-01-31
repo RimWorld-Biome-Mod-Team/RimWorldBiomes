@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="ApparelMakeableBase">
+	    <defName>BeetlePlateArmor</defName>
+	    <label>beetle plate armor</label>
+	    <techLevel>Neolithic</techLevel>
+	    <description>Armor made from chitin</description>
+	    <graphicData> 
+	    	<texPath>Things/Apparel/BeetlePlateArmor/BeetleArmor</texPath>
+	    	<graphicClass>Graphic_Single</graphicClass> 
+	    </graphicData>
+	    <statBases>
+            <WorkToMake>12000</WorkToMake>
+            <MaxHitPoints>120</MaxHitPoints>
+            <Mass>1.2</Mass>
+            <ArmorRating_Blunt>0.13</ArmorRating_Blunt>
+            <ArmorRating_Sharp>0.40</ArmorRating_Sharp>
+	    </statBases>
+        <costList>
+            <RWBChitin>40</RWBChitin>
+            <Steel>10</Steel>
+        </costList>
+        <costStuffCount>20</costStuffCount>
+        <stuffCategories>
+            <li>Fabric</li>
+        </stuffCategories>
+	    <thingCategories>
+	      <li>Apparel</li>
+	    </thingCategories>
+	    <generateCommonality>0.1</generateCommonality>
+	    <apparel>
+	     <defaultOutfitTags>
+	        <li>Soldier</li>
+	     </defaultOutfitTags>
+	     <wornGraphicPath>Things/Apparel/BeetlePlateArmor/BeetleArmor</wornGraphicPath>
+         <layers>
+             <li>Middle</li>
+             <li>Shell</li>
+         </layers>
+				<bodyPartGroups>
+		    <li>Neck</li>
+	        <li>Shoulders</li>
+	        <li>Torso</li>
+	        <li>Arms</li>
+	        <li>Legs</li>
+				</bodyPartGroups>
+	    </apparel>
+        <colorGenerator Class="ColorGenerator_StandardApparel" />
+    </ThingDef>
+    
+    <ThingDef ParentName="HatMakeableBase">
+        <defName>BeetlePlateHelmet</defName>
+        <label>beetle plate helmet</label>
+        <techLevel>Neolithic</techLevel>
+        <description>Armor made from chitin</description>
+        <graphicData>
+            <texPath>Things/Apparel/BeetlePlateHelmet/BeetleHelm</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <costList>
+            <RWBChitin>20</RWBChitin>
+            <Steel>10</Steel>
+        </costList>
+        <costStuffCount>20</costStuffCount>
+        <stuffCategories>
+            <li>Fabric</li>
+        </stuffCategories>
+        <statBases>
+            <WorkToMake>12000</WorkToMake>
+            <MaxHitPoints>120</MaxHitPoints>
+            <Mass>1.2</Mass>
+            <ArmorRating_Blunt>0.13</ArmorRating_Blunt>
+            <ArmorRating_Sharp>0.40</ArmorRating_Sharp>
+        </statBases>
+        <equippedStatOffsets>
+            <MoveSpeed>-0.02</MoveSpeed>
+            <SocialImpact>-0.1</SocialImpact>
+        </equippedStatOffsets>
+        <generateCommonality>0.1</generateCommonality>
+        <apparel>
+            <defaultOutfitTags>
+                <li>Soldier</li>
+            </defaultOutfitTags>
+            <wornGraphicPath>Things/Apparel/BeetlePlateHelmet/BeetleHelm</wornGraphicPath>
+            <layers>
+                <li>Overhead</li>
+            </layers>		<bodyPartGroups>
+                <li>FullHead</li>
+            </bodyPartGroups>
+        </apparel>
+    </ThingDef>
+    
+    <ThingDef ParentName="HatMakeableBase">
+        <defName>BatMask</defName>
+        <label>bat mask</label>
+        <techLevel>Neolithic</techLevel>
+        <description>Mask resembling a bat head</description>
+        <graphicData>
+            <texPath>Things/Apparel/BatMask/BatMask</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <costStuffCount>30</costStuffCount>
+        <stuffCategories>
+            <li>Fabric</li>
+        </stuffCategories>
+        <statBases>
+            <WorkToMake>6000</WorkToMake>
+            <MaxHitPoints>120</MaxHitPoints>
+            <Mass>1.2</Mass>
+            <ArmorRating_Blunt>0.05</ArmorRating_Blunt>
+            <ArmorRating_Sharp>0.05</ArmorRating_Sharp>
+        </statBases>
+        <equippedStatOffsets>
+            <SocialImpact>-0.1</SocialImpact>
+        </equippedStatOffsets>
+        <generateCommonality>0.1</generateCommonality>
+        <apparel>
+            <defaultOutfitTags>
+                <li>Soldier</li>
+            </defaultOutfitTags>
+            <wornGraphicPath>Things/Apparel/BatMask/BatMask</wornGraphicPath>
+            <layers>
+                <li>Overhead</li>
+            </layers>		<bodyPartGroups>
+                <li>FullHead</li>
+            </bodyPartGroups>
+        </apparel>
+    </ThingDef>
+    
+    <ThingDef ParentName="HatMakeableBase">
+        <defName>SMask</defName>
+        <label>Spider mask</label>
+        <description>A mask designed to look like a spider's face.</description>
+        <techLevel>Neolithic</techLevel>
+        <graphicData>
+            <texPath>Things/Apparel/SpiderMask/SpiderMask</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <stuffCategories>
+            <li>Fabric</li>
+        </stuffCategories>
+        <costStuffCount>40</costStuffCount>
+        <statBases>
+            <WorkToMake>6000</WorkToMake>
+            <MaxHitPoints>100</MaxHitPoints>
+            <Mass>1.1</Mass>
+            <ArmorRating_Blunt>0.05</ArmorRating_Blunt>
+            <ArmorRating_Sharp>0.15</ArmorRating_Sharp>
+        </statBases>
+        <equippedStatOffsets>
+            <PainShockThreshold>0.10</PainShockThreshold>
+        </equippedStatOffsets>
+        <apparel>
+            <bodyPartGroups>
+                <li>FullHead</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Things/Apparel/SpiderMask/SpiderMask</wornGraphicPath>
+            <hatRenderedFrontOfFace>true</hatRenderedFrontOfFace>
+            <layers>
+                <li>Overhead</li>
+            </layers>
+            <tags>
+                <li>Neolithic</li>
+            </tags>
+            <defaultOutfitTags>
+                <li>Soldier</li>
+            </defaultOutfitTags>
+        </apparel>
+<!--        <recipeMaker>-->
+<!--            <workSpeedStat>SculptingSpeed</workSpeedStat>-->
+<!--            <workSkill>Crafting</workSkill>-->
+<!--            <effectWorking>Sculpt</effectWorking>-->
+<!--            <soundWorking>Recipe_Sculpt</soundWorking>-->
+<!--           <recipeUsers>-->
+<!--                <li>CraftingSpot</li>-->
+<!--            </recipeUsers>-->
+<!--            <unfinishedThingDef>UnfinishedSculpture</unfinishedThingDef>-->
+<!--            <factionPrerequisiteTags>-->
+<!--                <li>Tribal</li>-->
+<!--            </factionPrerequisiteTags>-->
+<!--        </recipeMaker>-->
+    </ThingDef>
+    
+</Defs>

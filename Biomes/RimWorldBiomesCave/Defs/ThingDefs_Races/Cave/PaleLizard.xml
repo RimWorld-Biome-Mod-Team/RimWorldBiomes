@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    
+    <!-- Maxolotl   -->
+    <ThingDef ParentName="AnimalThingBase">
+        <defName>RWBPaleLizard</defName>
+        <label>maxolotl</label>
+        <description>This small lizard has lost most of its color and has lost its eyes due to the adaptation to the cavern environment. It is a common prey animal for the carnivores of the caverns.</description>
+        <statBases>
+            <MoveSpeed>5.2</MoveSpeed>
+            <ComfyTemperatureMin>-65</ComfyTemperatureMin>
+            <MarketValue>100</MarketValue>
+            <LeatherAmount>0</LeatherAmount>
+        </statBases>
+        <tools>
+            <li>
+                <capacities>
+                    <li>Bite</li>
+                </capacities>
+                <power>3</power>
+                <cooldownTime>2.0</cooldownTime>
+                <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+            </li>
+            <li>
+                <label>head</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>1</power>
+                <cooldownTime>1.65</cooldownTime>
+                <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+                <commonality>0.2</commonality>
+            </li>
+        </tools>
+        <race>
+            <body>QuadrupedAnimalWithPawsAndTail</body>
+            <herdAnimal>false</herdAnimal>
+            <herdMigrationAllowed>false</herdMigrationAllowed>
+            <baseBodySize>0.2</baseBodySize>
+            <baseHungerRate>0.23</baseHungerRate>
+            <baseHealthScale>0.4</baseHealthScale>
+            <foodType>VegetarianRoughAnimal</foodType>
+            <gestationPeriodDays>5</gestationPeriodDays>
+            <manhunterOnDamageChance>1</manhunterOnDamageChance>
+            <manhunterOnTameFailChance>0.018</manhunterOnTameFailChance>
+            <wildness>0.3</wildness>
+            <lifeExpectancy>30</lifeExpectancy>
+            <lifeStageAges>
+                <li>
+                    <def>AnimalJuvenile</def>
+                    <minAge>0.0</minAge>
+                </li>
+                <li>
+                    <def>AnimalAdult</def>
+                    <minAge>2.0</minAge>
+                </li>
+            </lifeStageAges>
+            <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+            <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+            <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+        </race>
+        <comps>
+            <li Class="CompProperties_EggLayer">
+                <eggFertilizedDef>RWBEggPaleLizardFertilized</eggFertilizedDef>
+                <eggFertilizationCountMax>1</eggFertilizationCountMax>
+                <eggLayIntervalDays>20</eggLayIntervalDays>
+                <eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+                <eggCountRange>1</eggCountRange>
+            </li>
+        </comps>
+        <tradeTags>
+            <li>StandardAnimal</li>
+        </tradeTags>
+    </ThingDef>
+
+    <PawnKindDef ParentName="AnimalKindBase">
+        <defName>RWBPaleLizard</defName>
+        <label>pale lizard</label>
+        <race>RWBPaleLizard</race>
+        <combatPower>45</combatPower>
+        <canArriveManhunter>true</canArriveManhunter>
+        <wildSpawn_spawnWild>true</wildSpawn_spawnWild>
+        <lifeStages>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Pawns/Caves/Animals/PaleLizard/PaleLizard</texPath>
+                    <drawSize>0.5</drawSize>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Dessicated/CritterDessicatedSmall</texPath>
+                    <drawSize>0.4</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Pawns/Caves/Animals/PaleLizard/PaleLizard</texPath>
+                    <drawSize>0.8</drawSize>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Dessicated/CritterDessicatedSmall</texPath>
+                    <drawSize>0.75</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+        </lifeStages>
+    </PawnKindDef>
+</Defs>

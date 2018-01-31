@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Vampire Moth -->
+
+  <RWBVampireMoth.label>吸血蛾</RWBVampireMoth.label>
+  <RWBVampireMoth.labelPlural>吸血蛾</RWBVampireMoth.labelPlural>
+  <RWBVampireMoth.labelMale>雄吸血蛾</RWBVampireMoth.labelMale>
+  <RWBVampireMoth.labelMalePlural>雄吸血蛾</RWBVampireMoth.labelMalePlural>
+  <RWBVampireMoth.labelFemale>雌吸血蛾</RWBVampireMoth.labelFemale>
+  <RWBVampireMoth.labelFemalePlural>雌吸血蛾</RWBVampireMoth.labelFemalePlural>
+
+
+</LanguageData>

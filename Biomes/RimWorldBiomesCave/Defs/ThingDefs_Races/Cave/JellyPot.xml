@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!--  JellyPot Bug  -->
+	<ThingDef ParentName="BaseInsect">
+    	<defName>RWBJellypotBug</defName>
+    	<label>jellypot bug</label>
+	    <description>This comparatively small insect is a much desired livestock for any cave dwelling faction due to their hardiness and their ability to produce insect jelly over time.</description>
+        <butcherProducts>
+            <RWBChitin>20</RWBChitin>
+        </butcherProducts>
+	    <statBases>
+	      <MoveSpeed>4</MoveSpeed>
+	      <ArmorRating_Blunt>0.1</ArmorRating_Blunt>
+	      <ArmorRating_Sharp>0.1</ArmorRating_Sharp>
+	      <ComfyTemperatureMin>0</ComfyTemperatureMin>
+	      <MarketValue>100</MarketValue>
+	      <LeatherAmount>0</LeatherAmount>
+          <MeatAmount>10</MeatAmount>
+	    </statBases>
+	    <tools>
+	      <li>
+	        <capacities>
+	          <li>Bite</li>
+	        </capacities>
+	        <power>2</power>
+	        <cooldownTime>1.5</cooldownTime>
+	        <linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+	      </li>
+	      <li>
+	        <label>head</label>
+	        <capacities>
+	          <li>Blunt</li>
+	        </capacities>
+	        <power>1</power>
+	        <cooldownTime>1.65</cooldownTime>
+	        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+	        <commonality>0.2</commonality>
+	      </li>
+	    </tools>
+	    <comps>
+      		<li Class="CompProperties_Milkable">
+       			<milkDef>InsectJelly</milkDef>
+        		<milkIntervalDays>3</milkIntervalDays>
+        		<milkAmount>12</milkAmount>
+                <milkFemaleOnly>false</milkFemaleOnly>
+      		</li>
+            <li Class="CompProperties_EggLayer">
+                <eggFertilizedDef>RWBEggJellyPotFertilized</eggFertilizedDef>
+                <eggFertilizationCountMax>1</eggFertilizationCountMax>
+                <eggLayIntervalDays>40</eggLayIntervalDays>
+                <eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+                <eggCountRange>1</eggCountRange>
+            </li>
+    	</comps>
+	    <race>
+          <foodType>VegetarianRoughAnimal</foodType>
+          <gestationPeriodDays>40</gestationPeriodDays>
+          <fleshType>RWBInsectoid</fleshType>
+	      <body>BeetleLike</body>
+	      <baseBodySize>0.2</baseBodySize>
+	      <baseHungerRate>0.24</baseHungerRate>
+	      <baseHealthScale>0.4</baseHealthScale>
+	      <wildness>0.05</wildness>
+	      <lifeExpectancy>10</lifeExpectancy>
+	      <lifeStageAges>
+	        <li>
+	          <def>RWBInsectAdult</def>
+	          <minAge>0</minAge>
+              <soundWounded>Pawn_Megascarab_Wounded</soundWounded>
+              <soundDeath>Pawn_Megascarab_Death</soundDeath>
+              <soundCall>Pawn_Megascarab_Call</soundCall>
+              <soundAngry>Pawn_Megascarab_Angry</soundAngry>
+	        </li>
+	      </lifeStageAges>
+	      <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+	      <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+	      <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+	    </race>
+	    <tradeTags>
+	      <li>Insectoid</li>
+	    </tradeTags>
+	</ThingDef>
+
+	<PawnKindDef ParentName="AnimalKindBase">
+	    <defName>RWBJellypotBug</defName>
+	    <label>jellypot Bug</label>
+	    <race>RWBJellypotBug</race>
+	    <combatPower>25</combatPower>
+			<canArriveManhunter>false</canArriveManhunter>
+			<wildSpawn_EcoSystemWeight>0.05</wildSpawn_EcoSystemWeight>
+	    <wildSpawn_spawnWild>true</wildSpawn_spawnWild>
+	    <lifeStages>
+	      <li>
+	        <bodyGraphicData>
+	          <texPath>Pawns/Caves/Animals/JellyPot/Jellypot</texPath>
+	          <drawSize>1.7</drawSize>
+	           <color>(213,186,142)</color>
+	        </bodyGraphicData>
+	        <dessicatedBodyGraphicData>
+	          <texPath>Things/Pawn/Animal/Dessicated/CritterDessicatedSmall</texPath>
+	          <drawSize>1.5</drawSize>
+	        </dessicatedBodyGraphicData>
+	      </li>
+	    </lifeStages>
+	</PawnKindDef>
+</Defs>

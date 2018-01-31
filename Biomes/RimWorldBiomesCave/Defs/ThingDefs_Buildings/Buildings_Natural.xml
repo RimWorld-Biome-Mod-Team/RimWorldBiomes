@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- Cave Steam Geyser -->
+
+	<ThingDef ParentName="BuildingNaturalBase">
+		<defName>SteamGeyser_Cave</defName>
+		<thingClass>Building_SteamGeyser</thingClass>
+		<label>steam geyser</label>
+		<graphicData>
+			<texPath>Things/Building/Natural/SteamGeyser_Cave</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>Transparent</shaderType>
+			<drawSize>(4,4)</drawSize>
+		</graphicData>
+		<altitudeLayer>Floor</altitudeLayer>
+		<rotatable>false</rotatable>
+		<destroyable>false</destroyable>
+		<useHitPoints>false</useHitPoints>
+		<tickerType>Normal</tickerType>
+		<selectable>true</selectable>
+		<description>Natural steam source.</description>
+		<size>(2,2)</size>
+		<neverOverlapFloors>true</neverOverlapFloors>
+		<blockPlants>true</blockPlants>
+		<building>
+			<isEdifice>false</isEdifice>
+			<claimable>false</claimable>
+			<deconstructible>false</deconstructible>
+		</building>
+	</ThingDef>
+    
+</Defs>

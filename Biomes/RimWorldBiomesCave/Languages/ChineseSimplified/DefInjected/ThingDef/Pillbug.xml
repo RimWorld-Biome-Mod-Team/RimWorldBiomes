@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Pillbug -->
+
+  <RWBPillbug.label>鼠妇</RWBPillbug.label>
+  <RWBPillbug.description>有着牛一样的大小和人的一样性情，这些虫子有天然的装甲，任何捕食者难以刺穿他，更不用说存在于每个部位的可以刺穿敌人尖状物。</RWBPillbug.description>
+  <RWBPillbug.tools.1.label>头</RWBPillbug.tools.1.label>
+  <!-- No Leather: Butcher Products -->
+  <RWBPillbug_Meat.label>鼠妇肉</RWBPillbug_Meat.label>
+  <RWBPillbug_Meat.description>鼠妇的肉</RWBPillbug_Meat.description>
+  <RWBPillbug_Corpse.label>鼠妇尸体</RWBPillbug_Corpse.label>
+  <RWBPillbug_Corpse.description>鼠妇的尸体</RWBPillbug_Corpse.description>
+
+
+</LanguageData>

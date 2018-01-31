@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <TerrainDef>
+    <defName>RWBRockySoil</defName>
+    <label>rocky soil</label>
+    <texturePath>Terrain/Surfaces/RoughStone</texturePath>
+    <edgeType>FadeRough</edgeType>
+    <renderPrecedence>350</renderPrecedence>
+    <pathCost>2</pathCost>
+    <statBases>
+      <Beauty>-1</Beauty>
+      <Cleanliness>-1</Cleanliness>
+    </statBases>
+    <scatterType>Rocky</scatterType>
+    <affordances>
+      <li>Heavy</li>
+      <li>Light</li>
+      <li>GrowSoil</li>
+      <li>Diggable</li>
+    </affordances>
+    <terrainFilthDef>FilthDirt</terrainFilthDef>
+    <fertility>0.5</fertility>
+    <takeFootprints>True</takeFootprints>
+  </TerrainDef>
+  
+  <TerrainDef>
+      <defName>RWBSandstoneSoil</defName>
+      <label>rocky soil</label>
+      <texturePath>Terrain/Surfaces/RoughStone</texturePath>
+      <edgeType>FadeRough</edgeType>
+      <renderPrecedence>350</renderPrecedence>
+      <pathCost>2</pathCost>
+          <color>(126,104,94)</color>
+      <statBases>
+          <Beauty>-1</Beauty>
+          <Cleanliness>-1</Cleanliness>
+      </statBases>
+      <scatterType>Rocky</scatterType>
+      <affordances>
+          <li>Heavy</li>
+          <li>Light</li>
+          <li>GrowSoil</li>
+          <li>Diggable</li>
+      </affordances>
+      <terrainFilthDef>FilthDirt</terrainFilthDef>
+      <fertility>0.5</fertility>
+      <takeFootprints>True</takeFootprints>
+  </TerrainDef>
+  
+  <TerrainDef>
+      <defName>RWBGraniteSoil</defName>
+      <label>rocky soil</label>
+          <color>(105,95,97)</color>
+      <texturePath>Terrain/Surfaces/RoughStone</texturePath>
+      <edgeType>FadeRough</edgeType>
+      <renderPrecedence>350</renderPrecedence>
+      <pathCost>2</pathCost>
+      <statBases>
+          <Beauty>-1</Beauty>
+          <Cleanliness>-1</Cleanliness>
+      </statBases>
+      <scatterType>Rocky</scatterType>
+      <affordances>
+          <li>Heavy</li>
+          <li>Light</li>
+          <li>GrowSoil</li>
+          <li>Diggable</li>
+      </affordances>
+      <terrainFilthDef>FilthDirt</terrainFilthDef>
+      <fertility>0.5</fertility>
+      <takeFootprints>True</takeFootprints>
+  </TerrainDef>
+  
+  <TerrainDef>
+      <defName>RWBLimestoneSoil</defName>
+      <label>rocky soil</label>
+          <color>(158,153,135)</color>
+      <texturePath>Terrain/Surfaces/RoughStone</texturePath>
+      <edgeType>FadeRough</edgeType>
+      <renderPrecedence>350</renderPrecedence>
+      <pathCost>2</pathCost>
+      <statBases>
+          <Beauty>-1</Beauty>
+          <Cleanliness>-1</Cleanliness>
+      </statBases>
+      <scatterType>Rocky</scatterType>
+      <affordances>
+          <li>Heavy</li>
+          <li>Light</li>
+          <li>GrowSoil</li>
+          <li>Diggable</li>
+      </affordances>
+      <terrainFilthDef>FilthDirt</terrainFilthDef>
+      <fertility>0.5</fertility>
+      <takeFootprints>True</takeFootprints>
+  </TerrainDef>
+  
+  <TerrainDef>
+      <defName>RWBSlateSoil</defName>
+      <label>rocky soil</label>
+          <color>(70,70,70)</color>
+      <texturePath>Terrain/Surfaces/RoughStone</texturePath>
+      <edgeType>FadeRough</edgeType>
+      <renderPrecedence>350</renderPrecedence>
+      <pathCost>2</pathCost>
+      <statBases>
+          <Beauty>-1</Beauty>
+          <Cleanliness>-1</Cleanliness>
+      </statBases>
+      <scatterType>Rocky</scatterType>
+      <affordances>
+          <li>Heavy</li>
+          <li>Light</li>
+          <li>GrowSoil</li>
+          <li>Diggable</li>
+      </affordances>
+      <terrainFilthDef>FilthDirt</terrainFilthDef>
+      <fertility>0.5</fertility>
+      <takeFootprints>True</takeFootprints>
+  </TerrainDef>
+  
+  <TerrainDef>
+      <defName>RWBMarbleSoil</defName>
+      <label>rocky soil</label>
+          <color>(132,135,132)</color>
+      <texturePath>Terrain/Surfaces/RoughStone</texturePath>
+      <edgeType>FadeRough</edgeType>
+      <renderPrecedence>350</renderPrecedence>
+      <pathCost>2</pathCost>
+      <statBases>
+          <Beauty>-1</Beauty>
+          <Cleanliness>-1</Cleanliness>
+      </statBases>
+      <scatterType>Rocky</scatterType>
+      <affordances>
+          <li>Heavy</li>
+          <li>Light</li>
+          <li>GrowSoil</li>
+          <li>Diggable</li>
+      </affordances>
+      <terrainFilthDef>FilthDirt</terrainFilthDef>
+      <fertility>0.5</fertility>
+      <takeFootprints>True</takeFootprints>
+  </TerrainDef>
+</Defs>

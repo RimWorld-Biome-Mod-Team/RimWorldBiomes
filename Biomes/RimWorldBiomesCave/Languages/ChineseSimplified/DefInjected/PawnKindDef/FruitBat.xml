@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- FruitBat -->
+
+  <RWBFruitBat.label>果蝠</RWBFruitBat.label>
+  <RWBFruitBat.labelPlural>果蝠</RWBFruitBat.labelPlural>
+  <RWBFruitBat.lifeStages.0.label>果蝠</RWBFruitBat.lifeStages.0.label>
+  <RWBFruitBat.lifeStages.0.labelPlural>果蝠</RWBFruitBat.lifeStages.0.labelPlural>
+  <RWBFruitBat.lifeStages.0.labelMale>雄果蝠</RWBFruitBat.lifeStages.0.labelMale>
+  <RWBFruitBat.lifeStages.0.labelMalePlural>雄果蝠</RWBFruitBat.lifeStages.0.labelMalePlural>
+  <RWBFruitBat.lifeStages.0.labelFemale>雌果蝠</RWBFruitBat.lifeStages.0.labelFemale>
+  <RWBFruitBat.lifeStages.0.labelFemalePlural>雌果蝠</RWBFruitBat.lifeStages.0.labelFemalePlural>
+  <RWBFruitBat.lifeStages.1.label>果蝠</RWBFruitBat.lifeStages.1.label>
+  <RWBFruitBat.lifeStages.1.labelPlural>果蝠</RWBFruitBat.lifeStages.1.labelPlural>
+  <RWBFruitBat.lifeStages.1.labelMale>雄果蝠</RWBFruitBat.lifeStages.1.labelMale>
+  <RWBFruitBat.lifeStages.1.labelMalePlural>雄果蝠</RWBFruitBat.lifeStages.1.labelMalePlural>
+  <RWBFruitBat.lifeStages.1.labelFemale>雌果蝠</RWBFruitBat.lifeStages.1.labelFemale>
+  <RWBFruitBat.lifeStages.1.labelFemalePlural>雌果蝠</RWBFruitBat.lifeStages.1.labelFemalePlural>
+  <RWBFruitBat.lifeStages.2.label>果蝠</RWBFruitBat.lifeStages.2.label>
+  <RWBFruitBat.lifeStages.2.labelPlural>果蝠</RWBFruitBat.lifeStages.2.labelPlural>
+  <RWBFruitBat.lifeStages.2.labelMale>雄果蝠</RWBFruitBat.lifeStages.2.labelMale>
+  <RWBFruitBat.lifeStages.2.labelMalePlural>雄果蝠</RWBFruitBat.lifeStages.2.labelMalePlural>
+  <RWBFruitBat.lifeStages.2.labelFemale>雌果蝠</RWBFruitBat.lifeStages.2.labelFemale>
+  <RWBFruitBat.lifeStages.2.labelFemalePlural>雌果蝠</RWBFruitBat.lifeStages.2.labelFemalePlural>
+  <RWBFruitBat.labelMale>雄果蝠</RWBFruitBat.labelMale>
+  <RWBFruitBat.labelMalePlural>雄果蝠</RWBFruitBat.labelMalePlural>
+  <RWBFruitBat.labelFemale>雌果蝠</RWBFruitBat.labelFemale>
+  <RWBFruitBat.labelFemalePlural>雌果蝠</RWBFruitBat.labelFemalePlural>
+
+
+</LanguageData>

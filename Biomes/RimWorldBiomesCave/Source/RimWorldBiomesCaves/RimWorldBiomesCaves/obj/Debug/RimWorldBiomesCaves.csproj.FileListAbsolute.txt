@@ -1,0 +1,6 @@
+/Users/iankuo/Library/Application Support/Steam/SteamApps/common/RimWorld/RimWorldMac.app/Mods/RimWorldBiomesCave/Source/RimWorldBiomesCaves/RimWorldBiomesCaves/bin/Debug/RimWorldBiomesCaves.dll
+/Users/iankuo/Library/Application Support/Steam/SteamApps/common/RimWorld/RimWorldMac.app/Mods/RimWorldBiomesCave/Source/RimWorldBiomesCaves/RimWorldBiomesCaves/bin/Debug/RimWorldBiomesCaves.pdb
+/Users/iankuo/Library/Application Support/Steam/SteamApps/common/RimWorld/RimWorldMac.app/Mods/RimWorldBiomesCave/Source/RimWorldBiomesCaves/RimWorldBiomesCaves/obj/Debug/RimWorldBiomesCaves.csprojResolveAssemblyReference.cache
+/Users/iankuo/Library/Application Support/Steam/SteamApps/common/RimWorld/RimWorldMac.app/Mods/RimWorldBiomesCave/Source/RimWorldBiomesCaves/RimWorldBiomesCaves/obj/Debug/RimWorldBiomesCaves.csproj.CoreCompileInputs.cache
+/Users/iankuo/Library/Application Support/Steam/SteamApps/common/RimWorld/RimWorldMac.app/Mods/RimWorldBiomesCave/Source/RimWorldBiomesCaves/RimWorldBiomesCaves/obj/Debug/RimWorldBiomesCaves.dll
+/Users/iankuo/Library/Application Support/Steam/SteamApps/common/RimWorld/RimWorldMac.app/Mods/RimWorldBiomesCave/Source/RimWorldBiomesCaves/RimWorldBiomesCaves/obj/Debug/RimWorldBiomesCaves.pdb

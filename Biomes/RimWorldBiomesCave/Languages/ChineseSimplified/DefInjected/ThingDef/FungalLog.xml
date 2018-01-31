@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <FungalLog.label>真菌木</FungalLog.label>
+  <FungalLog.description>从蘑菇树获取的一种真菌材料。可用于建筑, 武器, 甚至简单的假肢。可以在紧要关头被用作武器。</FungalLog.description>
+  <FungalLog.stuffProps.stuffAdjective>真菌木</FungalLog.stuffProps.stuffAdjective>
+
+
+</LanguageData>

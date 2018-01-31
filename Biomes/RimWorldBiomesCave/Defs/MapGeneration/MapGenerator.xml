@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <GenStepDef>
+    <defName>CavernElevation</defName>
+    <linkWithMapGenerator>BasicMap</linkWithMapGenerator>
+    <order>12</order>
+    <genStep Class="RimWorldBiomesCaves.GenStep_CavernElevation"/>
+  </GenStepDef>
+  <GenStepDef>
+      <defName>CavernFloor</defName>
+      <linkWithMapGenerator>BasicMap</linkWithMapGenerator>
+      <order>213</order>
+      <genStep Class="RimWorldBiomesCaves.GenStep_CavernFloor"/>
+  </GenStepDef>
+</Defs>

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <MushroomCluster.label>蘑菇群</MushroomCluster.label>
+  <MushroomCluster.description>野生蘑菇只要那里有一点光线和极小的肥沃土壤，就可以生长在任何地方。</MushroomCluster.description>
+
+  <MushroomTree.label>蘑菇树</MushroomTree.label>
+  <MushroomTree.description>一种强壮的蘑菇树。生长缓慢，但真菌很坚强。</MushroomTree.description>
+
+  <SpectreCap.label>幽灵菇</SpectreCap.label>
+  <SpectreCap.description>由于其怪异的辉光和苍白的颜色，这种蘑菇曾经被认为是失落部落的鬼魂</SpectreCap.description>
+
+  <StarlightShroom.label>星光蘑菇</StarlightShroom.label>
+  <StarlightShroom.description>一种深蓝色蘑菇，它的斑点能反射少量的光线，使它看起来像是夜空。</StarlightShroom.description>
+
+  <SkullTop.label>骷髅菇</SkullTop.label>
+  <SkullTop.description>这种紫色的蘑菇也许是洞穴中最危险的, 因为它能够释放有毒的孢子, 如果它们足够近的话, 它能迅速毒杀任何活着的东西。它的孢子被用来制造赋毒武器和陷阱。</SkullTop.description>
+
+
+</LanguageData>

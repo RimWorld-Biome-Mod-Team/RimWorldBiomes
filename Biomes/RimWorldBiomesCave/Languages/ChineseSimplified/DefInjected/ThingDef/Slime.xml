@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Slime -->
+
+  <RWBSlime.label>史莱姆</RWBSlime.label>
+  <RWBSlime.description>这种奇怪的生物是看起来像是大量的黏性物质, 但实际上是数百万的微生物联合在一起工作一钟生物。由于它的肉是酸性的,因此没有天敌。他们的粘液可以用来制作危险的护城河, 也可以用作生物燃料。</RWBSlime.description>
+  <RWBSlime.tools.1.label>头</RWBSlime.tools.1.label>
+  <!-- No Leather: Butcher Products -->
+  <!-- Meat Amount: 0 -->
+  <RWBSlime_Corpse.label>史莱姆尸体</RWBSlime_Corpse.label>
+  <RWBSlime_Corpse.description>史莱姆的尸体</RWBSlime_Corpse.description>
+
+
+</LanguageData>

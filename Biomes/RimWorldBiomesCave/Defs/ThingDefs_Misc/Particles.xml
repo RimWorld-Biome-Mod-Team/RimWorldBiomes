@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>RWBSkulltopSpore</defName>
+		<label>skulltop spore</label>
+		<soundImpactDefault>BulletImpactGround</soundImpactDefault>
+		<selectable>false</selectable>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<filthLeaving>FilthDirt</filthLeaving>
+		<blockWind>false</blockWind>
+		<graphicData>
+		  <texPath>Particles/Skulltop_Spore</texPath>
+		  <graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<building>
+			<ai_chillDestination>false</ai_chillDestination>
+			<isInert>true</isInert>
+		  	<isEdifice>false</isEdifice>
+		  	<claimable>false</claimable>
+		</building>
+		<altitudeLayer>Gas</altitudeLayer>
+		<passability>Standable</passability>
+		<statBases>
+		  <MaxHitPoints>50</MaxHitPoints>
+		  <WorkToBuild>0</WorkToBuild>
+		  <Flammability>1.0</Flammability>
+		  <Beauty>-2</Beauty>
+		</statBases>
+		<rotatable>false</rotatable>
+		<neverMultiSelect>true</neverMultiSelect>
+			<castEdgeShadows>false</castEdgeShadows>
+		 <comps>
+		   	<li Class="RimWorldBiomesCore.CompProperties_AuraParticle">
+		            <hediff>ToxicBuildup</hediff>
+		            <severity>0.00025</severity>
+		            <releasedBy>plant</releasedBy>
+                    <parentThing>SkullTop</parentThing>
+                    <forceFlee>true</forceFlee>
+                    <warn>true</warn>
+		        </li>
+		</comps>
+        <tickerType>Normal</tickerType>
+	</ThingDef>
+    
+    <ThingDef ParentName="BuildingBase">
+        <defName>RWBPoisonGasWeak</defName>
+        <label>weak poison gas</label>
+        <soundImpactDefault>BulletImpactGround</soundImpactDefault>
+        <selectable>false</selectable>
+        <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+        <filthLeaving>FilthDirt</filthLeaving>
+        <blockWind>false</blockWind>
+        <graphicData>
+            <texPath>Particles/Skulltop_Spore</texPath>
+            <graphicClass>Graphic_Random</graphicClass>
+        </graphicData>
+        <building>
+            <ai_chillDestination>false</ai_chillDestination>
+            <isInert>true</isInert>
+            <isEdifice>false</isEdifice>
+            <claimable>false</claimable>
+        </building>
+        <altitudeLayer>Gas</altitudeLayer>
+        <passability>Standable</passability>
+        <statBases>
+            <MaxHitPoints>50</MaxHitPoints>
+            <WorkToBuild>0</WorkToBuild>
+            <Flammability>1.0</Flammability>
+            <Beauty>-2</Beauty>
+        </statBases>
+        <rotatable>false</rotatable>
+        <neverMultiSelect>true</neverMultiSelect>
+        <castEdgeShadows>false</castEdgeShadows>
+        <comps>
+            <li Class="RimWorldBiomesCore.CompProperties_AuraParticle">
+                <duration>5</duration>
+                <hediff>ToxicBuildup</hediff>
+                <severity>0.0005</severity>
+                <releasedBy>item</releasedBy>
+                <parentThing>RWBProj_GrenadePoisonWeak</parentThing>
+                <forceFlee>false</forceFlee>
+                <warn>false</warn>
+            </li>
+        </comps>
+        <tickerType>Normal</tickerType>
+    </ThingDef>
+    
+    <ThingDef ParentName="BuildingBase">
+        <defName>RWBPoisonGasStrong</defName>
+        <label>strong poison gas</label>
+        <soundImpactDefault>BulletImpactGround</soundImpactDefault>
+        <selectable>false</selectable>
+        <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+        <filthLeaving>FilthDirt</filthLeaving>
+        <blockWind>false</blockWind>
+        <graphicData>
+            <texPath>Particles/Skulltop_Spore</texPath>
+            <graphicClass>Graphic_Random</graphicClass>
+        </graphicData>
+        <building>
+            <ai_chillDestination>false</ai_chillDestination>
+            <isInert>true</isInert>
+            <isEdifice>false</isEdifice>
+            <claimable>false</claimable>
+        </building>
+        <altitudeLayer>Gas</altitudeLayer>
+        <passability>Standable</passability>
+        <statBases>
+            <MaxHitPoints>50</MaxHitPoints>
+            <WorkToBuild>0</WorkToBuild>
+            <Flammability>1.0</Flammability>
+            <Beauty>-2</Beauty>
+        </statBases>
+        <rotatable>false</rotatable>
+        <neverMultiSelect>true</neverMultiSelect>
+        <castEdgeShadows>false</castEdgeShadows>
+        <comps>
+            <li Class="RimWorldBiomesCore.CompProperties_AuraParticle">
+                <duration>5</duration>
+                <hediff>ToxicBuildup</hediff>
+                <severity>0.00075</severity>
+                <releasedBy>item</releasedBy>
+                <parentThing>RWBProj_GrenadePoisonStrong</parentThing>
+                <forceFlee>false</forceFlee>
+                <warn>false</warn>
+            </li>
+        </comps>
+        <tickerType>Normal</tickerType>
+    </ThingDef>
+</Defs>

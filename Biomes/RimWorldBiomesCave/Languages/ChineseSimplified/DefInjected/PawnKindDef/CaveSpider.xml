@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <RWBCaveSpider.label>洞穴蜘蛛</RWBCaveSpider.label>
+  <RWBCaveSpider.labelPlural>洞穴蜘蛛</RWBCaveSpider.labelPlural>
+  <RWBCaveSpider.lifeStages.0.label>幼蛛</RWBCaveSpider.lifeStages.0.label>
+  <RWBCaveSpider.lifeStages.0.labelPlural>幼蛛</RWBCaveSpider.lifeStages.0.labelPlural>
+  <RWBCaveSpider.lifeStages.0.labelMale>雄幼蛛</RWBCaveSpider.lifeStages.0.labelMale>
+  <RWBCaveSpider.lifeStages.0.labelMalePlural>雄幼蛛</RWBCaveSpider.lifeStages.0.labelMalePlural>
+  <RWBCaveSpider.lifeStages.0.labelFemale>雌幼蛛</RWBCaveSpider.lifeStages.0.labelFemale>
+  <RWBCaveSpider.lifeStages.0.labelFemalePlural>雌幼蛛</RWBCaveSpider.lifeStages.0.labelFemalePlural>
+  <RWBCaveSpider.lifeStages.1.label>若蛛</RWBCaveSpider.lifeStages.1.label>
+  <RWBCaveSpider.lifeStages.1.labelPlural>若蛛</RWBCaveSpider.lifeStages.1.labelPlural>
+  <RWBCaveSpider.lifeStages.1.labelMale>雄若蛛</RWBCaveSpider.lifeStages.1.labelMale>
+  <RWBCaveSpider.lifeStages.1.labelMalePlural>雄若蛛</RWBCaveSpider.lifeStages.1.labelMalePlural>
+  <RWBCaveSpider.lifeStages.1.labelFemale>雌若蛛</RWBCaveSpider.lifeStages.1.labelFemale>
+  <RWBCaveSpider.lifeStages.1.labelFemalePlural>雌若蛛</RWBCaveSpider.lifeStages.1.labelFemalePlural>
+  <RWBCaveSpider.lifeStages.2.label>洞穴蜘蛛</RWBCaveSpider.lifeStages.2.label>
+  <RWBCaveSpider.lifeStages.2.labelPlural>洞穴蜘蛛</RWBCaveSpider.lifeStages.2.labelPlural>
+  <RWBCaveSpider.lifeStages.2.labelMale>雄洞穴蜘蛛</RWBCaveSpider.lifeStages.2.labelMale>
+  <RWBCaveSpider.lifeStages.2.labelMalePlural>雄洞穴蜘蛛</RWBCaveSpider.lifeStages.2.labelMalePlural>
+  <RWBCaveSpider.lifeStages.2.labelFemale>雌洞穴蜘蛛</RWBCaveSpider.lifeStages.2.labelFemale>
+  <RWBCaveSpider.lifeStages.2.labelFemalePlural>雌洞穴蜘蛛</RWBCaveSpider.lifeStages.2.labelFemalePlural>
+  <RWBCaveSpider.labelMale>雌洞穴蜘蛛</RWBCaveSpider.labelMale>
+  <RWBCaveSpider.labelMalePlural>雌洞穴蜘蛛</RWBCaveSpider.labelMalePlural>
+  <RWBCaveSpider.labelFemale>雌洞穴蜘蛛</RWBCaveSpider.labelFemale>
+  <RWBCaveSpider.labelFemalePlural>雌洞穴蜘蛛</RWBCaveSpider.labelFemalePlural>
+
+
+</LanguageData>

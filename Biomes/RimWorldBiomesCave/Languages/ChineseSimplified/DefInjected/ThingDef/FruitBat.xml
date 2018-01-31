@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- FruitBat -->
+
+  <RWB_FruitBat.label>果蝠</RWB_FruitBat.label>
+  <RWB_FruitBat.description>这些飞行哺乳动物生活在洞穴深处, 通过回声定位导航。对于种植荧光果树的人来说它是个大麻烦</RWB_FruitBat.description>
+  <RWB_FruitBat.tools.1.label>头</RWB_FruitBat.tools.1.label>
+  <RWB_FruitBat_Leather.label>蝙蝠皮</RWB_FruitBat_Leather.label>
+  <RWB_FruitBat_Leather.description>蝙蝠皮</RWB_FruitBat_Leather.description>
+  <RWB_FruitBat_Leather.stuffProps.stuffAdjective>蝙蝠皮</RWB_FruitBat_Leather.stuffProps.stuffAdjective>
+  <RWB_FruitBat_Meat.label>果蝠肉</RWB_FruitBat_Meat.label>
+  <RWB_FruitBat_Meat.description>果蝠的肉</RWB_FruitBat_Meat.description>
+  <RWB_FruitBat_Corpse.label>果蝠尸体</RWB_FruitBat_Corpse.label>
+  <RWB_FruitBat_Corpse.description>果蝠的尸体</RWB_FruitBat_Corpse.description>
+
+
+</LanguageData>

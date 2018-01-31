@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!--  Giant Snail  -->
+    <ThingDef ParentName="AnimalThingBase">
+        <defName>RWBGiantSnail</defName>
+        <label>giant snail</label>
+        <description>Their size, strength, and surprising speed allows them to be used as pack animals. When threatened they will retract inside of their shell in an attempt to prevent further harm.</description>
+        <butcherProducts>
+            <RWBChitin>30</RWBChitin>
+        </butcherProducts>
+        <statBases>
+            <MoveSpeed>3.1</MoveSpeed>
+            <ArmorRating_Blunt>0.1</ArmorRating_Blunt>
+            <ArmorRating_Sharp>0.4</ArmorRating_Sharp>
+            <ComfyTemperatureMin>0</ComfyTemperatureMin>
+            <MarketValue>100</MarketValue>
+            <LeatherAmount>0</LeatherAmount>
+        </statBases>
+        <tools>
+            <li>
+                <label>Mouth</label>
+                <capacities>
+                    <li>Bite</li>
+                </capacities>
+                <power>4</power>
+                <cooldownTime>1.65</cooldownTime>
+                <linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+                <commonality>0.2</commonality>
+            </li>
+            <li>
+                <label>head</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>6</power>
+                <cooldownTime>1.65</cooldownTime>
+                <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+                <commonality>0.2</commonality>
+            </li>
+        </tools>
+        <comps>
+            <li Class="RimWorldBiomesCore.CompProperties_Trail">
+                <trail>RWBFilthSlime</trail>
+            </li>
+            <li Class="RimWorldBiomesCore.CompProperties_Regenerate">
+                <amount>0.1</amount>
+                <startThreshold>0.6</startThreshold>
+            </li>
+            <li Class="CompProperties_EggLayer">
+                <eggFertilizedDef>RWBEggGiantSnailFertilized</eggFertilizedDef>
+                <eggFertilizationCountMax>1</eggFertilizationCountMax>
+                <eggLayIntervalDays>25</eggLayIntervalDays>
+                <eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+                <eggCountRange>1</eggCountRange>
+            </li>
+            
+            <li Class="RimWorldBiomesCore.CompProperties_ReactiveDefense">
+                <defenseTrigger>health</defenseTrigger>
+                <defenseType>hide</defenseType>
+                <hpThreshold>0.6</hpThreshold>
+                <moveSpeedPenalty>0.3</moveSpeedPenalty>
+                <statDefs>
+                    <li>ArmorRating_Sharp</li>
+                    <li>ArmorRating_Blunt</li>
+                </statDefs>
+                <statValues>
+                    <li>0.25</li>
+                    <li>0.7</li>
+                </statValues>
+                <hideGraphic>
+                    <texPath>Pawns/Caves/Animals/GiantSnail/GiantSnailHide</texPath>
+                    <graphicClass>Graphic_Multi</graphicClass>
+                    <drawSize>2.5</drawSize>
+                </hideGraphic>
+                <apparel>RWBSnailDefense</apparel>
+            </li>
+        </comps>
+        <race>
+            <packAnimal>true</packAnimal>
+            <body>RWBSnail</body>
+            <foodType>VegetarianRoughAnimal</foodType>
+            <gestationPeriodDays>25</gestationPeriodDays>
+            <fleshType>RWBInsectoid</fleshType>
+            <baseBodySize>1.5</baseBodySize>
+            <baseHungerRate>0.8</baseHungerRate>
+            <baseHealthScale>1.2</baseHealthScale>
+            <wildness>0.35</wildness>
+            <lifeExpectancy>10</lifeExpectancy>
+            <lifeStageAges>
+                <li>
+                    <def>EusocialInsectJuvenile</def>
+                    <minAge>0.03</minAge>
+                </li>
+                <li>
+                    <def>RWBInsectAdult</def>
+                    <minAge>0.4</minAge>
+                </li>
+            </lifeStageAges>
+            <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+            <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+            <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+        </race>
+        <tradeTags>
+            <li>Insectoid</li>
+        </tradeTags>
+    </ThingDef>
+    
+    <PawnKindDef ParentName="AnimalKindBase">
+        <defName>RWBGiantSnail</defName>
+        <label>giant Snail</label>
+        <race>RWBGiantSnail</race>
+        <combatPower>75</combatPower>
+        <canArriveManhunter>true</canArriveManhunter>
+        <wildSpawn_EcoSystemWeight>0.05</wildSpawn_EcoSystemWeight>
+        <wildSpawn_spawnWild>true</wildSpawn_spawnWild>
+        <lifeStages>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Pawns/Caves/Animals/GiantSnail/GiantSnail</texPath>
+                    <drawSize>1.5</drawSize>
+                    <color>(224,233,205)</color>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Dessicated/CritterDessicatedSmall</texPath>
+                    <drawSize>1.3</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Pawns/Caves/Animals/GiantSnail/GiantSnail</texPath>
+                    <drawSize>2.7</drawSize>
+                    <color>(224,233,205)</color>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Muffalo/MuffaloDessicated</texPath>
+                    <drawSize>2.5</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+        </lifeStages>
+    </PawnKindDef>
+    
+    <ThingDef ParentName="ApparelBase">
+        <defName>RWBSnailDefense</defName>
+        <label>snail defense</label>
+        <techLevel>Animal</techLevel>
+        <description>you should not see this</description>
+        <graphicData>
+            <texPath>Things/Apparel/InvisibleArmor/InvisibleArmor</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <statBases>
+            <MaxHitPoints>100000</MaxHitPoints>
+            <Mass>1.2</Mass>
+        </statBases>
+        <thingCategories>
+            <li>Apparel</li>
+        </thingCategories>
+        <generateCommonality>0</generateCommonality>
+        <equippedStatOffsets>
+            <MoveSpeed>-3</MoveSpeed>
+        </equippedStatOffsets>
+        <apparel>
+            <defaultOutfitTags>
+                <li>Soldier</li>
+            </defaultOutfitTags>
+            <wornGraphicPath>Things/Apparel/InvisibleArmor/InvisibleArmor</wornGraphicPath>
+            <layers>
+                <li>Middle</li>
+                <li>Shell</li>
+            </layers>
+            <bodyPartGroups>
+                <li>Torso</li>
+                <li>Mouth</li>
+                <li>Eyes</li>
+                <li>FullHead</li>
+                <li>UpperHead</li>
+            </bodyPartGroups>
+        </apparel>
+    </ThingDef>
+</Defs>

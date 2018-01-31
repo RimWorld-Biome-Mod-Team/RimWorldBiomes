@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThingDef ParentName="RockBase">
+        <defName>RWBStalagmite</defName>
+        <thingClass>RimWorldBiomesCaves.Building_Stalagmite</thingClass>
+        <label>stalagmite</label>
+        <size>(1,1)</size>
+        
+        <graphicData>
+            <drawSize>(2,2)</drawSize>
+            <texPath>Terrain/Stalagmite_style1</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <linkType>None</linkType>
+        </graphicData>
+        <statBases>
+            <MaxHitPoints>500</MaxHitPoints>
+        </statBases>
+        <description>A stalagmite</description>
+        <rotatable>false</rotatable>
+        <blockWind>true</blockWind>
+        <building>
+            <isNaturalRock>false</isNaturalRock>
+            <claimable>false</claimable>
+        </building>
+    </ThingDef>
+    
+
+</Defs>
