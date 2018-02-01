@@ -22,6 +22,8 @@ namespace RimWorldBiomesCore
     {
         static Harmony_BiomePatches()
         {
+            //I'm a terrible Harmony Criminal, please ignore all the evil return false prefixes you see. Transpilers to those methods would be appreciated though! Swenzi
+
             //HarmonyInstance.DEBUG = true;
             //Harmony Object Instantialization
             HarmonyInstance harmony = HarmonyInstance.Create("rimworld.swenzi.biomepatches");
@@ -39,6 +41,8 @@ namespace RimWorldBiomesCore
             harmony.Patch(AccessTools.Method(typeof(World), "Impassable"), null, new HarmonyMethod(typeof(Harmony_BiomePatches), nameof(Impassable_PostFix)));
             harmony.Patch(AccessTools.Method(typeof(WorldPathGrid), "CalculatedCostAt"), null, new HarmonyMethod(typeof(Harmony_BiomePatches), nameof(CalculatedCostAt_PostFix)));
         }
+
+
 
         public static void CalculatedCostAt_PostFix(int tile, bool perceivedStatic, ref int __result, float yearPercent = -1f){
             Tile tile2 = Find.WorldGrid[tile];
