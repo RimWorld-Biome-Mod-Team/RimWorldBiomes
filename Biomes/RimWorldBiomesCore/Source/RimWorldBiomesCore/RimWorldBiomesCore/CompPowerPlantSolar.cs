@@ -61,7 +61,7 @@ namespace RimWorldBiomesCore
             GenDraw.FillableBarRequest r = default(GenDraw.FillableBarRequest);
             r.center = this.parent.DrawPos + Vector3.up * 0.1f;
             r.size = new Vector2((float)(base.parent.def.graphic.drawSize.x * 0.8), (float)(base.parent.def.graphic.drawSize.y * 0.07));
-            r.fillPercent = base.PowerOutput / 1700f;
+            r.fillPercent = base.PowerOutput / getFullSunPower();
             r.filledMat = CompPowerPlantSolar.PowerPlantSolarBarFilledMat;
             r.unfilledMat = CompPowerPlantSolar.PowerPlantSolarBarUnfilledMat;
             r.margin = 0.15f;
