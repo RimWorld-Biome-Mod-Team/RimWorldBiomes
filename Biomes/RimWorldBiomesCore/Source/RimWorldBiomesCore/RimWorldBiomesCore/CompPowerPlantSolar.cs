@@ -20,10 +20,10 @@ namespace RimWorldBiomesCore
 
         private float getFullSunPower(){
             float power = 0;
-            if(base.parent.def.defName == "RWBSmallSolarGenerator"){
+            if(base.parent?.def?.defName == "RWBSmallSolarGenerator"){
                 power = 350;
             }
-            if (base.parent.def.defName == "RWBTinySolarGenerator")
+            if (base.parent?.def?.defName == "RWBTinySolarGenerator")
             {
                 power = 80;
             }
@@ -33,6 +33,9 @@ namespace RimWorldBiomesCore
         {
             get
             {
+                if(this.parent == null || this.parent.Map == null || this.parent.Map.skyManager == null){
+                    return 0;   
+                }
                 return Mathf.Lerp(0f, getFullSunPower(), this.parent.Map.skyManager.CurSkyGlow) * this.RoofedPowerOutputFactor;
             }
         }
@@ -43,10 +46,10 @@ namespace RimWorldBiomesCore
             {
                 int num = 0;
                 int num2 = 0;
-                foreach (IntVec3 current in this.parent.OccupiedRect())
+                foreach (IntVec3 current in this.parent?.OccupiedRect())
                 {
                     num++;
-                    if (this.parent.Map.roofGrid.Roofed(current))
+                    if (this.parent.Map.roofGrid != null && this.parent.Map.roofGrid.Roofed(current))
                     {
                         num2++;
                     }

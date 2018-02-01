@@ -50,6 +50,7 @@
       <li>SolarPanels</li>
     </researchPrerequisites>
     <constructionSkillPrerequisite>3</constructionSkillPrerequisite>
+    <minifiedDef>MinifiedFurniture</minifiedDef>
   </ThingDef>
   
   
@@ -101,6 +102,7 @@
       <li>SolarPanels</li>
     </researchPrerequisites>
     <constructionSkillPrerequisite>3</constructionSkillPrerequisite>
+    <minifiedDef>MinifiedFurniture</minifiedDef>
   </ThingDef>
   
 </Defs>
