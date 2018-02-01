@@ -21,7 +21,7 @@
             <reproduces>true</reproduces>
 			<fertilityMin>0.01</fertilityMin>
 			<fertilitySensitivity>0.15</fertilitySensitivity>
-			<growDays>1.5</growDays>
+			<growDays>1</growDays>
             <dieIfLeafless>true</dieIfLeafless>
 <!--			<leaflessGraphicPath>Things/Plant/Grass_Leafless</leaflessGraphicPath>-->
 			<harvestWork>40</harvestWork>
@@ -31,7 +31,7 @@
 				<max>0.6</max>
 			</visualSizeRange>
 			<topWindExposure>0.4</topWindExposure>
-			<reproduceMtbDays>2</reproduceMtbDays>
+			<reproduceMtbDays>1</reproduceMtbDays>
             <neverBlightable>true</neverBlightable>
 		</plant>
 
