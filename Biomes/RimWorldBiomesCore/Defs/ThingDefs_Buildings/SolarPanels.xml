@@ -35,7 +35,7 @@
     <comps>
       <li Class="CompProperties_Power">
         <compClass>RimWorldBiomesCore.CompPowerPlantSolar</compClass>
-        <basePowerConsumption>-1341</basePowerConsumption>
+        <basePowerConsumption>-1</basePowerConsumption>
         <transmitsPower>true</transmitsPower>
       </li>
       <li Class="CompProperties_Breakdownable"/>
@@ -86,7 +86,7 @@
     <comps>
       <li Class="CompProperties_Power">
         <compClass>RimWorldBiomesCore.CompPowerPlantSolar</compClass>
-        <basePowerConsumption>-1590</basePowerConsumption>
+        <basePowerConsumption>-1</basePowerConsumption>
         <transmitsPower>true</transmitsPower>
       </li>
       <li Class="CompProperties_Breakdownable"/>

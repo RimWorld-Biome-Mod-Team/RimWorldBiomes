@@ -7,21 +7,33 @@ namespace RimWorldBiomesCore
     [StaticConstructorOnStartup]
     public class CompPowerPlantSolar : CompPowerPlant
     {
-        private const float FullSunPower = 1700f;
+        //public float FullSunPower = 1000f;
+        //private const float FullSunPower = 1700f;
 
         private const float NightPower = 0f;
 
-        private static readonly Vector2 BarSize = new Vector2(2.3f, 0.14f);
+        //private static readonly Vector2 BarSize = new Vector2(2.3f, 0.14f);
 
         private static readonly Material PowerPlantSolarBarFilledMat = SolidColorMaterials.SimpleSolidColorMaterial(new Color(0.5f, 0.475f, 0.1f), false);
 
         private static readonly Material PowerPlantSolarBarUnfilledMat = SolidColorMaterials.SimpleSolidColorMaterial(new Color(0.15f, 0.15f, 0.15f), false);
 
+        private float getFullSunPower(){
+            float power = 0;
+            if(base.parent.def.defName == "RWBSmallSolarGenerator"){
+                power = 350;
+            }
+            if (base.parent.def.defName == "RWBTinySolarGenerator")
+            {
+                power = 80;
+            }
+            return power;
+        }
         protected override float DesiredPowerOutput
         {
             get
             {
-                return Mathf.Lerp(0f, 1700f, this.parent.Map.skyManager.CurSkyGlow) * this.RoofedPowerOutputFactor;
+                return Mathf.Lerp(0f, getFullSunPower(), this.parent.Map.skyManager.CurSkyGlow) * this.RoofedPowerOutputFactor;
             }
         }
 
