@@ -132,6 +132,11 @@ namespace RimWorldBiomesCore
                         {
                             chance = 0.18f;
                         }
+                        if(thingDef.defName == "Agarilux"){
+                            Log.Error(thingDef.defName);
+                            Log.Error(chance.ToString());
+                        }
+
                         if (Rand.Chance(chance))
                         {
                             for (int i = 0; i < randomInRange; i++)

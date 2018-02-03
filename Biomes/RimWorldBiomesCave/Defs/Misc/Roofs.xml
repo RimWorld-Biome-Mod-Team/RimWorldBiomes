@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <RoofDef>
+    <defName>UncollapsableNaturalRoof</defName>
+    <label>overhead mountain</label>
+    <isThickRoof>true</isThickRoof>
+    <isNatural>true</isNatural>
+    <collapseLeavingThingDef>CollapsedRocks</collapseLeavingThingDef>
+    <filthLeaving>RockRubble</filthLeaving>
+  </RoofDef>
+
+</Defs>

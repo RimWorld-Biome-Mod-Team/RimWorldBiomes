@@ -51,8 +51,19 @@ namespace RimWorldBiomesCaves
                 }
 
 			}
-			foreach (IntVec3 current in map.AllCells)
-			{
+            RimWorldBiomesCore.BeachMaker.Init(map);
+            foreach (IntVec3 current in map.AllCells)
+            {
+                if (RimWorldBiomesCore.BeachMaker.BeachTerrainAt(current) != null){
+                    map.terrainGrid.SetTerrain(current,RimWorldBiomesCore.BeachMaker.BeachTerrainAt(current));
+                    if(current.GetFirstBuilding(map) != null){
+                        current.GetFirstBuilding(map).Destroy();
+                    }
+                    map.roofGrid.SetRoof(current,CavernRoofDefOf.UncollapsableNaturalRoof);
+                    GenRoof(current, roof, map);
+                    continue;
+                }
+
                 if (current.GetTerrain(map).defName == "SoilRich")
 				{
 					map.terrainGrid.SetTerrain(current, GenStep_RocksFromGrid.RockDefAt(current).naturalTerrain);
@@ -190,6 +201,7 @@ namespace RimWorldBiomesCaves
 
 			map.regionAndRoomUpdater.Enabled = true;
 			map.regionAndRoomUpdater.RebuildAllRegionsAndRooms();
+            RimWorldBiomesCore.BeachMaker.Cleanup();
 
         }
 

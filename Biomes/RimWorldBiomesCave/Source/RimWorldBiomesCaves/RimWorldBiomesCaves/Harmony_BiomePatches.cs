@@ -13,6 +13,7 @@ namespace RimWorldBiomesCaves
         {
             HarmonyInstance harmony = HarmonyInstance.Create("rimworld.swenzi.cavebiomepatches");
             harmony.Patch(AccessTools.Method(typeof(GenStep_Caves), "Generate"), new HarmonyMethod(typeof(Harmony_BiomePatches), nameof(Generate_PreFix)), null);
+            harmony.Patch(AccessTools.Method(typeof(RoofCollapseUtility), "WithinRangeOfRoofHolder"), null, new HarmonyMethod(typeof(Harmony_BiomePatches), nameof(WithinRangeOfRoofHolder_PostFix)));
         }
         public static bool Generate_PreFix(Map map, GenStep_Caves __instance)
         {
@@ -26,6 +27,12 @@ namespace RimWorldBiomesCaves
                 return false;
             }
             return true;
+        }
+
+        public static void WithinRangeOfRoofHolder_PostFix(IntVec3 c, Map map, bool __result){
+            if(map.roofGrid.RoofAt(c) == CavernRoofDefOf.UncollapsableNaturalRoof){
+                __result = true;
+            }
         }
     }
 }
