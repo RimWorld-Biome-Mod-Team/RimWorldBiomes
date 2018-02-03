@@ -98,7 +98,6 @@
                 <bodyGraphicData>
                     <texPath>Pawns/Caves/Animals/MossBeetle/MossBeetle</texPath>
                     <drawSize>1</drawSize>
-                    <color>(114,107,84)</color>
                 </bodyGraphicData>
                 <dessicatedBodyGraphicData>
                     <texPath>Things/Pawn/Animal/Dessicated/CritterDessicatedSmall</texPath>
@@ -109,7 +108,6 @@
                 <bodyGraphicData>
                     <texPath>Pawns/Caves/Animals/MossBeetle/MossBeetle</texPath>
                     <drawSize>1.25</drawSize>
-                    <color>(114,107,84)</color>
                 </bodyGraphicData>
                 <dessicatedBodyGraphicData>
                     <texPath>Things/Pawn/Animal/Dessicated/CritterDessicatedSmall</texPath>
@@ -120,7 +118,6 @@
                 <bodyGraphicData>
                     <texPath>Pawns/Caves/Animals/MossBeetle/MossBeetle</texPath>
                     <drawSize>1.5</drawSize>
-                    <color>(114,107,84)</color>
                     <shadowData>
                         <volume>(0.2, 0.3, 0.2)</volume>
                         <offset>(0,0,0)</offset>

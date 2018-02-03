@@ -118,7 +118,7 @@
             <li>
                 <bodyGraphicData>
                     <texPath>Pawns/Caves/Animals/GiantSnail/GiantSnail</texPath>
-                    <drawSize>1.5</drawSize>
+                    <drawSize>3</drawSize>
                     <color>(224,233,205)</color>
                 </bodyGraphicData>
                 <dessicatedBodyGraphicData>
@@ -129,12 +129,12 @@
             <li>
                 <bodyGraphicData>
                     <texPath>Pawns/Caves/Animals/GiantSnail/GiantSnail</texPath>
-                    <drawSize>2.7</drawSize>
+                    <drawSize>5.4</drawSize>
                     <color>(224,233,205)</color>
                 </bodyGraphicData>
                 <dessicatedBodyGraphicData>
                     <texPath>Things/Pawn/Animal/Muffalo/MuffaloDessicated</texPath>
-                    <drawSize>2.5</drawSize>
+                    <drawSize>5</drawSize>
                 </dessicatedBodyGraphicData>
             </li>
         </lifeStages>
