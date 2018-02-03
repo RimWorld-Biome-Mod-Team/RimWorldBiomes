@@ -117,14 +117,14 @@
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
           <texPath>Things/Pawn/Animal/Dessicated/CritterDessicatedSmall</texPath>
-          <drawSize>1.8</drawSize>
+          <drawSize>3.6</drawSize>
         </dessicatedBodyGraphicData>
       </li>
       <li>
         <label>juvenile spider</label>
         <bodyGraphicData>
           <texPath>Pawns/Caves/Animals/CaveSpider/Spider</texPath>
-          <drawSize>2.8</drawSize>
+          <drawSize>5.6</drawSize>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
           <texPath>Things/Pawn/Animal/Dessicated/CritterDessicatedSmall</texPath>
@@ -142,7 +142,7 @@
         </bodyGraphicData>
         <femaleGraphicData>
           <texPath>Pawns/Caves/Animals/CaveSpider/Spider</texPath>
-          <drawSize>3.8</drawSize>
+          <drawSize>7.6</drawSize>
         </femaleGraphicData>
         <dessicatedBodyGraphicData>
           <texPath>Things/Pawn/Animal/Dessicated/CritterDessicatedSmall</texPath>
