@@ -17,6 +17,7 @@ namespace RimWorldBiomesCaves
 				return; 
 			}
             ModuleBase roof = new Perlin(0.04, 2.0, 0.5, 4, Rand.Int, QualityMode.Medium);
+            ModuleBase islands = new Perlin(0.04, 2.0, 0.5, 4, Rand.Int, QualityMode.Medium);
 			MapGenFloatGrid arg_3B_0 = MapGenerator.Elevation;
             //Log.Error("Called");
 			foreach (IntVec3 current in map.AllCells)
@@ -54,13 +55,22 @@ namespace RimWorldBiomesCaves
             RimWorldBiomesCore.BeachMaker.Init(map);
             foreach (IntVec3 current in map.AllCells)
             {
+                
                 if (RimWorldBiomesCore.BeachMaker.BeachTerrainAt(current) != null){
-                    map.terrainGrid.SetTerrain(current,RimWorldBiomesCore.BeachMaker.BeachTerrainAt(current));
-                    if(current.GetFirstBuilding(map) != null){
+                    if (RimWorldBiomesCore.BeachMaker.BeachTerrainAt(current) != TerrainDefOf.Gravel && !NearLake(current,map,10))
+                    {
+                        map.terrainGrid.SetTerrain(current, RimWorldBiomesCore.BeachMaker.BeachTerrainAt(current));
+                        GenIsland(current, islands, map);
+
+                    }
+                    if (current.GetFirstBuilding(map) != null)
+                    {
                         current.GetFirstBuilding(map).Destroy();
                     }
+                    SetRockySoil(current, map);
                     map.roofGrid.SetRoof(current,CavernRoofDefOf.UncollapsableNaturalRoof);
                     GenRoof(current, roof, map);
+
                     continue;
                 }
 
@@ -174,27 +184,7 @@ namespace RimWorldBiomesCaves
                         GenSpawn.Spawn(ThingDef.Named(str), current, map);
                     }
 				}
-                if (current.GetTerrain(map) == RWBTerrainDefOf.RWBRockySoil){
-                    if(GenStep_RocksFromGrid.RockDefAt(current).naturalTerrain.defName.Contains("Sand")){
-                        map.terrainGrid.SetTerrain(current, RWBTerrainDefOf.RWBSandstoneSoil);
-                    }
-					if (GenStep_RocksFromGrid.RockDefAt(current).naturalTerrain.defName.Contains("Marble"))
-					{
-						map.terrainGrid.SetTerrain(current, RWBTerrainDefOf.RWBMarbleSoil);
-					}
-					if (GenStep_RocksFromGrid.RockDefAt(current).naturalTerrain.defName.Contains("Slate"))
-					{
-						map.terrainGrid.SetTerrain(current, RWBTerrainDefOf.RWBSlateSoil);
-					}
-					if (GenStep_RocksFromGrid.RockDefAt(current).naturalTerrain.defName.Contains("Granite"))
-					{
-						map.terrainGrid.SetTerrain(current, RWBTerrainDefOf.RWBGraniteSoil);
-					}
-					if (GenStep_RocksFromGrid.RockDefAt(current).naturalTerrain.defName.Contains("Lime"))
-					{
-						map.terrainGrid.SetTerrain(current, RWBTerrainDefOf.RWBLimestoneSoil);
-					}
-                }
+                SetRockySoil(current, map);
 
 
 			}
@@ -205,6 +195,39 @@ namespace RimWorldBiomesCaves
 
         }
 
+        private void SetRockySoil(IntVec3 current, Map map){
+            if (current.GetTerrain(map) == RWBTerrainDefOf.RWBRockySoil)
+            {
+                if (GenStep_RocksFromGrid.RockDefAt(current).naturalTerrain.defName.Contains("Sand"))
+                {
+                    map.terrainGrid.SetTerrain(current, RWBTerrainDefOf.RWBSandstoneSoil);
+                }
+                if (GenStep_RocksFromGrid.RockDefAt(current).naturalTerrain.defName.Contains("Marble"))
+                {
+                    map.terrainGrid.SetTerrain(current, RWBTerrainDefOf.RWBMarbleSoil);
+                }
+                if (GenStep_RocksFromGrid.RockDefAt(current).naturalTerrain.defName.Contains("Slate"))
+                {
+                    map.terrainGrid.SetTerrain(current, RWBTerrainDefOf.RWBSlateSoil);
+                }
+                if (GenStep_RocksFromGrid.RockDefAt(current).naturalTerrain.defName.Contains("Granite"))
+                {
+                    map.terrainGrid.SetTerrain(current, RWBTerrainDefOf.RWBGraniteSoil);
+                }
+                if (GenStep_RocksFromGrid.RockDefAt(current).naturalTerrain.defName.Contains("Lime"))
+                {
+                    map.terrainGrid.SetTerrain(current, RWBTerrainDefOf.RWBLimestoneSoil);
+                }
+            }
+        }
+
+        private void GenIsland(IntVec3 current, ModuleBase island, Map map){
+            if (island.GetValue(current) > 0.55)
+            {
+                
+                map.terrainGrid.SetTerrain(current, GenStep_RocksFromGrid.RockDefAt(current).naturalTerrain);
+            }
+        }
         protected void GenRoof(IntVec3 current, ModuleBase roof, Map map){
             //Log.Error(roof.GetValue(current).ToString());
             if (roof.GetValue(current) > 0.6  && current.GetFirstBuilding(map) == null){
@@ -259,5 +282,13 @@ namespace RimWorldBiomesCaves
             return true;
         }
 
+        private bool NearLake(IntVec3 pos, Map map, float dist){
+            foreach(IntVec3 c in GenRadial.RadialCellsAround(pos,dist,false)){
+                if(c.InBounds(map) && (c.GetTerrain(map) == TerrainDefOf.WaterShallow || c.GetTerrain(map) == TerrainDefOf.WaterDeep)){
+                    return true;
+                }
+            }
+            return false;
+        }
     }
 }

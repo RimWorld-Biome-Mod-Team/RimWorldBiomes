@@ -20,14 +20,12 @@ namespace RimWorldBiomesCore
 
         public static void Init(Map map)
         {
-            Log.Error("Called");
             Rot4 a = Find.World.CoastDirectionAt(map.Tile);
             if (!a.IsValid)
             {
                 BeachMaker.beachNoise = null;
                 return;
             }
-            Log.Error("Valid");
             ModuleBase moduleBase = new Perlin(0.029999999329447746, 2.0, 0.5, 3, Rand.Range(0, 2147483647), QualityMode.Medium);
             moduleBase = new ScaleBias(0.5, 0.5, moduleBase);
             NoiseDebugUI.StoreNoiseRender(moduleBase, "BeachMaker base", new IntVec2(map.Size.x, map.Size.z));
@@ -50,7 +48,6 @@ namespace RimWorldBiomesCore
             NoiseDebugUI.StoreNoiseRender(moduleBase2, "BeachMaker axis bias");
             BeachMaker.beachNoise = new Add(moduleBase, moduleBase2);
             NoiseDebugUI.StoreNoiseRender(BeachMaker.beachNoise, "beachNoise");
-            Log.Error("finished");
         }
 
         public static void Cleanup()
