@@ -57,7 +57,6 @@
             <growMinGlow>0</growMinGlow>
             <growOptimalGlow>0</growOptimalGlow>
             <reproduces>true</reproduces>
-            <wildClusterRadius>8</wildClusterRadius>
             <cavePlant>true</cavePlant>
             <growDays>30</growDays>
             <dieIfLeafless>true</dieIfLeafless>
