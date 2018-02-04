@@ -38,8 +38,9 @@
 			<li Class="RimWorldBiomesCore.CompProperties_WaterPlant">
 				<allowedTiles>
 					<li>WaterOceanShallow</li>
+                    <li>WaterOceanDeep</li>
 				</allowedTiles>
-                <spawnChance>0.045</spawnChance>
+                <spawnChance>0.03</spawnChance>
                 <allowedBiomes>
                     <li>RWBCavern</li>
                 </allowedBiomes>
