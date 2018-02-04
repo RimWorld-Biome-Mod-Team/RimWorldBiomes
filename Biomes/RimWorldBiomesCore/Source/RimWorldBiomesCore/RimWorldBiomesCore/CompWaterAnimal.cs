@@ -12,7 +12,7 @@ namespace RimWorldBiomesCore
             if(parent == null || ((Pawn)parent).Dead || parent.Map == null){
                 return;
             }
-            if(Props.allowedTiles.Contains(parent.Position.GetTerrain(parent.Map))){
+            if(Props.allowedTiles.Contains(parent.Position.GetTerrain(parent.Map)) || (Props.submergeInWater && isWater(parent.Position,parent.Map))){
                 if(!submerged){
                     ResolveSubmergedGraphic();
                     submerged = true;
@@ -67,6 +67,16 @@ namespace RimWorldBiomesCore
                     pawnGraphicSet.dessicatedGraphic =
                                       curKindLifeStage.dessicatedBodyGraphicData.GraphicColoredFor(((Pawn)parent));
             }
+        }
+
+        private bool isWater(IntVec3 pos, Map map)
+        {
+            if (pos.GetTerrain(map).defName.Contains("Water") || pos.GetTerrain(map).defName.Contains("water"))
+            {
+                //Log.Error(pos.GetTerrain(map).defName);
+                return true;
+            }
+            return false;
         }
     }
 }

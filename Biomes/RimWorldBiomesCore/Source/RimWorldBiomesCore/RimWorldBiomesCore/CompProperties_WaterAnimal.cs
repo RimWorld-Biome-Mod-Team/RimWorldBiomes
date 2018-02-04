@@ -11,6 +11,7 @@ namespace RimWorldBiomesCore
         public float spawnChance = V;
         public List<String> allowedBiomes = new List<String>();
         public GraphicData submergedGraphic = null;
+        public bool submergeInWater = true;
         public CompProperties_WaterAnimal()
         {
 

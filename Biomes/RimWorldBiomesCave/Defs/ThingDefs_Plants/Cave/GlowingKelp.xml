@@ -25,10 +25,10 @@
             <dieIfLeafless>true</dieIfLeafless>
 <!--			<leaflessGraphicPath>Things/Plant/Grass_Leafless</leaflessGraphicPath>-->
 			<harvestWork>40</harvestWork>
-			<maxMeshCount>4</maxMeshCount>
+			<maxMeshCount>1</maxMeshCount>
 			<visualSizeRange>
-				<min>0.4</min>
-				<max>0.6</max>
+				<min>0.8</min>
+				<max>1.2</max>
 			</visualSizeRange>
 			<topWindExposure>0.4</topWindExposure>
 			<reproduceMtbDays>2</reproduceMtbDays>
@@ -39,7 +39,7 @@
 				<allowedTiles>
 					<li>WaterOceanShallow</li>
 				</allowedTiles>
-                <spawnChance>0.07</spawnChance>
+                <spawnChance>0.045</spawnChance>
                 <allowedBiomes>
                     <li>RWBCavern</li>
                 </allowedBiomes>

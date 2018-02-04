@@ -187,7 +187,7 @@
             <growDays>6</growDays>
             <dieIfLeafless>true</dieIfLeafless>
             <reproduces>false</reproduces>
-            <maxMeshCount>9</maxMeshCount>
+            <maxMeshCount>1</maxMeshCount>
             <harvestTag>Standard</harvestTag>
             <harvestedThingDef>KessingerShroom</harvestedThingDef>
             <harvestYield>18</harvestYield>

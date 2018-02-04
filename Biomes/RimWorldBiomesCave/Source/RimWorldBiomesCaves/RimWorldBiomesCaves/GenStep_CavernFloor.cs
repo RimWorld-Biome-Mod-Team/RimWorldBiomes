@@ -27,7 +27,8 @@ namespace RimWorldBiomesCaves
                 if (current.GetFirstBuilding(map) == null)
 				{
                     if(current.GetTerrain(map) == TerrainDefOf.Soil || current.GetTerrain(map) == TerrainDefOf.Gravel){
-						map.terrainGrid.SetTerrain(current, GenStep_RocksFromGrid.RockDefAt(current).naturalTerrain);
+                        map.terrainGrid.SetTerrain(current, RWBTerrainDefOf.RWBRockySoil);
+                        SetRockySoil(current, map);
                     }
                     //Log.Error("change?");
 
@@ -43,7 +44,8 @@ namespace RimWorldBiomesCaves
                                 if(tvec.GetFirstBuilding(map) != null){
                                     tvec.GetFirstBuilding(map).Destroy();
                                 }
-                                map.terrainGrid.SetTerrain(tvec, TerrainDefOf.Soil);
+                                map.terrainGrid.SetTerrain(tvec, RWBTerrainDefOf.RWBRockySoil);
+                                SetRockySoil(tvec, map);
                                 //map.roofGrid.SetRoof(tvec, RoofDefOf.RoofRockThick);
 							}
                         }
@@ -91,8 +93,8 @@ namespace RimWorldBiomesCaves
 								{
 									tvec.GetFirstBuilding(map).Destroy();
 								}
-								map.terrainGrid.SetTerrain(tvec, TerrainDefOf.Soil);
-								//map.roofGrid.SetRoof(tvec, RoofDefOf.RoofRockThick);
+								//map.terrainGrid.SetTerrain(tvec, TerrainDefOf.Soil);
+								map.roofGrid.SetRoof(tvec, RoofDefOf.RoofRockThick);
 							}
 						}
 					}
@@ -100,7 +102,8 @@ namespace RimWorldBiomesCaves
                 }
 				if (current.GetTerrain(map).defName == "Mud")
 				{
-					map.terrainGrid.SetTerrain(current, TerrainDefOf.Soil);
+                    map.terrainGrid.SetTerrain(current, RWBTerrainDefOf.RWBRockySoil);
+                    SetRockySoil(current, map);
 				}
 
 				if (current.GetTerrain(map) == TerrainDefOf.Soil)
