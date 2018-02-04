@@ -79,13 +79,13 @@
     <wildPlants>
       <MushroomCluster>0.2</MushroomCluster>
       <SkullTop>0.001</SkullTop>
-      <Agarilux>0.002</Agarilux>
-      <Bryolux>0.05</Bryolux>
-      <Glowstool>0.003</Glowstool>
+      <Agarilux>0.00002</Agarilux>
+      <Bryolux>0.005</Bryolux>
+      <Glowstool>0.0003</Glowstool>
       <MushroomTree>0.1</MushroomTree>
       <GlowfruitTree>0.001</GlowfruitTree>
       <SpectreCap>0.002</SpectreCap>
-      <StarlightShroom>0.06</StarlightShroom>
+      <StarlightShroom>0.006</StarlightShroom>
     </wildPlants>
     <wildAnimals>
       <RWBSlug>0.1</RWBSlug>
