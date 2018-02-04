@@ -96,6 +96,10 @@
                 <li>
                     <def>RWBInsectAdult</def>
                     <minAge>0.4</minAge>
+                    <soundWounded>Pawn_RWBSnail_Wounded</soundWounded>
+                    <soundDeath>Pawn_Rodent_Death</soundDeath>
+                    <soundCall>Pawn_RWBSnail_Call</soundCall>
+                    <soundAngry>Pawn_RWBSnail_Angry</soundAngry>
                 </li>
             </lifeStageAges>
             <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>

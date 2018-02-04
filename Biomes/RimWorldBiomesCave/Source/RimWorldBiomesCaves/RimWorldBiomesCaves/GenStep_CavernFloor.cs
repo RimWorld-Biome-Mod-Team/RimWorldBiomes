@@ -52,14 +52,14 @@ namespace RimWorldBiomesCaves
                 }
 
 			}
-            RimWorldBiomesCore.BeachMaker.Init(map);
+            BeachMaker.Init(map);
             foreach (IntVec3 current in map.AllCells)
             {
                 
-                if (RimWorldBiomesCore.BeachMaker.BeachTerrainAt(current) != null){
-                    if (RimWorldBiomesCore.BeachMaker.BeachTerrainAt(current) != TerrainDefOf.Gravel && !NearLake(current,map,10))
+                if (BeachMaker.BeachTerrainAt(current) != null){
+                    if (BeachMaker.BeachTerrainAt(current) != TerrainDefOf.Gravel && !NearLake(current,map,10))
                     {
-                        map.terrainGrid.SetTerrain(current, RimWorldBiomesCore.BeachMaker.BeachTerrainAt(current));
+                        map.terrainGrid.SetTerrain(current, BeachMaker.BeachTerrainAt(current));
                         GenIsland(current, islands, map);
 
                     }
@@ -191,7 +191,7 @@ namespace RimWorldBiomesCaves
 
 			map.regionAndRoomUpdater.Enabled = true;
 			map.regionAndRoomUpdater.RebuildAllRegionsAndRooms();
-            RimWorldBiomesCore.BeachMaker.Cleanup();
+            BeachMaker.Cleanup();
 
         }
 

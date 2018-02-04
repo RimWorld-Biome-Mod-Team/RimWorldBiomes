@@ -96,7 +96,7 @@
         <lifeStages>
             <li>
                 <bodyGraphicData>
-                    <texPath>Pawns/Caves/Animals/MossBeetle/MossBeetle</texPath>
+                    <texPath>Pawns/Caves/Animals/Grub/Grub</texPath>
                     <drawSize>1</drawSize>
                 </bodyGraphicData>
                 <dessicatedBodyGraphicData>

@@ -40,6 +40,7 @@ namespace RimWorldBiomesCore
             harmony.Patch(AccessTools.Method(typeof(JobGiver_GetFood), "TryGiveJob"), null, new HarmonyMethod(typeof(Harmony_BiomePatches), nameof(TryGiveJob_PostFix)));
             harmony.Patch(AccessTools.Method(typeof(World), "Impassable"), null, new HarmonyMethod(typeof(Harmony_BiomePatches), nameof(Impassable_PostFix)));
             harmony.Patch(AccessTools.Method(typeof(WorldPathGrid), "CalculatedCostAt"), null, new HarmonyMethod(typeof(Harmony_BiomePatches), nameof(CalculatedCostAt_PostFix)));
+            harmony.Patch(AccessTools.Method(typeof(PlantProperties), "get_IsTree"), null, new HarmonyMethod(typeof(Harmony_BiomePatches), nameof(get_IsTree_PostFix)));
         }
 
 
@@ -132,10 +133,10 @@ namespace RimWorldBiomesCore
                         {
                             chance = 0.18f;
                         }
-                        if(thingDef.defName == "Agarilux"){
-                            Log.Error(thingDef.defName);
-                            Log.Error(chance.ToString());
-                        }
+                        //if(thingDef.defName == "Agarilux"){
+                        //    Log.Error(thingDef.defName);
+                        //    Log.Error(chance.ToString());
+                        //}
 
                         if (Rand.Chance(chance))
                         {
@@ -268,6 +269,13 @@ namespace RimWorldBiomesCore
             return true;
         }
 
+        public static void get_IsTree_PostFix(PlantProperties __instance, ref bool __result)
+        {
+            if(__instance.harvestTag == "FungalLog"){
+                __result = true;
+            }
+        }
+
 		private static readonly SimpleCurve TunnelsWidthPerRockCount = new SimpleCurve
 		{
 			{
@@ -283,6 +291,7 @@ namespace RimWorldBiomesCore
 				true
 			}
 		};
+
 
 
     }

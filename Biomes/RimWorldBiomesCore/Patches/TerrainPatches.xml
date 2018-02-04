@@ -10,10 +10,18 @@
             <li Class="PatchOperationRemove">
                 <xpath>/Defs/TerrainDef[defName = "WaterDeep"]/passability</xpath>
             </li>
+            <li Class="PatchOperationTest">
+                <xpath>/Defs/TerrainDef[defName = "WaterDeep"]/pathCost</xpath>
+                <success>Normal</success>
+            </li>
+            <li Class="PatchOperationRemove">
+                <xpath>/Defs/TerrainDef[defName = "WaterDeep"]/pathCost</xpath>
+            </li>
             <li Class="PatchOperationAdd">
                 <xpath>/Defs/TerrainDef[defName = "WaterDeep"]</xpath>
                 <value>
                     <passability>PassThroughOnly</passability>
+                    <pathCost>100</pathCost>
                 </value>
             </li>
         </operations>
@@ -27,11 +35,19 @@
             </li>
             <li Class="PatchOperationRemove">
                 <xpath>/Defs/TerrainDef[defName = "WaterOceanDeep"]/passability</xpath>
+            </li>
+            <li Class="PatchOperationTest">
+                <xpath>/Defs/TerrainDef[defName = "WaterOceanDeep"]/pathCost</xpath>
+                <success>Normal</success>
+            </li>
+            <li Class="PatchOperationRemove">
+                <xpath>/Defs/TerrainDef[defName = "WaterOceanDeep"]/pathCost</xpath>
             </li>
             <li Class="PatchOperationAdd">
                 <xpath>/Defs/TerrainDef[defName = "WaterOceanDeep"]</xpath>
                 <value>
                     <passability>PassThroughOnly</passability>
+                    <pathCost>100</pathCost>
                 </value>
             </li>
         </operations>
@@ -46,10 +62,18 @@
             <li Class="PatchOperationRemove">
                 <xpath>/Defs/TerrainDef[defName = "WaterMovingDeep"]/passability</xpath>
             </li>
+            <li Class="PatchOperationTest">
+                <xpath>/Defs/TerrainDef[defName = "WaterMovingDeep"]/pathCost</xpath>
+                <success>Normal</success>
+            </li>
+            <li Class="PatchOperationRemove">
+                <xpath>/Defs/TerrainDef[defName = "WaterMovingDeep"]/pathCost</xpath>
+            </li>
             <li Class="PatchOperationAdd">
                 <xpath>/Defs/TerrainDef[defName = "WaterMovingDeep"]</xpath>
                 <value>
                     <passability>PassThroughOnly</passability>
+                    <pathCost>125</pathCost>
                 </value>
             </li>
         </operations>

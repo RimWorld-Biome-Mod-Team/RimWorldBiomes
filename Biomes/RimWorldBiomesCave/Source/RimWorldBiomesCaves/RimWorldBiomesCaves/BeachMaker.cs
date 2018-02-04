@@ -2,7 +2,7 @@
 using Verse;
 using Verse.Noise;
 using RimWorld;
-namespace RimWorldBiomesCore
+namespace RimWorldBiomesCaves
 {
     public static class BeachMaker
     {

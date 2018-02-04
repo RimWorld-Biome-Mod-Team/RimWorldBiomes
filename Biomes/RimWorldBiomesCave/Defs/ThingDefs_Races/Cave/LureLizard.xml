@@ -6,6 +6,7 @@
     <ThingDef ParentName="AnimalThingBase">
         <defName>RWBLureLizard</defName>
         <label>lurelizard</label>
+        <tickerType>Normal</tickerType>
         <description>This dark reptile inhabits the salty waters of caverns that border the sea. It uses its bioluminescent tail tip to lure its prey.</description>
         <statBases>
             <MoveSpeed>4.93</MoveSpeed>
@@ -63,6 +64,10 @@
             <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
         </race>
         <comps>
+            <li Class="RimWorldBiomesCore.CompPropertiesAnimalGlower">
+                <glowRadius>4</glowRadius>
+                <glowColor>(0,162,162,1)</glowColor>
+            </li>
             <li Class="CompProperties_EggLayer">
                 <eggFertilizedDef>RWBEggLureLizardFertilized</eggFertilizedDef>
                 <eggFertilizationCountMax>1</eggFertilizationCountMax>

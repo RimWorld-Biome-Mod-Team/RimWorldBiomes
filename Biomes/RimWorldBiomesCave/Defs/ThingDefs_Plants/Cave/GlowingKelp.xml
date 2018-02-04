@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>	
+	<ThingDef ParentName="PlantBase">
+		<defName>RWBGlowingKelp</defName>
+		<label>glowing kelp</label>
+		<description>A strange aquatic plant that glows, usually grows in sea water and is a nutrious plant for sea creatures.</description>
+		<statBases>
+			<MaxHitPoints>85</MaxHitPoints>
+		</statBases>
+		<graphicData>
+			<texPath>Plants/Cave/GlowingKelp</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+            <selectable>true</selectable>
+		<hideAtSnowDepth>0.5</hideAtSnowDepth>
+		<ingestible>
+			<nutrition>0.50</nutrition>
+		</ingestible>
+		<plant>
+<!--            <MinOptimalGrowthTemperature>5</MinOptimalGrowthTemperature>-->
+            <growMinGlow>0</growMinGlow>
+			<fertilityMin>0.01</fertilityMin>
+			<fertilitySensitivity>0.15</fertilitySensitivity>
+			<growDays>4</growDays>
+            <dieIfLeafless>true</dieIfLeafless>
+<!--			<leaflessGraphicPath>Things/Plant/Grass_Leafless</leaflessGraphicPath>-->
+			<harvestWork>40</harvestWork>
+			<maxMeshCount>4</maxMeshCount>
+			<visualSizeRange>
+				<min>0.4</min>
+				<max>0.6</max>
+			</visualSizeRange>
+			<topWindExposure>0.4</topWindExposure>
+			<reproduceMtbDays>2</reproduceMtbDays>
+            <neverBlightable>true</neverBlightable>
+		</plant>
+		<comps>
+			<li Class="RimWorldBiomesCore.CompProperties_WaterPlant">
+				<allowedTiles>
+					<li>WaterOceanShallow</li>
+				</allowedTiles>
+                <spawnChance>0.07</spawnChance>
+                <allowedBiomes>
+                    <li>RWBCavern</li>
+                </allowedBiomes>
+                <growNearWater>true</growNearWater>
+			</li>
+			<li Class="CompProperties_Glower">
+        <glowRadius>6</glowRadius>
+        <glowColor>(102,168,109,1)</glowColor>
+      </li>
+		</comps>
+	</ThingDef>
+</Defs>

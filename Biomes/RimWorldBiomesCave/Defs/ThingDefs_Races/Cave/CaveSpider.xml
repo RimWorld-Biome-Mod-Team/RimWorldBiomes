@@ -88,10 +88,10 @@
         <li>
           <def>RWBInsectAdult</def>
           <minAge>0.4</minAge>
-          <soundWounded>Pawn_Megascarab_Wounded</soundWounded>
+          <soundWounded>Pawn_RWBSpider_Wounded</soundWounded>
           <soundDeath>Pawn_Megascarab_Death</soundDeath>
-          <soundCall>Pawn_Megascarab_Call</soundCall>
-          <soundAngry>Pawn_Megascarab_Angry</soundAngry>
+          <soundCall>Pawn_RWBSpider_Call</soundCall>
+          <soundAngry>Pawn_RWBSpider_Angry</soundAngry>
         </li>
       </lifeStageAges>
       <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
