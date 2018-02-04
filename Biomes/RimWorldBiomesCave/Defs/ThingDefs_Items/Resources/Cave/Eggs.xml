@@ -249,4 +249,23 @@
             </li>
         </comps>
     </ThingDef>
+    
+    <ThingDef ParentName="EggFertBase">
+        <defName>RWBEggLureLizardFertilized</defName>
+        <label>lure lizard egg (fert.)</label>
+        <description>Fertilized lure lizard egg. If all goes well, it should hatch into a baby lure lizard. It can be eaten raw, but it's much better cooked.</description>
+        <graphicData>
+            <texPath>Things/AnimalProducts/Eggs/AmphibianEgg</texPath>
+            <!--            <color>(255,255,255)</color>-->
+        </graphicData>
+        <statBases>
+            <MarketValue>15</MarketValue>
+        </statBases>
+        <comps>
+            <li Class="CompProperties_Hatcher">
+                <hatcherDaystoHatch>4.5</hatcherDaystoHatch>
+                <hatcherPawn>RWBLureLizard</hatcherPawn>
+            </li>
+        </comps>
+    </ThingDef>
 </Defs>

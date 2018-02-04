@@ -53,6 +53,7 @@
             </li>
         </comps>
         <race>
+            <trainableIntelligence>Advanced</trainableIntelligence>
             <packAnimal>true</packAnimal>
             <herdAnimal>true</herdAnimal>
             <herdMigrationAllowed>true</herdMigrationAllowed>

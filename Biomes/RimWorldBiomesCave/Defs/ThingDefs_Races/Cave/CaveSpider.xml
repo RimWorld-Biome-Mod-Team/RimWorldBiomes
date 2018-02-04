@@ -62,6 +62,7 @@
       </li>
     </comps>
     <race>
+        <trainableIntelligence>Advanced</trainableIntelligence>
         <packAnimal>true</packAnimal>
         <thinkTreeMain>Animal</thinkTreeMain>
         <thinkTreeConstant>AnimalConstant</thinkTreeConstant>
@@ -113,11 +114,11 @@
         <label>spiderling</label>
         <bodyGraphicData>
           <texPath>Pawns/Caves/Animals/CaveSpider/Spider</texPath>
-          <drawSize>2</drawSize>
+          <drawSize>4</drawSize>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
           <texPath>Things/Pawn/Animal/Dessicated/CritterDessicatedSmall</texPath>
-          <drawSize>3.6</drawSize>
+          <drawSize>1.8</drawSize>
         </dessicatedBodyGraphicData>
       </li>
       <li>
@@ -134,7 +135,7 @@
       <li>
         <bodyGraphicData>
           <texPath>Pawns/Caves/Animals/CaveSpider/Spider</texPath>
-          <drawSize>4</drawSize>
+          <drawSize>8</drawSize>
           <shadowData>
             <volume>(0.3, 0.4, 0.3)</volume>
             <offset>(0,0,-0.05)</offset>
