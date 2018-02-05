@@ -1,137 +1,137 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <Defs>
-
-    <!--  Spectre Shrimp  -->
-    <ThingDef ParentName="AnimalThingBase">
-        <defName>RWBSpectreShrimp</defName>
-        <label>spectre Shrimp</label>
-        <description>Small and blind from adapting to the underground environment these arthropods are a considerable threat when they swarm, their sharp mouthparts slicing into soft prey with ease.</description>
-        <statBases>
-            <MoveSpeed>4.3</MoveSpeed>
-            <ComfyTemperatureMin>-65</ComfyTemperatureMin>
-            <MarketValue>100</MarketValue>
-            <LeatherAmount>0</LeatherAmount>
-        </statBases>
-        <tools>
+   <!-- Spectre Shrimp -->
+   <ThingDef ParentName="AnimalThingBase">
+      <defName>RWBSpectreShrimp</defName>
+      <label>spectre Shrimp</label>
+      <description>Small and blind from adapting to the underground environment these arthropods are a considerable threat when they swarm, their sharp mouthparts slicing into soft prey with ease.</description>
+      <statBases>
+         <MoveSpeed>4.3</MoveSpeed>
+         <ComfyTemperatureMin>-65</ComfyTemperatureMin>
+         <MarketValue>100</MarketValue>
+         <LeatherAmount>0</LeatherAmount>
+      </statBases>
+      <tools>
+         <li>
+            <capacities>
+               <li>Bite</li>
+            </capacities>
+            <power>3</power>
+            <cooldownTime>2.5</cooldownTime>
+            <linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+            <surpriseAttack>
+               <extraMeleeDamages>
+                  <li>
+                     <def>Stun</def>
+                     <amount>20</amount>
+                  </li>
+               </extraMeleeDamages>
+            </surpriseAttack>
+         </li>
+         <li>
+            <label>head</label>
+            <capacities>
+               <li>Blunt</li>
+            </capacities>
+            <power>1</power>
+            <cooldownTime>1.65</cooldownTime>
+            <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+            <commonality>0.2</commonality>
+         </li>
+      </tools>
+      <race>
+         <predator>true</predator>
+         <body>BeetleLike</body>
+         <meatColor>(221, 239, 239)</meatColor>
+         <herdAnimal>true</herdAnimal>
+         <herdMigrationAllowed>false</herdMigrationAllowed>
+         <baseBodySize>0.12</baseBodySize>
+         <baseHungerRate>0.04</baseHungerRate>
+         <baseHealthScale>0.25</baseHealthScale>
+         <foodType>CarnivoreAnimalStrict</foodType>
+         <gestationPeriodDays>20</gestationPeriodDays>
+         <manhunterOnDamageChance>1</manhunterOnDamageChance>
+         <manhunterOnTameFailChance>0.018</manhunterOnTameFailChance>
+         <wildness>0.6</wildness>
+         <lifeExpectancy>20</lifeExpectancy>
+         <thinkTreeMain>Amphibian</thinkTreeMain>
+         <thinkTreeConstant>AmphibianConstant</thinkTreeConstant>
+         <lifeStageAges>
             <li>
-                <capacities>
-                    <li>Bite</li>
-                </capacities>
-                <power>3</power>
-                <cooldownTime>2.5</cooldownTime>
-                <linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
-                <surpriseAttack>
-                    <extraMeleeDamages>
-                        <li>
-                            <def>Stun</def>
-                            <amount>20</amount>
-                        </li>
-                    </extraMeleeDamages>
-                </surpriseAttack>
-            </li>
-            <li>
-                <label>head</label>
-                <capacities>
-                    <li>Blunt</li>
-                </capacities>
-                <power>1</power>
-                <cooldownTime>1.65</cooldownTime>
-                <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
-                <commonality>0.2</commonality>
-            </li>
-        </tools>
-        <race>
-            <predator>true</predator>
-            <body>BeetleLike</body>
-            <meatColor>(221, 239, 239)</meatColor>
-            <herdAnimal>true</herdAnimal>
-            <herdMigrationAllowed>false</herdMigrationAllowed>
-            <baseBodySize>0.12</baseBodySize>
-            <baseHungerRate>0.04</baseHungerRate>
-            <baseHealthScale>0.25</baseHealthScale>
-            <foodType>CarnivoreAnimalStrict</foodType>
-            <gestationPeriodDays>20</gestationPeriodDays>
-            <manhunterOnDamageChance>1</manhunterOnDamageChance>
-            <manhunterOnTameFailChance>0.018</manhunterOnTameFailChance>
-            <wildness>0.6</wildness>
-            <lifeExpectancy>20</lifeExpectancy>
-            <thinkTreeMain>Amphibian</thinkTreeMain>
-            <thinkTreeConstant>AmphibianConstant</thinkTreeConstant>
-            <lifeStageAges>
-                <li>
-                    <def>AnimalJuvenile</def>
-                    <minAge>0.0</minAge>
-                </li>
-                <li>
-                    <def>AnimalAdult</def>
-                    <minAge>2.0</minAge>
-                </li>
-            </lifeStageAges>
-            <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
-            <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
-            <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
-        </race>
-        <comps>
-            <li Class="CompProperties_EggLayer">
-                <eggFertilizedDef>RWBEggSpectreShrimpFertilized</eggFertilizedDef>
-                <eggFertilizationCountMax>4</eggFertilizationCountMax>
-                <eggLayIntervalDays>20</eggLayIntervalDays>
-                <eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
-                <eggCountRange>4</eggCountRange>
-            </li>
-            <li Class="RimWorldBiomesCore.CompProperties_WaterAnimal">
-                <submergedGraphic>
-                    <texPath>Pawns/Caves/Animals/SpectreShrimp/SpectreShrimpSub</texPath>
-                    <graphicClass>Graphic_Multi</graphicClass>
-                    <drawSize>0.9</drawSize>
-                </submergedGraphic>
-                <allowedTiles>
-                    <li>WaterShallow</li>
-                    <li>WaterDeep</li>
-                </allowedTiles>
-                <spawnChance>0.001875</spawnChance>
-                <allowedBiomes>
-                    <li>RWBCavern</li>
-                </allowedBiomes>
-            </li>
-        </comps>
-        <tradeTags>
-            <li>StandardAnimal</li>
-        </tradeTags>
-    </ThingDef>
-    
-    <PawnKindDef ParentName="AnimalKindBase">
-        <defName>RWBSpectreShrimp</defName>
-        <label>spectre Shrimp</label>
-        <race>RWBSpectreShrimp</race>
-        <combatPower>18</combatPower>
-        <canArriveManhunter>true</canArriveManhunter>
-        <wildSpawn_spawnWild>true</wildSpawn_spawnWild>
-        <wildSpawn_GroupSizeRange>
-            <min>3</min>
-            <max>3</max>
-        </wildSpawn_GroupSizeRange>
-        <lifeStages>
-            <li>
-                <bodyGraphicData>
-                    <texPath>Pawns/Caves/Animals/SpectreShrimp/SpectreShrimp</texPath>
-                    <drawSize>0.6</drawSize>
-                </bodyGraphicData>
-                <dessicatedBodyGraphicData>
-                    <texPath>Things/Pawn/Animal/Dessicated/CritterDessicatedSmall</texPath>
-                    <drawSize>0.5</drawSize>
-                </dessicatedBodyGraphicData>
+               <def>AnimalJuvenile</def>
+               <minAge>0.0</minAge>
             </li>
             <li>
-                <bodyGraphicData>
-                    <texPath>Pawns/Caves/Animals/SpectreShrimp/SpectreShrimp</texPath>
-                    <drawSize>0.9</drawSize>
-                </bodyGraphicData>
-                <dessicatedBodyGraphicData>
-                    <texPath>Things/Pawn/Animal/Dessicated/CritterDessicatedSmall</texPath>
-                    <drawSize>0.85</drawSize>
-                </dessicatedBodyGraphicData>
+               <def>AnimalAdult</def>
+               <minAge>2.0</minAge>
             </li>
-        </lifeStages>
-    </PawnKindDef>
+         </lifeStageAges>
+         <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+         <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+         <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+      </race>
+      <comps>
+         <li Class="CompProperties_EggLayer">
+            <eggFertilizedDef>RWBEggSpectreShrimpFertilized</eggFertilizedDef>
+            <eggFertilizationCountMax>4</eggFertilizationCountMax>
+            <eggLayIntervalDays>20</eggLayIntervalDays>
+            <eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+            <eggCountRange>4</eggCountRange>
+         </li>
+         <li Class="RimWorldBiomesCore.CompProperties_WaterAnimal">
+            <submergedGraphic>
+               <texPath>Pawns/Caves/Animals/SpectreShrimp/SpectreShrimpSub</texPath>
+               <graphicClass>Graphic_Multi</graphicClass>
+               <drawSize>0.9</drawSize>
+            </submergedGraphic>
+            <allowedTiles>
+               <li>WaterShallow</li>
+               <li>WaterDeep</li>
+			   <li>WaterOceanShallow</li>
+               <li>WaterOceanDeep</li>
+            </allowedTiles>
+            <spawnChance>0.001000</spawnChance>
+            <allowedBiomes>
+               <li>RWBCavern</li>
+            </allowedBiomes>
+         </li>
+      </comps>
+      <tradeTags>
+         <li>StandardAnimal</li>
+      </tradeTags>
+   </ThingDef>
+   <PawnKindDef ParentName="AnimalKindBase">
+      <defName>RWBSpectreShrimp</defName>
+      <label>spectre Shrimp</label>
+      <race>RWBSpectreShrimp</race>
+      <combatPower>18</combatPower>
+      <canArriveManhunter>true</canArriveManhunter>
+      <wildSpawn_spawnWild>true</wildSpawn_spawnWild>
+      <wildSpawn_GroupSizeRange>
+         <min>3</min>
+         <max>3</max>
+      </wildSpawn_GroupSizeRange>
+      <lifeStages>
+         <li>
+            <bodyGraphicData>
+               <texPath>Pawns/Caves/Animals/SpectreShrimp/SpectreShrimp</texPath>
+               <drawSize>0.6</drawSize>
+            </bodyGraphicData>
+            <dessicatedBodyGraphicData>
+               <texPath>Things/Pawn/Animal/Dessicated/CritterDessicatedSmall</texPath>
+               <drawSize>0.5</drawSize>
+            </dessicatedBodyGraphicData>
+         </li>
+         <li>
+            <bodyGraphicData>
+               <texPath>Pawns/Caves/Animals/SpectreShrimp/SpectreShrimp</texPath>
+               <drawSize>0.9</drawSize>
+            </bodyGraphicData>
+            <dessicatedBodyGraphicData>
+               <texPath>Things/Pawn/Animal/Dessicated/CritterDessicatedSmall</texPath>
+               <drawSize>0.85</drawSize>
+            </dessicatedBodyGraphicData>
+         </li>
+      </lifeStages>
+   </PawnKindDef>
 </Defs>
