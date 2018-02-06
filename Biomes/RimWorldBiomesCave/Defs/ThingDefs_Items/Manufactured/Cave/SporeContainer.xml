@@ -37,6 +37,9 @@
         <soundWorking>Recipe_Machining</soundWorking>
         <workAmount>3000</workAmount>
         <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+        <recipeUsers>
+            <li>DrugLab</li>
+        </recipeUsers>
         <ingredients>
             <li>
                 <filter>

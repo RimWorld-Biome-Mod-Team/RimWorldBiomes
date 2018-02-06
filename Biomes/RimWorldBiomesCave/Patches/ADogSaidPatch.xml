@@ -3,13 +3,10 @@
 	<Operation Class="PatchOperationSequence">
 		<success>Always</success>
 		<operations>
-			<li Class="ModCheck.isModLoaded">
-				<modName>A Dog Said...</modName>
-				<yourMod>Biomes</yourMod>
-			</li>
-
-
-			
+            <li Class="ModCheck.isModLoaded">
+                <modName>A Dog Said...</modName>
+                <yourMod>Biomes</yourMod>
+            </li>
 			<!-- Organ installing recipes == should be most animals -->
 			<li Class="PatchOperationAdd"> <!-- "Inserting animal defNames into InstallBionicAnimalStomach surgery <recipeUsers>" -->
 				<xpath>/Defs/RecipeDef[defName = "InstallBionicAnimalStomach"]/recipeUsers</xpath>

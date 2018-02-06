@@ -16,4 +16,19 @@
             </li>
         </operations>
     </Operation>
+    
+    <Operation Class="PatchOperationSequence">
+        <success>Always</success>
+        <operations>
+            <li Class="PatchOperationRemove">
+                <xpath>Defs/ThingDef[defName = "WoodFiredGenerator"]/label</xpath>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName = "WoodFiredGenerator"]</xpath>
+                <value>
+                    <label>Fueled Generator</label>
+                </value>
+            </li>
+        </operations>
+    </Operation>
 </Patch>

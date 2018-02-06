@@ -23,4 +23,20 @@
             <li>RWBCoal</li>
         </value>
     </Operation>
+    
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName = "FueledSmithy"]/comps/li[@Class = "CompProperties_Refuelable"]/fuelFilter/thingDefs</xpath>
+        <value>
+            <li>RWBCoal</li>
+            <li>FungalLog</li>
+        </value>
+    </Operation>
+    
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName = "FueledStove"]/comps/li[@Class = "CompProperties_Refuelable"]/fuelFilter/thingDefs</xpath>
+        <value>
+            <li>RWBCoal</li>
+            <li>FungalLog</li>
+        </value>
+    </Operation>
 </Patch>
