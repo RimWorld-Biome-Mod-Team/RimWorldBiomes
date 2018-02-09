@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <MakeSporeContainer.label>胞子コンテナを作る</MakeSporeContainer.label>
+  <MakeSporeContainer.description>胞子コンテナを作ります。</MakeSporeContainer.description>
+  <MakeSporeContainer.jobString>胞子コンテナを作っている。</MakeSporeContainer.jobString>
+
+
+</LanguageData>

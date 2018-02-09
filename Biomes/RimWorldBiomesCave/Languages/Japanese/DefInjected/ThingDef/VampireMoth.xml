@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+<!-- Vampire Moth -->
+
+<RWBVampireMoth.label>吸血蛾</RWBVampireMoth.label>
+<RWBVampireMoth.description>見かけによらずかわいい、文字通り血まみれの巨大な蛾は、ほぼすべての生き物の血を飲むでしょう。</RWBVampireMoth.description>
+<RWBVampireMoth.tools.1.label>頭部</RWBVampireMoth.tools.1.label>
+<!-- Leather Amount: 0 -->
+<RWBVampireMoth_Meat.label>吸血蛾の肉</RWBVampireMoth_Meat.label>
+<RWBVampireMoth_Meat.description>吸血蛾の肉</RWBVampireMoth_Meat.description>
+<RWBVampireMoth_Corpse.label>吸血蛾の死骸</RWBVampireMoth_Corpse.label>
+<RWBVampireMoth_Corpse.description>吸血蛾の死骸</RWBVampireMoth_Corpse.description>
+
+
+</LanguageData>

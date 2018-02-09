@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+<!-- Bovine Beetle -->
+
+<RWBBovineBeetle.label>ウシムシ</RWBBovineBeetle.label>
+<RWBBovineBeetle.description>この巨大なテントウムシの親戚は、家畜として保つ価値のある洞窟の生き物の一つです。 殺されたときにキチン質を、搾乳されたときに蜜柑と異なる資源の集合体を提供し、それを飼い慣らすのが非常に簡単であることは、どの洞窟の住人にとってもかなり有用である。</RWBBovineBeetle.description>
+<RWBBovineBeetle.tools.1.label>head</RWBBovineBeetle.tools.1.label>
+<!-- No Leather: Butcher Products -->
+<RWBBovineBeetle_Meat.label>ウシムシの肉</RWBBovineBeetle_Meat.label>
+<RWBBovineBeetle_Meat.description>ウシムシの肉</RWBBovineBeetle_Meat.description>
+<RWBBovineBeetle_Corpse.label>ウシムシの死骸</RWBBovineBeetle_Corpse.label>
+<RWBBovineBeetle_Corpse.description>ウシムシの死骸</RWBBovineBeetle_Corpse.description>
+
+
+</LanguageData>

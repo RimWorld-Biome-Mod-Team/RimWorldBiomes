@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <RWBSmallSolarGenerator.label>太陽光発電(2x2)</RWBSmallSolarGenerator.label>
+  <RWBSmallSolarGenerator.description>太陽光で発電します。暗がりでは発電しません。通常のソーラーパネルより小さいバージョンは、発電する量はわずかに少ないですが、少なくとも屋根の小さな穴を通して太陽を利用することができます。
+</RWBSmallSolarGenerator.description>
+  <RWBSmallSolarGenerator_Blueprint.label>太陽光発電(2x2)(設計)</RWBSmallSolarGenerator_Blueprint.label>
+  <RWBSmallSolarGenerator_Blueprint_Install.label>太陽光発電(2x2)(設計)</RWBSmallSolarGenerator_Blueprint_Install.label>
+  <RWBSmallSolarGenerator_Frame.label>太陽光発電(2x2)(施工)</RWBSmallSolarGenerator_Frame.label>
+  <RWBSmallSolarGenerator_Frame.description>太陽光で発電します。暗がりでは発電しません。通常のソーラーパネルより小さいバージョンは、発電する量はわずかに少ないですが、少なくとも屋根の小さな穴を通して太陽を利用することができます。</RWBSmallSolarGenerator_Frame.description>
+
+  <RWBTinySolarGenerator.label>太陽光発電(1x1)</RWBTinySolarGenerator.label>
+  <RWBTinySolarGenerator.description>太陽光で発電します。暗がりでは発電しません。通常のソーラーパネルよりとても小さいバージョンは、発電量は大幅に少ないですが、少なくとも屋根のより小さな穴を通して太陽を利用することができます。</RWBTinySolarGenerator.description>
+  <RWBTinySolarGenerator_Blueprint.label>太陽光発電(1x1)(設計)</RWBTinySolarGenerator_Blueprint.label>
+  <RWBTinySolarGenerator_Blueprint_Install.label>太陽光発電(1x1)(設計)</RWBTinySolarGenerator_Blueprint_Install.label>
+  <RWBTinySolarGenerator_Frame.label>太陽光発電(1x1)(施工)</RWBTinySolarGenerator_Frame.label>
+  <RWBTinySolarGenerator_Frame.description>太陽光で発電します。暗がりでは発電しません。通常のソーラーパネルよりとても小さいバージョンは、発電量は大幅に少ないですが、少なくとも屋根のより小さな穴を通して太陽を利用することができます。</RWBTinySolarGenerator_Frame.description>
+
+
+</LanguageData>

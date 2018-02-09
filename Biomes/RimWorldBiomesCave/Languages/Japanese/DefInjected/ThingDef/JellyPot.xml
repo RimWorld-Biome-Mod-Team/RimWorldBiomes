@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+<!-- JellyPot Bug -->
+
+<RWBJellypotBug.label>ゼリーポット虫</RWBJellypotBug.label>
+<RWBJellypotBug.description>この比較的小さい昆虫は、その堅さと時間の経過とともに昆虫ゼリーを生産する能力のために、どの洞窟住居者にとっても非常に望ましい家畜です。</RWBJellypotBug.description>
+<RWBJellypotBug.tools.1.label>頭部</RWBJellypotBug.tools.1.label>
+<!-- No Leather: Butcher Products -->
+<RWBJellypotBug_Meat.label>ゼリーポット虫の肉</RWBJellypotBug_Meat.label>
+<RWBJellypotBug_Meat.description>ゼリーポット虫の肉</RWBJellypotBug_Meat.description>
+<RWBJellypotBug_Corpse.label>ゼリーポット虫の死骸</RWBJellypotBug_Corpse.label>
+<RWBJellypotBug_Corpse.description>ゼリーポット虫の死骸</RWBJellypotBug_Corpse.description>
+
+
+</LanguageData>

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <RWBSpiderBite.label>猛毒の咬みつき</RWBSpiderBite.label>
+  <RWBSpiderBite.deathMessage>{0} は死に至った。</RWBSpiderBite.deathMessage>
+
+  <RWBVampireBite.label>吸血鬼の咬みつき</RWBVampireBite.label>
+  <RWBVampireBite.deathMessage>{0} は死に至った。</RWBVampireBite.deathMessage>
+
+
+</LanguageData>

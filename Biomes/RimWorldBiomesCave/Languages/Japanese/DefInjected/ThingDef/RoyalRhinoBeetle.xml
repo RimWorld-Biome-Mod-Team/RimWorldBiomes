@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+<!-- 高貴なサイカブトムシ -->
+
+<RWBRhinoBeetle.label>高貴なサイカブトムシ</RWBRhinoBeetle.label>
+<RWBRhinoBeetle.description>このカブトムシは、ほぼマッファローの大きさです。 彼らはキチン質の殻、高貴な紫の色から名付けられました。 捕食者や交尾相手は彼らの強い角をよく知っています。</RWBRhinoBeetle.description>
+<RWBRhinoBeetle.tools.0.label>ツノ</RWBRhinoBeetle.tools.0.label>
+<RWBRhinoBeetle.tools.2.label>頭部</RWBRhinoBeetle.tools.2.label>
+<!-- No Leather: Butcher Products -->
+<RWBRhinoBeetle_Meat.label>高貴なサイカブトムシの肉</RWBRhinoBeetle_Meat.label>
+<RWBRhinoBeetle_Meat.description>高貴なサイカブトムシの肉</RWBRhinoBeetle_Meat.description>
+<RWBRhinoBeetle_Corpse.label>高貴なサイカブトムシの死骸</RWBRhinoBeetle_Corpse.label>
+<RWBRhinoBeetle_Corpse.description>高貴なサイカブトムシの死骸</RWBRhinoBeetle_Corpse.description>
+
+
+</LanguageData>

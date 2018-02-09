@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+<!-- Coal -->
+
+<RWBCoal.label>石炭</RWBCoal.label>
+<RWBCoal.description>炭素の一種。 素晴らしい燃料源とクリスマスプレゼント。</RWBCoal.description>
+<RWBCoal.stuffProps.stuffAdjective>石炭</RWBCoal.stuffProps.stuffAdjective>
+
+
+<!-- Crystal -->
+
+<RWBChunkCrystal.label>クリスタルの塊</RWBChunkCrystal.label>
+<RWBChunkCrystal.description>クリスタルの塊です。カットして役に立つブロックにします。</RWBChunkCrystal.description>
+
+<RWBCrystalShards.label>クリスタルのブロック</RWBCrystalShards.label>
+<RWBCrystalShards.description>クリスタルのブロックです。</RWBCrystalShards.description>
+<RWBCrystalShards.stuffProps.stuffAdjective>クリスタルのブロック</RWBCrystalShards.stuffProps.stuffAdjective>
+
+
+</LanguageData>

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+<RWBPlanterBox.label>プランターボックス</RWBPlanterBox.label>
+<RWBPlanterBox.description>すぐに植物を育てるための持ち運び可能な箱。</RWBPlanterBox.description>
+<RWBPlanterBox_Blueprint.label>プランターボックス(設計)</RWBPlanterBox_Blueprint.label>
+<RWBPlanterBox_Frame.label>プランターボックス(施工)</RWBPlanterBox_Frame.label>
+<RWBPlanterBox_Frame.description>すぐに植物を育てるための持ち運び可能な箱。</RWBPlanterBox_Frame.description>
+
+
+</LanguageData>

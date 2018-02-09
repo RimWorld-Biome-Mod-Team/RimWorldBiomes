@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+<!-- FruitBat -->
+
+<RWB_FruitBat.label>フルーツコウモリ</RWB_FruitBat.label>
+<RWB_FruitBat.description>これらの飛行する哺乳類は、洞穴の深部に住んでいて、エコーロケーションを経由して移動します。 洞窟のグローフルーツを食べることは、育成する上で、誰にとっても面倒なことです。</RWB_FruitBat.description>
+<RWB_FruitBat.tools.1.label>頭部</RWB_FruitBat.tools.1.label>
+<RWB_FruitBat_Leather.label>コウモリの皮</RWB_FruitBat_Leather.label>
+<RWB_FruitBat_Leather.description>コウモリの皮</RWB_FruitBat_Leather.description>
+<RWB_FruitBat_Leather.stuffProps.stuffAdjective>コウモリの皮</RWB_FruitBat_Leather.stuffProps.stuffAdjective>
+<RWB_FruitBat_Meat.label>フルーツコウモリの肉</RWB_FruitBat_Meat.label>
+<RWB_FruitBat_Meat.description>フルーツコウモリの肉</RWB_FruitBat_Meat.description>
+<RWB_FruitBat_Corpse.label>フルーツコウモリの死骸</RWB_FruitBat_Corpse.label>
+<RWB_FruitBat_Corpse.description>フルーツコウモリの死骸</RWB_FruitBat_Corpse.description>
+
+
+</LanguageData>

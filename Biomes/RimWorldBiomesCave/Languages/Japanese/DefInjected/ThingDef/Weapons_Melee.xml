@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+<RWB_MoleGloveBasic.label>モグラの爪のグローブ</RWB_MoleGloveBasic.label>
+<RWB_MoleGloveBasic.description>モグラの爪から作られた即興の武器。</RWB_MoleGloveBasic.description>
+<RWB_MoleGloveBasic.tools.0.label>爪</RWB_MoleGloveBasic.tools.0.label>
+
+<RWB_MoleGloveAdvanced.label>モグラの爪のグローブ(進化型)</RWB_MoleGloveAdvanced.label>
+<RWB_MoleGloveAdvanced.description>モグラの爪から作られた武器を進化させたモノ。</RWB_MoleGloveAdvanced.description>
+<RWB_MoleGloveAdvanced.tools.0.label>爪</RWB_MoleGloveAdvanced.tools.0.label>
+
+
+</LanguageData>

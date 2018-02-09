@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+<!-- Maxolotl -->
+
+<RWBPaleLizard.label>青白トカゲ</RWBPaleLizard.label>
+<RWBPaleLizard.description>この小さなトカゲはその色の大部分を失い、洞窟環境への適応により目を失ってしまった。 これは、洞窟の肉食動物のための共通の餌食動物です。</RWBPaleLizard.description>
+<RWBPaleLizard.tools.1.label>頭部</RWBPaleLizard.tools.1.label>
+<!-- Leather Amount: 0 -->
+<RWBPaleLizard_Meat.label>青白トカゲの肉</RWBPaleLizard_Meat.label>
+<RWBPaleLizard_Meat.description>青白トカゲの肉</RWBPaleLizard_Meat.description>
+<RWBPaleLizard_Corpse.label>青白トカゲの死骸</RWBPaleLizard_Corpse.label>
+<RWBPaleLizard_Corpse.description>青白トカゲの死骸</RWBPaleLizard_Corpse.description>
+
+
+</LanguageData>

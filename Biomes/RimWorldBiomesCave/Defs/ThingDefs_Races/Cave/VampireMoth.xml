@@ -52,18 +52,6 @@
                 <eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
                 <eggCountRange>1</eggCountRange>
             </li>
-            <li Class="CompLumbering.CompProperties_Lumbering">
-                <cycledGraphic>
-                    <texPath>Pawns/Caves/Animals/VampireMoth/VampireMothCycle/VampireMoth</texPath>
-                    <graphicClass>Graphic_Multi</graphicClass>
-                    <drawSize>1.4</drawSize>
-                    <shadowData>
-                        <volume>(0.4, 0.8, 0.4)</volume>
-                    </shadowData>
-                </cycledGraphic>
-                <secondsPerStep>1.4</secondsPerStep>
-                <secondsBetweenSteps>1</secondsBetweenSteps>
-            </li>
         </comps>
         <race>
             <predator>true</predator>

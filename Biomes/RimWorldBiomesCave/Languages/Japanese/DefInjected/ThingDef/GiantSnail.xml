@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+<!-- Giant Snail -->
+
+<RWBGiantSnail.label>ジャイアントカタツムリ</RWBGiantSnail.label>
+<RWBGiantSnail.description>彼らの大きさ、強度、および驚くべき速度は、それらを荷運び用動物として使用することを可能にします。 脅かされると、彼らはさらなる害を防ぐために殻の内部へ後退します。</RWBGiantSnail.description>
+<RWBGiantSnail.tools.0.label>頭部</RWBGiantSnail.tools.0.label>
+<!-- No Leather: Butcher Products -->
+<RWBGiantSnail_Meat.label>ジャイアントカタツムリの肉</RWBGiantSnail_Meat.label>
+<RWBGiantSnail_Meat.description>ジャイアントカタツムリの肉</RWBGiantSnail_Meat.description>
+<RWBGiantSnail_Corpse.label>ジャイアントカタツムリの死骸</RWBGiantSnail_Corpse.label>
+<RWBGiantSnail_Corpse.description>ジャイアントカタツムリの死骸</RWBGiantSnail_Corpse.description>
+
+
+<!-- Giant Snail -->
+
+<RWBSnailDefense.label>カタツムリの防御</RWBSnailDefense.label>
+<RWBSnailDefense.description>殻に閉じこもります。</RWBSnailDefense.description>
+
+
+</LanguageData>

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+<MineableCrystal.label>クリスタル</MineableCrystal.label>
+<MineableCrystal.description>岩石に埋め込まれたクリスタルの塊。</MineableCrystal.description>
+
+<MineableCoal.label>石炭鉱床</MineableCoal.label>
+<MineableCoal.description>石炭の鉱床です。</MineableCoal.description>
+
+
+</LanguageData>

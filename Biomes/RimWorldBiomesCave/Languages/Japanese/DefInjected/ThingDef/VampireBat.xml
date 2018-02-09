@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+<!-- VampireBat -->
+
+<RWB_VampireBat.label>吸血コウモリ</RWB_VampireBat.label>
+<RWB_VampireBat.description>これらの飛行する哺乳類は、洞穴の深部に住んでいて、エコーロケーションを経由して移動します。 生き物の血液を十分に大きく摂食すると、病気の媒介動物になることがあります。</RWB_VampireBat.description>
+<RWB_VampireBat.tools.1.label>head</RWB_VampireBat.tools.1.label>
+<RWB_VampireBat_Leather.label>コウモリの皮</RWB_VampireBat_Leather.label>
+<RWB_VampireBat_Leather.description>コウモリの皮</RWB_VampireBat_Leather.description>
+<RWB_VampireBat_Leather.stuffProps.stuffAdjective>コウモリの皮</RWB_VampireBat_Leather.stuffProps.stuffAdjective>
+<RWB_VampireBat_Meat.label>吸血コウモリの肉</RWB_VampireBat_Meat.label>
+<RWB_VampireBat_Meat.description>吸血コウモリの肉</RWB_VampireBat_Meat.description>
+<RWB_VampireBat_Corpse.label>吸血コウモリの死骸</RWB_VampireBat_Corpse.label>
+<RWB_VampireBat_Corpse.description>吸血コウモリの死骸</RWB_VampireBat_Corpse.description>
+
+
+</LanguageData>

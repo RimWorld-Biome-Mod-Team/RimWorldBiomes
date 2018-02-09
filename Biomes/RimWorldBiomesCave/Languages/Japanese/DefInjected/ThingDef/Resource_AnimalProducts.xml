@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+<RWBChitin.label>キチン質</RWBChitin.label>
+<RWBChitin.description>節足動物から収集された粗い装甲材料は、しばしば鎧や衣服を作るために使われました。</RWBChitin.description>
+<RWBChitin.stuffProps.stuffAdjective>chitin</RWBChitin.stuffProps.stuffAdjective>
+
+<RWBSlimeChunk.label>スライムの塊</RWBSlimeChunk.label>
+<RWBSlimeChunk.description>酸性の粘液の山、保持するときは注意してください。</RWBSlimeChunk.description>
+<RWBSlimeChunk.stuffProps.stuffAdjective>スライムの塊</RWBSlimeChunk.stuffProps.stuffAdjective>
+
+<RWBMoleClaw.label>モグラの爪</RWBMoleClaw.label>
+<RWBMoleClaw.description>死んだ齧歯類からの爪。</RWBMoleClaw.description>
+<RWBMoleClaw.stuffProps.stuffAdjective>モグラの爪</RWBMoleClaw.stuffProps.stuffAdjective>
+
+<RWBHoneyDew.label>甘露</RWBHoneyDew.label>
+<RWBHoneyDew.description>ウシムシから集められた栄養価の高い液体。</RWBHoneyDew.description>
+
+
+</LanguageData>

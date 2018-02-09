@@ -1,0 +1,122 @@
+<Patch>
+    <Operation Class="PatchOperationSequence">
+        <success>Always</success>
+        <operations>
+            <li Class="RimWorldBiomesCaves.CheckLightSetting">
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName = "RWBLureLizard"]/comps</xpath>
+                <value>
+                    <li Class="RimWorldBiomesCore.CompPropertiesAnimalGlower">
+                        <glowRadius>4</glowRadius>
+                        <glowColor>(0,162,162,1)</glowColor>
+                    </li>
+                </value>
+            </li>
+        </operations>
+    </Operation>
+    
+    
+    <Operation Class="PatchOperationSequence">
+        <success>Always</success>
+        <operations>
+            <li Class="RimWorldBiomesCaves.CheckPlantOverlaySetting">
+            </li>
+        </operations>
+    </Operation>
+    
+    <Operation Class="PatchOperationSequence">
+        <success>Always</success>
+        <operations>
+            <li Class="RimWorldBiomesCaves.CheckAnimationSetting">
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName = "RWB_VampireBat"]/comps</xpath>
+                <value>
+                    <li Class="CompAnimated.CompProperties_Animated">
+                        <movingFrames>
+                            <li>
+                                <texPath>Pawns/Caves/Animals/VampireBat/VampireBatA</texPath>
+                                <color>(110,95,82)</color>
+                                <drawSize>2.2</drawSize>
+                                <shaderType>CutoutComplex</shaderType>
+                                <graphicClass>Graphic_Multi</graphicClass>
+                            </li>
+                            <li>
+                                <texPath>Pawns/Caves/Animals/VampireBat/VampireBatB</texPath>
+                                <color>(110,95,82)</color>
+                                <drawSize>2.2</drawSize>
+                                <shaderType>CutoutComplex</shaderType>
+                                <graphicClass>Graphic_Multi</graphicClass>
+                            </li>
+                        </movingFrames>
+                        <stillFrames>
+                            <li>
+                                <texPath>Pawns/Caves/Animals/VampireBat/VampireBatSitting</texPath>
+                                <color>(110,95,82)</color>
+                                <drawSize>2.2</drawSize>
+                                <shaderType>CutoutComplex</shaderType>
+                                <graphicClass>Graphic_Multi</graphicClass>
+                            </li>
+                        </stillFrames>
+                        <sound/>
+                        <secondsBetweenFrames>0.6</secondsBetweenFrames>
+                    </li>
+                </value>
+            </li>
+            
+            <li Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName = "RWB_FruitBat"]/comps</xpath>
+                <value>
+                    <li Class="CompAnimated.CompProperties_Animated">
+                        <movingFrames>
+                            <li>
+                                <texPath>Pawns/Caves/Animals/FruitBat/FruitBatA</texPath>
+                                <color>(110,95,82)</color>
+                                <drawSize>2.2</drawSize>
+                                <shaderType>CutoutComplex</shaderType>
+                                <graphicClass>Graphic_Multi</graphicClass>
+                            </li>
+                            <li>
+                                <texPath>Pawns/Caves/Animals/FruitBat/FruitBatB</texPath>
+                                <color>(110,95,82)</color>
+                                <drawSize>2.2</drawSize>
+                                <shaderType>CutoutComplex</shaderType>
+                                <graphicClass>Graphic_Multi</graphicClass>
+                            </li>
+                        </movingFrames>
+                        <stillFrames>
+                            <li>
+                                <texPath>Pawns/Caves/Animals/FruitBat/FruitBatSitting</texPath>
+                                <color>(110,95,82)</color>
+                                <drawSize>2.2</drawSize>
+                                <shaderType>CutoutComplex</shaderType>
+                                <graphicClass>Graphic_Multi</graphicClass>
+                            </li>
+                        </stillFrames>
+                        <sound/>
+                        <secondsBetweenFrames>0.6</secondsBetweenFrames>
+                    </li>
+                </value>
+            </li>
+            
+            <li Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName = "RWBVampireMoth"]/comps</xpath>
+                <value>
+                    <li Class="CompLumbering.CompProperties_Lumbering">
+                        <cycledGraphic>
+                            <texPath>Pawns/Caves/Animals/VampireMoth/VampireMothCycle/VampireMoth</texPath>
+                            <graphicClass>Graphic_Multi</graphicClass>
+                            <drawSize>1.4</drawSize>
+                            <shadowData>
+                                <volume>(0.4, 0.8, 0.4)</volume>
+                            </shadowData>
+                        </cycledGraphic>
+                        <secondsPerStep>1.4</secondsPerStep>
+                        <secondsBetweenSteps>1</secondsBetweenSteps>
+                    </li>
+                </value>
+            </li>
+        </operations>
+    </Operation>
+</Patch>
