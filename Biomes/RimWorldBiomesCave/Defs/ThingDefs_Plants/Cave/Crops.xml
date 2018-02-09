@@ -28,6 +28,7 @@
 			<harvestYield>7</harvestYield>
 			<sowTags>
 				<li>Ground</li>
+                <li>Hydroponic</li>
 			</sowTags>
 			<topWindExposure>0.1</topWindExposure>
 			<growDays>3</growDays>
@@ -67,6 +68,7 @@
             <sowMinSkill>6</sowMinSkill>
             <sowTags>
                 <li>Ground</li>
+                <li>Hydroponic</li>
             </sowTags>
             <topWindExposure>0.1</topWindExposure>
             <visualSizeRange>
@@ -155,6 +157,7 @@
             <neverBlightable>true</neverBlightable>
             <sowTags>
                 <li>Ground</li>
+                <li>Hydroponic</li>
             </sowTags>
             <topWindExposure>0.1</topWindExposure>
             <visualSizeRange>
@@ -231,6 +234,7 @@
             <sowMinSkill>5</sowMinSkill>
             <sowTags>
                 <li>Ground</li>
+                <li>Hydroponic</li>
             </sowTags>
             <topWindExposure>0.1</topWindExposure>
             <visualSizeRange>
@@ -269,6 +273,7 @@
             <neverBlightable>true</neverBlightable>
             <sowTags>
                 <li>Ground</li>
+                <li>Hydroponic</li>
             </sowTags>
             <topWindExposure>0.1</topWindExposure>
             <visualSizeRange>
