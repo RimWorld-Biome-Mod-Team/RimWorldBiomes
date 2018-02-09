@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+<!-- Crystal Crab -->
+
+<RWBCrystalCrab.label>クリスタルガニ</RWBCrystalCrab.label>
+<RWBCrystalCrab.description>大型のオオガニの一種であるこの種は、大きな目と水晶で覆われた石の殻を持ち、洞窟の環境に適応しています。 彼らが生まれる瞬間、両親から一生を通じて成長し続ける結晶のための特別なくり抜かれた岩の殻を与えられます。</RWBCrystalCrab.description>
+<RWBCrystalCrab.tools.0.label>爪</RWBCrystalCrab.tools.0.label>
+<RWBCrystalCrab.tools.1.label>頭部</RWBCrystalCrab.tools.1.label>
+<!-- No Leather: Butcher Products -->
+<RWBCrystalCrab_Meat.label>クリスタルガニの肉</RWBCrystalCrab_Meat.label>
+<RWBCrystalCrab_Meat.description>クリスタルガニの肉</RWBCrystalCrab_Meat.description>
+<RWBCrystalCrab_Corpse.label>クリスタルガニの死骸</RWBCrystalCrab_Corpse.label>
+<RWBCrystalCrab_Corpse.description>クリスタルガニの死骸</RWBCrystalCrab_Corpse.description>
+
+
+</LanguageData>

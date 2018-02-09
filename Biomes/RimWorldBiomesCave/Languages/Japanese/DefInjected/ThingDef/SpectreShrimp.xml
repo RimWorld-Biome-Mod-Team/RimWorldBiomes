@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+<!-- Spectre Shrimp -->
+
+<RWBSpectreShrimp.label>幽霊エビ</RWBSpectreShrimp.label>
+<RWBSpectreShrimp.description>小さく、地下環境に適応する過程で視覚は未発達な生物。容易に柔らかい餌食を食いちぎる鋭い口器を持ちます。群がるとき、これらの節足動物はかなりの脅威です。</RWBSpectreShrimp.description>
+<RWBSpectreShrimp.tools.1.label>頭部</RWBSpectreShrimp.tools.1.label>
+<!-- Leather Amount: 0 -->
+<RWBSpectreShrimp_Meat.label>幽霊エビの肉</RWBSpectreShrimp_Meat.label>
+<RWBSpectreShrimp_Meat.description>幽霊エビの肉</RWBSpectreShrimp_Meat.description>
+<RWBSpectreShrimp_Corpse.label>幽霊エビの死骸</RWBSpectreShrimp_Corpse.label>
+<RWBSpectreShrimp_Corpse.description>幽霊エビの死骸</RWBSpectreShrimp_Corpse.description>
+
+
+</LanguageData>

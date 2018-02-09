@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+<PaleBeets.label>ペイルビート</PaleBeets.label>
+<PaleBeets.description>石を介してその根を掘り起こし、洞窟内の小さな栄養素から生き残ることができるように遺伝的に設計された淡い紫色のビート。</PaleBeets.description>
+
+<MortalMorel.label>アミガサタケ</MortalMorel.label>
+<MortalMorel.description>このキノコは、長い間、洞窟の住人に薬草類似物質として使用されてきた。 その名前は、死の終わりをはぐくむという意味で使われています。</MortalMorel.description>
+
+<GlowfruitTree.label>グローフルーツの木</GlowfruitTree.label>
+<GlowfruitTree.description>洞窟の暗い環境に適応した孤独な樹種で、この木は柑橘類のような果実を作り、暗闇の中で輝きます。 果実は食用で、洞窟と呼ばれるフルーツコウモリの好物です。 </GlowfruitTree.description>
+
+<InkCap.label>インクキャップ</InkCap.label>
+<InkCap.description>黒っぽい布のような繊維を作り出す、大きい傘のキノコ。</InkCap.description>
+
+<BluebellShroom.label>ブルーベルマッシュルーム</BluebellShroom.label>
+<BluebellShroom.description>この小さなマッシュルームは小さな群れで成長する傾向があり、洞窟に住む人型によって鮮明な幻覚を引き起こすためによく使われます。</BluebellShroom.description>
+
+
+</LanguageData>

@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <BluebellCutsHigh.label>ブルーベルでハイになる</BluebellCutsHigh.label>
+  <BluebellCutsHigh.stages.0.label>軽度</BluebellCutsHigh.stages.0.label>
+  <BluebellCutsHigh.stages.1.label>重度</BluebellCutsHigh.stages.1.label>
+
+
+  <!-- Shroom addiction -->
+
+  <BluebellCutsTolerance.label>ブルーベル耐性</BluebellCutsTolerance.label>
+  <BluebellCutsTolerance.stages.0.label>わずかに</BluebellCutsTolerance.stages.0.label>
+  <BluebellCutsTolerance.stages.1.label>小</BluebellCutsTolerance.stages.1.label>
+  <BluebellCutsTolerance.stages.2.label>大</BluebellCutsTolerance.stages.2.label>
+  <BluebellCutsTolerance.stages.3.label>極大</BluebellCutsTolerance.stages.3.label>
+
+  <BluebellCutsAddiction.label>ブルーベル中毒</BluebellCutsAddiction.label>
+  <BluebellCutsAddiction.stages.1.label>禁断症状</BluebellCutsAddiction.stages.1.label>
+
+
+</LanguageData>

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+<MushroomCluster.label>群生キノコ</MushroomCluster.label>
+<MushroomCluster.description>群生した野生のキノコ。 少し光があり、わずかに肥沃な土地がどこにでも生えます。</MushroomCluster.description>
+
+<MushroomTree.label>キノコの木</MushroomTree.label>
+<MushroomTree.description>強いキノコの木。 ゆっくりと増殖しますが、菌類は非常に強いです。</MushroomTree.description>
+
+<SpectreCap.label>スペクトラキャップ</SpectreCap.label>
+<SpectreCap.description>このキノコは、かつては不気味な輝きと淡い色のため、洞窟内の失われた部族による幽霊と考えられていました。</SpectreCap.description>
+
+<StarlightShroom.label>スターライトキノコ</StarlightShroom.label>
+<StarlightShroom.description>深い青色の傘をしたキノコは、夜空のように見える小さな光を反射します。</StarlightShroom.description>
+
+<SkullTop.label>スカルトップ</SkullTop.label>
+<SkullTop.description>この紫がかったキノコは、近くにいると生きているものを急速に毒する毒性胞子を放出する能力のため、おそらく洞窟で最も危険です。 その胞子は有毒な武器や罠を作るために使われます。</SkullTop.description>
+
+
+</LanguageData>

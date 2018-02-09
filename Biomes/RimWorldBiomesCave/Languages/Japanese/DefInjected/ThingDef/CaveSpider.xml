@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+<RWBCaveSpider.label>洞窟グモ</RWBCaveSpider.label>
+<RWBCaveSpider.description>これらの巨大なクモは、頂点ではないにしても、洞窟の捕食者の1つです。 彼らが洞窟の壁の穴の中に住んでいると、彼らは十分に近くに獲物を待って攻撃し、攻撃する。 彼らは後でそれらを保存するためにクモの糸で自分の獲物を包みます。 探検家は彼らの巣に近づき過ぎないよう注意してください。</RWBCaveSpider.description>
+<RWBCaveSpider.tools.0.label>顎</RWBCaveSpider.tools.0.label>
+<RWBCaveSpider.tools.1.label>左脚</RWBCaveSpider.tools.1.label>
+<RWBCaveSpider.tools.2.label>右脚</RWBCaveSpider.tools.2.label>
+<RWBCaveSpider.tools.3.label>頭部</RWBCaveSpider.tools.3.label>
+<!-- Leather Amount: 0 -->
+<RWBCaveSpider_Meat.label>洞窟グモの肉</RWBCaveSpider_Meat.label>
+<RWBCaveSpider_Meat.description>洞窟グモの肉</RWBCaveSpider_Meat.description>
+<RWBCaveSpider_Corpse.label>洞窟グモの死骸</RWBCaveSpider_Corpse.label>
+<RWBCaveSpider_Corpse.description>洞窟グモの死骸</RWBCaveSpider_Corpse.description>
+
+
+</LanguageData>

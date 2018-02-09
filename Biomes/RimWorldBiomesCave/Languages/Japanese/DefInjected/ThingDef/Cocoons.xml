@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+<RWBSmallCocoon.label>繭</RWBSmallCocoon.label>
+<RWBSmallCocoon.description>生死に関わらず軟らかく獲物を包む為のシルクで紡がれた繭。</RWBSmallCocoon.description>
+
+<RWBMediumCocoon.label>繭(中型)</RWBMediumCocoon.label>
+<RWBMediumCocoon.description>より大きな獲物を包む為の巨大なシルクで紡がれた繭。</RWBMediumCocoon.description>
+
+<RWBLargeCocoon.label>繭(大型)</RWBLargeCocoon.label>
+<RWBLargeCocoon.description>より大きな獲物を包む為の巨大なシルクで紡がれた繭。</RWBLargeCocoon.description>
+
+
+</LanguageData>

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+<!-- Pillbug -->
+
+<RWBPillbug.label>ダンゴムシ</RWBPillbug.label>
+<RWBPillbug.description>ざっと言うと、牛のサイズと、気質。この生物には、敵を突き刺すことができる各々の部分の上にあるスパイクは言うまでもなく、どんな捕食者でも終わりまで突き通すのが難しい自然の装甲があります。</RWBPillbug.description>
+<RWBPillbug.tools.1.label>頭部</RWBPillbug.tools.1.label>
+<!-- No Leather: Butcher Products -->
+<RWBPillbug_Meat.label>ダンゴムシの肉</RWBPillbug_Meat.label>
+<RWBPillbug_Meat.description>ダンゴムシの肉</RWBPillbug_Meat.description>
+<RWBPillbug_Corpse.label>ダンゴムシの死骸</RWBPillbug_Corpse.label>
+<RWBPillbug_Corpse.description>ダンゴムシの死骸</RWBPillbug_Corpse.description>
+
+
+</LanguageData>

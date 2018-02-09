@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+<!-- Slime -->
+
+<RWBSlime.label>スライム</RWBSlime.label>
+<RWBSlime.labelPlural>スライム</RWBSlime.labelPlural>
+<RWBSlime.lifeStages.0.label>スライム</RWBSlime.lifeStages.0.label>
+<RWBSlime.lifeStages.0.labelPlural>スライム</RWBSlime.lifeStages.0.labelPlural>
+<RWBSlime.lifeStages.0.labelMale>スライム</RWBSlime.lifeStages.0.labelMale>
+<RWBSlime.lifeStages.0.labelMalePlural>スライム</RWBSlime.lifeStages.0.labelMalePlural>
+<RWBSlime.lifeStages.0.labelFemale>スライム</RWBSlime.lifeStages.0.labelFemale>
+<RWBSlime.lifeStages.0.labelFemalePlural>スライム</RWBSlime.lifeStages.0.labelFemalePlural>
+<RWBSlime.lifeStages.1.label>スライム</RWBSlime.lifeStages.1.label>
+<RWBSlime.lifeStages.1.labelPlural>スライム</RWBSlime.lifeStages.1.labelPlural>
+<RWBSlime.lifeStages.1.labelMale>スライム</RWBSlime.lifeStages.1.labelMale>
+<RWBSlime.lifeStages.1.labelMalePlural>スライム</RWBSlime.lifeStages.1.labelMalePlural>
+<RWBSlime.lifeStages.1.labelFemale>スライム</RWBSlime.lifeStages.1.labelFemale>
+<RWBSlime.lifeStages.1.labelFemalePlural>スライム</RWBSlime.lifeStages.1.labelFemalePlural>
+<RWBSlime.labelMale>スライム</RWBSlime.labelMale>
+<RWBSlime.labelMalePlural>スライム</RWBSlime.labelMalePlural>
+<RWBSlime.labelFemale>スライム</RWBSlime.labelFemale>
+<RWBSlime.labelFemalePlural>スライム</RWBSlime.labelFemalePlural>
+
+
+</LanguageData>

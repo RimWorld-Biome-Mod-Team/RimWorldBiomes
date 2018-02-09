@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+<!-- Poison grenade -->
+
+<RWBProj_GrenadePoisonWeak.label>ポイズングレネード</RWBProj_GrenadePoisonWeak.label>
+
+<RWBPoisonGrenadeBasic.label>ポイズングレネード</RWBPoisonGrenadeBasic.label>
+<RWBPoisonGrenadeBasic.description>インパクトの瞬間、毒雲を放出するグレネード。</RWBPoisonGrenadeBasic.description>
+<RWBPoisonGrenadeBasic.verbs.0.label>手投げポイズングレネード</RWBPoisonGrenadeBasic.verbs.0.label>
+
+
+<!-- (advanced) -->
+
+<RWBProj_GrenadePoisonStrong.label>ポイズングレネード</RWBProj_GrenadePoisonStrong.label>
+
+<RWBPoisonGrenadeAdvanced.label>ポイズングレネード(進化型)</RWBPoisonGrenadeAdvanced.label>
+<RWBPoisonGrenadeAdvanced.description>インパクトの瞬間、毒雲を放出するグレネード。</RWBPoisonGrenadeAdvanced.description>
+<RWBPoisonGrenadeAdvanced.verbs.0.label>手投げポイズングレネード</RWBPoisonGrenadeAdvanced.verbs.0.label>
+
+
+</LanguageData>

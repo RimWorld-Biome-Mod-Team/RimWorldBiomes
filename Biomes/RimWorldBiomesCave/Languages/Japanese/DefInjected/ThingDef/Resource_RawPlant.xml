@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+<RawPaleBeets.label>ペイルビート</RawPaleBeets.label>
+<RawPaleBeets.description>生のペイルビートです。</RawPaleBeets.description>
+
+<SkulltopCap.label>スカルトップの傘</SkulltopCap.label>
+<SkulltopCap.description>スカルトップの傘です。</SkulltopCap.description>
+
+<FungalMedicine.label>真菌薬</FungalMedicine.label>
+<FungalMedicine.description>一般的には致死的な植物から抽出された1パックの薬草。ハーブ療法より強力でないが、無いよりはマシ。</FungalMedicine.description>
+
+<Glowfruit.label>グローフルーツ</Glowfruit.label>
+<Glowfruit.description>グローフルーツです。</Glowfruit.description>
+
+<FungalFiber.label>真菌繊維</FungalFiber.label>
+<FungalFiber.description>暗い菌糸体の繊維。</FungalFiber.description>
+<FungalFiber.stuffProps.stuffAdjective>真菌繊維</FungalFiber.stuffProps.stuffAdjective>
+
+
+</LanguageData>

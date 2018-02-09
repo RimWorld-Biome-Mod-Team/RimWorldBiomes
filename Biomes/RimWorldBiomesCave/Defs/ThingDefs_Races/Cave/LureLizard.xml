@@ -64,10 +64,6 @@
             <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
         </race>
         <comps>
-            <li Class="RimWorldBiomesCore.CompPropertiesAnimalGlower">
-                <glowRadius>4</glowRadius>
-                <glowColor>(0,162,162,1)</glowColor>
-            </li>
             <li Class="CompProperties_EggLayer">
                 <eggFertilizedDef>RWBEggLureLizardFertilized</eggFertilizedDef>
                 <eggFertilizationCountMax>1</eggFertilizationCountMax>

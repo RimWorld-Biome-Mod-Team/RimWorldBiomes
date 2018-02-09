@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <BiomesCavesSettingsCategoryLabel>Caves Biome</BiomesCavesSettingsCategoryLabel>
+  <EnableAnimationsLabel>Enable animal animations</EnableAnimationsLabel>
+  <EnableAnimalLightLabel>Enable animal light</EnableAnimalLightLabel>
+  <EnablePlantOverlayLabel>Enable plants rendering over pawns</EnablePlantOverlayLabel>
+  <!--<DynamicDefNote>NOTE: Currently, these settings are only triggered during the creation or load of map.</DynamicDefNote>-->
+
+</LanguageData>

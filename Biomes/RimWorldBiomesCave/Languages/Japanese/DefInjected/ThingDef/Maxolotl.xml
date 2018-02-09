@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+<!-- Maxolotl -->
+
+<RWBMaxolotl.label>マホロートル</RWBMaxolotl.label>
+<RWBMaxolotl.description>巨大なアホロートルの仲間。これらのサラマンダーは、洞窟内に住む巨大な虫と競争し、食べることによって、住処となった洞窟環境内で巨大な姿に成長しました。 彼らはほとんど独占的に水生生物ですが、必要に応じて陸地に行くことができます。</RWBMaxolotl.description>
+<RWBMaxolotl.tools.1.label>頭部</RWBMaxolotl.tools.1.label>
+<!-- Leather Amount: 0 -->
+<RWBMaxolotl_Meat.label>マホロートルの肉</RWBMaxolotl_Meat.label>
+<RWBMaxolotl_Meat.description>マホロートルの肉</RWBMaxolotl_Meat.description>
+<RWBMaxolotl_Corpse.label>マホロートルの死骸</RWBMaxolotl_Corpse.label>
+<RWBMaxolotl_Corpse.description>マホロートルの死骸</RWBMaxolotl_Corpse.description>
+
+
+</LanguageData>

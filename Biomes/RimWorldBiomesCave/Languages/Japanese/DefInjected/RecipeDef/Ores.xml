@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Crystal -->
+
+  <MakeCrystalShards.label>クリスタルのブロックを作る</MakeCrystalShards.label>
+  <MakeCrystalShards.description>クリスタルの塊をカットして役に立つブロックにする。</MakeCrystalShards.description>
+  <MakeCrystalShards.jobString>塊をカット中</MakeCrystalShards.jobString>
+
+
+</LanguageData>

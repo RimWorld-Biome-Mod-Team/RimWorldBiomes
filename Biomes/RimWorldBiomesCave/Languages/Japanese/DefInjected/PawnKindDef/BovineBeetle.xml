@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- ウシムシ -->
+
+  <RWBBovineBeetle.label>ウシムシ</RWBBovineBeetle.label>
+  <RWBBovineBeetle.labelPlural>ウシムシ</RWBBovineBeetle.labelPlural>
+  <RWBBovineBeetle.lifeStages.0.label>ウシムシ</RWBBovineBeetle.lifeStages.0.label>
+  <RWBBovineBeetle.lifeStages.0.labelPlural>ウシムシ</RWBBovineBeetle.lifeStages.0.labelPlural>
+  <RWBBovineBeetle.lifeStages.0.labelMale>ウシムシ</RWBBovineBeetle.lifeStages.0.labelMale>
+  <RWBBovineBeetle.lifeStages.0.labelMalePlural>ウシムシ</RWBBovineBeetle.lifeStages.0.labelMalePlural>
+  <RWBBovineBeetle.lifeStages.0.labelFemale>ウシムシ</RWBBovineBeetle.lifeStages.0.labelFemale>
+  <RWBBovineBeetle.lifeStages.0.labelFemalePlural>ウシムシ</RWBBovineBeetle.lifeStages.0.labelFemalePlural>
+  <RWBBovineBeetle.lifeStages.1.label>ウシムシ</RWBBovineBeetle.lifeStages.1.label>
+  <RWBBovineBeetle.lifeStages.1.labelPlural>ウシムシ</RWBBovineBeetle.lifeStages.1.labelPlural>
+  <RWBBovineBeetle.lifeStages.1.labelMale>ウシムシ</RWBBovineBeetle.lifeStages.1.labelMale>
+  <RWBBovineBeetle.lifeStages.1.labelMalePlural>ウシムシ</RWBBovineBeetle.lifeStages.1.labelMalePlural>
+  <RWBBovineBeetle.lifeStages.1.labelFemale>ウシムシ</RWBBovineBeetle.lifeStages.1.labelFemale>
+  <RWBBovineBeetle.lifeStages.1.labelFemalePlural>ウシムシ</RWBBovineBeetle.lifeStages.1.labelFemalePlural>
+  <RWBBovineBeetle.labelMale>ウシムシ</RWBBovineBeetle.labelMale>
+  <RWBBovineBeetle.labelMalePlural>ウシムシs</RWBBovineBeetle.labelMalePlural>
+  <RWBBovineBeetle.labelFemale>ウシムシ</RWBBovineBeetle.labelFemale>
+  <RWBBovineBeetle.labelFemalePlural>ウシムシ</RWBBovineBeetle.labelFemalePlural>
+
+
+</LanguageData>

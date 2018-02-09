@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+<!-- Slime -->
+
+<RWBSlime.label>スライム</RWBSlime.label>
+<RWBSlime.description>この奇妙な生き物は実際には数百万の微生物が並んで働いています。 その肉は酸性であるという事実のために、彼らは事実上自然の捕食者を持っていません。 スライムは危険な堀を作るのに使うことができ、バイオ燃料として使うことができます。</RWBSlime.description>
+<RWBSlime.tools.1.label>頭部</RWBSlime.tools.1.label>
+<!-- No Leather: Butcher Products -->
+<RWBSlime_Meat.label>スライムの肉</RWBSlime_Meat.label>
+<RWBSlime_Corpse.label>スライムの死骸</RWBSlime_Corpse.label>
+<RWBSlime_Corpse.description>スライムの死骸</RWBSlime_Corpse.description>
+
+
+</LanguageData>

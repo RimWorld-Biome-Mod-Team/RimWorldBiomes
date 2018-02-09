@@ -1,8 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?>
 <Patch>
     <Operation Class="PatchOperationSequence">
         <success>Always</success>
         <operations>
+            <li Class="RimWorldBiomesCore.CheckWaterPathingSetting">
+            </li>
+            
             <li Class="PatchOperationTest">
                 <xpath>/Defs/TerrainDef[defName = "WaterDeep"]/passability</xpath>
                 <success>Normal</success>
@@ -24,11 +26,7 @@
                     <pathCost>100</pathCost>
                 </value>
             </li>
-        </operations>
-    </Operation>
-    <Operation Class="PatchOperationSequence">
-        <success>Always</success>
-        <operations>
+            
             <li Class="PatchOperationTest">
                 <xpath>/Defs/TerrainDef[defName = "WaterOceanDeep"]/passability</xpath>
                 <success>Normal</success>
@@ -50,11 +48,7 @@
                     <pathCost>100</pathCost>
                 </value>
             </li>
-        </operations>
-    </Operation>
-    <Operation Class="PatchOperationSequence">
-        <success>Always</success>
-        <operations>
+            
             <li Class="PatchOperationTest">
                 <xpath>/Defs/TerrainDef[defName = "WaterMovingDeep"]/passability</xpath>
                 <success>Normal</success>

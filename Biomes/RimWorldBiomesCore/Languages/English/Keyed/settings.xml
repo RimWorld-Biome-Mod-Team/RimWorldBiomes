@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <BiomesCoreSettingsCategoryLabel>Core</BiomesCoreSettingsCategoryLabel>
+  <EnableWaterPathingLabel>Enable walking on deep water</EnableWaterPathingLabel>
+  <!--<DynamicDefNote>NOTE: Currently, these settings are only triggered during the creation or load of map.</DynamicDefNote>-->
+
+</LanguageData>

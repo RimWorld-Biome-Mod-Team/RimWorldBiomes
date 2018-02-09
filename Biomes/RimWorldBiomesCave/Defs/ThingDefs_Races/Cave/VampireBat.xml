@@ -17,35 +17,6 @@
         <comps>
             <li Class="RimWorldBiomesCore.CompProperties_Vampire">
             </li>
-            <li Class="CompAnimated.CompProperties_Animated">
-                <movingFrames>
-                    <li>
-                        <texPath>Pawns/Caves/Animals/VampireBat/VampireBatA</texPath>
-                        <color>(110,95,82)</color>
-                        <drawSize>2.2</drawSize>
-                        <shaderType>CutoutComplex</shaderType>
-                        <graphicClass>Graphic_Multi</graphicClass>
-                    </li>
-                    <li>
-                        <texPath>Pawns/Caves/Animals/VampireBat/VampireBatB</texPath>
-                        <color>(110,95,82)</color>
-                        <drawSize>2.2</drawSize>
-                        <shaderType>CutoutComplex</shaderType>
-                        <graphicClass>Graphic_Multi</graphicClass>
-                    </li>
-                </movingFrames>
-                <stillFrames>
-                    <li>
-                        <texPath>Pawns/Caves/Animals/VampireBat/VampireBatSitting</texPath>
-                        <color>(110,95,82)</color>
-                        <drawSize>2.2</drawSize>
-                        <shaderType>CutoutComplex</shaderType>
-                        <graphicClass>Graphic_Multi</graphicClass>
-                    </li>
-                </stillFrames>
-                <sound/>
-                <secondsBetweenFrames>0.6</secondsBetweenFrames>
-            </li>
         </comps>
         <tools>
             <li>
