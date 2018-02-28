@@ -17,9 +17,10 @@
 			<nutrition>0.16</nutrition>
 		</ingestible>
 		<plant>
+            <fertilityMin>0.01</fertilityMin>
             <growMinGlow>0</growMinGlow>
             <growOptimalGlow>0</growOptimalGlow>
-			<fertilitySensitivity>0.4</fertilitySensitivity>
+			<fertilitySensitivity>0</fertilitySensitivity>
 			<dieIfLeafless>true</dieIfLeafless>
 			<reproduces>false</reproduces>
 			<maxMeshCount>1</maxMeshCount>
@@ -56,9 +57,10 @@
             <nutrition>0.15</nutrition>
         </ingestible>
         <plant>
+            <fertilityMin>0.01</fertilityMin>
         	<growMinGlow>0</growMinGlow>
             <growOptimalGlow>0</growOptimalGlow>
-            <fertilitySensitivity>0.4</fertilitySensitivity>
+            <fertilitySensitivity>0</fertilitySensitivity>
             <growDays>5</growDays>
             <dieIfLeafless>true</dieIfLeafless>
             <reproduces>false</reproduces>
@@ -95,11 +97,12 @@
             <nutrition>1.8</nutrition>
         </ingestible>
         <plant>
+            <fertilityMin>0.01</fertilityMin>
             <blockAdjacentSow>true</blockAdjacentSow>
             <growMinGlow>0</growMinGlow>
             <growOptimalGlow>0</growOptimalGlow>
             <cavePlant>true</cavePlant>
-            <fertilitySensitivity>0.4</fertilitySensitivity>
+            <fertilitySensitivity>0</fertilitySensitivity>
             <growDays>13</growDays>
             <lifespanFraction>6.925</lifespanFraction>
             <dieIfLeafless>true</dieIfLeafless>
@@ -145,9 +148,10 @@
             <nutrition>0.15</nutrition>
         </ingestible>
         <plant>
+            <fertilityMin>0.01</fertilityMin>
         	<growMinGlow>0</growMinGlow>
             <growOptimalGlow>0</growOptimalGlow>
-            <fertilitySensitivity>0.4</fertilitySensitivity>
+            <fertilitySensitivity>0</fertilitySensitivity>
             <growDays>7</growDays>
             <dieIfLeafless>true</dieIfLeafless>
             <reproduces>false</reproduces>
@@ -184,9 +188,10 @@
             <nutrition>0.20</nutrition>
         </ingestible>
         <plant>
+            <fertilityMin>0.01</fertilityMin>
             <growMinGlow>0</growMinGlow>
             <growOptimalGlow>0</growOptimalGlow>
-            <fertilitySensitivity>0.4</fertilitySensitivity>
+            <fertilitySensitivity>0</fertilitySensitivity>
             <growDays>6</growDays>
             <dieIfLeafless>true</dieIfLeafless>
             <reproduces>false</reproduces>
@@ -222,9 +227,10 @@
             <nutrition>0.20</nutrition>
         </ingestible>
         <plant>
+            <fertilityMin>0.01</fertilityMin>
             <growMinGlow>0</growMinGlow>
             <growOptimalGlow>0</growOptimalGlow>
-            <fertilitySensitivity>0.4</fertilitySensitivity>
+            <fertilitySensitivity>0</fertilitySensitivity>
             <growDays>4.5</growDays>
             <dieIfLeafless>true</dieIfLeafless>
             <reproduces>false</reproduces>
@@ -261,9 +267,10 @@
             <nutrition>0.15</nutrition>
         </ingestible>
         <plant>
+            <fertilityMin>0.01</fertilityMin>
         	<growMinGlow>0</growMinGlow>
             <growOptimalGlow>0</growOptimalGlow>
-            <fertilitySensitivity>0.4</fertilitySensitivity>
+            <fertilitySensitivity>0</fertilitySensitivity>
             <growDays>7.5</growDays>
             <dieIfLeafless>true</dieIfLeafless>
             <reproduces>false</reproduces>

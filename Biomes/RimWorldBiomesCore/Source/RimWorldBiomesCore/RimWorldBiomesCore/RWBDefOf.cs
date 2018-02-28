@@ -14,5 +14,6 @@ namespace RimWorldBiomesCore
         public static ThingDef RWBSmallCocoon;
         public static ThingDef RWBMediumCocoon;
         public static ThingDef RWBLargeCocoon;
+        public static RoofDef UncollapsableNaturalRoof;
     }
 }

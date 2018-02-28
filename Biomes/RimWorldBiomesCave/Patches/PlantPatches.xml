@@ -18,6 +18,12 @@
                     <growDays>5</growDays>
                 </value>
             </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName = "Glowstool"]/plant/fertilitySensitivity</xpath>
+                <value>
+                    <fertilitySensitivity>0</fertilitySensitivity>
+                </value>
+            </li>
             <li Class="PatchOperationAdd">
                 <xpath>Defs/ThingDef[defName = "Glowstool"]</xpath>
                 <value>

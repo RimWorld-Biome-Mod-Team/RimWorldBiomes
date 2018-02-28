@@ -17,6 +17,7 @@
 			<nutrition>0.50</nutrition>
 		</ingestible>
 		<plant>
+            <reproduces>true</reproduces>
 <!--            <MinOptimalGrowthTemperature>5</MinOptimalGrowthTemperature>-->
             <growMinGlow>0</growMinGlow>
 			<fertilityMin>0.01</fertilityMin>
@@ -44,7 +45,7 @@
                 <allowedBiomes>
                     <li>RWBCavern</li>
                 </allowedBiomes>
-                <growNearWater>true</growNearWater>
+                <growNearWater>false</growNearWater>
 			</li>
 			<li Class="CompProperties_Glower">
         <glowRadius>6</glowRadius>

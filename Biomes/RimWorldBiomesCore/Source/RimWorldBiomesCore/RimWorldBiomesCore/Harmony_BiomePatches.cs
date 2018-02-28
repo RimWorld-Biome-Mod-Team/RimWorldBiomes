@@ -29,6 +29,7 @@ namespace RimWorldBiomesCore
             HarmonyInstance harmony = HarmonyInstance.Create("rimworld.swenzi.biomepatches");
             //Patches
             //Settling on Impassable Terrain Patch
+
             harmony.Patch(AccessTools.Method(typeof(TileFinder), "IsValidTileForNewSettlement"), new HarmonyMethod(typeof(Harmony_BiomePatches), nameof(IsValidTileForNewSettlement_PreFix)), null);
             harmony.Patch(AccessTools.Method(typeof(GenStep_CaveHives), "Generate"), new HarmonyMethod(typeof(Harmony_BiomePatches), nameof(GenerateHive_PreFix)), null);
             harmony.Patch(AccessTools.Method(typeof(GenStep_Terrain), "TerrainFrom"), new HarmonyMethod(typeof(Harmony_BiomePatches), nameof(TerrainFrom_PreFix)), null);
@@ -41,9 +42,27 @@ namespace RimWorldBiomesCore
             harmony.Patch(AccessTools.Method(typeof(World), "Impassable"), null, new HarmonyMethod(typeof(Harmony_BiomePatches), nameof(Impassable_PostFix)));
             harmony.Patch(AccessTools.Method(typeof(WorldPathGrid), "CalculatedCostAt"), null, new HarmonyMethod(typeof(Harmony_BiomePatches), nameof(CalculatedCostAt_PostFix)));
             harmony.Patch(AccessTools.Method(typeof(PlantProperties), "get_IsTree"), null, new HarmonyMethod(typeof(Harmony_BiomePatches), nameof(get_IsTree_PostFix)));
+            harmony.Patch(AccessTools.Method(typeof(GenPlant), "CanEverPlantAt"), null, new HarmonyMethod(typeof(Harmony_BiomePatches), nameof(CanEverPlantAt_PostFix)));
+            harmony.Patch(AccessTools.Method(typeof(RoofCollapseUtility), "WithinRangeOfRoofHolder"), null, new HarmonyMethod(typeof(Harmony_BiomePatches), nameof(WithinRangeOfRoofHolder_PostFix)));
+
+        }
+       
+        public static void WithinRangeOfRoofHolder_PostFix(IntVec3 c, Map map, bool __result)
+        {
+            if (map.roofGrid.RoofAt(c) == RWBDefOf.UncollapsableNaturalRoof)
+            {
+                __result = true;
+            }
         }
 
-
+        public static void CanEverPlantAt_PostFix(ThingDef plantDef, IntVec3 c, Map map, ref bool __result){
+            if(__result == false && plantDef.GetCompProperties<CompProperties_WaterPlant>() != null){
+                if(plantDef.GetCompProperties<CompProperties_WaterPlant>().allowedTiles.Contains(c.GetTerrain(map))){
+                    __result = true;
+                }
+            }
+            
+        }
 
         public static void CalculatedCostAt_PostFix(int tile, bool perceivedStatic, ref int __result, float yearPercent = -1f){
             Tile tile2 = Find.WorldGrid[tile];
