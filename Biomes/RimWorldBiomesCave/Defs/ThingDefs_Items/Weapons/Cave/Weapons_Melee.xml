@@ -57,7 +57,6 @@
 			<texPath>Things/Weapons/Caves/MoleClawGlove/MoleClawGlove_Basic</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
             <shaderType>CutoutSkin</shaderType>
-                    <color>(119, 92, 47)</color>
 		</graphicData>
     <weaponTags>
       <li>NonNeolithicOnlyMelee</li>
@@ -71,11 +70,8 @@
 		</statBases>
         <costList>
             <RWBMoleClaw>1</RWBMoleClaw>
+            <Cloth>30</Cloth>
         </costList>
-        <costStuffCount>30</costStuffCount>
-        <stuffCategories>
-            <li>Fabric</li>
-        </stuffCategories>
 <!--		<equippedAngleOffset>-65</equippedAngleOffset>-->
 		<recipeMaker>
 			<recipeUsers>
@@ -94,7 +90,6 @@
         <cooldownTime>1.6</cooldownTime>
       </li>
     </tools>
-
   </ThingDef>
 
 <ThingDef ParentName="BaseMeleeWeapon_Sharp">
@@ -106,7 +101,6 @@
         <texPath>Things/Weapons/Caves/MoleClawGlove/MoleClawGlove_Advanced</texPath>
         <graphicClass>Graphic_Single</graphicClass>
 <!--        <shaderType>CutoutSkin</shaderType>-->
-        <color>(119, 92, 47)</color>
     </graphicData>
     <weaponTags>
         <li>NonNeolithicOnlyMelee</li>
@@ -121,11 +115,8 @@
     <costList>
         <RWB_MoleGloveBasic>1</RWB_MoleGloveBasic>
         <Steel>25</Steel>
+        <Cloth>50</Cloth>
     </costList>
-    <costStuffCount>50</costStuffCount>
-    <stuffCategories>
-        <li>Fabric</li>
-    </stuffCategories>
     <!--		<equippedAngleOffset>-65</equippedAngleOffset>-->
     <recipeMaker>
         <recipeUsers>

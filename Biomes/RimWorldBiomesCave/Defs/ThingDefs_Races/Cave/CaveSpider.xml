@@ -109,6 +109,7 @@
     <race>RWBCaveSpider</race>
     <combatPower>160</combatPower>
     <wildSpawn_spawnWild>true</wildSpawn_spawnWild>
+    <canArriveManhunter>false</canArriveManhunter>
     <lifeStages>
       <li>
         <label>spiderling</label>

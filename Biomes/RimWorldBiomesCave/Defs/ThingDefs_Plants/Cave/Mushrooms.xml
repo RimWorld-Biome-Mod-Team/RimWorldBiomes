@@ -50,8 +50,8 @@
         </statBases>
 
         <plant>
-            <wildClusterSizeRange>10</wildClusterSizeRange>
-            <wildClusterRadius>4</wildClusterRadius>
+            <wildClusterSizeRange>5</wildClusterSizeRange>
+            <wildClusterRadius>3</wildClusterRadius>
             <reproduceMtbDays>5</reproduceMtbDays>
             <harvestedThingDef>FungalLog</harvestedThingDef>
             <growMinGlow>0</growMinGlow>
