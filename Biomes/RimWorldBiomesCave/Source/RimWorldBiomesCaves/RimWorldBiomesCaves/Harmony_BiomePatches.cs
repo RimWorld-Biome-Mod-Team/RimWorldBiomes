@@ -17,12 +17,21 @@ namespace RimWorldBiomesCaves
         {
             HarmonyInstance harmony = HarmonyInstance.Create("rimworld.swenzi.cavebiomepatches");
             harmony.Patch(AccessTools.Method(typeof(GenStep_Caves), "Generate"), new HarmonyMethod(typeof(Harmony_BiomePatches), nameof(Generate_PreFix)), null);
-            harmony.Patch(AccessTools.Method(typeof(WildSpawner), "WildSpawnerTick"), null, new HarmonyMethod(typeof(Harmony_BiomePatches), nameof(WildSpawnerTick_PostFix)));
+            //harmony.Patch(AccessTools.Method(typeof(WildSpawner), "WildSpawnerTick"), null, new HarmonyMethod(typeof(Harmony_BiomePatches), nameof(WildSpawnerTick_PostFix)));
             harmony.Patch(AccessTools.Method(typeof(GenPlantReproduction), "TryFindReproductionDestination"), null, new HarmonyMethod(typeof(Harmony_BiomePatches), nameof(TryFindReproductionDestination_PostFix)));
         }
 
         public static void WildSpawnerTick_PostFix(WildSpawner __instance){
-            Log.Error(__instance.AnimalEcosystemFull.ToString());
+            IntVec3 loc;
+            if(Find.TickManager.TicksGame % 1210 == 0 && !__instance.AnimalEcosystemFull){
+                Log.Error("not full");
+                float desiredAnimalDensity = Traverse.Create(__instance).Property("DesiredAnimalDensity").GetValue<float>();
+                Log.Error(desiredAnimalDensity.ToString());
+                Log.Error((Rand.Value < 0.0268888883f * desiredAnimalDensity).ToString());
+                Map map = (Map)AccessTools.Field(typeof(WildSpawner), "map").GetValue(__instance);
+                Log.Error(RCellFinder.TryFindRandomPawnEntryCell(out loc, map, CellFinder.EdgeRoadChance_Animal, null).ToString());
+
+            }
         }
         public static void TryFindReproductionDestination_PostFix(IntVec3 source, ThingDef plantDef, SeedTargFindMode mode, Map map, ref IntVec3 foundCell, ref bool __result)
         {             if (plantDef.plant.cavePlant)

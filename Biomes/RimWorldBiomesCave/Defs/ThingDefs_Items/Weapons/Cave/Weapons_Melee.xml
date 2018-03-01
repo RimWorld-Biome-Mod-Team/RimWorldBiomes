@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
     <ThingDef ParentName="BaseMeleeWeapon_Sharp">
@@ -56,6 +56,8 @@
 		<graphicData>
 			<texPath>Things/Weapons/Caves/MoleClawGlove/MoleClawGlove_Basic</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutSkin</shaderType>
+                    <color>(119, 92, 47)</color>
 		</graphicData>
     <weaponTags>
       <li>NonNeolithicOnlyMelee</li>
@@ -92,6 +94,7 @@
         <cooldownTime>1.6</cooldownTime>
       </li>
     </tools>
+
   </ThingDef>
 
 <ThingDef ParentName="BaseMeleeWeapon_Sharp">
@@ -102,6 +105,8 @@
     <graphicData>
         <texPath>Things/Weapons/Caves/MoleClawGlove/MoleClawGlove_Advanced</texPath>
         <graphicClass>Graphic_Single</graphicClass>
+<!--        <shaderType>CutoutSkin</shaderType>-->
+        <color>(119, 92, 47)</color>
     </graphicData>
     <weaponTags>
         <li>NonNeolithicOnlyMelee</li>

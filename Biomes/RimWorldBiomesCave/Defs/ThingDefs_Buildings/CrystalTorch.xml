@@ -8,6 +8,7 @@
     <description>A wooden torch for lighting an area. Made with these intricate glowing crystals found in caves.</description>
     <category>Building</category>
     <graphicData>
+        <color>(170,219,255)</color>
       <texPath>Buildings/CrystalTorchLamp</texPath>
       <graphicClass>Graphic_Single</graphicClass>
 	  <shaderType>CutoutComplex</shaderType>
