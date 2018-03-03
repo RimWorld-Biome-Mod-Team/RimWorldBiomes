@@ -78,6 +78,7 @@
 	    <description>Shards of crystal.</description>
 	    <graphicData>
 	        <texPath>Things/Ore/Smooth_Crystal</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
 	    </graphicData>
 	    <statBases>
 	        <MarketValue>2</MarketValue>

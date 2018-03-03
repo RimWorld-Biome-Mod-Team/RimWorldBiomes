@@ -44,9 +44,41 @@ namespace RimWorldBiomesCore
             harmony.Patch(AccessTools.Method(typeof(PlantProperties), "get_IsTree"), null, new HarmonyMethod(typeof(Harmony_BiomePatches), nameof(get_IsTree_PostFix)));
             harmony.Patch(AccessTools.Method(typeof(GenPlant), "CanEverPlantAt"), null, new HarmonyMethod(typeof(Harmony_BiomePatches), nameof(CanEverPlantAt_PostFix)));
             harmony.Patch(AccessTools.Method(typeof(RoofCollapseUtility), "WithinRangeOfRoofHolder"), null, new HarmonyMethod(typeof(Harmony_BiomePatches), nameof(WithinRangeOfRoofHolder_PostFix)));
-
+            harmony.Patch(AccessTools.Method(typeof(GenStep_ScatterLumpsMineable), "ScatterAt"), new HarmonyMethod(typeof(Harmony_BiomePatches), nameof(ScatterAt_PreFix)), null);
         }
        
+        public static bool ScatterAt_PreFix(IntVec3 c, Map map, GenStep_ScatterLumpsMineable __instance){
+
+            ThingDef thingDef = null;
+            if(__instance.forcedDefToScatter != null){
+                thingDef = __instance.forcedDefToScatter;
+            }
+            else{
+                thingDef = DefDatabase<ThingDef>.AllDefs.RandomElementByWeight(delegate (ThingDef d)
+                {
+                    if (d.building == null)
+                    {
+                        return 0f;
+                    }
+                    if(d.GetCompProperties<CompProperties_BiomeSpecific>() != null && !d.GetCompProperties<CompProperties_BiomeSpecific>().allowedBiomes.Contains(map.Biome.defName)){
+                        return 0f;
+                    }
+                    return d.building.mineableScatterCommonality;
+                });
+            }
+
+            List<IntVec3> recentLumpCells = (List<IntVec3>)AccessTools.Field(typeof(GenStep_ScatterLumpsMineable), "recentLumpCells").GetValue(__instance);
+            int numCells = (__instance.forcedLumpSize <= 0) ? thingDef.building.mineableScatterLumpSizeRange.RandomInRange : __instance.forcedLumpSize;
+            recentLumpCells.Clear();
+            foreach (IntVec3 current in GridShapeMaker.IrregularLump(c, map, numCells))
+            {
+                GenSpawn.Spawn(thingDef, current, map);
+                recentLumpCells.Add(current);
+            }
+            AccessTools.Field(typeof(GenStep_ScatterLumpsMineable), "recentLumpCells").SetValue(__instance,recentLumpCells);
+            return false;
+          
+        }
         public static void WithinRangeOfRoofHolder_PostFix(IntVec3 c, Map map, bool __result)
         {
             if (map.roofGrid.RoofAt(c) == RWBDefOf.UncollapsableNaturalRoof)

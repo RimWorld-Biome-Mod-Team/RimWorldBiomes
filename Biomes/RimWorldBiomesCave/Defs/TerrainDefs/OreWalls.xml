@@ -29,6 +29,11 @@
             <glowRadius>3</glowRadius>
             <glowColor>(170,219,255,1)</glowColor>
         </li>
+        <li Class="RimWorldBiomesCore.CompProperties_BiomeSpecific">
+            <allowedBiomes>
+                <li>RWBCavern</li>
+            </allowedBiomes>
+        </li>
     </comps>
   </ThingDef>
   
@@ -57,5 +62,12 @@
               <max>30</max>
           </mineableScatterLumpSizeRange>
       </building>
+      <comps>
+          <li Class="RimWorldBiomesCore.CompProperties_BiomeSpecific">
+              <allowedBiomes>
+                  <li>RWBCavern</li>
+              </allowedBiomes>
+          </li>
+      </comps>
   </ThingDef>
 </Defs>
