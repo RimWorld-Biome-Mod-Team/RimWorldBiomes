@@ -1,20 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
 <Patch>
     <Operation Class="PatchOperationSequence">
         <success>Always</success>
         <operations>
-            <li Class="PatchOperationTest">
-                <xpath>/Defs/ThingDef[defName = "WoodFiredGenerator"]/comps/li[@Class = "CompProperties_Refuelable"]/fuelFilter/thingDefs/WoodLog</xpath>
-                <success>Normal</success>
-            </li>
-            <li Class="PatchOperationRemove">
-                <xpath>/Defs/ThingDef[defName = "WoodFiredGenerator"]/comps/li[@Class = "CompProperties_Refuelable"]/fuelFilter/thingDefs/WoodLog</xpath>
-            </li>
             <li Class="PatchOperationAdd">
                 <xpath>/Defs/ThingDef[defName = "WoodFiredGenerator"]/comps/li[@Class = "CompProperties_Refuelable"]/fuelFilter/thingDefs</xpath>
                 <value>
-                    <li>RWBCoal</li>
-                    <li>FungalLog</li>
-                    <li>WoodLog</li>
+                        <li>RWBCoal</li>
+                        <li>FungalLog</li>
                 </value>
             </li>
         </operations>
@@ -23,19 +16,11 @@
     <Operation Class="PatchOperationSequence">
         <success>Always</success>
         <operations>
-            <li Class="PatchOperationTest">
-                <xpath>/Defs/ThingDef[defName = "TorchLamp"]/comps/li[@Class = "CompProperties_Refuelable"]/fuelFilter/thingDefs/WoodLog</xpath>
-                <success>Normal</success>
-            </li>
-            <li Class="PatchOperationRemove">
-                <xpath>/Defs/ThingDef[defName = "TorchLamp"]/comps/li[@Class = "CompProperties_Refuelable"]/fuelFilter/thingDefs/WoodLog</xpath>
-            </li>
             <li Class="PatchOperationAdd">
                 <xpath>/Defs/ThingDef[defName = "TorchLamp"]/comps/li[@Class = "CompProperties_Refuelable"]/fuelFilter/thingDefs</xpath>
                 <value>
-                    <li>RWBCoal</li>
-                    <li>FungalLog</li>
-                    <li>WoodLog</li>
+                        <li>RWBCoal</li>
+                        <li>FungalLog</li>
                 </value>
             </li>
         </operations>
@@ -44,19 +29,11 @@
     <Operation Class="PatchOperationSequence">
         <success>Always</success>
         <operations>
-            <li Class="PatchOperationTest">
-                <xpath>/Defs/ThingDef[defName = "Campfire"]/comps/li[@Class = "CompProperties_Refuelable"]/fuelFilter/thingDefs/WoodLog</xpath>
-                <success>Normal</success>
-            </li>
-            <li Class="PatchOperationRemove">
-                <xpath>/Defs/ThingDef[defName = "Campfire"]/comps/li[@Class = "CompProperties_Refuelable"]/fuelFilter/thingDefs/WoodLog</xpath>
-            </li>
             <li Class="PatchOperationAdd">
                 <xpath>/Defs/ThingDef[defName = "Campfire"]/comps/li[@Class = "CompProperties_Refuelable"]/fuelFilter/thingDefs</xpath>
                 <value>
-                    <li>RWBCoal</li>
-                    <li>FungalLog</li>
-                    <li>WoodLog</li>
+                        <li>RWBCoal</li>
+                        <li>FungalLog</li>
                 </value>
             </li>
         </operations>
@@ -65,19 +42,11 @@
     <Operation Class="PatchOperationSequence">
         <success>Always</success>
         <operations>
-            <li Class="PatchOperationTest">
-                <xpath>/Defs/ThingDef[defName = "FueledSmithy"]/comps/li[@Class = "CompProperties_Refuelable"]/fuelFilter/thingDefs/WoodLog</xpath>
-                <success>Normal</success>
-            </li>
-            <li Class="PatchOperationRemove">
-                <xpath>/Defs/ThingDef[defName = "FueledSmithy"]/comps/li[@Class = "CompProperties_Refuelable"]/fuelFilter/thingDefs/WoodLog</xpath>
-            </li>
             <li Class="PatchOperationAdd">
                 <xpath>/Defs/ThingDef[defName = "FueledSmithy"]/comps/li[@Class = "CompProperties_Refuelable"]/fuelFilter/thingDefs</xpath>
                 <value>
-                    <li>RWBCoal</li>
-                    <li>FungalLog</li>
-                    <li>WoodLog</li>
+                        <li>RWBCoal</li>
+                        <li>FungalLog</li>
                 </value>
             </li>
         </operations>
@@ -86,19 +55,11 @@
     <Operation Class="PatchOperationSequence">
         <success>Always</success>
         <operations>
-            <li Class="PatchOperationTest">
-                <xpath>/Defs/ThingDef[defName = "FueledStove"]/comps/li[@Class = "CompProperties_Refuelable"]/fuelFilter/thingDefs/WoodLog</xpath>
-                <success>Normal</success>
-            </li>
-            <li Class="PatchOperationRemove">
-                <xpath>/Defs/ThingDef[defName = "FueledStove"]/comps/li[@Class = "CompProperties_Refuelable"]/fuelFilter/thingDefs/WoodLog</xpath>
-            </li>
             <li Class="PatchOperationAdd">
                 <xpath>/Defs/ThingDef[defName = "FueledStove"]/comps/li[@Class = "CompProperties_Refuelable"]/fuelFilter/thingDefs</xpath>
                 <value>
-                    <li>RWBCoal</li>
-                    <li>FungalLog</li>
-                    <li>WoodLog</li>
+                        <li>RWBCoal</li>
+                        <li>FungalLog</li>
                 </value>
             </li>
         </operations>

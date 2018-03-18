@@ -62,7 +62,7 @@
             <dieIfLeafless>true</dieIfLeafless>
             <harvestWork>1000</harvestWork>
             <harvestYield>36</harvestYield>
-            <harvestTag>FungalLog</harvestTag>
+            <harvestTag>Wood</harvestTag>
             <neverBlightable>true</neverBlightable>
         </plant>
     </ThingDef>

@@ -1,0 +1,18 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workbench ActiveDocument="RimWorldBiomesCore/Harmony_BiomePatches.cs">
+    <Files>
+      <File FileName="RimWorldBiomesCore/CompWaterAnimal.cs" Line="26" Column="29" />
+      <File FileName="RimWorldBiomesCore/CompWaterPlant.cs" Line="23" Column="1" />
+      <File FileName="RimWorldBiomesCore/CompBiomeSpecific.cs" Line="11" Column="41" />
+      <File FileName="RimWorldBiomesCore/CompProperties_BiomeSpecific.cs" Line="14" Column="56" />
+      <File FileName="RimWorldBiomesCore/CompProperties_WaterPlant.cs" Line="26" Column="9" />
+      <File FileName="RimWorldBiomesCore/Harmony_BiomePatches.cs" Line="47" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>
