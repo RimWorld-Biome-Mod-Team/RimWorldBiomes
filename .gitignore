@@ -17,7 +17,7 @@ ExportedObj/
 *.pidb
 *.booproj
 *.svd
-
+.vs/*
 
 # Unity3D generated meta files
 *.pidb.meta
@@ -28,3 +28,8 @@ sysinfo.txt
 # Builds
 *.apk
 *.unitypackage
+Biomes/RimWorldBiomesCore/Source/RimWorldBiomesCore/.vs/*
+*.cache
+*.txt
+*.CopyComplete
+Biomes/RimWorldBiomesCore/Source/RimWorldBiomesCore/RimWorldBiomesCore/obj/Debug/*

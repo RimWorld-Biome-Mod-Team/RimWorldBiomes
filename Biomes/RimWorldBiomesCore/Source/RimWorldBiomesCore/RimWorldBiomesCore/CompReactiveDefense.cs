@@ -138,6 +138,7 @@ namespace RimWorldBiomesCore
                 }
                 return;
             }
+
             if(((Pawn)parent).health.hediffSet.GetPartHealth(((Pawn)parent).RaceProps.body.corePart) < ((Pawn)parent).RaceProps.body.corePart.def.hitPoints * props.hpThreshold * ((Pawn)parent).def.race.baseHealthScale){
                //Log.Error("a");
                 if(!hidden){
@@ -154,7 +155,9 @@ namespace RimWorldBiomesCore
                             }
                             pawn.apparel.Wear(apparel, false);
                         }
-                    }
+
+
+					}
                     if (Props.stopAttacker && !stoppedAttacker)
                     {
                         ((Pawn)lastattack.Instigator).jobs.StartJob(new Job(JobDefOf.WaitWander), JobCondition.InterruptForced);
@@ -162,20 +165,29 @@ namespace RimWorldBiomesCore
                     }
                     ResolveHideGraphic();
                     hidden = true;
-                    pawn.jobs.StartJob(new Job(JobDefOf.FleeAndCower, pawn.Position),JobCondition.InterruptForced);
-                }
-            }else{
-                //Log.Error("b");
-                if (hidden){
-                    if (Props.apparel != null && pawn.apparel != null)
-                    {
-                        pawn.apparel.DestroyAll();
-                    }
-                    ResolveBaseGraphic();
-                    hidden = false;
-                    stoppedAttacker = false;
-                }
-            }
+                    pawn.jobs.StartJob(new Job(JobDefOf.FleeAndCower, pawn.Position),JobCondition.InterruptForced);					
+				} else {
+					//prevent from moving
+					pawn.pather.StopDead();
+				}
+			}
+			else {
+				if (hidden)
+				{
+					if (Props.apparel != null && pawn.apparel != null)
+					{
+						pawn.apparel.DestroyAll();
+					}
+					ResolveBaseGraphic();
+					hidden = false;
+					stoppedAttacker = false;
+
+
+					//allow to move again
+//					pawn.pather.ResetToCurrentPosition();
+					pawn.pather.StartPath(pawn.Position, PathEndMode.OnCell);
+				}
+			}
         }
 
         public override void PostPostApplyDamage(DamageInfo dinfo, float totalDamageDealt)
