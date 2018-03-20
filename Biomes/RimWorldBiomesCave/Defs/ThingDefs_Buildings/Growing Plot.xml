@@ -49,7 +49,7 @@
 <!--            <basePowerConsumption>0</basePowerConsumption>-->
 <!--        </li>-->
 <!--        <li Class="CompProperties_Flickable"/>-->
-        <li Class="CompProperties_Breakdownable"/>
+ <!--       <li Class="CompProperties_Breakdownable"/>-->
     </comps>
     <!--<researchPrerequisites><li>Hydroponics</li></researchPrerequisites> -->
     <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
