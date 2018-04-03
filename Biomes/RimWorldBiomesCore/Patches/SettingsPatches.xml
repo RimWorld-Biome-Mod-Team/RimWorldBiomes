@@ -23,7 +23,7 @@
                 <xpath>/Defs/TerrainDef[defName = "WaterDeep"]</xpath>
                 <value>
                     <passability>PassThroughOnly</passability>
-                    <pathCost>100</pathCost>
+                    <pathCost>30</pathCost>
                 </value>
             </li>
             
@@ -45,7 +45,7 @@
                 <xpath>/Defs/TerrainDef[defName = "WaterOceanDeep"]</xpath>
                 <value>
                     <passability>PassThroughOnly</passability>
-                    <pathCost>100</pathCost>
+                    <pathCost>30</pathCost>
                 </value>
             </li>
             
@@ -67,7 +67,7 @@
                 <xpath>/Defs/TerrainDef[defName = "WaterMovingDeep"]</xpath>
                 <value>
                     <passability>PassThroughOnly</passability>
-                    <pathCost>125</pathCost>
+                    <pathCost>40</pathCost>
                 </value>
             </li>
         </operations>

@@ -33,3 +33,6 @@ Biomes/RimWorldBiomesCore/Source/RimWorldBiomesCore/.vs/*
 *.txt
 *.CopyComplete
 Biomes/RimWorldBiomesCore/Source/RimWorldBiomesCore/RimWorldBiomesCore/obj/Debug/*
+Biomes/.vs/ProjectSettings.json
+Biomes/.vs/slnx.sqlite
+Biomes/.vs/VSWorkspaceState.json
