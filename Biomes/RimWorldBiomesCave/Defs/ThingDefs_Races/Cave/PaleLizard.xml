@@ -5,7 +5,7 @@
     <!-- Maxolotl   -->
     <ThingDef ParentName="AnimalThingBase">
         <defName>RWBPaleLizard</defName>
-        <label>maxolotl</label>
+        <label>Pale Lizard</label>
         <description>This small lizard has lost most of its color and has lost its eyes due to the adaptation to the cavern environment. It is a common prey animal for the carnivores of the caverns.</description>
         <statBases>
             <MoveSpeed>5.2</MoveSpeed>
