@@ -11,11 +11,9 @@
       <texPath>Things/Ore/Coal</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-    <resourceReadoutPriority>First</resourceReadoutPriority>
     <soundInteract>Metal_Drop</soundInteract>
     <soundDrop>Metal_Drop</soundDrop>
     <useHitPoints>false</useHitPoints>
-    <resourceReadoutAlwaysShow>true</resourceReadoutAlwaysShow>
     <statBases>
       <MarketValue>2</MarketValue>
       <Mass>0.5</Mass>
