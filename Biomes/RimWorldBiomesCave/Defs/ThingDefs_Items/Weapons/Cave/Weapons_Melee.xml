@@ -27,7 +27,7 @@
         <costList>
             <Steel>150</Steel>
             <Component>25</Component>
-            <RWBChunkCrystal>50</RWBChunkCrystal>
+            <RWBCrystalShards>50</RWBCrystalShards>
         </costList>
         <!--		<equippedAngleOffset>-65</equippedAngleOffset>-->
         <recipeMaker>
