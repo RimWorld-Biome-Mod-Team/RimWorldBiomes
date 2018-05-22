@@ -18,11 +18,12 @@
 		</ingestible>
 
 		<plant>
+            <lifespanFraction>10</lifespanFraction>
             <reproduces>true</reproduces>
 			<fertilityMin>0.01</fertilityMin>
 			<fertilitySensitivity>0.15</fertilitySensitivity>
-			<growDays>1</growDays>
-            <dieIfLeafless>true</dieIfLeafless>
+			<growDays>2</growDays>
+<!--why? >            <dieIfLeafless>true</dieIfLeafless>
 <!--			<leaflessGraphicPath>Things/Plant/Grass_Leafless</leaflessGraphicPath>-->
 			<harvestWork>40</harvestWork>
 			<maxMeshCount>4</maxMeshCount>
@@ -33,6 +34,7 @@
 			<topWindExposure>0.4</topWindExposure>
 			<reproduceMtbDays>0.5</reproduceMtbDays>
             <neverBlightable>true</neverBlightable>
+            <wildClusterSizeRange><min>3</min><max>6</max></wildClusterSizeRange>
 		</plant>
 
 	</ThingDef>
