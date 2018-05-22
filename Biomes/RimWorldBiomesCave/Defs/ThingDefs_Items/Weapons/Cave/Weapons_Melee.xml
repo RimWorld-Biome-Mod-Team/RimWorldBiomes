@@ -63,6 +63,7 @@
       <li>NonNeolithicOnlySimpleMelee</li>
       <li>NeolithicMeleeBasic</li>
     </weaponTags>
+     <generateCommonality>0.5</generateCommonality>
 		<statBases>
 			<WorkToMake>400</WorkToMake>
 			<Mass>0.5</Mass>
@@ -107,6 +108,7 @@
         <li>NonNeolithicOnlySimpleMelee</li>
         <li>NeolithicMeleeBasic</li>
     </weaponTags>
+    <generateCommonality>0</generateCommonality>
     <statBases>
         <WorkToMake>800</WorkToMake>
         <Mass>0.8</Mass>
