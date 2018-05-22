@@ -7,6 +7,7 @@
 		<description>Crystal Tiles</description>
 		<texturePath>Terrain/CrystalFloor</texturePath>
 		<statBases>
+            <Beauty>3</Beauty>
 			<WorkToBuild>400</WorkToBuild>
 		</statBases>
 		<costList>
