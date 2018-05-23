@@ -23,9 +23,9 @@
 			<fertilityMin>0.01</fertilityMin>
 			<fertilitySensitivity>0.15</fertilitySensitivity>
 			<growDays>2</growDays>
-<!--why? >            <dieIfLeafless>true</dieIfLeafless>
-<!--			<leaflessGraphicPath>Things/Plant/Grass_Leafless</leaflessGraphicPath>-->
-			<harvestWork>40</harvestWork>
+<!--            <dieIfLeafless>true</dieIfLeafless>
+			<leaflessGraphicPath>Things/Plant/Grass_Leafless</leaflessGraphicPath>
+-->			<harvestWork>40</harvestWork>
 			<maxMeshCount>4</maxMeshCount>
 			<visualSizeRange>
 				<min>0.4</min>
