@@ -6,7 +6,7 @@ namespace RimWorldBiomesCaves
     [DefOf]
     public static class RWBBuildingDefOf
     {
-        public static BuildingDef Stalagmite1;
+        public static ThingDef Stalagmite1;
 
     }
 }
