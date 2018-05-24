@@ -42,15 +42,27 @@ namespace RimWorldBiomesCaves
                         // Checks wether the plantdef has a fertility value(Added for TiberiumRim users since Tiberium has 0% fertility)
                         if (plantDef.fertility != 0)
                         {
-                            IntVec3 source = CellFinder.RandomCell(map);
-                            if (plantDef.CanEverPlantAt(source, map))
+                            IntVec3 source;
+                            int FailSafe = 0;
+                            bool EscapeLoop = false;
+
+                            do
                             {
-                                //insert the seed
-                                GenPlantReproduction.TryReproduceInto(source, plantDef, map);
-                                if (source.GetPlant(map).def == plantDef)
+                                //loop that runs 10 times to look for a plantable tile
+                                source = CellFinder.RandomCell(map);
+                                FailSafe =+1;
+                                if (FailSafe >= 10)
                                 {
-                                    source.GetPlant(map).Growth = SpawnedMaturity;
+                                    EscapeLoop = true;
                                 }
+                            }
+                            while (!plantDef.CanEverPlantAt(source, map) || EscapeLoop);
+
+                            //plants
+                            GenPlantReproduction.TryReproduceInto(source, plantDef, map);
+                            if (source.GetPlant(map).def == plantDef)
+                            {
+                                source.GetPlant(map).Growth = SpawnedMaturity;
                             }
                         }
                     }
