@@ -11,12 +11,10 @@ namespace RimWorldBiomesCaves
 
         static Harmony_WildSpawnerPatch()
         {
+            Log.Message("Biomes cavern vegetation patch sends its regards");
             HarmonyInstance harmony = HarmonyInstance.Create("rimworld.soggynoodle.wildspawnerpatch");
-
             harmony.Patch(AccessTools.Method(typeof(WildSpawner), "TrySpawnPlantFromMapEdge"), null,
                 new HarmonyMethod(typeof(Harmony_WildSpawnerPatch), nameof(WildSpawner_TrySpawnPlantFromMapEdge_PostFix)), null);
-            Log.Message("Biomes cavern vegetation patch sends its regards");
-
         }
 
         private static void WildSpawner_TrySpawnPlantFromMapEdge_PostFix(WildSpawner __instance)
@@ -40,23 +38,25 @@ namespace RimWorldBiomesCaves
                             return;
                         }
                         // Checks wether the plantdef has a fertility value(Added for TiberiumRim users since Tiberium has 0% fertility)
-                        if (plantDef.fertility != 0)
+                        if (plantDef.plant == null || plantDef.plant.fertilityMin <= 0f)
                         {
+                            Log.Message("[Biomes!] if you see this message, contact the modmakers because of a mod conflict");
+                            return;
+                        }
                             IntVec3 source;
                             int FailSafe = 0;
-                            bool EscapeLoop = false;
-
                             do
                             {
                                 //loop that runs 10 times to look for a plantable tile
                                 source = CellFinder.RandomCell(map);
-                                FailSafe =+1;
-                                if (FailSafe >= 10)
+                                Log.Message(source.ToString());
+                                if (FailSafe >= 9)
                                 {
-                                    EscapeLoop = true;
+                                    return; // Exit because no free spot found.
                                 }
+                                FailSafe++;
                             }
-                            while (!plantDef.CanEverPlantAt(source, map) || EscapeLoop);
+                            while (!plantDef.CanEverPlantAt(source, map));
 
                             //plants
                             GenPlantReproduction.TryReproduceInto(source, plantDef, map);
@@ -64,7 +64,6 @@ namespace RimWorldBiomesCaves
                             {
                                 source.GetPlant(map).Growth = SpawnedMaturity;
                             }
-                        }
                     }
                 }
             }
