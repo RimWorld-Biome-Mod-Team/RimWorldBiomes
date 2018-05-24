@@ -34,7 +34,7 @@ namespace RimWorldBiomesCore
             harmony.Patch(AccessTools.Method(typeof(GenStep_CaveHives), "Generate"), new HarmonyMethod(typeof(Harmony_BiomePatches), nameof(GenerateHive_PreFix)), null);
             harmony.Patch(AccessTools.Method(typeof(GenStep_Terrain), "TerrainFrom"), new HarmonyMethod(typeof(Harmony_BiomePatches), nameof(TerrainFrom_PreFix)), null);
             harmony.Patch(AccessTools.Method(typeof(Building_SteamGeyser), "SpawnSetup"), new HarmonyMethod(typeof(Harmony_BiomePatches), nameof(GeyserSpawnSetup_PreFix)), null);
-            harmony.Patch(AccessTools.Method(typeof(GenStep_CavePlants), "Generate"), new HarmonyMethod(typeof(Harmony_BiomePatches), nameof(GenerateCavePlant_PreFix)), null);
+            //harmony.Patch(AccessTools.Method(typeof(GenStep_CavePlants), "Generate"), new HarmonyMethod(typeof(Harmony_BiomePatches), nameof(GenerateCavePlant_PreFix)), null);
             harmony.Patch(AccessTools.Method(typeof(Building_PlantGrower), "GetInspectString"), null, new HarmonyMethod(typeof(Harmony_BiomePatches), nameof(GetInspectString_PostFix)));
             harmony.Patch(AccessTools.Method(typeof(Pawn_ApparelTracker), "ApparelChanged"), new HarmonyMethod(typeof(Harmony_BiomePatches), nameof(ApparelChanged_PreFix)), null);
             harmony.Patch(AccessTools.Method(typeof(Mineable), "TrySpawnYield"), null, new HarmonyMethod(typeof(Harmony_BiomePatches), nameof(TrySpawnYield_PostFix)));
@@ -156,7 +156,7 @@ namespace RimWorldBiomesCore
             }
             return true;
         }
-                                                           
+        /*                                                   
         public static bool GenerateCavePlant_PreFix(Map map){
 			map.regionAndRoomUpdater.Enabled = false;
 			MapGenFloatGrid caves = MapGenerator.Caves;
@@ -219,6 +219,7 @@ namespace RimWorldBiomesCore
 			map.regionAndRoomUpdater.Enabled = true;
 			return false;
         }
+        */
         public static bool GenerateHive_PreFix(Map map){
             if(map.Biome.defName == "RWBCavern"){
                 return false;
