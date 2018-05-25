@@ -47,10 +47,9 @@ namespace RimWorldBiomesCaves
                             int FailSafe = 0;
                             do
                             {
-                                //loop that runs 10 times to look for a plantable tile
+                                //loop that runs 5 times to look for a plantable tile
                                 source = CellFinder.RandomCell(map);
-                                Log.Message(source.ToString());
-                                if (FailSafe >= 9)
+                                if (FailSafe >= 4)
                                 {
                                     return; // Exit because no free spot found.
                                 }
