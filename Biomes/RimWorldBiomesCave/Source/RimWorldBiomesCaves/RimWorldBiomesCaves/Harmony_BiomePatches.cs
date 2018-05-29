@@ -17,8 +17,8 @@ namespace RimWorldBiomesCaves
         {
             HarmonyInstance harmony = HarmonyInstance.Create("rimworld.swenzi.cavebiomepatches");
             harmony.Patch(AccessTools.Method(typeof(GenStep_Caves), "Generate"), new HarmonyMethod(typeof(Harmony_BiomePatches), nameof(Generate_PreFix)), null);
-            //harmony.Patch(AccessTools.Method(typeof(WildSpawner), "WildSpawnerTick"), null, new HarmonyMethod(typeof(Harmony_BiomePatches), nameof(WildSpawnerTick_PostFix)));
-            harmony.Patch(AccessTools.Method(typeof(GenPlantReproduction), "TryFindReproductionDestination"), null, new HarmonyMethod(typeof(Harmony_BiomePatches), nameof(TryFindReproductionDestination_PostFix)));
+            harmony.Patch(AccessTools.Method(typeof(WildSpawner), "WildSpawnerTick"), null, new HarmonyMethod(typeof(Harmony_BiomePatches), nameof(WildSpawnerTick_PostFix)));
+            //harmony.Patch(AccessTools.Method(typeof(GenPlantReproduction), "TryFindReproductionDestination"), null, new HarmonyMethod(typeof(Harmony_BiomePatches), nameof(TryFindReproductionDestination_PostFix)));
         }
 
         public static void WildSpawnerTick_PostFix(WildSpawner __instance){

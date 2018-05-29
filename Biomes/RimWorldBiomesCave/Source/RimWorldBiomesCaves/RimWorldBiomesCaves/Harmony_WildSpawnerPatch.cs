@@ -20,7 +20,7 @@ namespace RimWorldBiomesCaves
         private static void WildSpawner_TrySpawnPlantFromMapEdge_PostFix(WildSpawner __instance)
         {
             //every 2 in game seconds at speed 1
-            if ((Find.TickManager.TicksGame % 60) == 0)
+            if ((Find.TickManager.TicksGame % 120) == 0)
             {
                 float SpawnedMaturity = 0.05f;
                 int SpawnRate = 1;
