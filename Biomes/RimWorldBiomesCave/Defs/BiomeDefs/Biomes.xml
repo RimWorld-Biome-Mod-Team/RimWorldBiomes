@@ -78,7 +78,7 @@
     </baseWeatherCommonalities>
     <wildPlants>
       <MushroomCluster>0.2</MushroomCluster>
-      <SkullTop>0.001</SkullTop>
+      <SkullTop>0.0002</SkullTop>
       <Agarilux>0.00002</Agarilux>
       <Bryolux>0.005</Bryolux>
       <Glowstool>0.0003</Glowstool>
