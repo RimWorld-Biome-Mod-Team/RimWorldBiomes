@@ -47,7 +47,52 @@
 	    </apparel>
         <colorGenerator Class="ColorGenerator_StandardApparel" />
     </ThingDef>
-    
+
+		<ThingDef ParentName="ApparelMakeableBase">
+			<defName>VampireMothCloak</defName>
+			<description>A cloak made from the wings of a vampire moth.</description>
+			<label>vampire moth cloak</label>
+			<graphicData>
+				<texPath>Things/Apparel/VampireMothCloak/VampireMothCloak</texPath>
+				<graphicClass>Graphic_Single</graphicClass>
+			</graphicData>
+			<techLevel>Neolithic</techLevel>
+			<costStuffCount>35</costStuffCount>
+			<stuffCategories>
+				<li>Fabric</li>
+			</stuffCategories>
+			<thingCategories>
+				<li>Apparel</li>
+			</thingCategories>
+			<tradeability>Sellable</tradeability>
+			<statBases>
+				<MaxHitPoints>100</MaxHitPoints>
+				<WorkToMake>20000</WorkToMake>
+				<Mass>2.0</Mass>
+				<ArmorRating_Blunt>0.03</ArmorRating_Blunt>
+				<ArmorRating_Sharp>0.03</ArmorRating_Sharp>
+				<ArmorRating_Heat>0.03</ArmorRating_Heat>
+				<Insulation_Cold>-8</Insulation_Cold>
+				<Insulation_Heat>10</Insulation_Heat>
+			</statBases>
+			<apparel>
+				<bodyPartGroups>
+					<li>Torso</li>
+					<li>Shoulders</li>
+					<li>Arms</li>
+					<li>Legs</li>
+				</bodyPartGroups>
+				<wornGraphicPath>Things/Apparel/VampireMothCloak/VampireMothCloak</wornGraphicPath>
+				<layers>
+					<li>Shell</li>
+				</layers>
+				<defaultOutfitTags>
+					<li>Worker</li>
+				</defaultOutfitTags>
+			</apparel>
+			<colorGenerator Class="ColorGenerator_StandardApparel" />
+		</ThingDef>
+
     <ThingDef ParentName="HatMakeableBase">
         <defName>BeetlePlateHelmet</defName>
         <label>beetle plate helmet</label>
