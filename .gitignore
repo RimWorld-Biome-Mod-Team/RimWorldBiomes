@@ -40,3 +40,5 @@ Biomes/RimWorldBiomesCave/Source/RimWorldBiomesCaves/RimWorldBiomesCaves/.vs/Rim
 Biomes/RimWorldBiomesCave/Source/RimWorldBiomesCaves/RimWorldBiomesCaves/.vs/RimWorldBiomesCave/v15/Server/sqlite3/storage.ide
 Biomes/RimWorldBiomesCave/Source/RimWorldBiomesCaves/RimWorldBiomesCaves/.vs/RimWorldBiomesCave/v15/Server/sqlite3/storage.ide-shm
 Biomes/RimWorldBiomesCave/Source/RimWorldBiomesCaves/RimWorldBiomesCaves/.vs/RimWorldBiomesCave/v15/Server/sqlite3/storage.ide-wal
+
+*.DS_Store
