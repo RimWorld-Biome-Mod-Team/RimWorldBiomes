@@ -2,7 +2,9 @@
 <ModMetaData>
 	<name>Biomes! Cavern Edition</name>
 	<author>Draegon and Swenzi</author>
-	<targetVersion>0.18.1722</targetVersion>
+		<supportedVersions>
+			<li>1.0</li>
+		</supportedVersions>
 	<description>
 </description>
 </ModMetaData>
